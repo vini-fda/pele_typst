@@ -49,8 +49,13 @@ jobs:
       - name: Install the package as @local/pele_typst
         run: |
           version=$(sed -n 's/^version = "\(.*\)"/\1/p' typst.toml)
+          echo "PACKAGE_VERSION=$version" >> "$GITHUB_ENV"
           mkdir -p "$RUNNER_TEMP/packages/local/pele_typst"
           ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/packages/local/pele_typst/$version"
+      - name: The documents import the version typst.toml declares
+        run: |
+          grep -q "@local/pele_typst:$PACKAGE_VERSION\"" tests/smoke.typ
+          grep -q "@local/pele_typst:$PACKAGE_VERSION\"" README.md
       - name: Compile with the committed plugin
         run: |
           typst compile --package-path "$RUNNER_TEMP/packages" --ignore-system-fonts tests/smoke.typ "$RUNNER_TEMP/smoke.pdf"
@@ -63,7 +68,7 @@ jobs:
           typst compile --root . --ignore-system-fonts examples/basic.typ "$RUNNER_TEMP/basic.pdf"
       - name: An unsupported diagram fails with pele's message
         run: |
-          printf '#import "@local/pele_typst:0.1.0": mermaid\n#mermaid("sequenceDiagram\\n  A->>B: hi")\n' > "$RUNNER_TEMP/bad.typ"
+          printf '#import "@local/pele_typst:%s": mermaid\n#mermaid("sequenceDiagram\\n  A->>B: hi")\n' "$PACKAGE_VERSION" > "$RUNNER_TEMP/bad.typ"
           if typst compile --package-path "$RUNNER_TEMP/packages" "$RUNNER_TEMP/bad.typ" "$RUNNER_TEMP/bad.pdf" 2> "$RUNNER_TEMP/err.txt"; then
             echo "expected the compile to fail"; exit 1
           fi

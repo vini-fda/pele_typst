@@ -5,7 +5,7 @@ Render [Mermaid](https://mermaid.js.org) diagrams in Typst with **pele_rs**, a R
 compiled to a WebAssembly plugin, so it runs in the Typst CLI and the web app alike.
 
 ```typ
-#import "@local/pele_typst:0.1.0": mermaid
+#import "@local/pele_typst:0.2.0": mermaid
 
 #mermaid("
 flowchart TD
@@ -16,10 +16,15 @@ flowchart TD
 
 ![Example output](examples/basic.png)
 
-**Status:** flowcharts (`flowchart` / `graph`) are ported, with every shape, subgraphs,
-`classDef`/`style`/`linkStyle`, front matter and `%%{init}%%` config, and `@{ shape: … }`
-metadata. pele's other diagram types (sequence, class, state, …) report
-`Diagram type "…" is not supported yet.` For the ported types, `pele_rs` writes the same SVG as
+**Status:** two of pele's diagram types are ported:
+
+- **Flowcharts** (`flowchart` / `graph`), with every shape, subgraphs,
+  `classDef`/`style`/`linkStyle`, and `@{ shape: … }` metadata.
+- **Pie charts** (`pie`), with `showData`, titles, and the `pie` config options `textPosition`,
+  `donutHole` and `legendPosition`.
+
+Front matter and `%%{init}%%` config work for both. pele's other diagram types (sequence, class,
+state, …) report `Diagram type "…" is not supported yet.` For the ported types, `pele_rs` writes the same SVG as
 pele's JavaScript byte for byte; see [Tests](#tests).
 
 ## Usage
@@ -63,7 +68,7 @@ font much wider than Arial can overflow its boxes.
 
 ## Installing
 
-Typst reads local packages from `{data-dir}/typst/packages/local/pele_typst/0.1.0`, where
+Typst reads local packages from `{data-dir}/typst/packages/local/pele_typst/0.2.0`, where
 `{data-dir}` is `~/Library/Application Support` on macOS, `~/.local/share` on Linux and
 `%APPDATA%` on Windows. Link or copy this folder there; only `typst.toml`, `lib.typ`,
 `pele_typst.wasm`, `README.md` and `LICENSE` are needed. For the web app, upload those files to
@@ -85,14 +90,13 @@ rustup target add wasm32-unknown-unknown
 
 ## Tests
 
-`pele_rs/tests/fixtures.rs` renders each source in `pele_rs/tests/fixtures/flowchart.json` and
-compares it with the SVG that pele's JavaScript gave: 188 flowcharts from pele's docs corpus,
-its test files and extra cases here, all identical. Regenerate the fixtures from a pele checkout
-with [bun](https://bun.sh):
+`pele_rs/tests/fixtures.rs` renders each source in `pele_rs/tests/fixtures/` and compares it with
+the SVG that pele's JavaScript gave: 196 flowcharts and 73 pie charts from pele's docs corpus, its
+test files and the extra cases in `pele_rs/scripts/extra/`, all identical. Regenerate the
+fixtures from a pele checkout with [bun](https://bun.sh):
 
 ```sh
 cd pele_rs
-bun scripts/harvest.ts ../../pele > scripts/harvested-flowcharts.json
 bun scripts/fixtures.ts ../../pele
 cargo test
 ```
