@@ -1,0 +1,636 @@
+[
+  {
+    "source": "---\ntitle: .inf\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: .inf } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: -.inf\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: -.inf } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: .nan\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: .nan } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: 1e999\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: 1e999 } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: -0\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: -0 } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: [null, one, [two, null]]\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: [null, one, [two, null]] } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: {a: true}\n---\nflowchart LR\nA --> B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\nA@{ label: {a: true} } --> B",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: [oops\n---\nflowchart LR\n A",
+    "options": {}
+  },
+  {
+    "source": "---\nconfig:\n  x: [1,}\n---\npie\n \"x\": 1",
+    "options": {}
+  },
+  {
+    "source": "---\ntitle: \"\\q\"\n---\ninfo",
+    "options": {}
+  },
+  {
+    "source": "---\nconfig:\n x: &a 1\n---\ninfo",
+    "options": {}
+  },
+  {
+    "source": "---\nconfig:\n flowchart:\n  curve: stepBefore\n  useMaxWidth: false\n---\n%%{init: {\"flowchart\":{\"curve\":\"linear\"}}}%%\nflowchart LR\n A --> B",
+    "options": {
+      "config": {
+        "flowchart": {
+          "curve": "basis",
+          "nodeSpacing": 120
+        },
+        "extra": true
+      }
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"https://example.org/a?a=1&b=2\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"https://example.org/a?a=1&b=2\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"https://example.org/a?a=1&b=2\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"javascript:alert(1)\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"javascript:alert(1)\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"javascript:alert(1)\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"data:text/html,hello\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"data:text/html,hello\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"data:text/html,hello\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"mailto:a@example.org\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"mailto:a@example.org\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"mailto:a@example.org\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"obsidian://open?vault=test\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"obsidian://open?vault=test\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"obsidian://open?vault=test\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"../note\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"../note\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"../note\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"//example.org/path\" \"tip\" _blank",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"//example.org/path\" \"tip\" _blank",
+    "options": {
+      "links": false
+    }
+  },
+  {
+    "source": "flowchart LR\n A --> B\n click A \"//example.org/path\" \"tip\" _blank",
+    "options": {
+      "linkSchemes": [
+        "https",
+        "obsidian"
+      ],
+      "linkRel": "nofollow noopener"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "\"Segoe UI\", system-ui, sans-serif",
+      "fontFamilyMono": "\"Segoe UI\", system-ui, sans-serif",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "思源黑体, sans-serif",
+      "fontFamilyMono": "思源黑体, sans-serif",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "x;color:red",
+      "fontFamilyMono": "x;color:red",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "url(//evil.example/f)",
+      "fontFamilyMono": "url(//evil.example/f)",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "\"open",
+      "fontFamilyMono": "\"open",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "it's",
+      "fontFamilyMono": "it's",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "a,,b",
+      "fontFamilyMono": "a,,b",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<code>text</code>\"] --> B",
+    "options": {
+      "fontFamily": "",
+      "fontFamilyMono": "",
+      "idPrefix": "quoted\"prefix"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$a \\neq b_1 < c * d$$\"] -->|\"$$e^#35;$$\"| B",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$a \\neq b_1 < c * d$$\"] -->|\"$$e^#35;$$\"| B",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$a \\neq b_1 < c * d$$\"] -->|\"$$e^#35;$$\"| B",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$a \\neq b_1 < c * d$$\"] -->|\"$$e^#35;$$\"| B",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$a \\neq b_1 < c * d$$\"] -->|\"$$e^#35;$$\"| B",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$x$$\"] --> B[\"$$x$$\"] --> C[\"$$x$$\"]",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$x$$\"] --> B[\"$$x$$\"] --> C[\"$$x$$\"]",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$x$$\"] --> B[\"$$x$$\"] --> C[\"$$x$$\"]",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$x$$\"] --> B[\"$$x$$\"] --> C[\"$$x$$\"]",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$x$$\"] --> B[\"$$x$$\"] --> C[\"$$x$$\"]",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Total $$x$$ items<br/>last line\"]",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Total $$x$$ items<br/>last line\"]",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Total $$x$$ items<br/>last line\"]",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Total $$x$$ items<br/>last line\"]",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Total $$x$$ items<br/>last line\"]",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<span title=$$a$$>hello</span> $$b$$ $$c$$\"]",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<span title=$$a$$>hello</span> $$b$$ $$c$$\"]",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<span title=$$a$$>hello</span> $$b$$ $$c$$\"]",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<span title=$$a$$>hello</span> $$b$$ $$c$$\"]",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"<span title=$$a$$>hello</span> $$b$$ $$c$$\"]",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"`**bold** $$a_1$$ and $$b$$ *c*`\"]",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"`**bold** $$a_1$$ and $$b$$ *c*`\"]",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"`**bold** $$a_1$$ and $$b$$ *c*`\"]",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"`**bold** $$a_1$$ and $$b$$ *c*`\"]",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"`**bold** $$a_1$$ and $$b$$ *c*`\"]",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Hide $$x$$\"]\n style A opacity:0,letter-spacing:6px,word-spacing:4px",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Hide $$x$$\"]\n style A opacity:0,letter-spacing:6px,word-spacing:4px",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Hide $$x$$\"]\n style A opacity:0,letter-spacing:6px,word-spacing:4px",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Hide $$x$$\"]\n style A opacity:0,letter-spacing:6px,word-spacing:4px",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"Hide $$x$$\"]\n style A opacity:0,letter-spacing:6px,word-spacing:4px",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart TD\n X --> A\n subgraph S[\"$$x$$\"]\n A\n end",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart TD\n X --> A\n subgraph S[\"$$x$$\"]\n A\n end",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart TD\n X --> A\n subgraph S[\"$$x$$\"]\n A\n end",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart TD\n X --> A\n subgraph S[\"$$x$$\"]\n A\n end",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart TD\n X --> A\n subgraph S[\"$$x$$\"]\n A\n end",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"fa:fa-star fa:fa-star\"] --> B[\"fa:fa-car\"]",
+    "options": {
+      "iconMode": "all",
+      "mathMode": "svg"
+    }
+  },
+  {
+    "source": "flowchart LR\n A@{icon:\"test#35;icon\",form:\"circle\",label:\"fa:fa-star\"}",
+    "options": {
+      "iconMode": "all",
+      "mathMode": "svg"
+    }
+  },
+  {
+    "source": "flowchart LR\n A[\"$$x$$ fa:fa-star\"] -->|\"fa:fa-car $$y$$\"| B",
+    "options": {
+      "iconMode": "all",
+      "mathMode": "svg"
+    }
+  },
+  {
+    "source": "flowchart TD\nA-->B",
+    "options": {}
+  },
+  {
+    "source": "usecase-beta\nA[Name]",
+    "options": {}
+  },
+  {
+    "source": "cynefin-beta",
+    "options": {}
+  },
+  {
+    "source": "usecase-beta﻿\nA[Name]",
+    "options": {}
+  },
+  {
+    "source": "iſhikawa\nRoot",
+    "options": {}
+  },
+  {
+    "source": "ishiKawa\nRoot",
+    "options": {}
+  },
+  {
+    "source": "classDiagram\nclass A %%comment\nclass B",
+    "options": {}
+  },
+  {
+    "source": "flowchart TD\nA %%anything\nB",
+    "options": {}
+  },
+  {
+    "source": "classDiagram\nclass A %%comment\nclass B",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"http://>\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"http:example.org\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"HTTP://EXAMPLE.ORG/a/../b\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"http://bücher.example/a b\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"http://127.1\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"http://[::1]/\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"https://example.org:443/a\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"https://user:pass@EXAMPLE.org/path\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"http://%3E/\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"https://example.org/&#35;<tail\"",
+    "options": {}
+  },
+  {
+    "source": "flowchart LR\n A\n click A \"javascript :alert(1)\"",
+    "options": {}
+  }
+]

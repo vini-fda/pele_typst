@@ -1,0 +1,37 @@
+[
+  {
+    "source": "erDiagram\n p[\"$$a$$\"] {\n string name \"$$b$$\"\n }\n p ||--o{ q : \"$$c$$\"",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "erDiagram\n p[\"$$a$$\"] {\n string name \"$$b$$\"\n }\n p ||--o{ q : \"$$c$$\"",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "erDiagram\n p[\"$$a$$\"] {\n string name \"$$b$$\"\n }\n p ||--o{ q : \"$$c$$\"",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "erDiagram\n p[\"$$a$$\"] {\n string name \"$$b$$\"\n }\n p ||--o{ q : \"$$c$$\"",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "erDiagram\n p[\"$$a$$\"] {\n string name \"$$b$$\"\n }\n p ||--o{ q : \"$$c$$\"",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

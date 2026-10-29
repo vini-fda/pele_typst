@@ -1,0 +1,37 @@
+[
+  {
+    "source": "mindmap\n root((\"$$a$$\"))\n  $$b$$",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "mindmap\n root((\"$$a$$\"))\n  $$b$$",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "mindmap\n root((\"$$a$$\"))\n  $$b$$",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "mindmap\n root((\"$$a$$\"))\n  $$b$$",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "mindmap\n root((\"$$a$$\"))\n  $$b$$",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

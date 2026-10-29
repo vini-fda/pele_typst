@@ -1,0 +1,779 @@
+[
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 696 371\" width=\"696\" height=\"371\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(542.66,253)\"><path class=\"pele-ishikawa-spine\" d=\"M-328.85,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-99,-130M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25M-74.75,-81.5H-92.75M-88.25,-108.5H-106.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-137.9\" y=\"-164\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-99\" y=\"-141.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-152.45\" y=\"-22.6\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-169.05\" y=\"-49.6\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-168.95\" y=\"-76.6\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-148.99\" y=\"-103.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,-6.26L-406.35,-211M-314.6,-27.5H-380.6M-358.6,-27.5L-372.1,-54.5M-336.6,-27.5L-363.6,-81.5M-355.1,-108.5H-443.1M-421.1,-108.5L-434.6,-135.5M-399.1,-108.5L-426.1,-162.5M-377.1,-108.5L-417.6,-189.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-307.43,-5.65L-301.42,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-454.59\" y=\"-245\" width=\"96.48\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-406.35\" y=\"-222.4\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-415.16\" y=\"-22.6\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-414.44\" y=\"-49.6\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-421.9\" y=\"-76.6\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-466.38\" y=\"-103.6\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-468.77\" y=\"-130.6\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-476.23\" y=\"-157.6\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-478.63\" y=\"-184.6\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,6.26L-338.85,76M-314.6,27.5H-332.6M-328.1,54.5H-346.1\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-301.42,8.66L-307.43,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-393.75\" y=\"76\" width=\"109.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-338.85\" y=\"98.6\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-418.91\" y=\"32.4\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-378.72\" y=\"59.4\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 696,
+   "height": 371,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n        Process\n            Out of focus\n        User\n            Shaky hands\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 313 182\" width=\"313\" height=\"182\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(159.68,91)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-58.5,-49M-47.75,-27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-97.4\" y=\"-83\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"-60.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-108.49\" y=\"-22.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 313,
+   "height": 182,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\nProblem\nCause A\n  Subcause A1\nCause B\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 283 171\" width=\"283\" height=\"171\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(162.02,91)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Cause A\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-58.5,-49M-47.75,-27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-99.18\" y=\"-83\" width=\"81.36\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"-60.4\" text-anchor=\"middle\">Cause A</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-112.39\" y=\"-22.6\" text-anchor=\"middle\">Subcause A1</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Cause B\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-53,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-93.68\" y=\"38\" width=\"81.36\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"60.6\" text-anchor=\"middle\">Cause B</text></g><g class=\"pele-ishikawa-head\" data-id=\"Problem\"><path d=\"M0,-24H88.02A24,24 0 0 1 88.02,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"44.01\" y=\"5.6\">Problem</tspan></text></g></g></svg>",
+   "width": 283,
+   "height": 171,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Problem\nCause A\n  Subcause A1\nCause B\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 283 171\" width=\"283\" height=\"171\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(162.02,91)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Cause A\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-58.5,-49M-47.75,-27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-99.18\" y=\"-83\" width=\"81.36\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"-60.4\" text-anchor=\"middle\">Cause A</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-112.39\" y=\"-22.6\" text-anchor=\"middle\">Subcause A1</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Cause B\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-53,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-93.68\" y=\"38\" width=\"81.36\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"60.6\" text-anchor=\"middle\">Cause B</text></g><g class=\"pele-ishikawa-head\" data-id=\"Problem\"><path d=\"M0,-24H88.02A24,24 0 0 1 88.02,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"44.01\" y=\"5.6\">Problem</tspan></text></g></g></svg>",
+   "width": 283,
+   "height": 171,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"></svg>",
+   "width": 16,
+   "height": 16,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\nishikawa",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nishikawa\n--------^\nExpecting 'SPACELINE', 'SPACELIST', 'TEXT', got 'EOF'",
+    "code": "syntax",
+    "type": "ishikawa",
+    "mermaidType": "ishikawa",
+    "line": 2,
+    "column": 9,
+    "snippet": "ishikawa\n--------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nishikawa\n--------^\nExpecting 'SPACELINE', 'SPACELIST', 'TEXT', got 'EOF'",
+   "code": "syntax",
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "line": 2,
+   "column": 9,
+   "snippet": "ishikawa\n--------^"
+  }
+ },
+ {
+  "source": "ishikawa\nEffect\n\tOne\n\t\tTwo\n\t\t\tThree\n\t\t\t\tFour\n\tFive\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 247 225\" width=\"247\" height=\"225\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(146.32,145)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"One\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-85.5,-103M-47.75,-27.5H-91.75M-69.75,-27.5L-96.75,-81.5M-83.25,-54.5H-101.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-110.62\" y=\"-137\" width=\"50.24\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-85.5\" y=\"-114.4\" text-anchor=\"middle\">One</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-109.97\" y=\"-22.6\" text-anchor=\"middle\">Two</text><text fill=\"var(--_m)\" x=\"-120.03\" y=\"-76.6\" text-anchor=\"middle\">Three</text><text fill=\"var(--_m)\" x=\"-120.64\" y=\"-49.6\" text-anchor=\"middle\">Four</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Five\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-53,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-78.11\" y=\"38\" width=\"50.22\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"60.6\" text-anchor=\"middle\">Five</text></g><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 247,
+   "height": 225,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "%% first\n\n%% second\nishikawa-beta\n%% inside\n  Effect\n\n\n  %% between\n  Cause\n    Sub %% not a comment\n\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 330 123\" width=\"330\" height=\"123\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(228.93,91)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Cause\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-58.5,-49M-47.75,-27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-91.62\" y=\"-83\" width=\"66.24\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"-60.4\" text-anchor=\"middle\">Cause</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-145.84\" y=\"-22.6\" text-anchor=\"middle\">Sub %% not a comment</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 330,
+   "height": 123,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ISHIKAWA-BETA\nEffect\r\n  Cause\r\n    Sub\r\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 205 123\" width=\"205\" height=\"123\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(103.66,91)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Cause\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-58.5,-49M-47.75,-27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-91.62\" y=\"-83\" width=\"66.24\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"-60.4\" text-anchor=\"middle\">Cause</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-83.2\" y=\"-22.6\" text-anchor=\"middle\">Sub</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 205,
+   "height": 123,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\nEffect\n  A\n      B\n    C\n  D\n E\nF\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 252 198\" width=\"252\" height=\"198\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(150.78,118)\"><path class=\"pele-ishikawa-spine\" d=\"M-136.44,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"A\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-72,-76M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-87.34\" y=\"-110\" width=\"30.67\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-72\" y=\"-87.4\" text-anchor=\"middle\">A</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-75.8\" y=\"-22.6\" text-anchor=\"middle\">C</text><text x=\"-88.92\" y=\"-49.6\" text-anchor=\"middle\">B</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"D\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-53,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-68.78\" y=\"38\" width=\"31.55\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"60.6\" text-anchor=\"middle\">D</text></g><g class=\"pele-ishikawa-category\" data-id=\"E\"><path class=\"pele-ishikawa-bones\" d=\"M-111.57,-6.26L-127.44,-38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-108.44,0L-115.03,-5.65L-109.02,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-142.78\" y=\"-72\" width=\"30.67\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-127.44\" y=\"-49.4\" text-anchor=\"middle\">E</text></g><g class=\"pele-ishikawa-category\" data-id=\"F\"><path class=\"pele-ishikawa-bones\" d=\"M-111.57,6.26L-127.44,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-108.44,0L-109.02,8.66L-115.03,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-142.33\" y=\"38\" width=\"29.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-127.44\" y=\"60.6\" text-anchor=\"middle\">F</text></g><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 252,
+   "height": 198,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n  Effect\n   \n\n  Cause\n   ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 195 112\" width=\"195\" height=\"112\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(94.12,80)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Cause\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-53,-38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-86.12\" y=\"-72\" width=\"66.24\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"-49.4\" text-anchor=\"middle\">Cause</text></g><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 195,
+   "height": 112,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\nEffect\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 143 64\" width=\"143\" height=\"64\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(42,32)\"><path class=\"pele-ishikawa-spine\" d=\"M-34,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 143,
+   "height": 64,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa\n  E\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 109 64\" width=\"109\" height=\"64\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(42,32)\"><path class=\"pele-ishikawa-spine\" d=\"M-34,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-head\" data-id=\"E\"><path d=\"M0,-24H34.67A24,24 0 0 1 34.67,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"17.34\" y=\"5.6\">E</tspan></text></g></g></svg>",
+   "width": 109,
+   "height": 64,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "%% c\nishikawa-beta\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"></svg>",
+   "width": 16,
+   "height": 16,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-bet\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 128 64\" width=\"128\" height=\"64\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(42,32)\"><path class=\"pele-ishikawa-spine\" d=\"M-34,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-head\" data-id=\"-bet\"><path d=\"M0,-24H53.33A24,24 0 0 1 53.33,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"26.66\" y=\"5.6\">-bet</tspan></text></g></g></svg>",
+   "width": 128,
+   "height": 64,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n        Problem\n  A\n      A1\n    A2\n  B\n C\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 279 198\" width=\"279\" height=\"198\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(158.67,118)\"><path class=\"pele-ishikawa-spine\" d=\"M-143.9,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"A\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-72,-76M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-87.34\" y=\"-110\" width=\"30.67\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-72\" y=\"-87.4\" text-anchor=\"middle\">A</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-79.31\" y=\"-22.6\" text-anchor=\"middle\">A2</text><text x=\"-92.81\" y=\"-49.6\" text-anchor=\"middle\">A1</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"B\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-53,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-68.34\" y=\"38\" width=\"30.67\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"60.6\" text-anchor=\"middle\">B</text></g><g class=\"pele-ishikawa-category\" data-id=\"C\"><path class=\"pele-ishikawa-bones\" d=\"M-119.03,-6.26L-134.9,-38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-115.9,0L-122.48,-5.65L-116.47,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-150.67\" y=\"-72\" width=\"31.55\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-134.9\" y=\"-49.4\" text-anchor=\"middle\">C</text></g><g class=\"pele-ishikawa-head\" data-id=\"Problem\"><path d=\"M0,-24H88.02A24,24 0 0 1 88.02,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"44.01\" y=\"5.6\">Problem</tspan></text></g></g></svg>",
+   "width": 279,
+   "height": 198,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: Root causes\n---\nishikawa-beta\n  Effect\n    Cause\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 195 148\" width=\"195\" height=\"148\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"97.5\" y=\"25.6\">Root causes</tspan></text><g transform=\"translate(94.12,116)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Cause\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-53,-38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-86.12\" y=\"-72\" width=\"66.24\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"-49.4\" text-anchor=\"middle\">Cause</text></g><g class=\"pele-ishikawa-head\" data-id=\"Effect\"><path d=\"M0,-24H68.45A24,24 0 0 1 68.45,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"34.22\" y=\"5.6\">Effect</tspan></text></g></g></svg>",
+   "width": 195,
+   "height": 148,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n\n  Effect\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\n  Effect\n^\nExpecting 'SPACELINE', 'NL', 'EOF', got 'SPACELIST'",
+    "code": "syntax",
+    "type": "ishikawa",
+    "mermaidType": "ishikawa",
+    "line": 3,
+    "column": 1,
+    "snippet": "  Effect\n^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\n  Effect\n^\nExpecting 'SPACELINE', 'NL', 'EOF', got 'SPACELIST'",
+   "code": "syntax",
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "line": 3,
+   "column": 1,
+   "snippet": "  Effect\n^"
+  }
+ },
+ {
+  "source": "ishikawa-beta\n  Effect\n  ishikawa again\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\n  ishikawa again\n--^\nExpecting 'SPACELINE', 'NL', 'EOF', 'TEXT', got 'ISHIKAWA'",
+    "code": "syntax",
+    "type": "ishikawa",
+    "mermaidType": "ishikawa",
+    "line": 3,
+    "column": 3,
+    "snippet": "  ishikawa again\n--^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\n  ishikawa again\n--^\nExpecting 'SPACELINE', 'NL', 'EOF', 'TEXT', got 'ISHIKAWA'",
+   "code": "syntax",
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "line": 3,
+   "column": 3,
+   "snippet": "  ishikawa again\n--^"
+  }
+ },
+ {
+  "source": "ishikawa-beta\n  Late delivery\n  People\n    Too few reviewers\n      No time set aside\n  Process\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 373 198\" width=\"373\" height=\"198\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(218.33,118)\"><path class=\"pele-ishikawa-spine\" d=\"M-62,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"People\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-72,-76M-47.75,-27.5H-91.75M-69.75,-27.5L-83.25,-54.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-106.9\" y=\"-110\" width=\"69.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-72\" y=\"-87.4\" text-anchor=\"middle\">People</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-153.54\" y=\"-22.6\" text-anchor=\"middle\">Too few reviewers</text><text fill=\"var(--_m)\" x=\"-142.32\" y=\"-49.6\" text-anchor=\"middle\">No time set aside</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-53,38\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-91.9\" y=\"38\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-53\" y=\"60.6\" text-anchor=\"middle\">Process</text></g><g class=\"pele-ishikawa-head\" data-id=\"Late delivery\"><path d=\"M0,-24H121.82A24,24 0 0 1 121.82,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.91\" y=\"5.6\">Late delivery</tspan></text></g></g></svg>",
+   "width": 373,
+   "height": 198,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 246 874\" width=\"246\" height=\"874\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><path class=\"pele-edge\" d=\"M18,44V74H28\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,92V120.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,92V165.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,92V210.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,92V255.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M18,44V302H28\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,320V348.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M18,44V395H28\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,413V441.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M58,458V486.5H68\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M58,458V531.5H68\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M58,458V576.5H68\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,413V621.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M58,638V666.5H68\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M58,638V711.5H68\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M18,44V758H28\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,776V804.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><path class=\"pele-edge\" d=\"M38,776V849.5H48\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-node pele-ishikawa-head\" data-id=\"Blurry Photo\"><rect x=\"8\" y=\"8\" width=\"116.9\" height=\"36\" rx=\"12\" fill=\"var(--_s)\" stroke=\"var(--_b)\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"66.45\" y=\"31.6\">Blurry Photo</tspan></text></g><g class=\"pele-node pele-ishikawa-category\" data-id=\"Process\"><rect x=\"28\" y=\"56\" width=\"82.26\" height=\"36\" rx=\"4\" fill=\"var(--_s)\" stroke=\"var(--_b)\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"69.13\" y=\"79.6\">Process</tspan></text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Out of focus\"><text class=\"pele-label\" font-size=\"14\" x=\"95.74\" y=\"125.4\" text-anchor=\"middle\">Out of focus</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Shutter speed too slow\"><text class=\"pele-label\" font-size=\"14\" x=\"129.2\" y=\"170.4\" text-anchor=\"middle\">Shutter speed too slow</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Protective film not removed\"><text class=\"pele-label\" font-size=\"14\" x=\"142.81\" y=\"215.4\" text-anchor=\"middle\">Protective film not removed</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Beautification filter applied\"><text class=\"pele-label\" font-size=\"14\" x=\"139.7\" y=\"260.4\" text-anchor=\"middle\">Beautification filter applied</text></g><g class=\"pele-node pele-ishikawa-category\" data-id=\"User\"><rect x=\"28\" y=\"284\" width=\"55.57\" height=\"36\" rx=\"4\" fill=\"var(--_s)\" stroke=\"var(--_b)\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"55.78\" y=\"307.6\">User</tspan></text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Shaky hands\"><text class=\"pele-label\" font-size=\"14\" x=\"98.47\" y=\"353.4\" text-anchor=\"middle\">Shaky hands</text></g><g class=\"pele-node pele-ishikawa-category\" data-id=\"Equipment\"><rect x=\"28\" y=\"377\" width=\"102.67\" height=\"36\" rx=\"4\" fill=\"var(--_s)\" stroke=\"var(--_b)\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"79.34\" y=\"400.6\">Equipment</tspan></text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"LENS\"><text class=\"pele-label\" font-size=\"14\" x=\"76.28\" y=\"446.4\" text-anchor=\"middle\">LENS</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Inappropriate lens\"><text class=\"pele-label\" font-size=\"14\" x=\"134.03\" y=\"491.4\" text-anchor=\"middle\">Inappropriate lens</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Damaged lens\"><text class=\"pele-label\" font-size=\"14\" x=\"123.13\" y=\"536.4\" text-anchor=\"middle\">Damaged lens</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Dirty lens\"><text class=\"pele-label\" font-size=\"14\" x=\"107.17\" y=\"581.4\" text-anchor=\"middle\">Dirty lens</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"SENSOR\"><text class=\"pele-label\" font-size=\"14\" x=\"87.56\" y=\"626.4\" text-anchor=\"middle\">SENSOR</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Damaged sensor\"><text class=\"pele-label\" font-size=\"14\" x=\"131.3\" y=\"671.4\" text-anchor=\"middle\">Damaged sensor</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Dirty sensor\"><text class=\"pele-label\" font-size=\"14\" x=\"115.34\" y=\"716.4\" text-anchor=\"middle\">Dirty sensor</text></g><g class=\"pele-node pele-ishikawa-category\" data-id=\"Environment\"><rect x=\"28\" y=\"740\" width=\"117.79\" height=\"36\" rx=\"4\" fill=\"var(--_s)\" stroke=\"var(--_b)\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"86.9\" y=\"763.6\">Environment</tspan></text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Subject moved too quickly\"><text class=\"pele-label\" font-size=\"14\" x=\"139.31\" y=\"809.4\" text-anchor=\"middle\">Subject moved too quickly</text></g><g class=\"pele-node pele-ishikawa-cause\" data-id=\"Too dark\"><text class=\"pele-label\" font-size=\"14\" x=\"85.62\" y=\"854.4\" text-anchor=\"middle\">Too dark</text></g></svg>",
+   "width": 246,
+   "height": 874,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 806 464\" width=\"806\" height=\"464\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(621.22,305)\"><path class=\"pele-ishikawa-spine\" d=\"M-351.9,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-130,-192M-54,-40H-72M-80,-92H-98M-101.25,-134.5H-119.25M-117.75,-167.5H-135.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-176.12\" y=\"-232\" width=\"92.24\" height=\"40\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-130\" y=\"-205\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"18\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"-150.53\" y=\"-45.2\">Beautification filter</tspan><tspan x=\"-150.53\" y=\"-22.2\">applied</tspan></text><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"-174.52\" y=\"-97.2\">Protective film not</tspan><tspan x=\"-174.52\" y=\"-74.2\">removed</tspan></text><text x=\"-215.8\" y=\"-128.2\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-189.28\" y=\"-161.2\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-61.5,55M-49.25,30.5H-67.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-92.61\" y=\"55\" width=\"62.22\" height=\"40\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-61.5\" y=\"82\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"18\"><text x=\"-124.28\" y=\"36.8\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-327.03,-6.26L-450.4,-253M-339.15,-30.5H-405.15M-383.15,-30.5L-399.65,-63.5M-361.15,-30.5L-394.15,-96.5M-388.65,-129.5H-476.65M-454.65,-129.5L-471.15,-162.5M-432.65,-129.5L-465.65,-195.5M-410.65,-129.5L-460.15,-228.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-323.9,0L-330.48,-5.65L-324.47,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-508.2\" y=\"-293\" width=\"115.6\" height=\"40\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-450.4\" y=\"-266\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"18\"><text x=\"-448.15\" y=\"-24.2\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-452.65\" y=\"-57.2\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-467.67\" y=\"-90.2\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-505.15\" y=\"-123.2\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-513.65\" y=\"-156.2\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-528.67\" y=\"-189.2\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-537.18\" y=\"-222.2\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-327.03,6.26L-377.4,107M-343.9,40H-361.9M-365.15,82.5H-383.15\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-323.9,0L-324.47,8.66L-330.48,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-443.53\" y=\"107\" width=\"132.26\" height=\"40\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-377.4\" y=\"134\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"18\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"-441.43\" y=\"34.8\">Subject moved too</tspan><tspan x=\"-441.43\" y=\"57.8\">quickly</tspan></text><text x=\"-423.66\" y=\"88.8\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-27H145.12A27,27 0 0 1 145.12,27H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"72.56\" y=\"7\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 806,
+   "height": 464,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": []
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 696 371\" width=\"696\" height=\"371\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(542.66,253)\"><path class=\"pele-ishikawa-spine\" d=\"M-328.85,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-99,-130M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25M-74.75,-81.5H-92.75M-88.25,-108.5H-106.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-137.9\" y=\"-164\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-99\" y=\"-141.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-152.45\" y=\"-22.6\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-169.05\" y=\"-49.6\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-168.95\" y=\"-76.6\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-148.99\" y=\"-103.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,-6.26L-406.35,-211M-314.6,-27.5H-380.6M-358.6,-27.5L-372.1,-54.5M-336.6,-27.5L-363.6,-81.5M-355.1,-108.5H-443.1M-421.1,-108.5L-434.6,-135.5M-399.1,-108.5L-426.1,-162.5M-377.1,-108.5L-417.6,-189.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-307.43,-5.65L-301.42,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-454.59\" y=\"-245\" width=\"96.48\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-406.35\" y=\"-222.4\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-415.16\" y=\"-22.6\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-414.44\" y=\"-49.6\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-421.9\" y=\"-76.6\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-466.38\" y=\"-103.6\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-468.77\" y=\"-130.6\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-476.23\" y=\"-157.6\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-478.63\" y=\"-184.6\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,6.26L-338.85,76M-314.6,27.5H-332.6M-328.1,54.5H-346.1\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-301.42,8.66L-307.43,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-393.75\" y=\"76\" width=\"109.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-338.85\" y=\"98.6\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-418.91\" y=\"32.4\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-378.72\" y=\"59.4\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 696,
+   "height": 371,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": [
+    "members",
+    "attributes",
+    "files",
+    "messages"
+   ]
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 696 371\" width=\"696\" height=\"371\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(542.66,253)\"><path class=\"pele-ishikawa-spine\" d=\"M-328.85,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-99,-130M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25M-74.75,-81.5H-92.75M-88.25,-108.5H-106.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-137.9\" y=\"-164\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-99\" y=\"-141.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-152.45\" y=\"-22.6\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-169.05\" y=\"-49.6\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-168.95\" y=\"-76.6\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-148.99\" y=\"-103.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,-6.26L-406.35,-211M-314.6,-27.5H-380.6M-358.6,-27.5L-372.1,-54.5M-336.6,-27.5L-363.6,-81.5M-355.1,-108.5H-443.1M-421.1,-108.5L-434.6,-135.5M-399.1,-108.5L-426.1,-162.5M-377.1,-108.5L-417.6,-189.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-307.43,-5.65L-301.42,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-454.59\" y=\"-245\" width=\"96.48\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-406.35\" y=\"-222.4\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-415.16\" y=\"-22.6\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-414.44\" y=\"-49.6\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-421.9\" y=\"-76.6\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-466.38\" y=\"-103.6\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-468.77\" y=\"-130.6\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-476.23\" y=\"-157.6\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-478.63\" y=\"-184.6\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,6.26L-338.85,76M-314.6,27.5H-332.6M-328.1,54.5H-346.1\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-301.42,8.66L-307.43,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-393.75\" y=\"76\" width=\"109.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-338.85\" y=\"98.6\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-418.91\" y=\"32.4\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-378.72\" y=\"59.4\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 696,
+   "height": 371,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "fontFamily": "Custom Sans",
+   "fontFamilyMono": "Custom Mono",
+   "fontSize": 11
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 554 303\" width=\"554\" height=\"303\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,Custom Mono);font:11px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,Custom Sans)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(430.73,204)\"><path class=\"pele-ishikawa-spine\" d=\"M-268.44,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-87,-106M-46.25,-24.5H-64.25M-56.75,-45.5H-74.75M-67.25,-66.5H-85.25M-77.75,-87.5H-95.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-116.87\" y=\"-133\" width=\"59.73\" height=\"27\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-87\" y=\"-115.65\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"10\"><text x=\"-127.61\" y=\"-21\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-140.32\" y=\"-42\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-141.11\" y=\"-63\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-127.71\" y=\"-84\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-55.5,43M-46.25,24.5H-64.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-77.11\" y=\"43\" width=\"43.22\" height=\"27\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-55.5\" y=\"60.35\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"10\"><text x=\"-98.15\" y=\"28\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-243.57,-6.26L-324.94,-169M-252.69,-24.5H-318.69M-296.69,-24.5L-307.19,-45.5M-274.69,-24.5L-295.69,-66.5M-284.19,-87.5H-372.19M-350.19,-87.5L-360.69,-108.5M-328.19,-87.5L-349.19,-129.5M-306.19,-87.5L-337.69,-150.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-240.44,0L-247.02,-5.65L-241.01,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-361.23\" y=\"-196\" width=\"72.58\" height=\"27\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-324.94\" y=\"-178.65\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"10\"><text x=\"-344.8\" y=\"-21\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-338.86\" y=\"-42\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-338.76\" y=\"-63\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-390.25\" y=\"-84\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-386.52\" y=\"-105\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-386.42\" y=\"-126\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-382.71\" y=\"-147\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-243.57,6.26L-272.44,64M-252.69,24.5H-270.69M-263.19,45.5H-281.19\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-240.44,0L-241.01,8.66L-247.02,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-313.31\" y=\"64\" width=\"81.74\" height=\"27\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-272.44\" y=\"81.35\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"10\"><text x=\"-333.77\" y=\"28\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-305.92\" y=\"49\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H90.62A24,24 0 0 1 90.62,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"45.31\" y=\"3.85\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 554,
+   "height": 303,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "responsive": true,
+   "maxWidth": 280,
+   "autoDirection": false,
+   "directionBreakpoint": 400
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 696 371\" width=\"696\" height=\"371\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(542.66,253)\"><path class=\"pele-ishikawa-spine\" d=\"M-328.85,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-99,-130M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25M-74.75,-81.5H-92.75M-88.25,-108.5H-106.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-137.9\" y=\"-164\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-99\" y=\"-141.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-152.45\" y=\"-22.6\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-169.05\" y=\"-49.6\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-168.95\" y=\"-76.6\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-148.99\" y=\"-103.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,-6.26L-406.35,-211M-314.6,-27.5H-380.6M-358.6,-27.5L-372.1,-54.5M-336.6,-27.5L-363.6,-81.5M-355.1,-108.5H-443.1M-421.1,-108.5L-434.6,-135.5M-399.1,-108.5L-426.1,-162.5M-377.1,-108.5L-417.6,-189.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-307.43,-5.65L-301.42,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-454.59\" y=\"-245\" width=\"96.48\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-406.35\" y=\"-222.4\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-415.16\" y=\"-22.6\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-414.44\" y=\"-49.6\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-421.9\" y=\"-76.6\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-466.38\" y=\"-103.6\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-468.77\" y=\"-130.6\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-476.23\" y=\"-157.6\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-478.63\" y=\"-184.6\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,6.26L-338.85,76M-314.6,27.5H-332.6M-328.1,54.5H-346.1\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-301.42,8.66L-307.43,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-393.75\" y=\"76\" width=\"109.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-338.85\" y=\"98.6\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-418.91\" y=\"32.4\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-378.72\" y=\"59.4\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 696,
+   "height": 371,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "links": false,
+   "images": false
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 696 371\" width=\"696\" height=\"371\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(542.66,253)\"><path class=\"pele-ishikawa-spine\" d=\"M-328.85,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-99,-130M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25M-74.75,-81.5H-92.75M-88.25,-108.5H-106.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-137.9\" y=\"-164\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-99\" y=\"-141.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-152.45\" y=\"-22.6\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-169.05\" y=\"-49.6\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-168.95\" y=\"-76.6\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-148.99\" y=\"-103.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,-6.26L-406.35,-211M-314.6,-27.5H-380.6M-358.6,-27.5L-372.1,-54.5M-336.6,-27.5L-363.6,-81.5M-355.1,-108.5H-443.1M-421.1,-108.5L-434.6,-135.5M-399.1,-108.5L-426.1,-162.5M-377.1,-108.5L-417.6,-189.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-307.43,-5.65L-301.42,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-454.59\" y=\"-245\" width=\"96.48\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-406.35\" y=\"-222.4\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-415.16\" y=\"-22.6\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-414.44\" y=\"-49.6\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-421.9\" y=\"-76.6\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-466.38\" y=\"-103.6\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-468.77\" y=\"-130.6\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-476.23\" y=\"-157.6\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-478.63\" y=\"-184.6\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,6.26L-338.85,76M-314.6,27.5H-332.6M-328.1,54.5H-346.1\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-301.42,8.66L-307.43,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-393.75\" y=\"76\" width=\"109.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-338.85\" y=\"98.6\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-418.91\" y=\"32.4\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-378.72\" y=\"59.4\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 696,
+   "height": 371,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "limit": 4
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "error": {
+    "message": "Diagram source is longer than the limit of 4 characters.",
+    "code": "limit",
+    "type": null,
+    "mermaidType": null,
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "Diagram source is longer than the limit of 4 characters.",
+   "code": "limit",
+   "type": null,
+   "mermaidType": null,
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "outputLimit": 64
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "error": {
+   "message": "Diagram output is longer than the limit of 64 characters.",
+   "code": "limit",
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "ishikawa-beta\n    Blurry Photo\n    Process\n        Out of focus\n        Shutter speed too slow\n        Protective film not removed\n        Beautification filter applied\n    User\n        Shaky hands\n    Equipment\n        LENS\n            Inappropriate lens\n            Damaged lens\n            Dirty lens\n        SENSOR\n            Damaged sensor\n            Dirty sensor\n    Environment\n        Subject moved too quickly\n        Too dark\n",
+  "options": {
+   "now": 1768478400000,
+   "maxEdges": 0
+  },
+  "detected": "ishikawa",
+  "parsed": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa"
+  },
+  "result": {
+   "type": "ishikawa",
+   "mermaidType": "ishikawa",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-ishikawa\" viewBox=\"0 0 696 371\" width=\"696\" height=\"371\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_hw:var(--pele-heading-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"ishikawa\"><g transform=\"translate(542.66,253)\"><path class=\"pele-ishikawa-spine\" d=\"M-328.85,0H-7\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M0,0L-8,3.36L-8,-3.36Z\" fill=\"var(--_l)\" stroke=\"none\"/><g class=\"pele-ishikawa-category\" data-id=\"Process\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,-6.26L-99,-130M-47.75,-27.5H-65.75M-61.25,-54.5H-79.25M-74.75,-81.5H-92.75M-88.25,-108.5H-106.25\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-40.58,-5.65L-34.57,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-137.9\" y=\"-164\" width=\"77.79\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-99\" y=\"-141.4\" text-anchor=\"middle\">Process</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-152.45\" y=\"-22.6\" text-anchor=\"middle\">Beautification filter applied</text><text x=\"-169.05\" y=\"-49.6\" text-anchor=\"middle\">Protective film not removed</text><text x=\"-168.95\" y=\"-76.6\" text-anchor=\"middle\">Shutter speed too slow</text><text x=\"-148.99\" y=\"-103.6\" text-anchor=\"middle\">Out of focus</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"User\"><path class=\"pele-ishikawa-bones\" d=\"M-37.13,6.26L-58.5,49M-47.75,27.5H-65.75\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-34,0L-34.57,8.66L-40.58,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-85.39\" y=\"49\" width=\"53.78\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-58.5\" y=\"71.6\" text-anchor=\"middle\">User</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-111.22\" y=\"32.4\" text-anchor=\"middle\">Shaky hands</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Equipment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,-6.26L-406.35,-211M-314.6,-27.5H-380.6M-358.6,-27.5L-372.1,-54.5M-336.6,-27.5L-363.6,-81.5M-355.1,-108.5H-443.1M-421.1,-108.5L-434.6,-135.5M-399.1,-108.5L-426.1,-162.5M-377.1,-108.5L-417.6,-189.5\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-307.43,-5.65L-301.42,-8.66Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-454.59\" y=\"-245\" width=\"96.48\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-406.35\" y=\"-222.4\" text-anchor=\"middle\">Equipment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-415.16\" y=\"-22.6\" text-anchor=\"middle\">SENSOR</text><text fill=\"var(--_m)\" x=\"-414.44\" y=\"-49.6\" text-anchor=\"middle\">Dirty sensor</text><text fill=\"var(--_m)\" x=\"-421.9\" y=\"-76.6\" text-anchor=\"middle\">Damaged sensor</text><text x=\"-466.38\" y=\"-103.6\" text-anchor=\"middle\">LENS</text><text fill=\"var(--_m)\" x=\"-468.77\" y=\"-130.6\" text-anchor=\"middle\">Dirty lens</text><text fill=\"var(--_m)\" x=\"-476.23\" y=\"-157.6\" text-anchor=\"middle\">Damaged lens</text><text fill=\"var(--_m)\" x=\"-478.63\" y=\"-184.6\" text-anchor=\"middle\">Inappropriate lens</text></g></g><g class=\"pele-ishikawa-category\" data-id=\"Environment\"><path class=\"pele-ishikawa-bones\" d=\"M-303.98,6.26L-338.85,76M-314.6,27.5H-332.6M-328.1,54.5H-346.1\" fill=\"none\" stroke=\"var(--_l)\"/><path class=\"pele-marker\" d=\"M-300.85,0L-301.42,8.66L-307.43,5.65Z\" fill=\"var(--_l)\" stroke=\"none\"/><rect x=\"-393.75\" y=\"76\" width=\"109.81\" height=\"34\" fill=\"var(--_s)\" stroke=\"var(--_b)\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" x=\"-338.85\" y=\"98.6\" text-anchor=\"middle\">Environment</text><g class=\"pele-ishikawa-causes\" font-size=\"14\"><text x=\"-418.91\" y=\"32.4\" text-anchor=\"middle\">Subject moved too quickly</text><text x=\"-378.72\" y=\"59.4\" text-anchor=\"middle\">Too dark</text></g></g><g class=\"pele-ishikawa-head\" data-id=\"Blurry Photo\"><path d=\"M0,-24H120.9A24,24 0 0 1 120.9,24H0Z\" fill=\"var(--_s)\" stroke=\"var(--_b)\" stroke-linejoin=\"round\"/><text class=\"pele-label\" font-weight=\"var(--_hw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"60.45\" y=\"5.6\">Blurry Photo</tspan></text></g></g></svg>",
+   "width": 696,
+   "height": 371,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ }
+]

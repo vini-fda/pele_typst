@@ -1,0 +1,1303 @@
+[
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 511 438\" width=\"511\" height=\"438\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"255.5\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(227.95,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"175.59\" y=\"-92.6\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"173.64\" y=\"102.4\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-185.32\" y=\"102.4\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-159.63\" y=\"-92.6\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"224.49\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"259.66\" y=\"-8.1\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"224.49\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"256.94\" y=\"17.9\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 511,
+   "height": 438,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n  title Restaurant Comparison\n  axis food[\"Food Quality\"], service[\"Service\"], price[\"Price\"]\n  axis ambiance[\"Ambiance\"]\n\n  curve a[\"Restaurant A\"]{4, 3, 2, 4}\n  curve b[\"Restaurant B\"]{3, 4, 3, 3}\n  curve c[\"Restaurant C\"]{2, 3, 4, 2}\n  curve d[\"Restaurant D\"]{2, 2, 4, 3}\n\n  graticule polygon\n  max 5\n\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 600 438\" width=\"600\" height=\"438\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"300\" y=\"25.6\">Restaurant Comparison</tspan></text><g transform=\"translate(244.24,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><polygon points=\"0,-32 32,0 0,32 -32,0\"/><polygon points=\"0,-64 64,0 0,64 -64,0\"/><polygon points=\"0,-96 96,0 0,96 -96,0\"/><polygon points=\"0,-128 128,0 0,128 -128,0\"/><polygon points=\"0,-160 160,0 0,160 -160,0\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L160,0M0,0L0,160M0,0L-160,0\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><polygon class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" points=\"0,-128 96,0 0,64 -128,0\"/><polygon class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" points=\"0,-96 128,0 0,96 -96,0\"/><polygon class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-3,#54a24b)\" stroke=\"var(--pele-series-3,#54a24b)\" points=\"0,-64 96,0 0,128 -64,0\"/><polygon class=\"pele-curve\" data-id=\"d\" fill=\"var(--pele-series-4,#e45756)\" stroke=\"var(--pele-series-4,#e45756)\" points=\"0,-64 64,0 0,128 -96,0\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"food\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Food Quality</text></g><g class=\"pele-axis-label\" data-id=\"service\"><text x=\"197.34\" y=\"4.9\" text-anchor=\"middle\">Service</text></g><g class=\"pele-axis-label\" data-id=\"price\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">Price</text></g><g class=\"pele-axis-label\" data-id=\"ambiance\"><text x=\"-205.12\" y=\"4.9\" text-anchor=\"middle\">Ambiance</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"244.68\" y=\"-45\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"305.53\" y=\"-34.1\" text-anchor=\"middle\">Restaurant A</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"244.68\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"305.53\" y=\"-8.1\" text-anchor=\"middle\">Restaurant B</text></g><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"244.68\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-3,#54a24b)\"/><text x=\"305.91\" y=\"17.9\" text-anchor=\"middle\">Restaurant C</text></g><g class=\"pele-legend-item\" data-id=\"d\"><rect x=\"244.68\" y=\"33\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-4,#e45756)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-4,#e45756)\"/><text x=\"305.91\" y=\"43.9\" text-anchor=\"middle\">Restaurant D</text></g></g></g></svg>",
+   "width": 600,
+   "height": 438,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  radar:\n    axisScaleFactor: 0.25\n    curveTension: 0.1\n  theme: base\n  themeVariables:\n    cScale0: \"#FF0000\"\n    cScale1: \"#00FF00\"\n    cScale2: \"#0000FF\"\n    radar:\n      curveOpacity: 0\n---\nradar-beta\n  axis A, B, C, D, E\n  curve c1{1,2,3,4,5}\n  curve c2{5,4,3,2,1}\n  curve c3{3,3,3,3,3}\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 427 387\" width=\"427\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-40M0,0L38.04,-12.36M0,0L23.51,32.36M0,0L-23.51,32.36M0,0L-38.04,-12.36\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c1\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-32 C21.3,-29.03 55.22,-30.74 60.87,-19.78 C66.51,-8.81 70.04,65.33 56.43,77.67 C42.82,90 -54.38,116.27 -75.24,103.55 C-96.1,90.84 -159.69,-35.89 -152.17,-49.44 C-144.65,-63 -21.3,-34.97 0,-32 Z\"/><path class=\"pele-curve\" data-id=\"c2\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-160 C15.22,-162.97 116.09,-63.32 121.74,-39.55 C127.38,-15.79 72.36,68.53 56.43,77.67 C40.49,86.8 -28.93,60.53 -37.62,51.78 C-46.3,43.02 -34.2,11.29 -30.43,-9.89 C-26.67,-31.07 -15.22,-157.03 0,-160 Z\"/><path class=\"pele-curve\" data-id=\"c3\" fill=\"var(--pele-series-3,#54a24b)\" stroke=\"var(--pele-series-3,#54a24b)\" d=\"M0,-96 C18.26,-96 85.66,-47.03 91.3,-29.67 C96.94,-12.3 71.2,66.93 56.43,77.67 C41.65,88.4 -41.65,88.4 -56.43,77.67 C-71.2,66.93 -96.94,-12.3 -91.3,-29.67 C-85.66,-47.03 -18.26,-96 0,-96 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"170.15\" y=\"-59.37\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"107.33\" y=\"156.17\" text-anchor=\"middle\">C</text></g><g class=\"pele-axis-label\" data-id=\"D\"><text x=\"-107.33\" y=\"156.17\" text-anchor=\"middle\">D</text></g><g class=\"pele-axis-label\" data-id=\"E\"><text x=\"-170.15\" y=\"-59.37\" text-anchor=\"middle\">E</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c1\"><rect x=\"200\" y=\"-32\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"227.39\" y=\"-21.1\" text-anchor=\"middle\">c1</text></g><g class=\"pele-legend-item\" data-id=\"c2\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"227.39\" y=\"4.9\" text-anchor=\"middle\">c2</text></g><g class=\"pele-legend-item\" data-id=\"c3\"><rect x=\"200\" y=\"20\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-3,#54a24b)\"/><text x=\"227.39\" y=\"30.9\" text-anchor=\"middle\">c3</text></g></g></g></svg>",
+   "width": 427,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n    axis A,B,C\n    curve mycurve{1,2,3}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 465 387\" width=\"465\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"155.36\" y=\"102.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-155.74\" y=\"102.4\" text-anchor=\"middle\">C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"246.45\" y=\"4.9\" text-anchor=\"middle\">mycurve</text></g></g></g></svg>",
+   "width": 465,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n    title Radar diagram\n    accTitle: Radar accTitle\n    accDescr: Radar accDescription\n    axis A[\"Axis A\"], B[\"Axis B\"] ,C[\"Axis C\"]\n    curve mycurve[\"My Curve\"]{1,2,3}\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 502 419\" width=\"502\" height=\"419\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\" aria-labelledby=\"pele-title\" aria-describedby=\"pele-desc\"><title id=\"pele-title\">Radar accTitle</title><desc id=\"pele-desc\">Radar accDescription</desc><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"251\" y=\"25.6\">Radar diagram</tspan></text><g transform=\"translate(199.13,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Axis A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"170.53\" y=\"102.4\" text-anchor=\"middle\">Axis B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-170.91\" y=\"102.4\" text-anchor=\"middle\">Axis C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"214.36\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"264.31\" y=\"4.9\" text-anchor=\"middle\">My Curve</text></g></g></g></svg>",
+   "width": 502,
+   "height": 419,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n    ticks 10\n    showLegend false\n    graticule polygon\n    min 1\n    max 10\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 368 368\" width=\"368\" height=\"368\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,184)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/><polygon points=\"\"/></g></g></svg>",
+   "width": 368,
+   "height": 368,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n    axis A,B,C\n    curve mycurve{ C: 3, A: 1, B: 2 }",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 465 387\" width=\"465\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"155.36\" y=\"102.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-155.74\" y=\"102.4\" text-anchor=\"middle\">C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"246.45\" y=\"4.9\" text-anchor=\"middle\">mycurve</text></g></g></g></svg>",
+   "width": 465,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n    %% This is a comment\n    axis A,B,C\n    %% This is another comment\n    curve mycurve{1,2,3}\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 465 387\" width=\"465\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"155.36\" y=\"102.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-155.74\" y=\"102.4\" text-anchor=\"middle\">C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"246.45\" y=\"4.9\" text-anchor=\"middle\">mycurve</text></g></g></g></svg>",
+   "width": 465,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    %%{init: {'radar': {'marginTop': 80, 'axisLabelFactor': 1.25}}}%%\n    radar-beta\n    axis A,B,C\n    curve mycurve{1,2,3}\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 490 432\" width=\"490\" height=\"432\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(196.51,248)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-211.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"183.07\" y=\"118.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-183.46\" y=\"118.4\" text-anchor=\"middle\">C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"211.74\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"258.19\" y=\"4.9\" text-anchor=\"middle\">mycurve</text></g></g></g></svg>",
+   "width": 490,
+   "height": 432,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    %%{init: { \"theme\": \"base\", \"themeVariables\": {'fontSize': 80, 'cScale0': '#123456' }}}%%\n    radar-beta:\n    axis A,B,C\n    curve mycurve{1,2,3}\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 465 387\" width=\"465\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"155.36\" y=\"102.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-155.74\" y=\"102.4\" text-anchor=\"middle\">C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"246.45\" y=\"4.9\" text-anchor=\"middle\">mycurve</text></g></g></g></svg>",
+   "width": 465,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    %%{init: { \"theme\": \"base\", \"themeVariables\": {'fontSize': 10, 'radar': { 'axisColor': '#FF0000' }}}}%%\n    radar-beta\n    axis A,B,C\n    curve mycurve{1,2,3}\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 465 387\" width=\"465\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"mycurve\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"155.36\" y=\"102.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-155.74\" y=\"102.4\" text-anchor=\"middle\">C</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"mycurve\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"246.45\" y=\"4.9\" text-anchor=\"middle\">mycurve</text></g></g></g></svg>",
+   "width": 465,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n  axis",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\n  axis\n------^\nExpecting token of type 'ID' but found `\n`.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 2,
+    "column": 7,
+    "snippet": "  axis\n------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\n  axis\n------^\nExpecting token of type 'ID' but found `\n`.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 2,
+   "column": 7,
+   "snippet": "  axis\n------^"
+  }
+ },
+ {
+  "source": "radar-beta\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 368 368\" width=\"368\" height=\"368\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,184)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g></g></svg>",
+   "width": 368,
+   "height": 368,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\ncurve c{",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\ncurve c{\n--------^\nExpecting a number or an axis name but found end of input.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 2,
+    "column": 9,
+    "snippet": "curve c{\n--------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\ncurve c{\n--------^\nExpecting a number or an axis name but found end of input.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 2,
+   "column": 9,
+   "snippet": "curve c{\n--------^"
+  }
+ },
+ {
+  "source": "radar-beta\nmax ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nmax \n---^\nExpecting token of type 'NUMBER' but found `\n`.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 2,
+    "column": 4,
+    "snippet": "max \n---^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nmax \n---^\nExpecting token of type 'NUMBER' but found `\n`.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 2,
+   "column": 4,
+   "snippet": "max \n---^"
+  }
+ },
+ {
+  "source": "radar-beta\naxis a\ncurve c{1}\nmax ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 4:\nmax \n---^\nExpecting token of type 'NUMBER' but found `\n`.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 4,
+    "column": 4,
+    "snippet": "max \n---^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 4:\nmax \n---^\nExpecting token of type 'NUMBER' but found `\n`.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 4,
+   "column": 4,
+   "snippet": "max \n---^"
+  }
+ },
+ {
+  "source": "radar-beta\naxis ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\naxis \n----^\nExpecting token of type 'ID' but found `\n`.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 2,
+    "column": 5,
+    "snippet": "axis \n----^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\naxis \n----^\nExpecting token of type 'ID' but found `\n`.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 2,
+   "column": 5,
+   "snippet": "axis \n----^"
+  }
+ },
+ {
+  "source": "radar-beta\naxis a",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 368 387\" width=\"368\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">a</text></g></g></g></svg>",
+   "width": 368,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\naccDescr {",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\naccDescr {\n^\nExpecting an axis, a curve, an option, a title, or a line break but found `accDescr`.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 2,
+    "column": 1,
+    "snippet": "accDescr {\n^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\naccDescr {\n^\nExpecting an axis, a curve, an option, a title, or a line break but found `accDescr`.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 2,
+   "column": 1,
+   "snippet": "accDescr {\n^"
+  }
+ },
+ {
+  "source": "radar-beta\naxis a[\"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\naxis a[\"\n-------^",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 2,
+    "column": 8,
+    "snippet": "axis a[\"\n-------^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\naxis a[\"\n-------^",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 2,
+   "column": 8,
+   "snippet": "axis a[\"\n-------^"
+  }
+ },
+ {
+  "source": "radar-beta\naxis a\ncurve c{",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\ncurve c{\n--------^\nExpecting a number or an axis name but found end of input.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 3,
+    "column": 9,
+    "snippet": "curve c{\n--------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\ncurve c{\n--------^\nExpecting a number or an axis name but found end of input.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 3,
+   "column": 9,
+   "snippet": "curve c{\n--------^"
+  }
+ },
+ {
+  "source": "radar-beta\ntitle ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 368 368\" width=\"368\" height=\"368\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,184)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g></g></svg>",
+   "width": 368,
+   "height": 368,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis a[\"<script>x</script>\"], b[\"\\\"q\\\" & co\"]\n curve c[\"<img src=x>\"]{1,2}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 412 406\" width=\"412\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-80 C0,-80 0,160 0,160 C0,160 0,-80 0,-80 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">x</text></g><g class=\"pele-axis-label\" data-id=\"b\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">&quot;q&quot; &amp; co</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"220\" y=\"4.9\"> </tspan></text></g></g></g></svg>",
+   "width": 412,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n accTitle: t\n axis a, b\n curve x{1,2}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 406\" width=\"419\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\" aria-labelledby=\"pele-title\"><title id=\"pele-title\">t</title><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"x\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-80 C0,-80 0,160 0,160 C0,160 0,-80 0,-80 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">a</text></g><g class=\"pele-axis-label\" data-id=\"b\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">b</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"x\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">x</text></g></g></g></svg>",
+   "width": 419,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n  axis A, B, C, D\n  curve one[\"First\"]{1,2,3,4}\n  curve two{4,3,2,1}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 455 406\" width=\"455\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(192.11,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L160,0M0,0L0,160M0,0L-160,0\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"one\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-40 C40.8,-40 80,-27.2 80,0 C80,27.2 40.8,120 0,120 C-40.8,120 -160,27.2 -160,0 C-160,-27.2 -40.8,-40 0,-40 Z\"/><path class=\"pele-curve\" data-id=\"two\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-160 C27.2,-160 120,-40.8 120,0 C120,40.8 27.2,80 0,80 C-27.2,80 -40,40.8 -40,0 C-40,-40.8 -27.2,-160 0,-160 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"178.67\" y=\"4.9\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">C</text></g><g class=\"pele-axis-label\" data-id=\"D\"><text x=\"-179.05\" y=\"4.9\" text-anchor=\"middle\">D</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"one\"><rect x=\"207.34\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"240.95\" y=\"-8.1\" text-anchor=\"middle\">First</text></g><g class=\"pele-legend-item\" data-id=\"two\"><rect x=\"207.34\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"238.23\" y=\"17.9\" text-anchor=\"middle\">two</text></g></g></g></svg>",
+   "width": 455,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B, C",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 368 387\" width=\"368\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"155.36\" y=\"102.4\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"-155.74\" y=\"102.4\" text-anchor=\"middle\">C</text></g></g></g></svg>",
+   "width": 368,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A\n curve c{5}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 387\" width=\"419\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-160 C0,-160 0,-160 0,-160 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n curve c{1,2,3}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 368\" width=\"419\" height=\"368\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,184)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 368,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{1,1}\n min 1\n max 1",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 406\" width=\"419\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,0 C0,0 0,0 0,0 C0,0 0,0 0,0 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">B</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{1,2}\n min 9\n max 2",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 406\" width=\"419\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-160 C0,-160 0,160 0,160 C0,160 0,-160 0,-160 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">B</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{0,0}",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 406\" width=\"419\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,0 C0,0 0,0 0,0 C0,0 0,0 0,0 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">B</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{1,2}\n ticks 0",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 406\" width=\"419\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-80 C0,-80 0,160 0,160 C0,160 0,-80 0,-80 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">B</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{1,2}\n ticks 0.3\n graticule polygon",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 406\" width=\"419\" height=\"406\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><polygon points=\"0,-160 0,160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L0,160\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><polygon class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" points=\"0,-80 0,160\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">B</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">c</text></g></g></g></svg>",
+   "width": 419,
+   "height": 406,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{1,2}\n max ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 4:\n max \n----^\nExpecting token of type 'NUMBER' but found `\n`.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 4,
+    "column": 5,
+    "snippet": " max \n----^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 4:\n max \n----^\nExpecting token of type 'NUMBER' but found `\n`.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 4,
+   "column": 5,
+   "snippet": " max \n----^"
+  }
+ },
+ {
+  "source": "radar-beta\n axis A, B\n curve c{",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\n curve c{\n---------^\nExpecting a number or an axis name but found end of input.",
+    "code": "syntax",
+    "type": "radar",
+    "mermaidType": "radar",
+    "line": 3,
+    "column": 10,
+    "snippet": " curve c{\n---------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\n curve c{\n---------^\nExpecting a number or an axis name but found end of input.",
+   "code": "syntax",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 3,
+   "column": 10,
+   "snippet": " curve c{\n---------^"
+  }
+ },
+ {
+  "source": "radar-beta\n  axis a, b, c\n  curve x{1, 2, 3}\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 419 387\" width=\"419\" height=\"387\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(184,203)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,80M0,0L-138.56,80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"x\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-53.33 C39.26,-57.87 115.93,30.67 92.38,53.33 C68.82,76 -122.86,98.13 -138.56,80 C-154.27,61.87 -39.26,-48.8 0,-53.33 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">a</text></g><g class=\"pele-axis-label\" data-id=\"b\"><text x=\"154.58\" y=\"102.4\" text-anchor=\"middle\">b</text></g><g class=\"pele-axis-label\" data-id=\"c\"><text x=\"-154.19\" y=\"102.4\" text-anchor=\"middle\">c</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"x\"><rect x=\"200\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"223.5\" y=\"4.9\" text-anchor=\"middle\">x</text></g></g></g></svg>",
+   "width": 419,
+   "height": 387,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 320 367\" width=\"320\" height=\"367\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"160\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(169.29,167.28)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"19.1\"/><circle r=\"38.2\"/><circle r=\"57.3\"/><circle r=\"76.4\"/><circle r=\"95.5\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-95.5M0,0L82.71,-47.75M0,0L82.71,47.75M0,0L0,95.5M0,0L-82.71,47.75M0,0L-82.71,-47.75\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-81.17 C25.31,-81.17 63.19,-63.27 74.43,-42.97 C85.68,-22.68 78.82,19.53 66.16,38.2 C53.51,56.87 21.79,67.26 0,66.85 C-21.79,66.44 -49.38,54.48 -62.03,35.81 C-74.68,17.14 -84.98,-23.09 -74.43,-42.98 C-63.89,-62.86 -25.31,-81.17 0,-81.17 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-66.85 C22.5,-66.04 50.08,-54.08 62.03,-35.81 C73.98,-17.55 80.84,21.51 70.3,40.59 C59.75,59.66 24.6,75.99 0,76.4 C-24.6,76.81 -62.48,62.86 -74.43,42.98 C-86.39,23.09 -82.95,-21.92 -70.3,-40.59 C-57.65,-59.26 -22.5,-67.66 0,-66.85 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-111.87\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"116.94\" y=\"-58.74\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"114.99\" y=\"68.54\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"121.68\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-126.67\" y=\"68.54\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-100.98\" y=\"-58.74\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"-25.17\" y=\"146.28\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"10\" y=\"157.18\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"-25.17\" y=\"172.28\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"7.28\" y=\"183.18\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 320,
+   "height": 367,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 562 464\" width=\"562\" height=\"464\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"281\" y=\"34\">Grades</tspan></text><g transform=\"translate(251.73,251)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"18\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-181.2\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"182.7\" y=\"-94.2\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"180.2\" y=\"106.8\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"193.8\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-195.21\" y=\"106.8\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-162.19\" y=\"-94.2\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"18\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"238.71\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"278.22\" y=\"-6.7\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"238.71\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"274.73\" y=\"19.3\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 562,
+   "height": 464,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n  title Restaurant Comparison\n  axis food[\"Food Quality\"], service[\"Service\"], price[\"Price\"]\n  axis ambiance[\"Ambiance\"]\n\n  curve a[\"Restaurant A\"]{4, 3, 2, 4}\n  curve b[\"Restaurant B\"]{3, 4, 3, 3}\n  curve c[\"Restaurant C\"]{2, 3, 4, 2}\n  curve d[\"Restaurant D\"]{2, 2, 4, 3}\n\n  graticule polygon\n  max 5\n\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 313 394\" width=\"313\" height=\"394\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"156.5\" y=\"25.6\">Restaurant Comparison</tspan></text><g transform=\"translate(163.92,154.68)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><polygon points=\"0,-16.7 16.7,0 0,16.7 -16.7,0\"/><polygon points=\"0,-33.4 33.4,0 0,33.4 -33.4,0\"/><polygon points=\"0,-50.1 50.1,0 0,50.1 -50.1,0\"/><polygon points=\"0,-66.8 66.8,0 0,66.8 -66.8,0\"/><polygon points=\"0,-83.5 83.5,0 0,83.5 -83.5,0\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-83.5M0,0L83.5,0M0,0L0,83.5M0,0L-83.5,0\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><polygon class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" points=\"0,-66.8 50.1,0 0,33.4 -66.8,0\"/><polygon class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" points=\"0,-50.1 66.8,0 0,50.1 -50.1,0\"/><polygon class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-3,#54a24b)\" stroke=\"var(--pele-series-3,#54a24b)\" points=\"0,-33.4 50.1,0 0,66.8 -33.4,0\"/><polygon class=\"pele-curve\" data-id=\"d\" fill=\"var(--pele-series-4,#e45756)\" stroke=\"var(--pele-series-4,#e45756)\" points=\"0,-33.4 33.4,0 0,66.8 -50.1,0\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"food\"><text x=\"0\" y=\"-99.27\" text-anchor=\"middle\">Food Quality</text></g><g class=\"pele-axis-label\" data-id=\"service\"><text x=\"117.01\" y=\"4.9\" text-anchor=\"middle\">Service</text></g><g class=\"pele-axis-label\" data-id=\"price\"><text x=\"0\" y=\"109.08\" text-anchor=\"middle\">Price</text></g><g class=\"pele-axis-label\" data-id=\"ambiance\"><text x=\"-124.8\" y=\"4.9\" text-anchor=\"middle\">Ambiance</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"-51.24\" y=\"133.68\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"9.61\" y=\"144.58\" text-anchor=\"middle\">Restaurant A</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"-51.24\" y=\"159.68\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"9.61\" y=\"170.58\" text-anchor=\"middle\">Restaurant B</text></g><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"-51.24\" y=\"185.68\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-3,#54a24b)\"/><text x=\"10\" y=\"196.58\" text-anchor=\"middle\">Restaurant C</text></g><g class=\"pele-legend-item\" data-id=\"d\"><rect x=\"-51.24\" y=\"211.68\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-4,#e45756)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-4,#e45756)\"/><text x=\"10\" y=\"222.58\" text-anchor=\"middle\">Restaurant D</text></g></g></g></svg>",
+   "width": 313,
+   "height": 394,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "radar-beta\n  title Restaurant Comparison\n  axis food[\"Food Quality\"], service[\"Service\"], price[\"Price\"]\n  axis ambiance[\"Ambiance\"]\n\n  curve a[\"Restaurant A\"]{4, 3, 2, 4}\n  curve b[\"Restaurant B\"]{3, 4, 3, 3}\n  curve c[\"Restaurant C\"]{2, 3, 4, 2}\n  curve d[\"Restaurant D\"]{2, 2, 4, 3}\n\n  graticule polygon\n  max 5\n\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 663 464\" width=\"663\" height=\"464\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"331.5\" y=\"34\">Restaurant Comparison</tspan></text><g transform=\"translate(266.03,251)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><polygon points=\"0,-32 32,0 0,32 -32,0\"/><polygon points=\"0,-64 64,0 0,64 -64,0\"/><polygon points=\"0,-96 96,0 0,96 -96,0\"/><polygon points=\"0,-128 128,0 0,128 -128,0\"/><polygon points=\"0,-160 160,0 0,160 -160,0\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L160,0M0,0L0,160M0,0L-160,0\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><polygon class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" points=\"0,-128 96,0 0,64 -128,0\"/><polygon class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" points=\"0,-96 128,0 0,96 -96,0\"/><polygon class=\"pele-curve\" data-id=\"c\" fill=\"var(--pele-series-3,#54a24b)\" stroke=\"var(--pele-series-3,#54a24b)\" points=\"0,-64 96,0 0,128 -64,0\"/><polygon class=\"pele-curve\" data-id=\"d\" fill=\"var(--pele-series-4,#e45756)\" stroke=\"var(--pele-series-4,#e45756)\" points=\"0,-64 64,0 0,128 -96,0\"/></g><g class=\"pele-axis-labels\" font-size=\"18\"><g class=\"pele-axis-label\" data-id=\"food\"><text x=\"0\" y=\"-181.2\" text-anchor=\"middle\">Food Quality</text></g><g class=\"pele-axis-label\" data-id=\"service\"><text x=\"204.01\" y=\"6.3\" text-anchor=\"middle\">Service</text></g><g class=\"pele-axis-label\" data-id=\"price\"><text x=\"0\" y=\"193.8\" text-anchor=\"middle\">Price</text></g><g class=\"pele-axis-label\" data-id=\"ambiance\"><text x=\"-214.01\" y=\"6.3\" text-anchor=\"middle\">Ambiance</text></g></g><g class=\"pele-legend\" font-size=\"18\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"258.01\" y=\"-45\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"330.54\" y=\"-32.7\" text-anchor=\"middle\">Restaurant A</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"258.01\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"330.54\" y=\"-6.7\" text-anchor=\"middle\">Restaurant B</text></g><g class=\"pele-legend-item\" data-id=\"c\"><rect x=\"258.01\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-3,#54a24b)\"/><text x=\"331.03\" y=\"19.3\" text-anchor=\"middle\">Restaurant C</text></g><g class=\"pele-legend-item\" data-id=\"d\"><rect x=\"258.01\" y=\"33\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-4,#e45756)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-4,#e45756)\"/><text x=\"331.03\" y=\"45.3\" text-anchor=\"middle\">Restaurant D</text></g></g></g></svg>",
+   "width": 663,
+   "height": 464,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  radar:\n    axisScaleFactor: 0.25\n    curveTension: 0.1\n  theme: base\n  themeVariables:\n    cScale0: \"#FF0000\"\n    cScale1: \"#00FF00\"\n    cScale2: \"#0000FF\"\n    radar:\n      curveOpacity: 0\n---\nradar-beta\n  axis A, B, C, D, E\n  curve c1{1,2,3,4,5}\n  curve c2{5,4,3,2,1}\n  curve c3{3,3,3,3,3}\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 320 428\" width=\"320\" height=\"428\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(160,177.8)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"27.2\"/><circle r=\"54.4\"/><circle r=\"81.6\"/><circle r=\"108.8\"/><circle r=\"136\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-34M0,0L32.34,-10.51M0,0L19.98,27.51M0,0L-19.98,27.51M0,0L-32.34,-10.51\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c1\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-27.2 C18.11,-24.68 46.94,-26.13 51.74,-16.81 C56.53,-7.49 59.53,55.53 47.96,66.02 C36.39,76.5 -46.22,98.83 -63.95,88.02 C-81.68,77.22 -135.74,-30.5 -129.34,-42.03 C-122.95,-53.55 -18.11,-29.72 0,-27.2 Z\"/><path class=\"pele-curve\" data-id=\"c2\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-136 C12.93,-138.52 98.68,-53.82 103.47,-33.62 C108.27,-13.42 61.51,58.25 47.96,66.02 C34.42,73.78 -24.59,51.45 -31.98,44.01 C-39.36,36.57 -29.07,9.6 -25.87,-8.41 C-22.67,-26.41 -12.93,-133.48 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"c3\" fill=\"var(--pele-series-3,#54a24b)\" stroke=\"var(--pele-series-3,#54a24b)\" d=\"M0,-81.6 C15.52,-81.6 72.81,-39.98 77.61,-25.22 C82.4,-10.45 60.52,56.89 47.96,66.02 C35.41,75.14 -35.41,75.14 -47.96,66.02 C-60.52,56.89 -82.4,-10.45 -77.61,-25.22 C-72.81,-39.98 -15.52,-81.6 0,-81.6 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-154.4\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"146.19\" y=\"-51.58\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"92.52\" y=\"135.78\" text-anchor=\"middle\">C</text></g><g class=\"pele-axis-label\" data-id=\"D\"><text x=\"-92.52\" y=\"135.78\" text-anchor=\"middle\">D</text></g><g class=\"pele-axis-label\" data-id=\"E\"><text x=\"-146.19\" y=\"-51.58\" text-anchor=\"middle\">E</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"c1\"><rect x=\"-17.39\" y=\"171\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"10\" y=\"181.9\" text-anchor=\"middle\">c1</text></g><g class=\"pele-legend-item\" data-id=\"c2\"><rect x=\"-17.39\" y=\"197\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"10\" y=\"207.9\" text-anchor=\"middle\">c2</text></g><g class=\"pele-legend-item\" data-id=\"c3\"><rect x=\"-17.39\" y=\"223\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-3,#54a24b)\"/><text x=\"10\" y=\"233.9\" text-anchor=\"middle\">c3</text></g></g></g></svg>",
+   "width": 320,
+   "height": 428,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  radar:\n    axisScaleFactor: 0.25\n    curveTension: 0.1\n  theme: base\n  themeVariables:\n    cScale0: \"#FF0000\"\n    cScale1: \"#00FF00\"\n    cScale2: \"#0000FF\"\n    radar:\n      curveOpacity: 0\n---\nradar-beta\n  axis A, B, C, D, E\n  curve c1{1,2,3,4,5}\n  curve c2{5,4,3,2,1}\n  curve c3{3,3,3,3,3}\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 442 401\" width=\"442\" height=\"401\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><g transform=\"translate(189.49,213)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-40M0,0L38.04,-12.36M0,0L23.51,32.36M0,0L-23.51,32.36M0,0L-38.04,-12.36\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"c1\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-32 C21.3,-29.03 55.22,-30.74 60.87,-19.78 C66.51,-8.81 70.04,65.33 56.43,77.67 C42.82,90 -54.38,116.27 -75.24,103.55 C-96.1,90.84 -159.69,-35.89 -152.17,-49.44 C-144.65,-63 -21.3,-34.97 0,-32 Z\"/><path class=\"pele-curve\" data-id=\"c2\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-160 C15.22,-162.97 116.09,-63.32 121.74,-39.55 C127.38,-15.79 72.36,68.53 56.43,77.67 C40.49,86.8 -28.93,60.53 -37.62,51.78 C-46.3,43.02 -34.2,11.29 -30.43,-9.89 C-26.67,-31.07 -15.22,-157.03 0,-160 Z\"/><path class=\"pele-curve\" data-id=\"c3\" fill=\"var(--pele-series-3,#54a24b)\" stroke=\"var(--pele-series-3,#54a24b)\" d=\"M0,-96 C18.26,-96 85.66,-47.03 91.3,-29.67 C96.94,-12.3 71.2,66.93 56.43,77.67 C41.65,88.4 -41.65,88.4 -56.43,77.67 C-71.2,66.93 -96.94,-12.3 -91.3,-29.67 C-85.66,-47.03 -18.26,-96 0,-96 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"18\"><g class=\"pele-axis-label\" data-id=\"A\"><text x=\"0\" y=\"-181.2\" text-anchor=\"middle\">A</text></g><g class=\"pele-axis-label\" data-id=\"B\"><text x=\"171.49\" y=\"-60.97\" text-anchor=\"middle\">B</text></g><g class=\"pele-axis-label\" data-id=\"C\"><text x=\"108.77\" y=\"160.57\" text-anchor=\"middle\">C</text></g><g class=\"pele-axis-label\" data-id=\"D\"><text x=\"-108.77\" y=\"160.57\" text-anchor=\"middle\">D</text></g><g class=\"pele-axis-label\" data-id=\"E\"><text x=\"-171.49\" y=\"-60.97\" text-anchor=\"middle\">E</text></g></g><g class=\"pele-legend\" font-size=\"18\"><g class=\"pele-legend-item\" data-id=\"c1\"><rect x=\"201.49\" y=\"-32\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"230.99\" y=\"-19.7\" text-anchor=\"middle\">c1</text></g><g class=\"pele-legend-item\" data-id=\"c2\"><rect x=\"201.49\" y=\"-6\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"230.99\" y=\"6.3\" text-anchor=\"middle\">c2</text></g><g class=\"pele-legend-item\" data-id=\"c3\"><rect x=\"201.49\" y=\"20\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-3,#54a24b)\"/><text x=\"230.99\" y=\"32.3\" text-anchor=\"middle\">c3</text></g></g></g></svg>",
+   "width": 442,
+   "height": 401,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": []
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 511 438\" width=\"511\" height=\"438\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"255.5\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(227.95,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"175.59\" y=\"-92.6\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"173.64\" y=\"102.4\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-185.32\" y=\"102.4\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-159.63\" y=\"-92.6\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"224.49\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"259.66\" y=\"-8.1\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"224.49\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"256.94\" y=\"17.9\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 511,
+   "height": 438,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": [
+    "members",
+    "attributes",
+    "files",
+    "messages"
+   ]
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 511 438\" width=\"511\" height=\"438\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"255.5\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(227.95,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"175.59\" y=\"-92.6\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"173.64\" y=\"102.4\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-185.32\" y=\"102.4\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-159.63\" y=\"-92.6\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"224.49\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"259.66\" y=\"-8.1\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"224.49\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"256.94\" y=\"17.9\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 511,
+   "height": 438,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "fontFamily": "Custom Sans",
+   "fontFamilyMono": "Custom Mono",
+   "fontSize": 11
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 469 419\" width=\"469\" height=\"419\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,Custom Mono);font:11px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,Custom Sans)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"234.5\" y=\"20.35\">Grades</tspan></text><g transform=\"translate(208.16,222)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"10\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-178\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"168.47\" y=\"-91\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"167.08\" y=\"98\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"185\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-175.42\" y=\"98\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-157.08\" y=\"-91\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"10\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"210.26\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"241.09\" y=\"-9.5\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"210.26\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"239.15\" y=\"16.5\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 469,
+   "height": 419,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "responsive": true,
+   "maxWidth": 280,
+   "autoDirection": false,
+   "directionBreakpoint": 400
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 291 334\" width=\"291\" height=\"334\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"145.5\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(155.2,151)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"16\"/><circle r=\"32\"/><circle r=\"48\"/><circle r=\"64\"/><circle r=\"80\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-80M0,0L69.28,-40M0,0L69.28,40M0,0L0,80M0,0L-69.28,40M0,0L-69.28,-40\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-68 C21.2,-68 52.93,-53 62.35,-36 C71.78,-19 66.03,16.36 55.43,32 C44.83,47.64 18.26,56.34 0,56 C-18.26,55.66 -41.36,45.64 -51.96,30 C-62.56,14.36 -71.19,-19.34 -62.35,-36 C-53.52,-52.66 -21.2,-68 0,-68 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-56 C18.84,-55.32 41.95,-45.3 51.96,-30 C61.97,-14.7 67.72,18.02 58.89,34 C50.06,49.98 20.61,63.66 0,64 C-20.61,64.34 -52.34,52.66 -62.35,36 C-72.37,19.34 -69.49,-18.36 -58.89,-34 C-48.29,-49.64 -18.84,-56.68 0,-56 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-95.6\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"102.84\" y=\"-50.6\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"100.9\" y=\"60.4\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"105.4\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-112.57\" y=\"60.4\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-86.89\" y=\"-50.6\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"-25.17\" y=\"130\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"10\" y=\"140.9\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"-25.17\" y=\"156\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"7.28\" y=\"166.9\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 291,
+   "height": 334,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "links": false,
+   "images": false
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 511 438\" width=\"511\" height=\"438\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"255.5\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(227.95,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"175.59\" y=\"-92.6\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"173.64\" y=\"102.4\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-185.32\" y=\"102.4\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-159.63\" y=\"-92.6\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"224.49\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"259.66\" y=\"-8.1\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"224.49\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"256.94\" y=\"17.9\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 511,
+   "height": 438,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "limit": 4
+  },
+  "detected": "radar",
+  "parsed": {
+   "error": {
+    "message": "Diagram source is longer than the limit of 4 characters.",
+    "code": "limit",
+    "type": null,
+    "mermaidType": null,
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "Diagram source is longer than the limit of 4 characters.",
+   "code": "limit",
+   "type": null,
+   "mermaidType": null,
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "outputLimit": 64
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "error": {
+   "message": "Diagram output is longer than the limit of 64 characters.",
+   "code": "limit",
+   "type": "radar",
+   "mermaidType": "radar",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "---\ntitle: \"Grades\"\n---\nradar-beta\n  axis m[\"Math\"], s[\"Science\"], e[\"English\"]\n  axis h[\"History\"], g[\"Geography\"], a[\"Art\"]\n  curve a[\"Alice\"]{85, 90, 80, 70, 75, 90}\n  curve b[\"Bob\"]{70, 75, 85, 80, 90, 85}\n\n  max 100\n  min 0\n",
+  "options": {
+   "now": 1768478400000,
+   "maxEdges": 0
+  },
+  "detected": "radar",
+  "parsed": {
+   "type": "radar",
+   "mermaidType": "radar"
+  },
+  "result": {
+   "type": "radar",
+   "mermaidType": "radar",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-radar\" viewBox=\"0 0 511 438\" width=\"511\" height=\"438\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"radar\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"255.5\" y=\"25.6\">Grades</tspan></text><g transform=\"translate(227.95,235)\"><g class=\"pele-graticule\" fill=\"none\" stroke=\"var(--_a)\"><circle r=\"32\"/><circle r=\"64\"/><circle r=\"96\"/><circle r=\"128\"/><circle r=\"160\"/></g><path class=\"pele-axes\" d=\"M0,0L0,-160M0,0L138.56,-80M0,0L138.56,80M0,0L0,160M0,0L-138.56,80M0,0L-138.56,-80\" fill=\"none\" stroke=\"var(--_b)\"/><g class=\"pele-curves\" fill-opacity=\"0.2\" stroke-width=\"1.5\" stroke-linejoin=\"round\"><path class=\"pele-curve\" data-id=\"a\" fill=\"var(--pele-series-1,#4c78a8)\" stroke=\"var(--pele-series-1,#4c78a8)\" d=\"M0,-136 C42.4,-136 105.86,-106 124.71,-72 C143.55,-38 132.05,32.72 110.85,64 C89.65,95.28 36.51,112.68 0,112 C-36.51,111.32 -82.72,91.28 -103.92,60 C-125.12,28.72 -142.37,-38.68 -124.71,-72 C-107.04,-105.32 -42.4,-136 0,-136 Z\"/><path class=\"pele-curve\" data-id=\"b\" fill=\"var(--pele-series-2,#f58518)\" stroke=\"var(--pele-series-2,#f58518)\" d=\"M0,-112 C37.69,-110.64 83.9,-90.6 103.92,-60 C123.95,-29.4 135.45,36.04 117.78,68 C100.11,99.96 41.22,127.32 0,128 C-41.22,128.68 -104.69,105.32 -124.71,72 C-144.73,38.68 -138.98,-36.72 -117.78,-68 C-96.58,-99.28 -37.69,-113.36 0,-112 Z\"/></g><g class=\"pele-axis-labels\" font-size=\"14\"><g class=\"pele-axis-label\" data-id=\"m\"><text x=\"0\" y=\"-179.6\" text-anchor=\"middle\">Math</text></g><g class=\"pele-axis-label\" data-id=\"s\"><text x=\"175.59\" y=\"-92.6\" text-anchor=\"middle\">Science</text></g><g class=\"pele-axis-label\" data-id=\"e\"><text x=\"173.64\" y=\"102.4\" text-anchor=\"middle\">English</text></g><g class=\"pele-axis-label\" data-id=\"h\"><text x=\"0\" y=\"189.4\" text-anchor=\"middle\">History</text></g><g class=\"pele-axis-label\" data-id=\"g\"><text x=\"-185.32\" y=\"102.4\" text-anchor=\"middle\">Geography</text></g><g class=\"pele-axis-label\" data-id=\"a\"><text x=\"-159.63\" y=\"-92.6\" text-anchor=\"middle\">Art</text></g></g><g class=\"pele-legend\" font-size=\"14\"><g class=\"pele-legend-item\" data-id=\"a\"><rect x=\"224.49\" y=\"-19\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-1,#4c78a8)\"/><text x=\"259.66\" y=\"-8.1\" text-anchor=\"middle\">Alice</text></g><g class=\"pele-legend-item\" data-id=\"b\"><rect x=\"224.49\" y=\"7\" width=\"12\" height=\"12\" rx=\"2\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.4\" stroke=\"var(--pele-series-2,#f58518)\"/><text x=\"256.94\" y=\"17.9\" text-anchor=\"middle\">Bob</text></g></g></g></svg>",
+   "width": 511,
+   "height": 438,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ }
+]

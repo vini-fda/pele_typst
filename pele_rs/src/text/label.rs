@@ -7,11 +7,33 @@ use super::entities::decode_entities;
 use super::measurer::{BOLD, ITALIC, MONO, SUB, SUP, TextMeasurer, UNDERLINE};
 use crate::util::{JS_WS, is_js_space, js_round, trim, trim_end, trim_start};
 
-#[derive(Debug, Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq, Default)]
 pub struct Span {
     pub text: String,
     pub style: u32,
     pub width: f64,
+    pub icon: Option<String>,
+    pub icon_markup: Option<String>,
+    pub icon_resolver: Option<crate::IconResolver>,
+    pub math: Option<crate::MathMarkup>,
+}
+
+impl Span {
+    pub fn plain(&self) -> bool {
+        self.icon.is_none() && self.math.is_none()
+    }
+    pub fn draw_icon(&self) -> String {
+        if let Some(resolve) = &self.icon_resolver {
+            self.icon.as_deref().and_then(|name| resolve.resolve(name)).unwrap_or_default()
+        } else {
+            self.icon_markup.clone().unwrap_or_default()
+        }
+    }
+}
+
+struct Marks {
+    tex: Vec<String>,
+    math: Vec<Option<crate::MathMarkup>>,
 }
 
 #[derive(Debug, Clone, Default)]
@@ -148,8 +170,12 @@ fn dedent(text: &str) -> String {
 }
 
 fn push_plain(line: &mut Vec<Span>, text: &str, style: u32) {
+    if text.is_empty() {
+        return;
+    }
     let decoded = decode_entities(text);
     if let Some(last) = line.last_mut()
+        && last.plain()
         && last.style == style
     {
         last.text.push_str(&decoded);
@@ -159,36 +185,71 @@ fn push_plain(line: &mut Vec<Span>, text: &str, style: u32) {
         text: decoded,
         style,
         width: 0.0,
+        ..Default::default()
     });
 }
 
-fn push_text(line: &mut Vec<Span>, text: &str, style: u32) {
+fn push_text(line: &mut Vec<Span>, text: &str, style: u32, marks: Option<&Marks>) {
     if text.is_empty() {
         return;
+    }
+    if let Some(found) = marks {
+        let mut last = 0;
+        for (at, ch) in text.char_indices() {
+            if !(0xe000..=0xf8ff).contains(&(ch as u32)) {
+                continue;
+            }
+            push_plain(line, &text[last..at], style);
+            let i = ch as usize - 0xe000;
+            if let Some(Some(math)) = found.math.get(i) {
+                line.push(Span {
+                    style,
+                    width: math.width(),
+                    math: Some(math.clone()),
+                    ..Default::default()
+                });
+            } else if let Some(tex) = found.tex.get(i) {
+                push_plain(line, &format!("$${tex}$$"), style);
+            }
+            last = at + ch.len_utf8();
+        }
+        if last > 0 {
+            if last < text.len() {
+                push_plain(line, &text[last..], style);
+            }
+            return;
+        }
     }
     push_plain(line, text, style);
 }
 
-// No icons are available outside a browser, so an icon leaves no gap, nor the space that set it
-// off from the text.
-fn push_icons(line: &mut Vec<Span>, text: &str, style: u32) {
+fn push_icons(line: &mut Vec<Span>, text: &str, style: u32, measurer: &dyn TextMeasurer, marks: Option<&Marks>) {
     if !text.contains(":fa-") {
-        push_text(line, text, style);
+        push_text(line, text, style, marks);
         return;
     }
     let mut last = 0;
     for m in re_icon().find_iter(text) {
-        push_text(line, &text[last..m.start()], style);
+        push_text(line, &text[last..m.start()], style, marks);
         last = m.end();
-        if text[last..].starts_with(' ') {
+        let markup = measurer.icon_markup(m.as_str());
+        if !markup.is_empty() {
+            line.push(Span {
+                style,
+                icon: Some(m.as_str().to_string()),
+                icon_markup: Some(markup),
+                icon_resolver: measurer.icon_resolver(),
+                ..Default::default()
+            });
+        } else if text[last..].starts_with(' ') {
             last += 1;
         } else if last == text.len()
-            && let Some(before) = line.last_mut()
+            && let Some(before) = line.last_mut().filter(|s| s.plain())
         {
             before.text = trim_end(&before.text).to_string();
         }
     }
-    push_text(line, &text[last..], style);
+    push_text(line, &text[last..], style, marks);
 }
 
 struct Open {
@@ -202,14 +263,22 @@ fn is_ascii_word(c: char) -> bool {
 }
 
 // Splits inline HTML and, for markdown labels, emphasis markers into styled spans.
-fn inline(line: &mut Vec<Span>, source: &str, markdown: bool, base: u32, open: &mut Open) {
+fn inline(
+    line: &mut Vec<Span>,
+    source: &str,
+    markdown: bool,
+    base: u32,
+    open: &mut Open,
+    measurer: &dyn TextMeasurer,
+    marks: Option<&Marks>,
+) {
     let mut style = open.style;
     let mut marked = 0u32;
     let mut text = String::new();
     let n = source.len();
     let mut i = 0;
     let flush = |line: &mut Vec<Span>, text: &mut String, style: u32, open: &Open| {
-        push_icons(line, text, style | open.shifts.last().copied().unwrap_or(0));
+        push_icons(line, text, style | open.shifts.last().copied().unwrap_or(0), measurer, marks);
         text.clear();
     };
     while i < n {
@@ -276,7 +345,13 @@ fn inline(line: &mut Vec<Span>, source: &str, markdown: bool, base: u32, open: &
 fn measure_spans(line: &mut [Span], measurer: &dyn TextMeasurer, size: f64) -> f64 {
     let mut total = 0.0;
     for span in line.iter_mut() {
-        span.width = measurer.width(&span.text, size, span.style);
+        span.width = if span.icon.is_some() {
+            size * 1.25
+        } else if let Some(math) = &span.math {
+            math.width()
+        } else {
+            measurer.width(&span.text, size, span.style)
+        };
         total += span.width;
     }
     total
@@ -291,7 +366,7 @@ struct Wrapping<'a> {
 
 impl Wrapping<'_> {
     fn commit(&mut self, hyphen: bool, out: &mut Vec<Vec<Span>>, widths: &mut Vec<f64>) {
-        if let Some(last) = self.current.last_mut() {
+        if let Some(last) = self.current.last_mut().filter(|s| s.plain()) {
             let mut trimmed = trim_end(&last.text).to_string();
             if hyphen && last.text.ends_with('\u{ad}') {
                 trimmed.pop();
@@ -318,6 +393,17 @@ fn wrap(line: &[Span], measurer: &dyn TextMeasurer, size: f64, max: f64, out: &m
         width: 0.0,
     };
     for (si, span) in line.iter().enumerate() {
+        if !span.plain() {
+            let width = span.math.as_ref().map_or(size * 1.25, |m| m.width());
+            if w.width > 0.0 && w.width + width > max {
+                w.commit(false, out, widths);
+            }
+            let mut placed = span.clone();
+            placed.width = width;
+            w.current.push(placed);
+            w.width += width;
+            continue;
+        }
         let pieces: Vec<&str> = re_piece().find_iter(&span.text).map(|m| m.as_str()).collect();
         // A piece ending in a soft hyphen fits if its '-' does, or if the rest of the word does,
         // which hides the hyphen.
@@ -359,7 +445,7 @@ fn wrap(line: &[Span], measurer: &dyn TextMeasurer, size: f64, max: f64, out: &m
                 part = trim_start(part);
             }
             match w.current.last_mut() {
-                Some(last) if last.style == span.style => {
+                Some(last) if last.plain() && last.style == span.style => {
                     last.text.push_str(part);
                     // Remeasuring for each zero-width piece would take quadratic time.
                     if part_width > 0.0 || trim_end(part) != part {
@@ -374,6 +460,7 @@ fn wrap(line: &[Span], measurer: &dyn TextMeasurer, size: f64, max: f64, out: &m
                         text: part.to_string(),
                         style: span.style,
                         width,
+                        ..Default::default()
                     });
                     w.width += width;
                 }
@@ -392,6 +479,28 @@ pub fn layout_label(raw: Option<&str>, markdown: bool, measurer: &dyn TextMeasur
     };
     let line_height = js_round(size * LINE_HEIGHT);
 
+    if measurer.math_active() && raw.contains("$$") && !raw.chars().any(|c| (0xe000..=0xf8ff).contains(&(c as u32))) {
+        static RE_MATH: OnceLock<Regex> = OnceLock::new();
+        let re = RE_MATH.get_or_init(|| Regex::new(r"\$\$([^\n\r\u{2028}\u{2029}]+?)\$\$").unwrap());
+        let mut found = Marks {
+            tex: Vec::new(),
+            math: Vec::new(),
+        };
+        let marked = re.replace_all(raw, |c: &regex::Captures| {
+            if found.tex.len() == 0x1900 {
+                return c[0].to_string();
+            }
+            found.tex.push(c[1].to_string());
+            char::from_u32(0xe000 + found.tex.len() as u32 - 1).unwrap().to_string()
+        });
+        if !found.tex.is_empty() {
+            for tex in &found.tex {
+                found.math.push(measurer.typeset(&decode_entities(tex), size));
+            }
+            return with_heights(layout_lines(&marked, markdown, measurer, size, max_width, base, Some(&found)));
+        }
+    }
+
     if !re_markup().is_match(raw) && !raw.contains('&') && !raw.contains('ﬂ') {
         let text = trim(raw);
         let width = measurer.width(text, size, base);
@@ -401,6 +510,7 @@ pub fn layout_label(raw: Option<&str>, markdown: bool, measurer: &dyn TextMeasur
                     text: text.to_string(),
                     style: base,
                     width,
+                    ..Default::default()
                 }]],
                 widths: vec![width],
                 width,
@@ -416,6 +526,7 @@ pub fn layout_label(raw: Option<&str>, markdown: bool, measurer: &dyn TextMeasur
                 text: text.to_string(),
                 style: base,
                 width,
+                ..Default::default()
             }],
             measurer,
             size,
@@ -444,10 +555,18 @@ pub fn layout_label(raw: Option<&str>, markdown: bool, measurer: &dyn TextMeasur
             line_height: snug,
         };
     }
-    layout_lines(raw, markdown, measurer, size, max_width, base)
+    layout_lines(raw, markdown, measurer, size, max_width, base, None)
 }
 
-fn layout_lines(raw: &str, markdown: bool, measurer: &dyn TextMeasurer, size: f64, max_width: f64, base: u32) -> Label {
+fn layout_lines(
+    raw: &str,
+    markdown: bool,
+    measurer: &dyn TextMeasurer,
+    size: f64,
+    max_width: f64,
+    base: u32,
+    marks: Option<&Marks>,
+) -> Label {
     let source = if markdown {
         trim(&dedent(&raw.replace("\r\n", "\n").replace('\r', "\n"))).to_string()
     } else {
@@ -463,7 +582,7 @@ fn layout_lines(raw: &str, markdown: bool, measurer: &dyn TextMeasurer, size: f6
     };
     for part in re_break().split(&source) {
         let mut line = Vec::new();
-        inline(&mut line, trim(part), markdown, base, &mut open);
+        inline(&mut line, trim(part), markdown, base, &mut open, measurer, marks);
         let w = measure_spans(&mut line, measurer, size);
         if w > max_width {
             wrap(&line, measurer, size, max_width, &mut lines, &mut widths);
@@ -493,6 +612,29 @@ fn layout_lines(raw: &str, markdown: bool, measurer: &dyn TextMeasurer, size: f6
     }
 }
 
+pub fn line_height(label: &Label, i: usize) -> f64 {
+    label.lines[i]
+        .iter()
+        .filter_map(|s| s.math.as_ref())
+        .fold(label.line_height, |h, m| h.max((m.height() + label.size / 4.0).ceil()))
+}
+pub fn with_heights(mut label: Label) -> Label {
+    label.height = (0..label.lines.len()).map(|i| line_height(&label, i)).sum();
+    label
+}
+pub fn has_math(line: &[Span]) -> bool {
+    line.iter().any(|s| s.math.is_some())
+}
 pub fn line_middle(label: &Label, i: usize) -> f64 {
-    (i as f64 + 0.5) * label.line_height
+    (0..i).map(|k| line_height(label, k)).sum::<f64>() + line_height(label, i) / 2.0
+}
+pub fn label_line(label: &Label, i: usize) -> Label {
+    Label {
+        lines: vec![label.lines[i].clone()],
+        widths: vec![label.widths[i]],
+        width: label.widths[i],
+        height: line_height(label, i),
+        size: label.size,
+        line_height: label.line_height,
+    }
 }

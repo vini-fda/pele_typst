@@ -1,0 +1,37 @@
+[
+  {
+    "source": "usecase-beta\n actor C(\"$$a$$\")\n systemBoundary \"$$b$$\"\n U(\"$$c$$\")\n end\n C --> U",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "usecase-beta\n actor C(\"$$a$$\")\n systemBoundary \"$$b$$\"\n U(\"$$c$$\")\n end\n C --> U",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "usecase-beta\n actor C(\"$$a$$\")\n systemBoundary \"$$b$$\"\n U(\"$$c$$\")\n end\n C --> U",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "usecase-beta\n actor C(\"$$a$$\")\n systemBoundary \"$$b$$\"\n U(\"$$c$$\")\n end\n C --> U",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "usecase-beta\n actor C(\"$$a$$\")\n systemBoundary \"$$b$$\"\n U(\"$$c$$\")\n end\n C --> U",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

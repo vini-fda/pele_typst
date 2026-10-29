@@ -1,0 +1,86 @@
+[
+  {
+    "source": "usecase-beta\nn(\"\")\njson d@{\"\":\"\",\"\":\"\"😀\"\"}:::d\nclassDef a e:#",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":1-}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{-}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":1\"\\q\"}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\"\"\\q\"1}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":1\"\\uZZZZ\"}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\"\"\\uZZZZ\"1}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":11e}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":1e}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{1.}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":\"\\😀\"}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "usecase-beta\njson P@{\"a\":\"\\u😀12\"}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  }
+]

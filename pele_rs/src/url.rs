@@ -21,7 +21,7 @@ fn re_ctrl() -> &'static Regex {
 }
 fn re_html_entities() -> &'static Regex {
     static R: OnceLock<Regex> = OnceLock::new();
-    re(&R, r"&#(\w+)(?:[^\w]|;)?")
+    re(&R, r"&#([A-Za-z0-9_]+);?")
 }
 fn re_html_ctrl_entity() -> &'static Regex {
     static R: OnceLock<Regex> = OnceLock::new();
@@ -33,11 +33,11 @@ fn re_ws_escape() -> &'static Regex {
 }
 fn re_scheme() -> &'static Regex {
     static R: OnceLock<Regex> = OnceLock::new();
-    re(&R, r"(?m)^.+(:|&colon;)")
+    re(&R, r"(?:^|[\r\n\u{2028}\u{2029}])[^\r\n\u{2028}\u{2029}]+(:|&colon;)")
 }
 fn re_invalid_protocol() -> &'static Regex {
     static R: OnceLock<Regex> = OnceLock::new();
-    re(&R, r"(?im)^([^\w]*)(javascript|data|vbscript)")
+    re(&R, r"(?i)(?:^|[\r\n\u{2028}\u{2029}])([^A-Za-z0-9_]*)(javascript|data|vbscript)")
 }
 fn re_scheme_name() -> &'static Regex {
     static R: OnceLock<Regex> = OnceLock::new();
@@ -101,22 +101,10 @@ fn unwrap(url: &str, percent: bool) -> Option<String> {
     }
 }
 
-// Lower-cases the scheme and host of an http(s) URL and gives it a path, as the URL parser would.
+// Use WHATWG URL parsing for host validation, IDNA, ports, dot segments and
+// percent encoding, matching the browser/JavaScript URL constructor.
 fn normalize_http(url: &str) -> Option<String> {
-    let at = url.find("://")?;
-    let scheme = url[..at].to_ascii_lowercase();
-    let rest = &url[at + 3..];
-    let end = rest.find(['/', '?', '#']).unwrap_or(rest.len());
-    let (host, tail) = rest.split_at(end);
-    if host.is_empty() || host.contains(char::is_whitespace) {
-        return None;
-    }
-    let tail = if tail.starts_with('/') {
-        tail.to_string()
-    } else {
-        format!("/{}", tail)
-    };
-    Some(format!("{}://{}{}", scheme, host.to_lowercase(), tail.replace(' ', "%20")))
+    ::url::Url::parse(url).ok().map(String::from)
 }
 
 // Refuses what @braintree/sanitize-url refuses, the check Mermaid applies to click targets.
@@ -207,6 +195,7 @@ pub fn internal_link(name: &str, options: &RenderOptions) -> bool {
     link_url(seen, options).is_some()
 }
 
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct LinkInfo {
     pub id: String,
     pub href: String,

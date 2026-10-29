@@ -1,0 +1,72 @@
+[
+  {
+    "source": "classDiagram\n class A {\n <<$$a$$>>\n }\n note for A \"$$b$$\"\n A \"$$c$$\" --> \"1\" B : $$d$$\n class C[\"$$e$$\"]",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n <<$$a$$>>\n }\n note for A \"$$b$$\"\n A \"$$c$$\" --> \"1\" B : $$d$$\n class C[\"$$e$$\"]",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n <<$$a$$>>\n }\n note for A \"$$b$$\"\n A \"$$c$$\" --> \"1\" B : $$d$$\n class C[\"$$e$$\"]",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n <<$$a$$>>\n }\n note for A \"$$b$$\"\n A \"$$c$$\" --> \"1\" B : $$d$$\n class C[\"$$e$$\"]",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n <<$$a$$>>\n }\n note for A \"$$b$$\"\n A \"$$c$$\" --> \"1\" B : $$d$$\n class C[\"$$e$$\"]",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n +$$m$$ int\n }\n A : $$n$$ text",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n +$$m$$ int\n }\n A : $$n$$ text",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n +$$m$$ int\n }\n A : $$n$$ text",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n +$$m$$ int\n }\n A : $$n$$ text",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "classDiagram\n class A {\n +$$m$$ int\n }\n A : $$n$$ text",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

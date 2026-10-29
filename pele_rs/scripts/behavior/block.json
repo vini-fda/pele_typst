@@ -1,0 +1,37 @@
+[
+  {
+    "source": "block-beta\n a[\"$$a$$\"] b[\"$$b$$\"]\n a -- \"$$c$$\" --> b",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "block-beta\n a[\"$$a$$\"] b[\"$$b$$\"]\n a -- \"$$c$$\" --> b",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "block-beta\n a[\"$$a$$\"] b[\"$$b$$\"]\n a -- \"$$c$$\" --> b",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "block-beta\n a[\"$$a$$\"] b[\"$$b$$\"]\n a -- \"$$c$$\" --> b",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "block-beta\n a[\"$$a$$\"] b[\"$$b$$\"]\n a -- \"$$c$$\" --> b",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

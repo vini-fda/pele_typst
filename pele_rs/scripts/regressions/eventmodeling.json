@@ -1,0 +1,16 @@
+[
+  {
+    "source": "eventmodeling title first\n/**/ title\n tf 1 evt A",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "---\ntitle: Frontmatter\n---\neventmodeling title first\n/**/ title\n tf 1 evt A",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  }
+]

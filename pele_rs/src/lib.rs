@@ -1,8 +1,8 @@
 //! A Rust port of [pele](https://github.com/obsidianmd/pele), a Mermaid renderer that writes
 //! themeable SVG. Identical inputs give the same SVG as pele's JavaScript, byte for byte.
 //!
-//! Flowcharts and pie charts are ported so far; other diagram types report that they are not
-//! supported.
+//! Implements the synchronous engine and all 33 diagram types from Pele 1.12.0,
+//! revision `36e584d59152181927e0d8bf70fddcd2a5f33d6c`.
 
 // The port mirrors pele's TypeScript loop for loop, and keeps JavaScript's handling of NaN, -0
 // and the sign of `%`, so that the SVG stays identical. These lints would trade that for idiom.
@@ -11,11 +11,15 @@
     clippy::neg_cmp_op_on_partial_ord,
     clippy::manual_clamp,
     clippy::manual_rem_euclid,
-    clippy::too_many_arguments
+    clippy::too_many_arguments,
+    // The public error carries complete messages, aliases, source snippets, and
+    // optional exact UTF-16 diagnostics. Keep Result<_, PeleError> compatible.
+    clippy::result_large_err
 )]
 
 pub mod detect;
 pub mod diagrams;
+pub mod engine;
 pub mod errors;
 pub mod layout;
 pub mod preprocess;
@@ -24,12 +28,73 @@ pub mod text;
 pub mod unicode;
 pub mod url;
 pub mod util;
+mod yaml;
 
-use serde_json::Value;
+use std::fmt;
+use std::sync::Arc;
 
+pub use engine::{
+    Diagram, DiagramMetadata, DiagramModel, ParseOptions, ParsedDiagram, Renderer, parse, render_parsed, render_parsed_with,
+    try_detect_type,
+};
 pub use errors::{PeleError, PeleErrorCode};
 pub use preprocess::Config;
 pub use text::measurer::{MetricsMeasurer, TextMeasurer};
+pub use url::LinkInfo;
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum MonospacePart {
+    Members,
+    Attributes,
+    Files,
+    Messages,
+}
+
+#[derive(Debug, Clone, PartialEq)]
+pub enum MathMarkup {
+    Svg { svg: String, width: f64, height: f64 },
+    Html { html: String, width: f64, height: f64 },
+}
+
+type IconCallback = dyn Fn(&str) -> Option<String> + Send + Sync;
+type MathCallback = dyn Fn(&str, f64) -> Option<MathMarkup> + Send + Sync;
+
+#[derive(Clone)]
+pub struct IconResolver(Arc<IconCallback>);
+impl PartialEq for IconResolver {
+    fn eq(&self, other: &Self) -> bool {
+        Arc::ptr_eq(&self.0, &other.0)
+    }
+}
+impl IconResolver {
+    pub fn new(f: impl Fn(&str) -> Option<String> + Send + Sync + 'static) -> Self {
+        Self(Arc::new(f))
+    }
+    pub fn resolve(&self, name: &str) -> Option<String> {
+        (self.0)(name)
+    }
+}
+impl fmt::Debug for IconResolver {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.write_str("IconResolver(..)")
+    }
+}
+
+#[derive(Clone)]
+pub struct MathResolver(Arc<MathCallback>);
+impl MathResolver {
+    pub fn new(f: impl Fn(&str, f64) -> Option<MathMarkup> + Send + Sync + 'static) -> Self {
+        Self(Arc::new(f))
+    }
+    pub fn resolve(&self, tex: &str, size: f64) -> Option<MathMarkup> {
+        (self.0)(tex, size)
+    }
+}
+impl fmt::Debug for MathResolver {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.write_str("MathResolver(..)")
+    }
+}
 
 #[derive(Debug, Clone, Default)]
 pub struct RenderOptions {
@@ -53,6 +118,13 @@ pub struct RenderOptions {
     pub images: Option<bool>,
     pub link_rel: Option<String>,
     pub config: Option<Config>,
+    pub monospace: Option<Vec<MonospacePart>>,
+    pub icons: Option<IconResolver>,
+    pub math: Option<MathResolver>,
+    /// Unix time in milliseconds. Native rendering defaults to the current time.
+    pub now: Option<f64>,
+    /// An IANA timezone; native rendering defaults to the system's local zone.
+    pub time_zone: Option<String>,
 }
 
 #[derive(Debug, Clone)]
@@ -62,105 +134,26 @@ pub struct RenderResult {
     pub height: f64,
     pub kind: String,
     pub mermaid_type: String,
+    pub links: Vec<LinkInfo>,
 }
 
-// Mermaid's default maxTextSize.
-const DEFAULT_LIMIT: usize = 50000;
-const DEFAULT_OUTPUT_LIMIT: usize = 4_000_000;
-const DEFAULT_MAX_EDGES: usize = 5000;
-
-// The diagram types this port draws, by pele's names for them.
-pub const SUPPORTED: [&str; 2] = ["flowchart", "pie"];
+/// Canonical diagram kinds registered by the complete renderer.
+pub use engine::SUPPORTED;
 
 pub fn detect_type(text: &str) -> Option<&'static str> {
-    let pre = preprocess::preprocess(text).ok()?;
-    detect::detect_diagram(&pre.text).map(|d| d.kind)
+    try_detect_type(text).ok().flatten()
 }
 
-/// Whether `text` is a diagram of a type this port draws.
 pub fn supports(text: &str) -> bool {
-    detect_type(text).is_some_and(|kind| SUPPORTED.contains(&kind))
+    engine::default_renderer().supports(text)
 }
 
-fn tag(mut error: PeleError, kind: &str) -> PeleError {
-    if error.diagram.is_none() {
-        error.diagram = Some(kind.to_string());
-    }
-    error.message = text::entities::written_codes(&error.message);
-    error.snippet = text::entities::written_codes(&error.snippet);
-    error
-}
-
-/// Renders Mermaid text to SVG, measuring text with pele's table of Arial widths.
+/// Render diagram text using Pele's metrics measurer.
 pub fn render(text: &str, options: &RenderOptions) -> Result<RenderResult, PeleError> {
-    render_with(text, options, &MetricsMeasurer)
+    engine::default_renderer().render(text, options)
 }
 
-/// Renders Mermaid text to SVG, measuring text with `measurer`.
+/// Render diagram text with a host-provided text measurer.
 pub fn render_with(text: &str, options: &RenderOptions, measurer: &dyn TextMeasurer) -> Result<RenderResult, PeleError> {
-    let limit = options.limit.unwrap_or(DEFAULT_LIMIT);
-    if text.encode_utf16().count() > limit {
-        return Err(PeleError::new(
-            format!("Diagram source is longer than the limit of {} characters.", limit),
-            PeleErrorCode::Limit,
-        ));
-    }
-    let pre = preprocess::preprocess(text)?;
-    let Some(found) = detect::detect_diagram(&pre.text) else {
-        return Err(PeleError::new(
-            "No diagram type detected for the given text.",
-            PeleErrorCode::UnsupportedDiagram,
-        ));
-    };
-    if !SUPPORTED.contains(&found.kind) {
-        return Err(PeleError::new(
-            format!("Diagram type \"{}\" is not supported yet.", found.kind),
-            PeleErrorCode::UnsupportedDiagram,
-        )
-        .of(found.kind));
-    }
-    let mut config = options.config.clone().unwrap_or_default();
-    for (k, v) in pre.config.iter() {
-        config.insert(k.clone(), v.clone());
-    }
-    let parsed = preprocess::encode_entities(&pre.text) + "\n";
-    let title = pre.title.as_deref().filter(|t| !t.is_empty());
-
-    // A diagram whose config section sets `useMaxWidth: false` keeps its own size in a page.
-    let section = config.get(found.kind).and_then(|v| v.as_object());
-    let fixed = section.and_then(|f| f.get("useMaxWidth")) == Some(&Value::Bool(false));
-    let mut opts = options.clone();
-    opts.responsive = Some(options.responsive.unwrap_or(!fixed));
-
-    let rendered = match found.kind {
-        "pie" => {
-            let ast = diagrams::pie::parser::parse_pie(&parsed).map_err(|e| tag(e, found.kind))?;
-            let model = diagrams::pie::model::build_pie(ast, title).map_err(|e| tag(e, found.kind))?;
-            diagrams::pie::render::render_pie(&model, &config, &opts, measurer)
-        }
-        _ => {
-            let mut db = diagrams::flowchart::db::FlowDb::new(
-                section.and_then(|f| f.get("inheritDir")) == Some(&Value::Bool(true)),
-                Some(options.max_edges.unwrap_or(DEFAULT_MAX_EDGES)),
-            );
-            db.title = title.map(String::from);
-            diagrams::flowchart::parser::parse_flowchart(&parsed, &mut db).map_err(|e| tag(e, found.kind))?;
-            diagrams::flowchart::render::render_flowchart(&db, &config, &opts, measurer)
-        }
-    };
-    let output_limit = options.output_limit.unwrap_or(DEFAULT_OUTPUT_LIMIT);
-    if rendered.svg.encode_utf16().count() > output_limit {
-        return Err(PeleError::new(
-            format!("Diagram output is longer than the limit of {} characters.", output_limit),
-            PeleErrorCode::Limit,
-        )
-        .of(found.kind));
-    }
-    Ok(RenderResult {
-        svg: rendered.svg,
-        width: rendered.width,
-        height: rendered.height,
-        kind: found.kind.to_string(),
-        mermaid_type: found.mermaid_type.to_string(),
-    })
+    engine::default_renderer().render_with(text, options, measurer)
 }

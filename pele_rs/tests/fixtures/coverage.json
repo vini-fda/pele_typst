@@ -1,0 +1,238 @@
+{
+  "revision": "36e584d59152181927e0d8bf70fddcd2a5f33d6c",
+  "documentationCount": 522,
+  "agentflowReferenceCount": 239,
+  "types": {
+    "flowchart": {
+      "corpus": "flowchart",
+      "documentation": 114,
+      "reference": 0,
+      "cases": 652,
+      "errors": 39
+    },
+    "pie": {
+      "corpus": "pie",
+      "documentation": 2,
+      "reference": 0,
+      "cases": 86,
+      "errors": 13
+    },
+    "er": {
+      "corpus": "er",
+      "documentation": 25,
+      "reference": 0,
+      "cases": 135,
+      "errors": 13
+    },
+    "mindmap": {
+      "corpus": "mindmap",
+      "documentation": 13,
+      "reference": 0,
+      "cases": 123,
+      "errors": 12
+    },
+    "kanban": {
+      "corpus": "kanban",
+      "documentation": 3,
+      "reference": 0,
+      "cases": 123,
+      "errors": 16
+    },
+    "timeline": {
+      "corpus": "timeline",
+      "documentation": 14,
+      "reference": 0,
+      "cases": 103,
+      "errors": 13
+    },
+    "journey": {
+      "corpus": "journey",
+      "documentation": 1,
+      "reference": 0,
+      "cases": 53,
+      "errors": 16
+    },
+    "class": {
+      "corpus": "class",
+      "documentation": 38,
+      "reference": 0,
+      "cases": 176,
+      "errors": 9
+    },
+    "quadrantChart": {
+      "corpus": "quadrant",
+      "documentation": 3,
+      "reference": 0,
+      "cases": 84,
+      "errors": 19
+    },
+    "xychart": {
+      "corpus": "xychart",
+      "documentation": 8,
+      "reference": 0,
+      "cases": 113,
+      "errors": 54
+    },
+    "state": {
+      "corpus": "state",
+      "documentation": 22,
+      "reference": 0,
+      "cases": 183,
+      "errors": 7
+    },
+    "gantt": {
+      "corpus": "gantt",
+      "documentation": 11,
+      "reference": 0,
+      "cases": 97,
+      "errors": 10
+    },
+    "architecture": {
+      "corpus": "architecture",
+      "documentation": 6,
+      "reference": 0,
+      "cases": 77,
+      "errors": 17
+    },
+    "requirement": {
+      "corpus": "requirement",
+      "documentation": 9,
+      "reference": 0,
+      "cases": 65,
+      "errors": 16
+    },
+    "sankey": {
+      "corpus": "sankey",
+      "documentation": 8,
+      "reference": 0,
+      "cases": 54,
+      "errors": 11
+    },
+    "packet": {
+      "corpus": "packet",
+      "documentation": 4,
+      "reference": 0,
+      "cases": 96,
+      "errors": 34
+    },
+    "radar": {
+      "corpus": "radar",
+      "documentation": 3,
+      "reference": 0,
+      "cases": 50,
+      "errors": 12
+    },
+    "treemap": {
+      "corpus": "treemap",
+      "documentation": 8,
+      "reference": 0,
+      "cases": 114,
+      "errors": 23
+    },
+    "info": {
+      "corpus": "info",
+      "documentation": 2,
+      "reference": 0,
+      "cases": 47,
+      "errors": 7
+    },
+    "sequence": {
+      "corpus": "sequence",
+      "documentation": 38,
+      "reference": 0,
+      "cases": 255,
+      "errors": 14
+    },
+    "gitGraph": {
+      "corpus": "git",
+      "documentation": 35,
+      "reference": 0,
+      "cases": 243,
+      "errors": 57
+    },
+    "c4": {
+      "corpus": "c4",
+      "documentation": 6,
+      "reference": 0,
+      "cases": 128,
+      "errors": 25
+    },
+    "block": {
+      "corpus": "block",
+      "documentation": 30,
+      "reference": 0,
+      "cases": 179,
+      "errors": 22
+    },
+    "railroad": {
+      "corpus": "railroad",
+      "documentation": 14,
+      "reference": 0,
+      "cases": 185,
+      "errors": 38
+    },
+    "agentflow": {
+      "corpus": "agentflow",
+      "documentation": 12,
+      "reference": 239,
+      "cases": 321,
+      "errors": 87
+    },
+    "treeView": {
+      "corpus": "treeview",
+      "documentation": 13,
+      "reference": 0,
+      "cases": 112,
+      "errors": 17
+    },
+    "cynefin": {
+      "corpus": "cynefin",
+      "documentation": 3,
+      "reference": 0,
+      "cases": 51,
+      "errors": 6
+    },
+    "wardley": {
+      "corpus": "wardley",
+      "documentation": 19,
+      "reference": 0,
+      "cases": 134,
+      "errors": 15
+    },
+    "eventmodeling": {
+      "corpus": "eventmodeling",
+      "documentation": 12,
+      "reference": 0,
+      "cases": 84,
+      "errors": 15
+    },
+    "usecase": {
+      "corpus": "usecase",
+      "documentation": 24,
+      "reference": 0,
+      "cases": 198,
+      "errors": 53
+    },
+    "venn": {
+      "corpus": "venn",
+      "documentation": 8,
+      "reference": 0,
+      "cases": 72,
+      "errors": 11
+    },
+    "ishikawa": {
+      "corpus": "ishikawa",
+      "documentation": 1,
+      "reference": 0,
+      "cases": 30,
+      "errors": 5
+    },
+    "swimlane": {
+      "corpus": "swimlane",
+      "documentation": 13,
+      "reference": 0,
+      "cases": 58,
+      "errors": 5
+    }
+  }
+}

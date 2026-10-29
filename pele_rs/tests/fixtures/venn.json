@@ -1,0 +1,1876 @@
+[
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  theme: default\n  look: classic\n---\nvenn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title \"Team overlap\"\n  set Frontend\n  set Backend\n  union Frontend,Backend[\"APIs\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 252\" width=\"343\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"171.5\" y=\"25.6\">Team overlap</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Frontend\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Backend\" cx=\"234.94\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Frontend\"><text class=\"pele-label\" x=\"71.54\" y=\"146.81\" text-anchor=\"middle\">Frontend</text></g><g class=\"pele-venn-region\" data-id=\"Backend\"><text class=\"pele-label\" x=\"271.41\" y=\"146.81\" text-anchor=\"middle\">Backend</text></g><g class=\"pele-venn-region\" data-id=\"Backend|Frontend\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"148.9\" text-anchor=\"middle\">APIs</text></g></g></svg>",
+   "width": 343,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]\n  set B[\"Beta\"]\n  union A,B[\"AB\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible,Viable[\"Innovation\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 481 457\" width=\"481\" height=\"457\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"150.12\" cy=\"150.12\" r=\"142.12\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"330.53\" cy=\"150.12\" r=\"142.12\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"240.33\" cy=\"306.36\" r=\"142.12\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"102.69\" y=\"128.34\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"377.96\" y=\"128.34\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"240.33\" y=\"366.73\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"240.33\" y=\"207.1\" text-anchor=\"middle\">Innovation</text></g></g></svg>",
+   "width": 481,
+   "height": 457,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n  set B[\"Beta\"]:12\n  union A,B[\"AB\"]:3\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 317 216\" width=\"317\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"231.29\" cy=\"108\" r=\"77.46\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"80.95\" y=\"115.38\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"257.95\" y=\"107.36\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"180.91\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 317,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Frontend\"]\n    text A1[\"React\"]\n    text A2[\"Design Systems\"]\n  set B[\"Backend\"]\n    text B1[\"API\"]\n  union A,B[\"Shared\"]\n    text AB1[\"OpenAPI\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 351 221\" width=\"351\" height=\"221\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"110.4\" cy=\"110.4\" r=\"102.4\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"240.39\" cy=\"110.4\" r=\"102.4\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"73.06\" y=\"93.15\" text-anchor=\"middle\">Frontend</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" x=\"73.06\" y=\"114.1\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"13\" fill=\"var(--_m)\" x=\"73.06\" y=\"134.1\" text-anchor=\"middle\">Design Systems</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"277.73\" y=\"103.15\" text-anchor=\"middle\">Backend</text><text class=\"pele-venn-text\" data-id=\"B1\" font-size=\"13\" fill=\"var(--_m)\" x=\"277.73\" y=\"124.1\" text-anchor=\"middle\">API</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"175.39\" y=\"105.3\" text-anchor=\"middle\">Shared</text><text class=\"pele-venn-text\" data-id=\"AB1\" font-size=\"13\" fill=\"var(--_m)\" x=\"175.39\" y=\"125.45\" text-anchor=\"middle\">OpenAPI</text></g></g></svg>",
+   "width": 351,
+   "height": 221,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n    text A1[\"React\"]\n    text A2[\"Design Systems\"]\n  set B[\"Beta\"]:12\n  union A,B[\"AB\"]:3\n  style A fill:#ff6b6b\n  style A,B color:#333\n  style A1 color:red\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 317 216\" width=\"317\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"231.29\" cy=\"108\" r=\"77.46\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"80.95\" y=\"95.38\" text-anchor=\"middle\">Alpha</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" style=\"fill:red;\" x=\"80.95\" y=\"116.33\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"13\" fill=\"var(--_m)\" x=\"80.95\" y=\"136.33\" text-anchor=\"middle\">Design Systems</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"257.95\" y=\"107.36\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" style=\"fill:#333;\" x=\"180.91\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 317,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          title foo bar\n          set A\n          set B\n          union A,B\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 252\" width=\"343\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"171.5\" y=\"25.6\">foo bar</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"146.81\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"146.81\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 343,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A[\"Alpha\"]\n          set B[\"Beta\"]\n          union A,B[\"AB\"]\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A[Alpha]\n          set B[Beta]\n          union A,B[AB]\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A:20\n          set B:12\n          union A,B:3\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 317 216\" width=\"317\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"231.29\" cy=\"108\" r=\"77.46\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"80.95\" y=\"115.38\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"257.95\" y=\"107.36\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 317,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          title foo bar\n          set A[\"Alpha\"]:20\n          set B[\"Beta\"]:12\n          set C[\"Gamma\"]:30\n          union A,B[\"AB\"]:5.3\n          union C,A,B:1\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 244 350\" width=\"244\" height=\"350\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"122\" y=\"25.6\">foo bar</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"89.65\" cy=\"125.65\" r=\"81.65\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"168.61\" cy=\"125.65\" r=\"63.25\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"C\" cx=\"135.11\" cy=\"241.1\" r=\"100\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"57.85\" y=\"120.38\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"201.35\" y=\"126.43\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"C\"><text class=\"pele-label\" x=\"137.88\" y=\"275.82\" text-anchor=\"middle\">Gamma</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"138.98\" y=\"115.88\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 244,
+   "height": 350,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A\n            text A1[\"foo bar\"]\n          set B\n            text B1[\"hello, world\"]\n          union A,B\n            text AB1[\"shared note\"]\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 372 234\" width=\"372\" height=\"234\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"116.83\" cy=\"116.83\" r=\"108.83\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"254.97\" cy=\"116.83\" r=\"108.83\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"77.14\" y=\"109.39\" text-anchor=\"middle\">A</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" x=\"77.14\" y=\"130.34\" text-anchor=\"middle\">foo bar</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"294.65\" y=\"109.39\" text-anchor=\"middle\">B</text><text class=\"pele-venn-text\" data-id=\"B1\" font-size=\"13\" fill=\"var(--_m)\" x=\"294.65\" y=\"130.34\" text-anchor=\"middle\">hello, world</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-venn-text\" data-id=\"AB1\" font-size=\"13\" fill=\"var(--_m)\" x=\"185.9\" y=\"121.38\" text-anchor=\"middle\">shared note</text></g></g></svg>",
+   "width": 372,
+   "height": 234,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A[\"Frontend\"]\n            text A1\n            text A2\n          set B[\"Backend\"]\n            text B1\n          union A,B[\"APIs\"]\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"90.81\" text-anchor=\"middle\">Frontend</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" x=\"71.54\" y=\"111.76\" text-anchor=\"middle\">A1</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"13\" fill=\"var(--_m)\" x=\"71.54\" y=\"131.76\" text-anchor=\"middle\">A2</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"100.81\" text-anchor=\"middle\">Backend</text><text class=\"pele-venn-text\" data-id=\"B1\" font-size=\"13\" fill=\"var(--_m)\" x=\"271.41\" y=\"121.76\" text-anchor=\"middle\">B1</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"112.9\" text-anchor=\"middle\">APIs</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A\n          set B\n          union A,B\n          style A fill:#ff6b6b\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A\n          set B\n          union A,B\n          style A,B color:#333\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A\n            text A1[\"React\"]\n          style A1 color:red\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 216 216\" width=\"216\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"103.6\" text-anchor=\"middle\">A</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" style=\"fill:red;\" x=\"108\" y=\"124.55\" text-anchor=\"middle\">React</text></g></g></svg>",
+   "width": 216,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A\n          set B\n          union A,B\n          style A fill:#ff6b6b, color:#333\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" style=\"fill:#333;\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A\n          set B\n          style A fill:rgb(255, 0, 128)\n          style B fill:rgba(255, 0, 128, 0.5)\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 431 216\" width=\"431\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:rgb(255, 0, 128);\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"323\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\" style=\"fill:rgba(255, 0, 128, 0.5);\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"113.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"323\" y=\"113.6\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 431,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n          set A[\"Frontend\"]:20\n            text A1[\"React\"]\n          set B[\"Backend\"]:12\n          union A,B[\"Shared\"]:3\n            text AB1[\"OpenAPI\"]\n          style A fill:#ff6b6b\n          style A,B color:#333\n          style A1 color:red\n      ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 432 293\" width=\"432\" height=\"293\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"146.1\" cy=\"146.1\" r=\"138.1\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"316.36\" cy=\"146.1\" r=\"106.97\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108.74\" y=\"144.15\" text-anchor=\"middle\">Frontend</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" style=\"fill:red;\" x=\"108.74\" y=\"165.1\" text-anchor=\"middle\">React</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"353.18\" y=\"143.08\" text-anchor=\"middle\">Backend</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" style=\"fill:#333;\" x=\"246.79\" y=\"141\" text-anchor=\"middle\">Shared</text><text class=\"pele-venn-text\" data-id=\"AB1\" font-size=\"13\" fill=\"var(--_m)\" x=\"246.79\" y=\"161.15\" text-anchor=\"middle\">OpenAPI</text></g></g></svg>",
+   "width": 432,
+   "height": 293,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n        set A,B\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\n        set A,B\n-------------^\nExpecting 'EOF', 'NEWLINE', 'TITLE', 'SET', 'UNION', 'TEXT', 'INDENT_TEXT', 'STYLE', got 'COMMA'",
+    "code": "syntax",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 2,
+    "column": 14,
+    "snippet": "        set A,B\n-------------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\n        set A,B\n-------------^\nExpecting 'EOF', 'NEWLINE', 'TITLE', 'SET', 'UNION', 'TEXT', 'INDENT_TEXT', 'STYLE', got 'COMMA'",
+   "code": "syntax",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 2,
+   "column": 14,
+   "snippet": "        set A,B\n-------------^"
+  }
+ },
+ {
+  "source": "venn-beta\n        union A\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "union requires multiple identifiers",
+    "code": "semantic",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "union requires multiple identifiers",
+   "code": "semantic",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\n        set Foo\n        union Foo,Buz\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "unknown set identifier: Buz",
+    "code": "semantic",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "unknown set identifier: Buz",
+   "code": "semantic",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\n        set \"Foo Bar\"\n        set Buz\n        union \"Foo Bar\",Buz\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Foo Bar\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Buz\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Foo Bar\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">Foo Bar</text></g><g class=\"pele-venn-region\" data-id=\"Buz\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">Buz</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"></g></svg>",
+   "width": 16,
+   "height": 16,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nset A[\"A very long label for a set that goes on and on\"]\nset B\nunion A,B[\"An intersection with a long label\"]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 540 337\" width=\"540\" height=\"337\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"168\" cy=\"168\" r=\"160\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"371.11\" cy=\"168\" r=\"160\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"109.66\" y=\"158.64\">A very long label for a set</tspan><tspan x=\"109.66\" y=\"179.64\">that goes on and on</tspan></text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"429.45\" y=\"169.14\" text-anchor=\"middle\">B</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"269.55\" y=\"163.9\">An intersection</tspan><tspan x=\"269.55\" y=\"181.9\">with a long label</tspan></text></g></g></svg>",
+   "width": 540,
+   "height": 337,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\ntitle \"Team overlap\"\nset A",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 216 252\" width=\"216\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"108\" y=\"25.6\">Team overlap</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"149.6\" text-anchor=\"middle\">A</text></g></g></svg>",
+   "width": 216,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: From the front matter\n---\nvenn-beta\nset A",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 216 252\" width=\"216\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"108\" y=\"25.6\">From the front matter</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"149.6\" text-anchor=\"middle\">A</text></g></g></svg>",
+   "width": 216,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: Front\n---\nvenn-beta\ntitle Inside\nset A",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 216 252\" width=\"216\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"108\" y=\"25.6\">Inside</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"149.6\" text-anchor=\"middle\">A</text></g></g></svg>",
+   "width": 216,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nset A%% note\nset B:5%% note\nunion A,B%% note",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 278 216\" width=\"278\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"199.13\" cy=\"108\" r=\"70.71\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"68.31\" y=\"117.14\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"236.71\" y=\"129.91\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 278,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\ntitle\nset A\nset title\ntitle Kept\nset B",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 431 439\" width=\"431\" height=\"439\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"215.5\" y=\"25.6\">Kept</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"title\" cx=\"323\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"215.5\" cy=\"330.2\" r=\"100\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"149.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"title\"><text class=\"pele-label\" x=\"323\" y=\"149.6\" text-anchor=\"middle\">title</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"215.5\" y=\"335.8\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 431,
+   "height": 439,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nset set-theory\nset union-x\nunion set-theory,union-x[\"both\"]\n  text-5\ntext set-theory text-books\nstyle set-theory fill:red,x:style-y",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"set-theory\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:red;\"/><circle class=\"pele-venn-set\" data-id=\"union-x\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"set-theory\"><text class=\"pele-label\" x=\"71.54\" y=\"100.81\" text-anchor=\"middle\">set-theory</text><text class=\"pele-venn-text\" data-id=\"text-books\" font-size=\"13\" fill=\"var(--_m)\" x=\"71.54\" y=\"121.76\" text-anchor=\"middle\">text-books</text></g><g class=\"pele-venn-region\" data-id=\"union-x\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">union-x</text></g><g class=\"pele-venn-region\" data-id=\"set-theory|union-x\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"102.9\" text-anchor=\"middle\">both</text><text class=\"pele-venn-text\" data-id=\"-5\" font-size=\"13\" fill=\"var(--_m)\" x=\"171.47\" y=\"123.05\" text-anchor=\"middle\">-5</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nunion A",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "union requires multiple identifiers",
+    "code": "semantic",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "union requires multiple identifiers",
+   "code": "semantic",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\nset A\nunion A,B",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "unknown set identifier: B",
+    "code": "semantic",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "unknown set identifier: B",
+   "code": "semantic",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\nset A\nunion A,\"B#35;x\"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "unknown set identifier: B#35;x",
+    "code": "semantic",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "unknown set identifier: B#35;x",
+   "code": "semantic",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\nset \"B#x\"\nset A\nunion A,\"B#35;x\"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "unknown set identifier: B#35;x",
+    "code": "semantic",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "unknown set identifier: B#35;x",
+   "code": "semantic",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\nset A,B",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nset A,B\n-----^\nExpecting 'EOF', 'NEWLINE', 'TITLE', 'SET', 'UNION', 'TEXT', 'INDENT_TEXT', 'STYLE', got 'COMMA'",
+    "code": "syntax",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 2,
+    "column": 6,
+    "snippet": "set A,B\n-----^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nset A,B\n-----^\nExpecting 'EOF', 'NEWLINE', 'TITLE', 'SET', 'UNION', 'TEXT', 'INDENT_TEXT', 'STYLE', got 'COMMA'",
+   "code": "syntax",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 2,
+   "column": 6,
+   "snippet": "set A,B\n-----^"
+  }
+ },
+ {
+  "source": "venn-beta\nset A $",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\nset A $\n------^",
+    "code": "syntax",
+    "type": "venn",
+    "mermaidType": "venn",
+    "line": 2,
+    "column": 7,
+    "snippet": "set A $\n------^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\nset A $\n------^",
+   "code": "syntax",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 2,
+   "column": 7,
+   "snippet": "set A $\n------^"
+  }
+ },
+ {
+  "source": "venn-beta\nset A\nset B\nunion A,B\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">A</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n    text A1[\"React\"]\n    text A2\n    text \"q\"\n    text 5\n  set B[Beta]:12\n  union A,B[\"AB\"]:3\n    text AB1[\"OpenAPI\"]\n  style A fill:#ff6b6b\n  style A,B color:#333\n  style A1 color:red\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 432 293\" width=\"432\" height=\"293\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"146.1\" cy=\"146.1\" r=\"138.1\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"316.36\" cy=\"146.1\" r=\"106.97\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108.74\" y=\"114.15\" text-anchor=\"middle\">Alpha</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" style=\"fill:red;\" x=\"108.74\" y=\"135.1\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"13\" fill=\"var(--_m)\" x=\"108.74\" y=\"155.1\" text-anchor=\"middle\">A2</text><text class=\"pele-venn-text\" data-id=\"q\" font-size=\"13\" fill=\"var(--_m)\" x=\"108.74\" y=\"175.1\" text-anchor=\"middle\">q</text><text class=\"pele-venn-text\" data-id=\"5\" font-size=\"13\" fill=\"var(--_m)\" x=\"108.74\" y=\"195.1\" text-anchor=\"middle\">5</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"353.18\" y=\"143.08\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" style=\"fill:#333;\" x=\"246.79\" y=\"141\" text-anchor=\"middle\">AB</text><text class=\"pele-venn-text\" data-id=\"AB1\" font-size=\"13\" fill=\"var(--_m)\" x=\"246.79\" y=\"161.15\" text-anchor=\"middle\">OpenAPI</text></g></g></svg>",
+   "width": 432,
+   "height": 293,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\ntitle A title\nset A\n  text x\nset B set C\nunion A,B,C[all]:1.5 union A,C\ntext A,B t1[\"one\"]\ntext C \"two\"\ntext A 3\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 362\" width=\"343\" height=\"362\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"171.5\" y=\"25.6\">A title</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"C\" cx=\"171.47\" cy=\"253.93\" r=\"100\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"74.63\" y=\"110.33\" text-anchor=\"middle\">A</text><text class=\"pele-venn-text\" data-id=\"x\" font-size=\"13\" fill=\"var(--_m)\" x=\"74.63\" y=\"131.28\" text-anchor=\"middle\">x</text><text class=\"pele-venn-text\" data-id=\"3\" font-size=\"13\" fill=\"var(--_m)\" x=\"74.63\" y=\"151.28\" text-anchor=\"middle\">3</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"268.31\" y=\"130.33\" text-anchor=\"middle\">B</text></g><g class=\"pele-venn-region\" data-id=\"C\"><text class=\"pele-label\" x=\"171.47\" y=\"288.07\" text-anchor=\"middle\">C</text><text class=\"pele-venn-text\" data-id=\"two\" font-size=\"13\" fill=\"var(--_m)\" x=\"171.47\" y=\"309.02\" text-anchor=\"middle\">two</text></g><g class=\"pele-venn-region\" data-id=\"A|B|C\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"185.54\" text-anchor=\"middle\">all</text></g></g></svg>",
+   "width": 343,
+   "height": 362,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n\n  venn-beta\n%% comment\n  set A %% trailing\n  set B\n\n   \n  union A,B\n    text T[\"x\"]\n\n    text U\ntext A V\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"100.81\" text-anchor=\"middle\">A</text><text class=\"pele-venn-text\" data-id=\"V\" font-size=\"13\" fill=\"var(--_m)\" x=\"71.54\" y=\"121.76\" text-anchor=\"middle\">V</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">B</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-venn-text\" data-id=\"T\" font-size=\"13\" fill=\"var(--_m)\" x=\"171.47\" y=\"102.55\" text-anchor=\"middle\">x</text><text class=\"pele-venn-text\" data-id=\"U\" font-size=\"13\" fill=\"var(--_m)\" x=\"171.47\" y=\"122.55\" text-anchor=\"middle\">U</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nset A\nstyle A fill:rgb(255, 0, 128), color:rgba(1,2,3,0.5), stroke:\"dashed red\", stroke-width:2 px, x:#fff 5 a\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 216 216\" width=\"216\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:rgb(255, 0, 128);stroke:dashed red;stroke-width:2 px;\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" style=\"fill:rgba(1,2,3,0.5);\" x=\"108\" y=\"113.6\" text-anchor=\"middle\">A</text></g></g></svg>",
+   "width": 216,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nset \"Foo Bar\"\nset Buz\nunion \"Foo Bar\",Buz\n  text \"a note\"[\"with label\"]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Foo Bar\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Buz\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Foo Bar\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">Foo Bar</text></g><g class=\"pele-venn-region\" data-id=\"Buz\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">Buz</text></g><g class=\"pele-venn-region\" data-id=\"Buz|Foo Bar\"><text class=\"pele-venn-text\" data-id=\"a note\" font-size=\"13\" fill=\"var(--_m)\" x=\"171.47\" y=\"112.55\" text-anchor=\"middle\">with label</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\r\nset A\r\n  text x\r\nset B\r\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 431 216\" width=\"431\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"323\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"103.6\" text-anchor=\"middle\">A</text><text class=\"pele-venn-text\" data-id=\"x\" font-size=\"13\" fill=\"var(--_m)\" x=\"108\" y=\"124.55\" text-anchor=\"middle\">x</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"323\" y=\"113.6\" text-anchor=\"middle\">B</text></g></g></svg>",
+   "width": 431,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\nset A\n  text a\n  text b\nunion A,A\n  text c\ntitle last one\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 216 252\" width=\"216\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"108\" y=\"25.6\">last one</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"108\" y=\"129.6\" text-anchor=\"middle\">A</text><text class=\"pele-venn-text\" data-id=\"a\" font-size=\"13\" fill=\"var(--_m)\" x=\"108\" y=\"150.55\" text-anchor=\"middle\">a</text><text class=\"pele-venn-text\" data-id=\"b\" font-size=\"13\" fill=\"var(--_m)\" x=\"108\" y=\"170.55\" text-anchor=\"middle\">b</text></g><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-venn-text\" data-id=\"c\" font-size=\"13\" fill=\"var(--_m)\" x=\"108\" y=\"148.55\" text-anchor=\"middle\">c</text></g></g></svg>",
+   "width": 216,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\nvenn-beta",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"></g></svg>",
+   "width": 16,
+   "height": 16,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 548 562\" width=\"548\" height=\"562\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"274\" y=\"34\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"172\" cy=\"214\" r=\"160\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"375.11\" cy=\"214\" r=\"160\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"273.55\" cy=\"389.89\" r=\"160\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"118.61\" y=\"190.17\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"428.5\" y=\"190.17\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"273.55\" y=\"458.55\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"18\" x=\"273.55\" y=\"184.03\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"355.74\" y=\"326.38\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"191.37\" y=\"326.38\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"273.55\" y=\"278.93\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 548,
+   "height": 562,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  theme: default\n  look: classic\n---\nvenn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  theme: default\n  look: classic\n---\nvenn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 548 562\" width=\"548\" height=\"562\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"274\" y=\"34\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"172\" cy=\"214\" r=\"160\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"375.11\" cy=\"214\" r=\"160\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"273.55\" cy=\"389.89\" r=\"160\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"118.61\" y=\"190.17\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"428.5\" y=\"190.17\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"273.55\" y=\"458.55\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"18\" x=\"273.55\" y=\"184.03\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"355.74\" y=\"326.38\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"191.37\" y=\"326.38\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"273.55\" y=\"278.93\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 548,
+   "height": 562,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title \"Team overlap\"\n  set Frontend\n  set Backend\n  union Frontend,Backend[\"APIs\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 252\" width=\"343\" height=\"252\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"171.5\" y=\"25.6\">Team overlap</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Frontend\" cx=\"108\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Backend\" cx=\"234.94\" cy=\"144\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Frontend\"><text class=\"pele-label\" x=\"71.54\" y=\"146.81\" text-anchor=\"middle\">Frontend</text></g><g class=\"pele-venn-region\" data-id=\"Backend\"><text class=\"pele-label\" x=\"271.41\" y=\"146.81\" text-anchor=\"middle\">Backend</text></g><g class=\"pele-venn-region\" data-id=\"Backend|Frontend\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"148.9\" text-anchor=\"middle\">APIs</text></g></g></svg>",
+   "width": 343,
+   "height": 252,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title \"Team overlap\"\n  set Frontend\n  set Backend\n  union Frontend,Backend[\"APIs\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 351 266\" width=\"351\" height=\"266\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"175.5\" y=\"34\">Team overlap</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Frontend\" cx=\"112\" cy=\"154\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Backend\" cx=\"238.94\" cy=\"154\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Frontend\"><text class=\"pele-label\" x=\"75.54\" y=\"158.21\" text-anchor=\"middle\">Frontend</text></g><g class=\"pele-venn-region\" data-id=\"Backend\"><text class=\"pele-label\" x=\"275.41\" y=\"158.21\" text-anchor=\"middle\">Backend</text></g><g class=\"pele-venn-region\" data-id=\"Backend|Frontend\"><text class=\"pele-label\" font-size=\"18\" x=\"175.47\" y=\"160.3\" text-anchor=\"middle\">APIs</text></g></g></svg>",
+   "width": 351,
+   "height": 266,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]\n  set B[\"Beta\"]\n  union A,B[\"AB\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 216\" width=\"343\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"234.94\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"71.54\" y=\"110.81\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"271.41\" y=\"110.81\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"171.47\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 343,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]\n  set B[\"Beta\"]\n  union A,B[\"AB\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 351 224\" width=\"351\" height=\"224\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"112\" cy=\"112\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"238.94\" cy=\"112\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"75.54\" y=\"116.21\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"275.41\" y=\"116.21\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"18\" x=\"175.47\" y=\"118.3\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 351,
+   "height": 224,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible,Viable[\"Innovation\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 481 457\" width=\"481\" height=\"457\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"150.12\" cy=\"150.12\" r=\"142.12\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"330.53\" cy=\"150.12\" r=\"142.12\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"240.33\" cy=\"306.36\" r=\"142.12\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"102.69\" y=\"128.34\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"377.96\" y=\"128.34\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"240.33\" y=\"366.73\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"240.33\" y=\"207.1\" text-anchor=\"middle\">Innovation</text></g></g></svg>",
+   "width": 481,
+   "height": 457,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible,Viable[\"Innovation\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 548 520\" width=\"548\" height=\"520\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"172\" cy=\"172\" r=\"160\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"375.11\" cy=\"172\" r=\"160\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"273.55\" cy=\"347.89\" r=\"160\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"118.61\" y=\"148.17\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"428.5\" y=\"148.17\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"273.55\" y=\"416.55\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"18\" x=\"273.55\" y=\"236.93\" text-anchor=\"middle\">Innovation</text></g></g></svg>",
+   "width": 548,
+   "height": 520,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n  set B[\"Beta\"]:12\n  union A,B[\"AB\"]:3\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 317 216\" width=\"317\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"231.29\" cy=\"108\" r=\"77.46\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"80.95\" y=\"115.38\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"257.95\" y=\"107.36\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"180.91\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 317,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n  set B[\"Beta\"]:12\n  union A,B[\"AB\"]:3\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 325 224\" width=\"325\" height=\"224\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"112\" cy=\"112\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"235.29\" cy=\"112\" r=\"77.46\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"84.95\" y=\"120.78\" text-anchor=\"middle\">Alpha</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"261.95\" y=\"112.76\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"18\" x=\"184.91\" y=\"118.3\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 325,
+   "height": 224,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Frontend\"]\n    text A1[\"React\"]\n    text A2[\"Design Systems\"]\n  set B[\"Backend\"]\n    text B1[\"API\"]\n  union A,B[\"Shared\"]\n    text AB1[\"OpenAPI\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 351 221\" width=\"351\" height=\"221\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"110.4\" cy=\"110.4\" r=\"102.4\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"240.39\" cy=\"110.4\" r=\"102.4\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"73.06\" y=\"93.15\" text-anchor=\"middle\">Frontend</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" x=\"73.06\" y=\"114.1\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"13\" fill=\"var(--_m)\" x=\"73.06\" y=\"134.1\" text-anchor=\"middle\">Design Systems</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"277.73\" y=\"103.15\" text-anchor=\"middle\">Backend</text><text class=\"pele-venn-text\" data-id=\"B1\" font-size=\"13\" fill=\"var(--_m)\" x=\"277.73\" y=\"124.1\" text-anchor=\"middle\">API</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" x=\"175.39\" y=\"105.3\" text-anchor=\"middle\">Shared</text><text class=\"pele-venn-text\" data-id=\"AB1\" font-size=\"13\" fill=\"var(--_m)\" x=\"175.39\" y=\"125.45\" text-anchor=\"middle\">OpenAPI</text></g></g></svg>",
+   "width": 351,
+   "height": 221,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Frontend\"]\n    text A1[\"React\"]\n    text A2[\"Design Systems\"]\n  set B[\"Backend\"]\n    text B1[\"API\"]\n  union A,B[\"Shared\"]\n    text AB1[\"OpenAPI\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 430 272\" width=\"430\" height=\"272\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"135.96\" cy=\"135.96\" r=\"123.96\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"293.31\" cy=\"135.96\" r=\"123.96\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"90.76\" y=\"115.5\" text-anchor=\"middle\">Frontend</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"16\" fill=\"var(--_m)\" x=\"90.76\" y=\"141.1\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"16\" fill=\"var(--_m)\" x=\"90.76\" y=\"165.1\" text-anchor=\"middle\">Design Systems</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"338.51\" y=\"127.5\" text-anchor=\"middle\">Backend</text><text class=\"pele-venn-text\" data-id=\"B1\" font-size=\"16\" fill=\"var(--_m)\" x=\"338.51\" y=\"153.1\" text-anchor=\"middle\">API</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"18\" x=\"214.64\" y=\"130.26\" text-anchor=\"middle\">Shared</text><text class=\"pele-venn-text\" data-id=\"AB1\" font-size=\"16\" fill=\"var(--_m)\" x=\"214.64\" y=\"155.06\" text-anchor=\"middle\">OpenAPI</text></g></g></svg>",
+   "width": 430,
+   "height": 272,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n    text A1[\"React\"]\n    text A2[\"Design Systems\"]\n  set B[\"Beta\"]:12\n  union A,B[\"AB\"]:3\n  style A fill:#ff6b6b\n  style A,B color:#333\n  style A1 color:red\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 317 216\" width=\"317\" height=\"216\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"108\" cy=\"108\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"231.29\" cy=\"108\" r=\"77.46\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"80.95\" y=\"95.38\" text-anchor=\"middle\">Alpha</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"13\" fill=\"var(--_m)\" style=\"fill:red;\" x=\"80.95\" y=\"116.33\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"13\" fill=\"var(--_m)\" x=\"80.95\" y=\"136.33\" text-anchor=\"middle\">Design Systems</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"257.95\" y=\"107.36\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"14\" style=\"fill:#333;\" x=\"180.91\" y=\"112.9\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 317,
+   "height": 216,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  set A[\"Alpha\"]:20\n    text A1[\"React\"]\n    text A2[\"Design Systems\"]\n  set B[\"Beta\"]:12\n  union A,B[\"AB\"]:3\n  style A fill:#ff6b6b\n  style A,B color:#333\n  style A1 color:red\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 329 227\" width=\"329\" height=\"227\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"A\" cx=\"113.14\" cy=\"113.14\" r=\"101.14\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#ff6b6b;\"/><circle class=\"pele-venn-set\" data-id=\"B\" cx=\"237.83\" cy=\"113.14\" r=\"78.34\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"A\"><text class=\"pele-label\" x=\"85.78\" y=\"97.94\" text-anchor=\"middle\">Alpha</text><text class=\"pele-venn-text\" data-id=\"A1\" font-size=\"16\" fill=\"var(--_m)\" style=\"fill:red;\" x=\"85.78\" y=\"123.54\" text-anchor=\"middle\">React</text><text class=\"pele-venn-text\" data-id=\"A2\" font-size=\"16\" fill=\"var(--_m)\" x=\"85.78\" y=\"147.54\" text-anchor=\"middle\">Design Systems</text></g><g class=\"pele-venn-region\" data-id=\"B\"><text class=\"pele-label\" x=\"264.8\" y=\"113.83\" text-anchor=\"middle\">Beta</text></g><g class=\"pele-venn-region\" data-id=\"A|B\"><text class=\"pele-label\" font-size=\"18\" style=\"fill:#333;\" x=\"186.88\" y=\"119.44\" text-anchor=\"middle\">AB</text></g></g></svg>",
+   "width": 329,
+   "height": 227,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": []
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": [
+    "members",
+    "attributes",
+    "files",
+    "messages"
+   ]
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontFamily": "Custom Sans",
+   "fontFamilyMono": "Custom Mono",
+   "fontSize": 11
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 343 355\" width=\"343\" height=\"355\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,Custom Mono);font:11px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,Custom Sans)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"171.5\" y=\"20.35\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"108\" cy=\"137\" r=\"100\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"234.94\" cy=\"137\" r=\"100\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"171.47\" cy=\"246.93\" r=\"100\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"74.63\" y=\"121.58\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"268.31\" y=\"121.58\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"171.47\" y=\"289.32\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"10\" x=\"171.47\" y=\"117.83\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"10\" x=\"222.84\" y=\"206.8\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"10\" x=\"120.1\" y=\"206.8\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"10\" x=\"171.47\" y=\"177.14\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 343,
+   "height": 355,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "responsive": true,
+   "maxWidth": 280,
+   "autoDirection": false,
+   "directionBreakpoint": 400
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "links": false,
+   "images": false
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "limit": 4
+  },
+  "detected": "venn",
+  "parsed": {
+   "error": {
+    "message": "Diagram source is longer than the limit of 4 characters.",
+    "code": "limit",
+    "type": null,
+    "mermaidType": null,
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "Diagram source is longer than the limit of 4 characters.",
+   "code": "limit",
+   "type": null,
+   "mermaidType": null,
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "outputLimit": 64
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "error": {
+   "message": "Diagram output is longer than the limit of 64 characters.",
+   "code": "limit",
+   "type": "venn",
+   "mermaidType": "venn",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "venn-beta\n  title What makes a good feature\n  set Desirable\n  set Feasible\n  set Viable\n  union Desirable,Feasible[\"Buildable\"]\n  union Feasible,Viable[\"Sustainable\"]\n  union Desirable,Viable[\"Marketable\"]\n  union Desirable,Feasible,Viable[\"Ship it\"]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxEdges": 0
+  },
+  "detected": "venn",
+  "parsed": {
+   "type": "venn",
+   "mermaidType": "venn"
+  },
+  "result": {
+   "type": "venn",
+   "mermaidType": "venn",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-venn\" viewBox=\"0 0 438 452\" width=\"438\" height=\"452\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"venn\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"219\" y=\"25.6\">What makes a good feature</tspan></text><g class=\"pele-venn-sets\"><circle class=\"pele-venn-set\" data-id=\"Desirable\" cx=\"136.98\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-1,#4c78a8)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-1,#4c78a8)\"/><circle class=\"pele-venn-set\" data-id=\"Feasible\" cx=\"300.72\" cy=\"172.98\" r=\"128.98\" fill=\"var(--pele-series-2,#f58518)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-2,#f58518)\"/><circle class=\"pele-venn-set\" data-id=\"Viable\" cx=\"218.85\" cy=\"314.78\" r=\"128.98\" fill=\"var(--pele-series-3,#54a24b)\" fill-opacity=\"0.2\" stroke=\"var(--pele-series-3,#54a24b)\"/></g><g class=\"pele-venn-labels\"><g class=\"pele-venn-region\" data-id=\"Desirable\"><text class=\"pele-label\" x=\"93.94\" y=\"153.73\" text-anchor=\"middle\">Desirable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible\"><text class=\"pele-label\" x=\"343.76\" y=\"153.73\" text-anchor=\"middle\">Feasible</text></g><g class=\"pele-venn-region\" data-id=\"Viable\"><text class=\"pele-label\" x=\"218.85\" y=\"370.08\" text-anchor=\"middle\">Viable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"148.64\" text-anchor=\"middle\">Buildable</text></g><g class=\"pele-venn-region\" data-id=\"Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"285.11\" y=\"263.4\" text-anchor=\"middle\">Sustainable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"152.6\" y=\"263.4\" text-anchor=\"middle\">Marketable</text></g><g class=\"pele-venn-region\" data-id=\"Desirable|Feasible|Viable\"><text class=\"pele-label\" font-size=\"14\" x=\"218.85\" y=\"225.15\" text-anchor=\"middle\">Ship it</text></g></g></svg>",
+   "width": 438,
+   "height": 452,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ }
+]

@@ -5,11 +5,13 @@ use std::collections::HashMap;
 use serde_json::Value;
 
 use super::db::{FlowDb, LabelType};
-use super::graph::{GraphNode, build_flow_graph};
+use super::graph::{FlowGraph, GraphNode, build_flow_graph};
 use super::shapes::canonical_shape;
 use crate::RenderOptions;
 use crate::diagrams::common::{Rendered, runs_across, tighten, title_room, turn_to_fit};
-use crate::layout::compound::{CEdge, CNode, Dir, cnode, compound_layout, direction, inherit_crossed_directions, shift_layout};
+use crate::layout::compound::{
+    CEdge, CNode, CompoundResult, Dir, cnode, compound_layout, direction, inherit_crossed_directions, shift_layout,
+};
 use crate::layout::layered::LayeredOptions;
 use crate::preprocess::Config;
 use crate::svg::builder::{esc, esc_text, label_svg};
@@ -64,8 +66,26 @@ struct NodeView<'a> {
     loops: usize,
 }
 
+pub trait FlowVariant {
+    fn kind(&self) -> &'static str;
+    fn prepare(&self, graph: &mut FlowGraph);
+    fn layout(&self, nodes: &mut [CNode], edges: &mut [CEdge], dir: Dir, opt: &LayeredOptions, tight: bool) -> CompoundResult;
+    fn draw_group(&self, c: &CNode, label: &Label, style: &ResolvedStyle, classes: &str, id: &str, dir: Dir) -> String;
+    fn filled_box(&self, c: &CNode, dir: Dir) -> [f64; 4];
+}
+
 pub fn render_flowchart(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn TextMeasurer) -> Rendered {
-    let fitted = |down: bool| tighten(options, |tight| draw(db, config, options, measurer, down, tight));
+    render_flowchart_variant(db, config, options, measurer, None)
+}
+
+pub fn render_flowchart_variant(
+    db: &FlowDb,
+    config: &Config,
+    options: &RenderOptions,
+    measurer: &dyn TextMeasurer,
+    variant: Option<&dyn FlowVariant>,
+) -> Rendered {
+    let fitted = |down: bool| tighten(options, |tight| draw(db, config, options, measurer, variant, down, tight));
     if runs_across(db.direction.as_deref()) {
         turn_to_fit(options, fitted)
     } else {
@@ -73,18 +93,30 @@ pub fn render_flowchart(db: &FlowDb, config: &Config, options: &RenderOptions, m
     }
 }
 
-fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn TextMeasurer, turned: bool, tight: bool) -> Rendered {
+fn draw(
+    db: &FlowDb,
+    config: &Config,
+    options: &RenderOptions,
+    measurer: &dyn TextMeasurer,
+    variant: Option<&dyn FlowVariant>,
+    turned: bool,
+    tight: bool,
+) -> Rendered {
     let group_pad = if tight { 12.0 } else { GROUP_PAD };
     let empty = Config::new();
-    let flow = match config.get("flowchart") {
+    let own = variant.and_then(|v| config.get(v.kind())).filter(|v| v.is_object());
+    let flow = match own.or_else(|| config.get("flowchart")) {
         Some(Value::Object(o)) => o,
         _ => &empty,
     };
     let curve = flow.get("curve").and_then(|v| v.as_str());
-    let graph = build_flow_graph(db, curve);
+    let mut graph = build_flow_graph(db, curve);
+    if let Some(v) = variant {
+        v.prepare(&mut graph);
+    }
     let size = options.font_size.unwrap_or(16.0);
     let edge_size = js_round(size * 0.875);
-    let wrap_width = number_option(flow, "wrappingWidth", 200.0);
+    let wrap_width = number_option(flow, "wrappingWidth", 200.0).min(if variant.is_some() && tight { 100.0 } else { f64::INFINITY });
     let pad = options.padding.unwrap_or(8.0);
 
     let mut index: HashMap<&str, usize> = HashMap::new();
@@ -109,7 +141,18 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
         let view;
         let mut c;
         if node.is_group {
-            let label = layout_label(node.label.as_deref(), markdown, measurer, font_size, 4000.0, text_style);
+            let label = layout_label(
+                node.label.as_deref(),
+                markdown,
+                measurer,
+                font_size,
+                if variant.is_some() && tight {
+                    (title_room(options) / 2.0).max(80.0)
+                } else {
+                    4000.0
+                },
+                text_style,
+            );
             c = cnode(0.0, 0.0);
             c.is_group = true;
             c.dir = node.dir.as_deref().filter(|d| !d.is_empty()).map(|d| direction(Some(d)));
@@ -260,15 +303,17 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
         groups: None,
         order_only: false,
     };
-    let layout = compound_layout(&mut cnodes, &mut cedges, root_dir, &layout_options);
+    let layout = if let Some(v) = variant {
+        v.layout(&mut cnodes, &mut cedges, root_dir, &layout_options, tight)
+    } else {
+        compound_layout(&mut cnodes, &mut cedges, root_dir, &layout_options)
+    };
 
-    let title = layout_label(
+    let title = crate::svg::title::title_label(
         db.title.as_deref(),
-        false,
         measurer,
         size,
         if tight { title_room(options) } else { 4000.0 },
-        BOLD,
     );
     let title_height = if title.height > 0.0 { title.height + 12.0 } else { 0.0 };
     let inner = layout.width.max(title.width);
@@ -302,6 +347,19 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             .unwrap_or(&node.css_classes);
         let classes = class_names(stripped);
         let id = esc_text(&node.id);
+        if c.is_group
+            && c.parent < 0
+            && let Some(v) = variant
+        {
+            if paints(&view.style.shape) {
+                fills.push(Fill {
+                    bx: v.filled_box(c, root_dir),
+                    shape: view.style.shape.clone(),
+                });
+            }
+            clusters += &v.draw_group(c, &view.label, &view.style, &classes, &id, root_dir);
+            continue;
+        }
         if c.is_group {
             if paints(&view.style.shape) {
                 fills.push(Fill {
@@ -414,12 +472,17 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             let glyph = bx * 0.6;
             inner = frame
                 + &format!(
-                    "<svg class=\"pele-icon\" data-icon=\"{}\" x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></svg>",
+                    "<svg class=\"pele-icon\" data-icon=\"{}\" x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">{}</svg>",
                     esc_text(node.icon.as_deref().unwrap()),
                     num(-glyph / 2.0),
                     num(top + (bx - glyph) / 2.0),
                     num(glyph),
-                    num(glyph)
+                    num(glyph),
+                    options
+                        .icons
+                        .as_ref()
+                        .and_then(|r| r.resolve(node.icon.as_deref().unwrap()))
+                        .unwrap_or_default()
                 );
         } else {
             inner = draw_shape(
@@ -644,6 +707,14 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
         acc_title: db.acc_title.as_deref(),
         acc_descr: db.acc_descr.as_deref(),
     };
-    let svg = svg_document("flowchart", width, height, size, options, &acc, &content);
+    let svg = svg_document(
+        variant.map_or("flowchart", |v| v.kind()),
+        width,
+        height,
+        size,
+        options,
+        &acc,
+        &content,
+    );
     Rendered { svg, width, height, links }
 }
