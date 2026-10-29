@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/obsidianmd/pele",
+  "revision": "36e584d59152181927e0d8bf70fddcd2a5f33d6c",
+  "version": "1.12.0",
+  "now": 1768478400000,
+  "timeZone": "UTC",
+  "measurer": "metricsMeasurer",
+  "types": {
+    "flowchart": "flowchart", "pie": "pie", "er": "er", "mindmap": "mindmap",
+    "kanban": "kanban", "timeline": "timeline", "journey": "journey", "class": "class",
+    "quadrantChart": "quadrant", "xychart": "xychart", "state": "state", "gantt": "gantt",
+    "architecture": "architecture", "requirement": "requirement", "sankey": "sankey",
+    "packet": "packet", "radar": "radar", "treemap": "treemap", "info": "info",
+    "sequence": "sequence", "gitGraph": "git", "c4": "c4", "block": "block",
+    "railroad": "railroad", "agentflow": "agentflow", "treeView": "treeview",
+    "cynefin": "cynefin", "wardley": "wardley", "eventmodeling": "eventmodeling",
+    "usecase": "usecase", "venn": "venn", "ishikawa": "ishikawa", "swimlane": "swimlane"
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "source": "sequenceDiagram\n participant A as $$\\alpha$$\n A->>B: Solve $$x^2$$\n Note over A: $$\\int x$$",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n participant A as $$\\alpha$$\n A->>B: Solve $$x^2$$\n Note over A: $$\\int x$$",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n participant A as $$\\alpha$$\n A->>B: Solve $$x^2$$\n Note over A: $$\\int x$$",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n participant A as $$\\alpha$$\n A->>B: Solve $$x^2$$\n Note over A: $$\\int x$$",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n participant A as $$\\alpha$$\n A->>B: Solve $$x^2$$\n Note over A: $$\\int x$$",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n A->>B: averyveryverylongwordthatmustbreak $$x$$ more\n B->>A: ok",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n A->>B: averyveryverylongwordthatmustbreak $$x$$ more\n B->>A: ok",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n A->>B: averyveryverylongwordthatmustbreak $$x$$ more\n B->>A: ok",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n A->>B: averyveryverylongwordthatmustbreak $$x$$ more\n B->>A: ok",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "sequenceDiagram\n A->>B: averyveryverylongwordthatmustbreak $$x$$ more\n B->>A: ok",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

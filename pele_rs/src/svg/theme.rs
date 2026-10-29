@@ -1,3 +1,4 @@
+pub const FONT_MONO: &str = "var(--_fm)";
 use std::sync::OnceLock;
 
 use indexmap::IndexMap;

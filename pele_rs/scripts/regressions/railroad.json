@@ -1,0 +1,30 @@
+[
+  {
+    "source": "railroad-ebnf-beta\ntitle first\ntitle\nr = a;",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "---\ntitle: Frontmatter\n---\nrailroad-ebnf-beta\ntitle first\ntitle\nr = a;",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "railroad-ebnf-beta\naccTitle: First\naccTitle:\nr = a;",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "railroad-ebnf-beta\naccDescr: First\naccDescr:\nr = a;",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  }
+]

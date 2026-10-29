@@ -1,0 +1,37 @@
+[
+  {
+    "source": "kanban\n todo[\"$$a$$\"]\n  t1[\"$$b$$\"]",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "kanban\n todo[\"$$a$$\"]\n  t1[\"$$b$$\"]",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "kanban\n todo[\"$$a$$\"]\n  t1[\"$$b$$\"]",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "kanban\n todo[\"$$a$$\"]\n  t1[\"$$b$$\"]",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "kanban\n todo[\"$$a$$\"]\n  t1[\"$$b$$\"]",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

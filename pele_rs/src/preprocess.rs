@@ -21,13 +21,13 @@ pub struct Preprocessed {
 const UNSAFE_KEYS: [&str; 3] = ["__proto__", "constructor", "prototype"];
 
 // Removes `%%` comment lines the way /^\s*%%(?!{)[^\n]+\n?/gm does.
-fn remove_comments(text: &str) -> String {
+fn remove_comments(text: &str, mut edits: Option<&mut Vec<crate::errors::Edit>>) -> String {
     let chars: Vec<char> = text.chars().collect();
     let n = chars.len();
     let mut out = String::with_capacity(text.len());
     let mut p = 0;
     let mut kept = 0;
-    // Positions where ^ can match: the start, and after each \n.
+    // JavaScript multiline ^ also matches after Unicode line/paragraph separators.
     while p <= n {
         let mut j = p;
         while j < n && is_js_space(chars[j]) {
@@ -42,6 +42,13 @@ fn remove_comments(text: &str) -> String {
             if end < n {
                 end += 1;
             }
+            if let Some(edits) = edits.as_mut() {
+                edits.push(crate::errors::Edit {
+                    from: chars[..p].iter().map(|c| c.len_utf16()).sum(),
+                    to: chars[..end].iter().map(|c| c.len_utf16()).sum(),
+                    length: 0,
+                });
+            }
             out.extend(&chars[kept..p]);
             kept = end;
             p = end;
@@ -49,13 +56,13 @@ fn remove_comments(text: &str) -> String {
                 break;
             }
             // The next match may start right here, at a line start.
-            if p > 0 && chars[p - 1] == '\n' {
+            if p > 0 && matches!(chars[p - 1], '\n' | '\r' | '\u{2028}' | '\u{2029}') {
                 continue;
             }
         }
         // Move to the next line start.
         let mut q = p;
-        while q < n && chars[q] != '\n' {
+        while q < n && !matches!(chars[q], '\n' | '\r' | '\u{2028}' | '\u{2029}') {
             q += 1;
         }
         if q >= n {
@@ -69,7 +76,7 @@ fn remove_comments(text: &str) -> String {
 
 pub fn cleanup_comments(text: &str) -> String {
     let text = if text.contains("%%") {
-        remove_comments(text)
+        remove_comments(text, None)
     } else {
         text.to_string()
     };
@@ -219,51 +226,22 @@ fn merge(target: &mut Config, source: &Config) {
     }
 }
 
-fn yaml_to_json(y: &yaml_rust2::Yaml) -> Value {
-    use yaml_rust2::Yaml;
-    match y {
-        Yaml::Real(s) => s
-            .parse::<f64>()
-            .ok()
-            .and_then(serde_json::Number::from_f64)
-            .map(Value::Number)
-            .unwrap_or(Value::Null),
-        Yaml::Integer(i) => Value::Number((*i).into()),
-        Yaml::String(s) => Value::String(s.clone()),
-        Yaml::Boolean(b) => Value::Bool(*b),
-        Yaml::Array(a) => Value::Array(a.iter().map(yaml_to_json).collect()),
-        Yaml::Hash(h) => {
-            let mut m = Map::new();
-            for (k, v) in h {
-                let key = match k {
-                    Yaml::String(s) => s.clone(),
-                    Yaml::Integer(i) => i.to_string(),
-                    Yaml::Real(s) => s.clone(),
-                    Yaml::Boolean(b) => b.to_string(),
-                    Yaml::Null => "null".to_string(),
-                    _ => continue,
-                };
-                m.insert(key, yaml_to_json(v));
-            }
-            Value::Object(m)
-        }
-        _ => Value::Null,
-    }
-}
-
 pub fn parse_yaml(src: &str) -> std::result::Result<Value, String> {
-    let docs = yaml_rust2::YamlLoader::load_from_str(src).map_err(|e| e.to_string())?;
-    Ok(docs.first().map(yaml_to_json).unwrap_or(Value::Null))
+    crate::yaml::parse(src)
 }
 
 // The text JavaScript's String() gives a scalar.
 pub fn value_string(v: &Value) -> String {
     match v {
         Value::String(s) => s.clone(),
-        Value::Number(n) => js_num(n.as_f64().unwrap_or(f64::NAN)),
+        Value::Number(n) => js_num(n.as_f64().unwrap_or_else(|| n.as_str().parse().unwrap_or(f64::NAN))),
         Value::Bool(b) => b.to_string(),
         Value::Null => "null".to_string(),
-        Value::Array(a) => a.iter().map(value_string).collect::<Vec<_>>().join(","),
+        Value::Array(a) => a
+            .iter()
+            .map(|v| if v.is_null() { String::new() } else { value_string(v) })
+            .collect::<Vec<_>>()
+            .join(","),
         Value::Object(_) => "[object Object]".to_string(),
     }
 }
@@ -272,7 +250,10 @@ pub fn truthy(v: Option<&Value>) -> bool {
     match v {
         None | Some(Value::Null) => false,
         Some(Value::Bool(b)) => *b,
-        Some(Value::Number(n)) => n.as_f64().is_some_and(|f| f != 0.0 && !f.is_nan()),
+        Some(Value::Number(n)) => {
+            let f = n.as_f64().unwrap_or_else(|| n.as_str().parse().unwrap_or(f64::NAN));
+            f != 0.0 && !f.is_nan()
+        }
         Some(Value::String(s)) => !s.is_empty(),
         Some(_) => true,
     }
@@ -373,7 +354,7 @@ fn find_directives(text: &str) -> Vec<Directive> {
     out
 }
 
-fn directives(text: &str, config: &mut Config) -> String {
+fn directives(text: &str, config: &mut Config, mut steps: Option<&mut Vec<Vec<crate::errors::Edit>>>) -> String {
     if !text.contains("%%{") {
         return text.to_string();
     }
@@ -391,11 +372,20 @@ fn directives(text: &str, config: &mut Config) -> String {
     }
     let mut out = String::new();
     let mut last = 0;
+    let mut edits = Vec::new();
     for d in find_directives(text) {
+        edits.push(crate::errors::Edit {
+            from: text[..d.start].encode_utf16().count(),
+            to: text[..d.end].encode_utf16().count(),
+            length: 0,
+        });
         out.push_str(&text[last..d.start]);
         last = d.end;
     }
     out.push_str(&text[last..]);
+    if let Some(steps) = steps.as_mut() {
+        steps.push(edits);
+    }
     out
 }
 
@@ -410,6 +400,10 @@ fn re_attr() -> &'static Regex {
 }
 
 pub fn preprocess(source: &str) -> Result<Preprocessed> {
+    preprocess_recorded(source, None)
+}
+
+fn preprocess_recorded(source: &str, mut steps: Option<&mut Vec<Vec<crate::errors::Edit>>>) -> Result<Preprocessed> {
     let mut text = normalize_line_breaks(source);
     // A tag needs a closing bracket, so nothing after the last one can match.
     let last_close = if text.contains('<') { text.rfind('>') } else { None };
@@ -460,10 +454,17 @@ pub fn preprocess(source: &str) -> Result<Preprocessed> {
         }
         let chars: Vec<char> = text.chars().collect();
         line_offset = chars[..front.length.min(chars.len())].iter().filter(|&&c| c == '\n').count();
+        if let Some(steps) = steps.as_mut() {
+            steps.push(vec![crate::errors::Edit {
+                from: 0,
+                to: chars[..front.length.min(chars.len())].iter().map(|c| c.len_utf16()).sum(),
+                length: 0,
+            }]);
+        }
         text = chars[front.length.min(chars.len())..].iter().collect();
     }
 
-    let text = directives(&text, &mut config);
+    let text = directives(&text, &mut config, steps);
     Ok(Preprocessed {
         text: cleanup_comments(&text),
         title,
@@ -474,7 +475,7 @@ pub fn preprocess(source: &str) -> Result<Preprocessed> {
 }
 
 // Does what Mermaid's `text.replace(/keyword.*:\S*#.*;/g, drop the last character)` does.
-fn drop_color_semicolons(text: &str, keyword: &str) -> String {
+fn drop_color_semicolons(text: &str, keyword: &str, mut edits: Option<&mut Vec<crate::errors::Edit>>) -> String {
     let Some(mut from) = text.find(keyword) else {
         return text.to_string();
     };
@@ -505,6 +506,13 @@ fn drop_color_semicolons(text: &str, keyword: &str) -> String {
             && let Some(semi) = text[..line_end].rfind(';')
             && semi > hash
         {
+            if let Some(edits) = edits.as_mut() {
+                edits.push(crate::errors::Edit {
+                    from: text[..semi].encode_utf16().count(),
+                    to: text[..semi + 1].encode_utf16().count(),
+                    length: 0,
+                });
+            }
             out.push_str(&text[last..semi]);
             last = semi + 1;
         }
@@ -526,16 +534,63 @@ fn drop_color_semicolons(text: &str, keyword: &str) -> String {
 
 // Mermaid hides `#name;` entity codes behind placeholder characters so `#` and `;` survive parsing.
 pub fn encode_entities(text: &str) -> String {
+    encode_recorded(text, None)
+}
+
+fn encode_recorded(text: &str, mut steps: Option<&mut Vec<Vec<crate::errors::Edit>>>) -> String {
     if !text.contains('#') {
         return text.to_string();
     }
-    let text = drop_color_semicolons(&drop_color_semicolons(text, "style"), "classDef");
+    let mut edits = Vec::new();
+    let text = drop_color_semicolons(text, "style", Some(&mut edits));
+    if let Some(steps) = steps.as_mut() {
+        steps.push(edits);
+    }
+    let mut edits = Vec::new();
+    let text = drop_color_semicolons(&text, "classDef", Some(&mut edits));
+    if let Some(steps) = steps.as_mut() {
+        steps.push(edits);
+    }
+    let mut edits = Vec::new();
     static R: OnceLock<Regex> = OnceLock::new();
     let re = R.get_or_init(|| Regex::new(r"#([0-9A-Za-z_]+);").unwrap());
-    re.replace_all(&text, |c: &regex::Captures| {
-        let inner = &c[1];
-        let numeric = inner.chars().all(|ch| ch.is_ascii_digit());
-        format!("{}{}¶ß", if numeric { "ﬂ°°" } else { "ﬂ°" }, inner)
-    })
-    .into_owned()
+    let result = re
+        .replace_all(&text, |c: &regex::Captures| {
+            let inner = &c[1];
+            let numeric = inner.chars().all(|ch| ch.is_ascii_digit());
+            let code = format!("{}{}¶ß", if numeric { "ﬂ°°" } else { "ﬂ°" }, inner);
+            let m = c.get(0).unwrap();
+            edits.push(crate::errors::Edit {
+                from: text[..m.start()].encode_utf16().count(),
+                to: text[..m.end()].encode_utf16().count(),
+                length: code.encode_utf16().count(),
+            });
+            code
+        })
+        .into_owned();
+    if let Some(steps) = steps.as_mut() {
+        steps.push(edits);
+    }
+    result
+}
+
+/// Replay preprocessing with edit records only when a parser needs an original position.
+pub(crate) fn source_edits(source: &str, keep_comments: bool) -> Result<Vec<Vec<crate::errors::Edit>>> {
+    let mut steps = Vec::new();
+    let pre = preprocess_recorded(source, Some(&mut steps))?;
+    let mut text = pre.with_comments;
+    if !keep_comments {
+        let mut edits = Vec::new();
+        text = remove_comments(&text, Some(&mut edits));
+        steps.push(edits);
+        let trimmed = trim_start(&text);
+        steps.push(vec![crate::errors::Edit {
+            from: 0,
+            to: text[..text.len() - trimmed.len()].encode_utf16().count(),
+            length: 0,
+        }]);
+        text = trimmed.to_string();
+    }
+    encode_recorded(&text, Some(&mut steps));
+    Ok(steps)
 }

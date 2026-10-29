@@ -4,6 +4,7 @@ use super::parser::PieAst;
 use crate::errors::{PeleError, PeleErrorCode};
 use crate::util::{is_js_space, js_num, trim_start};
 
+#[derive(Debug, Clone)]
 pub struct PieModel {
     pub title: Option<String>,
     pub acc_title: Option<String>,

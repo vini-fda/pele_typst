@@ -54,7 +54,35 @@ pub fn detect_diagram(cleaned: &str) -> Option<Detected> {
     let res = RES.get_or_init(|| {
         DETECTORS
             .iter()
-            .map(|d| Regex::new(&d.2.replace(r"\b", r"(?-u:\b)")).unwrap())
+            .map(|d| {
+                let pattern = if let Some(source) = d.2.strip_prefix("(?i)") {
+                    // JS /i without /u does not fold long-s or Kelvin sign to
+                    // ASCII header letters. Expand only the literal ASCII text.
+                    let mut out = String::new();
+                    let mut escaped = false;
+                    for c in source.chars() {
+                        if escaped {
+                            out.push(c);
+                            escaped = false;
+                        } else if c == '\\' {
+                            out.push(c);
+                            escaped = true;
+                        } else if c.is_ascii_alphabetic() {
+                            out.push_str(&format!("[{}{}]", c.to_ascii_lowercase(), c.to_ascii_uppercase()));
+                        } else {
+                            out.push(c);
+                        }
+                    }
+                    out
+                } else {
+                    d.2.to_string()
+                };
+                let pattern = pattern
+                    .replace(r"[\s:]", &format!("[{}:]", crate::util::JS_WS))
+                    .replace(r"\s", &format!("[{}]", crate::util::JS_WS))
+                    .replace(r"\b", r"(?-u:\b)");
+                Regex::new(&pattern).unwrap()
+            })
             .collect()
     });
     for (i, (kind, mermaid, _)) in DETECTORS.iter().enumerate() {

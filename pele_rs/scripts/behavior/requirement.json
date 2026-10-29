@@ -1,0 +1,37 @@
+[
+  {
+    "source": "requirementDiagram\n requirement \"$$a$$\" {\n id: \"$$b$$\"\n text: \"$$c$$\"\n }\n element e1 {\n type: \"$$d$$\"\n docref: \"$$e$$\"\n }",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "requirementDiagram\n requirement \"$$a$$\" {\n id: \"$$b$$\"\n text: \"$$c$$\"\n }\n element e1 {\n type: \"$$d$$\"\n docref: \"$$e$$\"\n }",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "requirementDiagram\n requirement \"$$a$$\" {\n id: \"$$b$$\"\n text: \"$$c$$\"\n }\n element e1 {\n type: \"$$d$$\"\n docref: \"$$e$$\"\n }",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "requirementDiagram\n requirement \"$$a$$\" {\n id: \"$$b$$\"\n text: \"$$c$$\"\n }\n element e1 {\n type: \"$$d$$\"\n docref: \"$$e$$\"\n }",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "requirementDiagram\n requirement \"$$a$$\" {\n id: \"$$b$$\"\n text: \"$$c$$\"\n }\n element e1 {\n type: \"$$d$$\"\n docref: \"$$e$$\"\n }",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

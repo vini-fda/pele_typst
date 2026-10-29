@@ -6,3 +6,4 @@ pub mod inline;
 pub mod root;
 pub mod shapes;
 pub mod theme;
+pub mod title;

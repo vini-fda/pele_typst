@@ -1,0 +1,2167 @@
+[
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"194.3\" cy=\"135.28\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"217.2\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"391.24\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"295.06\" cy=\"173.44\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"240.1\" cy=\"368.48\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"171.4\" cy=\"211.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"171.4\" y=\"233\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"197.09\" y=\"372.68\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"338.4\" y=\"177.64\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"391.24\" y=\"343.24\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"217.2\" y=\"343.24\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"194.3\" y=\"156.68\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  quadrantChart:\n    chartWidth: 400\n    chartHeight: 400\n  themeVariables:\n    quadrant1TextFill: \"ff0000\"\n---\nquadrantChart\n  x-axis Urgent --> Not Urgent\n  y-axis Not Important --> \"Important ❤\"\n  quadrant-1 Plan\n  quadrant-2 Do\n  quadrant-3 Delegate\n  quadrant-4 Delete\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 400 400\" width=\"400\" height=\"400\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"215\" y=\"34\" width=\"177\" height=\"177\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"303.5\" y=\"128.1\" text-anchor=\"middle\">Plan</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"34\" width=\"177\" height=\"177\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"122.5\" y=\"128.1\" text-anchor=\"middle\">Do</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"215\" width=\"177\" height=\"177\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"122.5\" y=\"309.1\" text-anchor=\"middle\">Delegate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"215\" y=\"215\" width=\"177\" height=\"177\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"303.5\" y=\"309.1\" text-anchor=\"middle\">Delete</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"123.5\" y=\"23.4\" text-anchor=\"middle\">Urgent</text><text x=\"302.5\" y=\"23.4\" text-anchor=\"middle\">Not Urgent</text><g transform=\"translate(18.5,302.5) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Not Important</text></g><g transform=\"translate(18.5,123.5) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Important ❤</text></g></g></svg>",
+   "width": 400,
+   "height": 400,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n  title Reach and engagement of campaigns\n  x-axis Low Reach --> High Reach\n  y-axis Low Engagement --> High Engagement\n  quadrant-1 We should expand\n  quadrant-2 Need to promote\n  quadrant-3 Re-evaluate\n  quadrant-4 May be improved\n  Campaign A: [0.9, 0.0] radius: 12\n  Campaign B:::class1: [0.8, 0.1] color: #ff3300, radius: 10\n  Campaign C: [0.7, 0.2] radius: 25, color: #00ff33, stroke-color: #10f0f0\n  Campaign D: [0.6, 0.3] radius: 15, stroke-color: #00ff0f, stroke-width: 5px ,color: #ff33f0\n  Campaign E:::class2: [0.5, 0.4]\n  Campaign F:::class3: [0.4, 0.5] color: #0000ff\n  classDef class1 color: #109060\n  classDef class2 color: #908342, radius : 10, stroke-color: #310085, stroke-width: 10px\n  classDef class3 color: #f00fff, radius : 10\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point class3\" data-id=\"Campaign F\" cx=\"217.2\" cy=\"254\" r=\"10\" style=\"fill:#0000ff;\"/><circle class=\"pele-point class2\" data-id=\"Campaign E\" cx=\"263\" cy=\"296.4\" r=\"10\" style=\"fill:#908342;stroke:#310085;stroke-width:10px;\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"308.8\" cy=\"338.8\" r=\"15\" style=\"fill:#ff33f0;stroke:#00ff0f;stroke-width:5px;\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"354.6\" cy=\"381.2\" r=\"25\" style=\"fill:#00ff33;\"/><circle class=\"pele-point class1\" data-id=\"Campaign B\" cx=\"400.4\" cy=\"423.6\" r=\"10\" style=\"fill:#ff3300;\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"446.2\" cy=\"466\" r=\"12\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"446.2\" y=\"446\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"448.41\" y=\"427.8\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"354.6\" y=\"422.6\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"364.64\" y=\"343\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"316.01\" y=\"300.6\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"217.2\" y=\"236\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nx-axis urgent --> not urgent",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">urgent</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">not urgent</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       x-AxIs         Urgent     -->        Not Urgent    \n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">Urgent</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">Not Urgent</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       x-AxIs         \"Urgent(* +=[❤\"     -->        \"Not Urgent (* +=[❤\"\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">Urgent(* +=[❤</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">Not Urgent (* +=[❤</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       x-AxIs         \"Urgent(* +=[❤\"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"50.19\" y=\"23.4\" text-anchor=\"middle\">Urgent(* +=[❤</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       x-AxIs         \"Urgent(* +=[❤\"  --> ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"56.2\" y=\"23.4\" text-anchor=\"middle\">Urgent(* +=[❤ ⟶</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\ny-axis urgent --> not urgent",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,371) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">urgent</text></g><g transform=\"translate(18.5,129) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">not urgent</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       y-AxIs         Urgent     -->        Not Urgent    \n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,371) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Urgent</text></g><g transform=\"translate(18.5,129) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Not Urgent</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       Y-AxIs         \"Urgent(* +=[❤\"     -->        \"Not Urgent (* +=[❤\"\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,371) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Urgent(* +=[❤</text></g><g transform=\"translate(18.5,129) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Not Urgent (* +=[❤</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       y-AxIs         \"Urgent(* +=[❤\"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,449.81) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Urgent(* +=[❤</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n       y-AxIs         \"Urgent(* +=[❤\"  --> ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,443.81) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Urgent(* +=[❤ ⟶</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 Plan",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"133.6\" text-anchor=\"middle\">Plan</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-2 do",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"133.6\" text-anchor=\"middle\">do</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-3 delegate",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"377.6\" text-anchor=\"middle\">delegate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-4 delete",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"377.6\" text-anchor=\"middle\">delete</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\ntitle this is title",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">this is title</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"42\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"42\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"269\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"269\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\npoint1: [0.1, 0.4]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"point1\" cx=\"56.4\" cy=\"298.4\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"56.4\" y=\"319.8\" text-anchor=\"middle\">point1</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n      title Analytics and Business Intelligence Platforms\n      x-axis \"Completeness of Vision ❤\" --> \"x-axis-2\"\n      y-axis Ability to Execute --> \"y-axis-2\"\n      quadrant-1 Leaders\n      quadrant-2 Challengers\n      quadrant-3 Niche\n      quadrant-4 Visionaries\n      Microsoft: [0.75, 0.75]\n      Salesforce: [0.55, 0.60]\n      IBM: [0.51, 0.40]\n      Incorta: [0.20, 0.30]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Analytics and Business Intelligence Platforms</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">Leaders</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Challengers</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Niche</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">Visionaries</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Completeness of Vision ❤</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">x-axis-2</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Ability to Execute</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">y-axis-2</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Incorta\" cx=\"125.6\" cy=\"338.8\" r=\"5\"/><circle class=\"pele-point\" data-id=\"IBM\" cx=\"267.58\" cy=\"296.4\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Salesforce\" cx=\"285.9\" cy=\"211.6\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Microsoft\" cx=\"377.5\" cy=\"148\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"377.5\" y=\"169.4\" text-anchor=\"middle\">Microsoft</text><text class=\"pele-label\" x=\"324.24\" y=\"215.8\" text-anchor=\"middle\">Salesforce</text><text class=\"pele-label\" x=\"288.25\" y=\"300.6\" text-anchor=\"middle\">IBM</text><text class=\"pele-label\" x=\"125.6\" y=\"360.2\" text-anchor=\"middle\">Incorta</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n      title Analytics and Business Intelligence Platforms\n      x-axis \"Completeness of Vision ❤\" --> \"x-axis-2\"\n      y-axis Ability to Execute --> \"y-axis-2\"\n      quadrant-1 Leaders\n      quadrant-2 Challengers\n      quadrant-3 Niche\n      quadrant-4 Visionaries\n      Microsoft: [0.75, 0.75] radius: 10\n      Salesforce: [0.55, 0.60] radius: 10, color: #ff0000\n      IBM: [0.51, 0.40] radius: 10, color: #ff0000, stroke-color: #ff00ff\n      Incorta: [0.20, 0.30] radius: 10 ,color: #ff0000 ,stroke-color: #ff00ff ,stroke-width: 10px",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Analytics and Business Intelligence Platforms</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">Leaders</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Challengers</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Niche</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">Visionaries</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Completeness of Vision ❤</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">x-axis-2</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Ability to Execute</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">y-axis-2</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Incorta\" cx=\"125.6\" cy=\"338.8\" r=\"10\" style=\"fill:#ff0000;stroke:#ff00ff;stroke-width:10px;\"/><circle class=\"pele-point\" data-id=\"IBM\" cx=\"267.58\" cy=\"296.4\" r=\"10\" style=\"fill:#ff0000;\"/><circle class=\"pele-point\" data-id=\"Salesforce\" cx=\"285.9\" cy=\"211.6\" r=\"10\" style=\"fill:#ff0000;\"/><circle class=\"pele-point\" data-id=\"Microsoft\" cx=\"377.5\" cy=\"148\" r=\"10\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"377.5\" y=\"174.4\" text-anchor=\"middle\">Microsoft</text><text class=\"pele-label\" x=\"329.24\" y=\"215.8\" text-anchor=\"middle\">Salesforce</text><text class=\"pele-label\" x=\"293.25\" y=\"300.6\" text-anchor=\"middle\">IBM</text><text class=\"pele-label\" x=\"125.6\" y=\"370.2\" text-anchor=\"middle\">Incorta</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n      title Analytics and Business Intelligence Platforms\n      x-axis \"Completeness of Vision ❤\" --> \"x-axis-2\"\n      y-axis Ability to Execute --> \"y-axis-2\"\n      quadrant-1 Leaders\n      quadrant-2 Challengers\n      quadrant-3 Niche\n      quadrant-4 Visionaries\n      Microsoft: [0.75, 0.75] stroke-color: #ff00ff ,stroke-width: 10px, color: #ff0000, radius: 10\n      Salesforce:::class1: [0.55, 0.60] radius: 10, color: #ff0000\n      IBM: [0.51, 0.40] stroke-color: #ff00ff ,stroke-width: 10px\n      Incorta: [0.20, 0.30] stroke-width: 10px",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Analytics and Business Intelligence Platforms</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">Leaders</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Challengers</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Niche</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">Visionaries</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Completeness of Vision ❤</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">x-axis-2</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Ability to Execute</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">y-axis-2</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Incorta\" cx=\"125.6\" cy=\"338.8\" r=\"5\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"stroke-width:10px;\"/><circle class=\"pele-point\" data-id=\"IBM\" cx=\"267.58\" cy=\"296.4\" r=\"5\" style=\"stroke:#ff00ff;stroke-width:10px;\"/><circle class=\"pele-point class1\" data-id=\"Salesforce\" cx=\"285.9\" cy=\"211.6\" r=\"10\" style=\"fill:#ff0000;\"/><circle class=\"pele-point\" data-id=\"Microsoft\" cx=\"377.5\" cy=\"148\" r=\"10\" style=\"fill:#ff0000;stroke:#ff00ff;stroke-width:10px;\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"377.5\" y=\"179.4\" text-anchor=\"middle\">Microsoft</text><text class=\"pele-label\" x=\"329.24\" y=\"215.8\" text-anchor=\"middle\">Salesforce</text><text class=\"pele-label\" x=\"293.25\" y=\"300.6\" text-anchor=\"middle\">IBM</text><text class=\"pele-label\" x=\"125.6\" y=\"365.2\" text-anchor=\"middle\">Incorta</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    classDef constructor fill:#ff0000\n    Microsoft:::constructor: [0.75, 0.75]\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "style named fill is not supported.",
+    "code": "semantic",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "style named fill is not supported.",
+   "code": "semantic",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 需要扩展",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"133.6\" text-anchor=\"middle\">需要扩展</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-2 需要推广\nquadrant-3 重新评估\nquadrant-4 可以改进",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"133.6\" text-anchor=\"middle\">需要推广</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"377.6\" text-anchor=\"middle\">重新评估</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"377.6\" text-anchor=\"middle\">可以改进</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nx-axis 低覆盖率 --> 高覆盖率",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">低覆盖率</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">高覆盖率</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\ny-axis 低参与度 --> 高参与度",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,371) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">低参与度</text></g><g transform=\"translate(18.5,129) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">高参与度</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n产品A: [0.3, 0.6]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"产品A\" cx=\"153.2\" cy=\"201.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"153.2\" y=\"223\" text-anchor=\"middle\">产品A</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\ntitle 分析象限图\nx-axis 低覆盖率 --> 高覆盖率\ny-axis 低参与度 --> 高参与度\nquadrant-1 需要扩展\nquadrant-2 需要推广\nquadrant-3 重新评估\nquadrant-4 可以改进\n产品A: [0.3, 0.6]\n产品B: [0.45, 0.23]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">分析象限图</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">需要扩展</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">需要推广</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">重新评估</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">可以改进</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">低覆盖率</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">高覆盖率</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">低参与度</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">高参与度</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"产品B\" cx=\"240.1\" cy=\"368.48\" r=\"5\"/><circle class=\"pele-point\" data-id=\"产品A\" cx=\"171.4\" cy=\"211.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"171.4\" y=\"233\" text-anchor=\"middle\">产品A</text><text class=\"pele-label\" x=\"240.1\" y=\"389.88\" text-anchor=\"middle\">产品B</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 拡張が必要\nx-axis 低い --> 高い",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"153.1\" text-anchor=\"middle\">拡張が必要</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">低い</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">高い</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nx-axis 낮음 --> 높음",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">낮음</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">높음</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-2 🚀Growth",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"133.6\" text-anchor=\"middle\">🚀Growth</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nx-axis Café --> Größe",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">Café</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">Größe</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 catégoría\nquadrant-2 naïve",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"133.6\" text-anchor=\"middle\">catégoría</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"133.6\" text-anchor=\"middle\">naïve</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n  title T\n  accTitle: a title\n  accDescr: a description\n  A: [0.1, 0.2]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\" aria-labelledby=\"pele-title\" aria-describedby=\"pele-desc\"><title id=\"pele-title\">a title</title><desc id=\"pele-desc\">a description</desc><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">T</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"42\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"42\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"269\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"269\" width=\"240\" height=\"223\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"A\" cx=\"56.4\" cy=\"402\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"56.4\" y=\"423.4\" text-anchor=\"middle\">A</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n  accDescr {\n    many\n    lines\n  }\n  x-axis \"`left`\" --> \"`right`\"\n  \"`**P**`\":::c: [1, 0] radius: 3",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_w:var(--pele-bold-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\" aria-describedby=\"pele-desc\"><desc id=\"pele-desc\">many\nlines</desc><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"239\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"239\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"486.4\" text-anchor=\"middle\">left</text><text x=\"371\" y=\"486.4\" text-anchor=\"middle\">right</text></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point c\" data-id=\"**P**\" cx=\"492\" cy=\"466\" r=\"3\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" font-weight=\"var(--_w)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"488\" y=\"455\">P</tspan></text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n%% comment\n  A: [0.3, 0.6] %% trailing\n  B:::k: [ 0 , 1 ] color: #abc , radius : 4\n  classDef k stroke-width: 2px",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point k\" data-id=\"B\" cx=\"8\" cy=\"8\" r=\"4\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#abc;stroke-width:2px;\"/><circle class=\"pele-point\" data-id=\"A\" cx=\"153.2\" cy=\"201.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"153.2\" y=\"223\" text-anchor=\"middle\">A</text><text class=\"pele-label\" x=\"22\" y=\"29.4\" text-anchor=\"middle\">B</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nA",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nA\n-^\nExpecting 'point_start', got 'NEWLINE'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 2,
+    "snippet": "A\n-^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nA\n-^\nExpecting 'point_start', got 'NEWLINE'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 2,
+   "snippet": "A\n-^"
+  }
+ },
+ {
+  "source": "quadrantChart\nx-axis a ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"11.89\" y=\"23.4\" text-anchor=\"middle\">a</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nx-axis a",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"11.89\" y=\"23.4\" text-anchor=\"middle\">a</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\naccDescr {",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\naccDescr {\n----------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got '$end'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 11,
+    "snippet": "accDescr {\n----------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\naccDescr {\n----------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got '$end'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 11,
+   "snippet": "accDescr {\n----------^"
+  }
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 \"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nquadrant-1 \"\n------------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got 'STR'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 13,
+    "snippet": "quadrant-1 \"\n------------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nquadrant-1 \"\n------------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got 'STR'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 13,
+   "snippet": "quadrant-1 \"\n------------^"
+  }
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 \"`",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nquadrant-1 \"`\n-------------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got '$end'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 14,
+    "snippet": "quadrant-1 \"`\n-------------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nquadrant-1 \"`\n-------------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got '$end'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 14,
+   "snippet": "quadrant-1 \"`\n-------------^"
+  }
+ },
+ {
+  "source": "quadrantChart\nA: [0.",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\nA: [0.\n-----^",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 6,
+    "snippet": "A: [0.\n-----^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\nA: [0.\n-----^",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 6,
+   "snippet": "A: [0.\n-----^"
+  }
+ },
+ {
+  "source": "quadrantChart\nA: [0",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\nA: [0\n-----^",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 6,
+    "snippet": "A: [0\n-----^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\nA: [0\n-----^",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 6,
+   "snippet": "A: [0\n-----^"
+  }
+ },
+ {
+  "source": "quadrantChart\nA:::c: [0.5, 0.5]\nclassDef c ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\nclassDef c \n----------^\nExpecting 'ALPHA', 'NUM', 'COLON', 'SPACE', 'BRKT', 'MINUS', got 'NEWLINE'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 3,
+    "column": 11,
+    "snippet": "classDef c \n----------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\nclassDef c \n----------^\nExpecting 'ALPHA', 'NUM', 'COLON', 'SPACE', 'BRKT', 'MINUS', got 'NEWLINE'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 3,
+   "column": 11,
+   "snippet": "classDef c \n----------^"
+  }
+ },
+ {
+  "source": "quadrantChart\nA: [0.5, 0.5] ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"A\" cx=\"250\" cy=\"250\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"250\" y=\"271.4\" text-anchor=\"middle\">A</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nx-axis \"",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nx-axis \"\n--------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got 'STR'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 9,
+    "snippet": "x-axis \"\n--------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nx-axis \"\n--------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got 'STR'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 9,
+   "snippet": "x-axis \"\n--------^"
+  }
+ },
+ {
+  "source": "quadrantChart\ntitle ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nA:::",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\nA:::\n----^",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 5,
+    "snippet": "A:::\n----^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\nA:::\n----^",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 5,
+   "snippet": "A:::\n----^"
+  }
+ },
+ {
+  "source": "quadrantChart\nA: [0.5, 0.5] radius: ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "value for radius  is invalid, please use a valid number",
+    "code": "semantic",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "value for radius  is invalid, please use a valid number",
+   "code": "semantic",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\n  __proto__:::__proto__: [0.5, 0.5]\n  constructor:::constructor: [0.1, 0.1]\n  toString:::toString: [0.2, 0.2]\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point toString\" data-id=\"toString\" cx=\"104.8\" cy=\"395.2\" r=\"5\"/><circle class=\"pele-point constructor\" data-id=\"constructor\" cx=\"56.4\" cy=\"443.6\" r=\"5\"/><circle class=\"pele-point __proto__\" data-id=\"__proto__\" cx=\"250\" cy=\"250\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"250\" y=\"271.4\" text-anchor=\"middle\">__proto__</text><text class=\"pele-label\" x=\"56.4\" y=\"465\" text-anchor=\"middle\">constructor</text><text class=\"pele-label\" x=\"104.8\" y=\"416.6\" text-anchor=\"middle\">toString</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n  title Reach and engagement\n  x-axis Low Reach --> High Reach\n  y-axis Low Engagement --> High Engagement\n  quadrant-1 Expand\n  quadrant-2 Promote\n  quadrant-3 Re-evaluate\n  quadrant-4 Improve\n  Campaign A: [0.25, 0.75]\n  Campaign B: [0.75, 0.25]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">Expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">Improve</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"377.5\" cy=\"360\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"148.5\" cy=\"148\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"148.5\" y=\"169.4\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"377.5\" y=\"381.4\" text-anchor=\"middle\">Campaign B</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n A: [0, 0]\n B: [1, 1]\n C: [0.5, 0.5]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"C\" cx=\"250\" cy=\"250\" r=\"5\"/><circle class=\"pele-point\" data-id=\"B\" cx=\"492\" cy=\"8\" r=\"5\"/><circle class=\"pele-point\" data-id=\"A\" cx=\"8\" cy=\"492\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"8\" y=\"513.4\" text-anchor=\"middle\">A</text><text class=\"pele-label\" x=\"488\" y=\"29.4\" text-anchor=\"middle\">B</text><text class=\"pele-label\" x=\"250\" y=\"271.4\" text-anchor=\"middle\">C</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n quadrant-1 q1\n quadrant-2 q2\n quadrant-3 q3\n quadrant-4 q4",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"133.6\" text-anchor=\"middle\">q1</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"133.6\" text-anchor=\"middle\">q2</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"128\" y=\"377.6\" text-anchor=\"middle\">q3</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"377.6\" text-anchor=\"middle\">q4</text></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n First: [0.5, 0.5]\n Second: [0.5, 0.5]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Second\" cx=\"250\" cy=\"250\" r=\"5\"/><circle class=\"pele-point\" data-id=\"First\" cx=\"250\" cy=\"250\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"250\" y=\"271.4\" text-anchor=\"middle\">First</text><text class=\"pele-label\" x=\"250\" y=\"237\" text-anchor=\"middle\">Second</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n x-axis Left --> Right",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"34\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"265\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"23.4\" text-anchor=\"middle\">Left</text><text x=\"371\" y=\"23.4\" text-anchor=\"middle\">Right</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n x-axis Left --> Right\n A: [0.5, 0.5]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"239\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"239\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"486.4\" text-anchor=\"middle\">Left</text><text x=\"371\" y=\"486.4\" text-anchor=\"middle\">Right</text></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"A\" cx=\"250\" cy=\"237\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"250\" y=\"258.4\" text-anchor=\"middle\">A</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  quadrantChart:\n    xAxisPosition: bottom\n---\nquadrantChart\n x-axis Left --> Right",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"239\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"239\" width=\"240\" height=\"227\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"129\" y=\"486.4\" text-anchor=\"middle\">Left</text><text x=\"371\" y=\"486.4\" text-anchor=\"middle\">Right</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n        A: [0.1, 0.1] radius: 12\n        B:::c1: [0.2, 0.2] color: #ff3300, radius: 10\n        C:::c2: [0.3, 0.3]\n        D: [0.4, 0.4] color: 00f, stroke-width: 3px\n        E: [0.5, 0.5] stroke-color: #00ff00\n        classDef c1 color: #109060\n        classDef c2 color: #908342, radius : 9, stroke-color: #310085, stroke-width: 10px",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"E\" cx=\"250\" cy=\"250\" r=\"5\"/><circle class=\"pele-point\" data-id=\"D\" cx=\"201.6\" cy=\"298.4\" r=\"5\" stroke=\"var(--pele-series-1,#4c78a8)\" style=\"fill:#00f;stroke-width:3px;\"/><circle class=\"pele-point c2\" data-id=\"C\" cx=\"153.2\" cy=\"346.8\" r=\"9\" style=\"fill:#908342;stroke:#310085;stroke-width:10px;\"/><circle class=\"pele-point c1\" data-id=\"B\" cx=\"104.8\" cy=\"395.2\" r=\"10\" style=\"fill:#ff3300;\"/><circle class=\"pele-point\" data-id=\"A\" cx=\"56.4\" cy=\"443.6\" r=\"12\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"56.4\" y=\"472\" text-anchor=\"middle\">A</text><text class=\"pele-label\" x=\"104.8\" y=\"421.6\" text-anchor=\"middle\">B</text><text class=\"pele-label\" x=\"153.2\" y=\"377.2\" text-anchor=\"middle\">C</text><text class=\"pele-label\" x=\"201.6\" y=\"321.3\" text-anchor=\"middle\">D</text><text class=\"pele-label\" x=\"250\" y=\"271.4\" text-anchor=\"middle\">E</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n A: [0.1, 0.1] radius: big",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "value for radius big is invalid, please use a valid number",
+    "code": "semantic",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "value for radius big is invalid, please use a valid number",
+   "code": "semantic",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\n A: [0.1, 0.1] color: red",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "value for color red is invalid, please use a valid hex code",
+    "code": "semantic",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "value for color red is invalid, please use a valid hex code",
+   "code": "semantic",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\n classDef c fill: #fff",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "style named fill is not supported.",
+    "code": "semantic",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "style named fill is not supported.",
+   "code": "semantic",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\n A: [1.2, 0.4]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\n A: [1.2, 0.4]\n------^",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 7,
+    "snippet": " A: [1.2, 0.4]\n------^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\n A: [1.2, 0.4]\n------^",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 7,
+   "snippet": " A: [1.2, 0.4]\n------^"
+  }
+ },
+ {
+  "source": "quadrantChart\n A: [0.2, 0.4",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\n A: [0.2, 0.4\n-------------^",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 14,
+    "snippet": " A: [0.2, 0.4\n-------------^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\n A: [0.2, 0.4\n-------------^",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 14,
+   "snippet": " A: [0.2, 0.4\n-------------^"
+  }
+ },
+ {
+  "source": "quadrantChart\n A: [0x5, 0.5]\n B: [0,5, 0.5]\n C: [0.5, 0.5]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"C\" cx=\"250\" cy=\"250\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"250\" y=\"271.4\" text-anchor=\"middle\">C</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n y-axis Down --> Up\n A: [0.5, 0.5]",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"8\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"252\" width=\"227\" height=\"240\" style=\"rx:var(--_r)\"/></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><g transform=\"translate(18.5,371) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Down</text></g><g transform=\"translate(18.5,129) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Up</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"A\" cx=\"263\" cy=\"250\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"263\" y=\"271.4\" text-anchor=\"middle\">A</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 A%% note",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"252\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"372\" y=\"133.6\" text-anchor=\"middle\">A</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"8\" y=\"8\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"8\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"252\" y=\"252\" width=\"240\" height=\"240\" style=\"rx:var(--_r)\"/></g></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\nquadrant-1 A:%% note",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nquadrant-1 A:%% note\n------------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got 'COLON'",
+    "code": "syntax",
+    "type": "quadrantChart",
+    "mermaidType": "quadrantChart",
+    "line": 2,
+    "column": 13,
+    "snippet": "quadrant-1 A:%% note\n------------^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nquadrant-1 A:%% note\n------------^\nExpecting 'NEWLINE', 'SEMI', 'EOF', got 'COLON'",
+   "code": "syntax",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 2,
+   "column": 13,
+   "snippet": "quadrant-1 A:%% note\n------------^"
+  }
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 320 320\" width=\"320\" height=\"320\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"160\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"182.5\" y=\"42\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"247.25\" y=\"63.1\">We should</tspan><tspan x=\"247.25\" y=\"84.1\">expand</tspan></text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"49\" y=\"42\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"113.75\" y=\"63.1\">Need to</tspan><tspan x=\"113.75\" y=\"84.1\">promote</tspan></text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"49\" y=\"166\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"113.75\" y=\"188.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"182.5\" y=\"166\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"247.25\" y=\"187.1\">May be</tspan><tspan x=\"247.25\" y=\"208.1\">improved</tspan></text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"114.75\" y=\"306.4\" text-anchor=\"middle\">Low Reach</text><text x=\"246.25\" y=\"306.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(26,225) rotate(-90)\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"0\" y=\"-4.1\">Low</tspan><tspan x=\"0\" y=\"13.9\">Engagement</tspan></text></g><g transform=\"translate(26,103) rotate(-90)\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"0\" y=\"-4.1\">High</tspan><tspan x=\"0\" y=\"13.9\">Engagement</tspan></text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"141.05\" cy=\"95.68\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"154.2\" cy=\"203.04\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"254.14\" cy=\"203.04\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"198.91\" cy=\"117.64\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"167.35\" cy=\"229.88\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"127.9\" cy=\"139.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"127.9\" y=\"126.6\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"124.34\" y=\"234.08\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"242.25\" y=\"121.84\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"254.14\" y=\"224.44\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"111.19\" y=\"207.24\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"141.05\" y=\"117.08\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 320,
+   "height": 320,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"27\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"268\" y=\"52\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378\" y=\"79\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"44\" y=\"52\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"154\" y=\"79\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"44\" y=\"256\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"154\" y=\"283\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"268\" y=\"256\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378\" y=\"283\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"18\" fill=\"var(--_m)\"><text x=\"155\" y=\"480.8\" text-anchor=\"middle\">Low Reach</text><text x=\"377\" y=\"480.8\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(25.5,355) rotate(-90)\"><text x=\"0\" y=\"6.3\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(25.5,153) rotate(-90)\"><text x=\"0\" y=\"6.3\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"199.4\" cy=\"140.88\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"221.6\" cy=\"318.64\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"390.32\" cy=\"318.64\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"297.08\" cy=\"177.24\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"243.8\" cy=\"363.08\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"177.2\" cy=\"213.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"15\"><text class=\"pele-label\" x=\"177.2\" y=\"237.85\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"192.54\" y=\"368.33\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"348.76\" y=\"182.49\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"390.32\" y=\"342.89\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"221.6\" y=\"342.89\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"199.4\" y=\"165.13\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  quadrantChart:\n    chartWidth: 400\n    chartHeight: 400\n  themeVariables:\n    quadrant1TextFill: \"ff0000\"\n---\nquadrantChart\n  x-axis Urgent --> Not Urgent\n  y-axis Not Important --> \"Important ❤\"\n  quadrant-1 Plan\n  quadrant-2 Do\n  quadrant-3 Delegate\n  quadrant-4 Delete\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 320 320\" width=\"320\" height=\"320\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"175\" y=\"34\" width=\"137\" height=\"137\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"243.5\" y=\"108.1\" text-anchor=\"middle\">Plan</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"34\" width=\"137\" height=\"137\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"102.5\" y=\"108.1\" text-anchor=\"middle\">Do</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"175\" width=\"137\" height=\"137\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"102.5\" y=\"249.1\" text-anchor=\"middle\">Delegate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"175\" y=\"175\" width=\"137\" height=\"137\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"243.5\" y=\"249.1\" text-anchor=\"middle\">Delete</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"103.5\" y=\"23.4\" text-anchor=\"middle\">Urgent</text><text x=\"242.5\" y=\"23.4\" text-anchor=\"middle\">Not Urgent</text><g transform=\"translate(18.5,242.5) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Not Important</text></g><g transform=\"translate(18.5,103.5) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Important ❤</text></g></g></svg>",
+   "width": 320,
+   "height": 320,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\nconfig:\n  quadrantChart:\n    chartWidth: 400\n    chartHeight: 400\n  themeVariables:\n    quadrant1TextFill: \"ff0000\"\n---\nquadrantChart\n  x-axis Urgent --> Not Urgent\n  y-axis Not Important --> \"Important ❤\"\n  quadrant-1 Plan\n  quadrant-2 Do\n  quadrant-3 Delegate\n  quadrant-4 Delete\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 400 400\" width=\"400\" height=\"400\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"218\" y=\"44\" width=\"170\" height=\"170\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"303\" y=\"136\" text-anchor=\"middle\">Plan</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"44\" y=\"44\" width=\"170\" height=\"170\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"129\" y=\"136\" text-anchor=\"middle\">Do</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"44\" y=\"218\" width=\"170\" height=\"170\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"129\" y=\"310\" text-anchor=\"middle\">Delegate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"218\" y=\"218\" width=\"170\" height=\"170\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"303\" y=\"310\" text-anchor=\"middle\">Delete</text></g></g><g class=\"pele-axis-labels\" font-size=\"18\" fill=\"var(--_m)\"><text x=\"130\" y=\"31.8\" text-anchor=\"middle\">Urgent</text><text x=\"302\" y=\"31.8\" text-anchor=\"middle\">Not Urgent</text><g transform=\"translate(25.5,302) rotate(-90)\"><text x=\"0\" y=\"6.3\" text-anchor=\"middle\">Not Important</text></g><g transform=\"translate(25.5,130) rotate(-90)\"><text x=\"0\" y=\"6.3\" text-anchor=\"middle\">Important ❤</text></g></g></svg>",
+   "width": 400,
+   "height": 400,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n  title Reach and engagement of campaigns\n  x-axis Low Reach --> High Reach\n  y-axis Low Engagement --> High Engagement\n  quadrant-1 We should expand\n  quadrant-2 Need to promote\n  quadrant-3 Re-evaluate\n  quadrant-4 May be improved\n  Campaign A: [0.9, 0.0] radius: 12\n  Campaign B:::class1: [0.8, 0.1] color: #ff3300, radius: 10\n  Campaign C: [0.7, 0.2] radius: 25, color: #00ff33, stroke-color: #10f0f0\n  Campaign D: [0.6, 0.3] radius: 15, stroke-color: #00ff0f, stroke-width: 5px ,color: #ff33f0\n  Campaign E:::class2: [0.5, 0.4]\n  Campaign F:::class3: [0.4, 0.5] color: #0000ff\n  classDef class1 color: #109060\n  classDef class2 color: #908342, radius : 10, stroke-color: #310085, stroke-width: 10px\n  classDef class3 color: #f00fff, radius : 10\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 320 320\" width=\"320\" height=\"320\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"160\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"182.5\" y=\"42\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"247.25\" y=\"63.1\">We should</tspan><tspan x=\"247.25\" y=\"84.1\">expand</tspan></text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"49\" y=\"42\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"113.75\" y=\"63.1\">Need to</tspan><tspan x=\"113.75\" y=\"84.1\">promote</tspan></text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"49\" y=\"166\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"113.75\" y=\"188.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"182.5\" y=\"166\" width=\"129.5\" height=\"120\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"247.25\" y=\"187.1\">May be</tspan><tspan x=\"247.25\" y=\"208.1\">improved</tspan></text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"114.75\" y=\"306.4\" text-anchor=\"middle\">Low Reach</text><text x=\"246.25\" y=\"306.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(26,225) rotate(-90)\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"0\" y=\"-4.1\">Low</tspan><tspan x=\"0\" y=\"13.9\">Engagement</tspan></text></g><g transform=\"translate(26,103) rotate(-90)\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"0\" y=\"-4.1\">High</tspan><tspan x=\"0\" y=\"13.9\">Engagement</tspan></text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point class3\" data-id=\"Campaign F\" cx=\"154.2\" cy=\"164\" r=\"10\" style=\"fill:#0000ff;\"/><circle class=\"pele-point class2\" data-id=\"Campaign E\" cx=\"180.5\" cy=\"188.4\" r=\"10\" style=\"fill:#908342;stroke:#310085;stroke-width:10px;\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"206.8\" cy=\"212.8\" r=\"15\" style=\"fill:#ff33f0;stroke:#00ff0f;stroke-width:5px;\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"233.1\" cy=\"237.2\" r=\"25\" style=\"fill:#00ff33;\"/><circle class=\"pele-point class1\" data-id=\"Campaign B\" cx=\"259.4\" cy=\"261.6\" r=\"10\" style=\"fill:#ff3300;\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"285.7\" cy=\"286\" r=\"12\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"278.99\" y=\"266\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"259.4\" y=\"243.6\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"233.1\" y=\"278.6\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"150.96\" y=\"217\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"180.5\" y=\"219.8\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"154.2\" y=\"146\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 320,
+   "height": 320,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n  title Reach and engagement of campaigns\n  x-axis Low Reach --> High Reach\n  y-axis Low Engagement --> High Engagement\n  quadrant-1 We should expand\n  quadrant-2 Need to promote\n  quadrant-3 Re-evaluate\n  quadrant-4 May be improved\n  Campaign A: [0.9, 0.0] radius: 12\n  Campaign B:::class1: [0.8, 0.1] color: #ff3300, radius: 10\n  Campaign C: [0.7, 0.2] radius: 25, color: #00ff33, stroke-color: #10f0f0\n  Campaign D: [0.6, 0.3] radius: 15, stroke-color: #00ff0f, stroke-width: 5px ,color: #ff33f0\n  Campaign E:::class2: [0.5, 0.4]\n  Campaign F:::class3: [0.4, 0.5] color: #0000ff\n  classDef class1 color: #109060\n  classDef class2 color: #908342, radius : 10, stroke-color: #310085, stroke-width: 10px\n  classDef class3 color: #f00fff, radius : 10\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"27\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"268\" y=\"52\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378\" y=\"79\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"44\" y=\"52\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"154\" y=\"79\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"44\" y=\"256\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"154\" y=\"283\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"268\" y=\"256\" width=\"220\" height=\"200\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378\" y=\"283\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"18\" fill=\"var(--_m)\"><text x=\"155\" y=\"480.8\" text-anchor=\"middle\">Low Reach</text><text x=\"377\" y=\"480.8\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(25.5,355) rotate(-90)\"><text x=\"0\" y=\"6.3\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(25.5,153) rotate(-90)\"><text x=\"0\" y=\"6.3\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point class3\" data-id=\"Campaign F\" cx=\"221.6\" cy=\"254\" r=\"10\" style=\"fill:#0000ff;\"/><circle class=\"pele-point class2\" data-id=\"Campaign E\" cx=\"266\" cy=\"294.4\" r=\"10\" style=\"fill:#908342;stroke:#310085;stroke-width:10px;\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"310.4\" cy=\"334.8\" r=\"15\" style=\"fill:#ff33f0;stroke:#00ff0f;stroke-width:5px;\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"354.8\" cy=\"375.2\" r=\"25\" style=\"fill:#00ff33;\"/><circle class=\"pele-point class1\" data-id=\"Campaign B\" cx=\"399.2\" cy=\"415.6\" r=\"10\" style=\"fill:#ff3300;\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"443.6\" cy=\"456\" r=\"12\"/></g><g class=\"pele-point-labels\" font-size=\"15\"><text class=\"pele-label\" x=\"443.6\" y=\"435.25\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"342.94\" y=\"420.85\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"426.48\" y=\"380.45\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"374.58\" y=\"340.05\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"266\" y=\"328.65\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"221.6\" y=\"235.25\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": []
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"194.3\" cy=\"135.28\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"217.2\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"391.24\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"295.06\" cy=\"173.44\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"240.1\" cy=\"368.48\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"171.4\" cy=\"211.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"171.4\" y=\"233\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"197.09\" y=\"372.68\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"338.4\" y=\"177.64\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"391.24\" y=\"343.24\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"217.2\" y=\"343.24\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"194.3\" y=\"156.68\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": [
+    "members",
+    "attributes",
+    "files",
+    "messages"
+   ]
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"194.3\" cy=\"135.28\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"217.2\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"391.24\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"295.06\" cy=\"173.44\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"240.1\" cy=\"368.48\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"171.4\" cy=\"211.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"171.4\" y=\"233\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"197.09\" y=\"372.68\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"338.4\" y=\"177.64\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"391.24\" y=\"343.24\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"217.2\" y=\"343.24\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"194.3\" y=\"156.68\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "fontFamily": "Custom Sans",
+   "fontFamilyMono": "Custom Mono",
+   "fontSize": 11
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,Custom Mono);font:11px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,Custom Sans)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"17.35\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"262\" y=\"35\" width=\"230\" height=\"216.5\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"377\" y=\"52.35\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"28\" y=\"35\" width=\"230\" height=\"216.5\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"143\" y=\"52.35\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"28\" y=\"255.5\" width=\"230\" height=\"216.5\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"143\" y=\"272.85\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"262\" y=\"255.5\" width=\"230\" height=\"216.5\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"377\" y=\"272.85\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"10\" fill=\"var(--_m)\"><text x=\"144\" y=\"488\" text-anchor=\"middle\">Low Reach</text><text x=\"376\" y=\"488\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(15.5,362.75) rotate(-90)\"><text x=\"0\" y=\"3.5\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(15.5,144.25) rotate(-90)\"><text x=\"0\" y=\"3.5\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"190.4\" cy=\"131.14\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"213.6\" cy=\"323.42\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"389.92\" cy=\"323.42\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"292.48\" cy=\"170.47\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"236.8\" cy=\"371.49\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"167.2\" cy=\"209.8\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"8\"><text class=\"pele-label\" x=\"167.2\" y=\"227.4\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"204.79\" y=\"374.29\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"292.48\" y=\"188.07\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"389.92\" y=\"341.02\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"213.6\" y=\"341.02\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"190.4\" y=\"148.74\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "responsive": true,
+   "maxWidth": 280,
+   "autoDirection": false,
+   "directionBreakpoint": 400
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 280 280\" width=\"280\" height=\"280\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"140\" y=\"21.1\">Reach and engagement of</tspan><tspan x=\"140\" y=\"42.1\">campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"162.5\" y=\"60\" width=\"109.5\" height=\"91\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"217.25\" y=\"81.1\">We should</tspan><tspan x=\"217.25\" y=\"102.1\">expand</tspan></text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"49\" y=\"60\" width=\"109.5\" height=\"91\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"103.75\" y=\"81.1\">Need to</tspan><tspan x=\"103.75\" y=\"102.1\">promote</tspan></text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"49\" y=\"155\" width=\"109.5\" height=\"91\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"103.75\" y=\"177.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"162.5\" y=\"155\" width=\"109.5\" height=\"91\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"217.25\" y=\"176.1\">May be</tspan><tspan x=\"217.25\" y=\"197.1\">improved</tspan></text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"104.75\" y=\"266.4\" text-anchor=\"middle\">Low Reach</text><text x=\"216.25\" y=\"266.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(26,199.5) rotate(-90)\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"0\" y=\"-4.1\">Low</tspan><tspan x=\"0\" y=\"13.9\">Engagement</tspan></text></g><g transform=\"translate(26,106.5) rotate(-90)\"><text text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"0\" y=\"-4.1\">High</tspan><tspan x=\"0\" y=\"13.9\">Engagement</tspan></text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"127.05\" cy=\"100.92\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"138.2\" cy=\"182.76\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"222.94\" cy=\"182.76\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"176.11\" cy=\"117.66\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"149.35\" cy=\"203.22\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"115.9\" cy=\"134.4\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"115.9\" y=\"121.4\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"106.34\" y=\"207.42\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"219.45\" y=\"121.86\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"222.94\" y=\"218.4\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"138.2\" y=\"204.16\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"127.05\" y=\"122.32\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 280,
+   "height": 280,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "links": false,
+   "images": false
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"194.3\" cy=\"135.28\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"217.2\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"391.24\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"295.06\" cy=\"173.44\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"240.1\" cy=\"368.48\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"171.4\" cy=\"211.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"171.4\" y=\"233\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"197.09\" y=\"372.68\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"338.4\" y=\"177.64\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"391.24\" y=\"343.24\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"217.2\" y=\"343.24\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"194.3\" y=\"156.68\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "limit": 4
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "error": {
+    "message": "Diagram source is longer than the limit of 4 characters.",
+    "code": "limit",
+    "type": null,
+    "mermaidType": null,
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "Diagram source is longer than the limit of 4 characters.",
+   "code": "limit",
+   "type": null,
+   "mermaidType": null,
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "outputLimit": 64
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "error": {
+   "message": "Diagram output is longer than the limit of 64 characters.",
+   "code": "limit",
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "quadrantChart\n    title Reach and engagement of campaigns\n    x-axis Low Reach --> High Reach\n    y-axis Low Engagement --> High Engagement\n    quadrant-1 We should expand\n    quadrant-2 Need to promote\n    quadrant-3 Re-evaluate\n    quadrant-4 May be improved\n    Campaign A: [0.3, 0.6]\n    Campaign B: [0.45, 0.23]\n    Campaign C: [0.57, 0.69]\n    Campaign D: [0.78, 0.34]\n    Campaign E: [0.40, 0.34]\n    Campaign F: [0.35, 0.78]\n",
+  "options": {
+   "now": 1768478400000,
+   "maxEdges": 0
+  },
+  "detected": "quadrantChart",
+  "parsed": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart"
+  },
+  "result": {
+   "type": "quadrantChart",
+   "mermaidType": "quadrantChart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-quadrantChart\" viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"quadrantChart\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"250\" y=\"22.6\">Reach and engagement of campaigns</tspan></text><g class=\"pele-quadrants\" fill=\"var(--_s)\" stroke=\"var(--_b)\"><g class=\"pele-quadrant\" data-id=\"1\"><rect x=\"265\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"64.6\" text-anchor=\"middle\">We should expand</text></g><g class=\"pele-quadrant\" data-id=\"2\"><rect x=\"34\" y=\"42\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"64.6\" text-anchor=\"middle\">Need to promote</text></g><g class=\"pele-quadrant\" data-id=\"3\"><rect x=\"34\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"147.5\" y=\"278.6\" text-anchor=\"middle\">Re-evaluate</text></g><g class=\"pele-quadrant\" data-id=\"4\"><rect x=\"265\" y=\"256\" width=\"227\" height=\"210\" style=\"rx:var(--_r)\"/><text class=\"pele-label\" fill=\"var(--_fg)\" stroke=\"none\" x=\"378.5\" y=\"278.6\" text-anchor=\"middle\">May be improved</text></g></g><g class=\"pele-axis-labels\" font-size=\"14\" fill=\"var(--_m)\"><text x=\"148.5\" y=\"486.4\" text-anchor=\"middle\">Low Reach</text><text x=\"377.5\" y=\"486.4\" text-anchor=\"middle\">High Reach</text><g transform=\"translate(18.5,360) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">Low Engagement</text></g><g transform=\"translate(18.5,148) rotate(-90)\"><text x=\"0\" y=\"4.9\" text-anchor=\"middle\">High Engagement</text></g></g><g class=\"pele-points\" fill=\"var(--pele-series-1,#4c78a8)\"><circle class=\"pele-point\" data-id=\"Campaign F\" cx=\"194.3\" cy=\"135.28\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign E\" cx=\"217.2\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign D\" cx=\"391.24\" cy=\"321.84\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign C\" cx=\"295.06\" cy=\"173.44\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign B\" cx=\"240.1\" cy=\"368.48\" r=\"5\"/><circle class=\"pele-point\" data-id=\"Campaign A\" cx=\"171.4\" cy=\"211.6\" r=\"5\"/></g><g class=\"pele-point-labels\" font-size=\"12\"><text class=\"pele-label\" x=\"171.4\" y=\"233\" text-anchor=\"middle\">Campaign A</text><text class=\"pele-label\" x=\"197.09\" y=\"372.68\" text-anchor=\"middle\">Campaign B</text><text class=\"pele-label\" x=\"338.4\" y=\"177.64\" text-anchor=\"middle\">Campaign C</text><text class=\"pele-label\" x=\"391.24\" y=\"343.24\" text-anchor=\"middle\">Campaign D</text><text class=\"pele-label\" x=\"217.2\" y=\"343.24\" text-anchor=\"middle\">Campaign E</text><text class=\"pele-label\" x=\"194.3\" y=\"156.68\" text-anchor=\"middle\">Campaign F</text></g></svg>",
+   "width": 500,
+   "height": 500,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ }
+]

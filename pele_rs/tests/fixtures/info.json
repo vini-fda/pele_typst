@@ -1,0 +1,1213 @@
+[
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info showInfo\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    info",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    info\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info showInfo\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    info showInfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n    showInfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n    showInfo\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    info\n    showInfo\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    info\n    showInfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n    info showInfo\n    ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\naccDescr {}\ntitle t",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">t</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\nshowInfo\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "\n info \n showInfo \n title x",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">x</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\ntitle x\naccTitle: a\naccDescr: d",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\" aria-labelledby=\"pele-title\" aria-describedby=\"pele-desc\"><title id=\"pele-title\">a</title><desc id=\"pele-desc\">d</desc><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">x</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info showInfo title x\n\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">x</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info title x\nshowInfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 2:\nshowInfo\n^\nExpecting a title or the end of input but found `showInfo`.",
+    "code": "syntax",
+    "type": "info",
+    "mermaidType": "info",
+    "line": 2,
+    "column": 1,
+    "snippet": "showInfo\n^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 2:\nshowInfo\n^\nExpecting a title or the end of input but found `showInfo`.",
+   "code": "syntax",
+   "type": "info",
+   "mermaidType": "info",
+   "line": 2,
+   "column": 1,
+   "snippet": "showInfo\n^"
+  }
+ },
+ {
+  "source": "info\ntitle x\n\n\ntitle y",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">y</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\ntitle x\ninfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\ninfo\n^\nExpecting a title or the end of input but found `info`.",
+    "code": "syntax",
+    "type": "info",
+    "mermaidType": "info",
+    "line": 3,
+    "column": 1,
+    "snippet": "info\n^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\ninfo\n^\nExpecting a title or the end of input but found `info`.",
+   "code": "syntax",
+   "type": "info",
+   "mermaidType": "info",
+   "line": 3,
+   "column": 1,
+   "snippet": "info\n^"
+  }
+ },
+ {
+  "source": "info%% c\nshowInfo%% d",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\naccDescr { a\n b }\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\" aria-describedby=\"pele-desc\"><desc id=\"pele-desc\">a\nb</desc><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\naccDescr { a\n b } title x",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\n b } title x\n----^\nExpecting a line break or the end of input but found ` title x`.",
+    "code": "syntax",
+    "type": "info",
+    "mermaidType": "info",
+    "line": 3,
+    "column": 5,
+    "snippet": " b } title x\n----^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\n b } title x\n----^\nExpecting a line break or the end of input but found ` title x`.",
+   "code": "syntax",
+   "type": "info",
+   "mermaidType": "info",
+   "line": 3,
+   "column": 5,
+   "snippet": " b } title x\n----^"
+  }
+ },
+ {
+  "source": "---\ntitle: x\n---\ninfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">x</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "%%{init: {\"theme\":\"dark\"}}%%\ninfo showInfo %% c\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\ntitle ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\naccDescr {",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "error": {
+    "message": "Lexical error on line 2. Unrecognized text.\naccDescr {\n^",
+    "code": "syntax",
+    "type": "info",
+    "mermaidType": "info",
+    "line": 2,
+    "column": 1,
+    "snippet": "accDescr {\n^"
+   }
+  },
+  "error": {
+   "message": "Lexical error on line 2. Unrecognized text.\naccDescr {\n^",
+   "code": "syntax",
+   "type": "info",
+   "mermaidType": "info",
+   "line": 2,
+   "column": 1,
+   "snippet": "accDescr {\n^"
+  }
+ },
+ {
+  "source": "info\naccTitle: ",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\naccTitle: t",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\" aria-labelledby=\"pele-title\"><title id=\"pele-title\">t</title><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\ntitle T\naccTitle: A\naccDescr: D\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\" aria-labelledby=\"pele-title\" aria-describedby=\"pele-desc\"><title id=\"pele-title\">A</title><desc id=\"pele-desc\">D</desc><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">T</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: T\n---\ninfo showInfo\n",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">T</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: From front matter\n---\ninfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 151 72\" width=\"151\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"75.5\" y=\"25.6\">From front matter</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"75.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 151,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "---\ntitle: From front matter\n---\ninfo\ntitle Own",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 72\" width=\"105\" height=\"72\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_tw:var(--pele-title-weight,bold);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-title\" font-weight=\"var(--_tw)\" text-anchor=\"middle\" xml:space=\"preserve\"><tspan x=\"52.5\" y=\"25.6\">Own</tspan></text><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"57.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 72,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info showInfo\naccTitle: Name\naccDescr: Text",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\" aria-labelledby=\"pele-title\" aria-describedby=\"pele-desc\"><title id=\"pele-title\">Name</title><desc id=\"pele-desc\">Text</desc><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\ntitle a\nshowInfo",
+  "options": {
+   "now": 1768478400000
+  },
+  "detected": "info",
+  "parsed": {
+   "error": {
+    "message": "Parse error on line 3:\nshowInfo\n^\nExpecting a title or the end of input but found `showInfo`.",
+    "code": "syntax",
+    "type": "info",
+    "mermaidType": "info",
+    "line": 3,
+    "column": 1,
+    "snippet": "showInfo\n^"
+   }
+  },
+  "error": {
+   "message": "Parse error on line 3:\nshowInfo\n^\nExpecting a title or the end of input but found `showInfo`.",
+   "code": "syntax",
+   "type": "info",
+   "mermaidType": "info",
+   "line": 3,
+   "column": 1,
+   "snippet": "showInfo\n^"
+  }
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 136 54\" width=\"136\" height=\"54\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"68\" y=\"34\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 136,
+   "height": 54,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info showInfo\n",
+  "options": {
+   "now": 1768478400000,
+   "maxWidth": 320
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info showInfo\n",
+  "options": {
+   "now": 1768478400000,
+   "fontSize": 20,
+   "padding": 12,
+   "responsive": false,
+   "idPrefix": "parity"
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 136 54\" width=\"136\" height=\"54\" style=\"--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:20px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"68\" y=\"34\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 136,
+   "height": 54,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": []
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "monospace": [
+    "members",
+    "attributes",
+    "files",
+    "messages"
+   ]
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "fontFamily": "Custom Sans",
+   "fontFamilyMono": "Custom Mono",
+   "fontSize": 11
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 78 33\" width=\"78\" height=\"33\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,Custom Mono);font:11px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,Custom Sans)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"39\" y=\"20.35\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 78,
+   "height": 33,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "responsive": true,
+   "maxWidth": 280,
+   "autoDirection": false,
+   "directionBreakpoint": 400
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "links": false,
+   "images": false
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "limit": 4
+  },
+  "detected": "info",
+  "parsed": {
+   "error": {
+    "message": "Diagram source is longer than the limit of 4 characters.",
+    "code": "limit",
+    "type": null,
+    "mermaidType": null,
+    "line": 0,
+    "column": 0,
+    "snippet": ""
+   }
+  },
+  "error": {
+   "message": "Diagram source is longer than the limit of 4 characters.",
+   "code": "limit",
+   "type": null,
+   "mermaidType": null,
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "outputLimit": 64
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "error": {
+   "message": "Diagram output is longer than the limit of 64 characters.",
+   "code": "limit",
+   "type": "info",
+   "mermaidType": "info",
+   "line": 0,
+   "column": 0,
+   "snippet": ""
+  }
+ },
+ {
+  "source": "info\n",
+  "options": {
+   "now": 1768478400000,
+   "maxEdges": 0
+  },
+  "detected": "info",
+  "parsed": {
+   "type": "info",
+   "mermaidType": "info"
+  },
+  "result": {
+   "type": "info",
+   "mermaidType": "info",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"pele pele-info\" viewBox=\"0 0 105 40\" width=\"105\" height=\"40\" style=\"max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_fm:var(--pele-font-mono,monospace);font:16px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,sans-serif)\" fill=\"var(--_fg)\" role=\"graphics-document document\" aria-roledescription=\"info\"><text class=\"pele-version\" fill=\"var(--_m)\" x=\"52.5\" y=\"25.6\" text-anchor=\"middle\">Pele v1.12.0</text></svg>",
+   "width": 105,
+   "height": 40,
+   "links": []
+  },
+  "reuseWidths": [
+   null,
+   320,
+   500,
+   null
+  ]
+ }
+]

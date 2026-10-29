@@ -1,0 +1,37 @@
+[
+  {
+    "source": "swimlane-beta LR\n subgraph L[\"$$x$$\"]\n A\n end\n style L color:#c00",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "swimlane-beta LR\n subgraph L[\"$$x$$\"]\n A\n end\n style L color:#c00",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "swimlane-beta LR\n subgraph L[\"$$x$$\"]\n A\n end\n style L color:#c00",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "swimlane-beta LR\n subgraph L[\"$$x$$\"]\n A\n end\n style L color:#c00",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "swimlane-beta LR\n subgraph L[\"$$x$$\"]\n A\n end\n style L color:#c00",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

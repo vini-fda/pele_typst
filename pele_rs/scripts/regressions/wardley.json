@@ -1,0 +1,16 @@
+[
+  {
+    "source": "wardley-beta\ntitle first\ntitle\ncomponent A [0.5,0.5]",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  },
+  {
+    "source": "---\ntitle: Frontmatter\n---\nwardley-beta\ntitle first\ntitle\ncomponent A [0.5,0.5]",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  }
+]

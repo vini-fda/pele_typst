@@ -1,0 +1,9 @@
+[
+  {
+    "source": "---\nconfig:\n kanban:\n  ticketBaseUrl: http://#TICKET#\n---\nkanban o\n]@{ticket: >}",
+    "options": {
+      "now": 1768478400000,
+      "timeZone": "UTC"
+    }
+  }
+]

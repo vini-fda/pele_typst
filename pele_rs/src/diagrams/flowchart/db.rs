@@ -183,7 +183,7 @@ fn destruct_end_link(raw: &str) -> (String, String, f64) {
     (kind, stroke.to_string(), length)
 }
 
-#[derive(Default)]
+#[derive(Default, Debug, Clone)]
 pub struct FlowDb {
     pub direction: Option<String>,
     pub nodes: IndexMap<String, FlowNode>,

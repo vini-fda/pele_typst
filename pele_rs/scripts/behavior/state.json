@@ -1,0 +1,37 @@
+[
+  {
+    "source": "stateDiagram-v2\n state \"$$a$$\" as s1\n s1 : $$b$$\n [*] --> s1 : $$c$$\n note right of s1 : $$d$$\n state \"$$e$$\" as C {\n x --> y\n }",
+    "options": {
+      "mathMode": "svg",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "stateDiagram-v2\n state \"$$a$$\" as s1\n s1 : $$b$$\n [*] --> s1 : $$c$$\n note right of s1 : $$d$$\n state \"$$e$$\" as C {\n x --> y\n }",
+    "options": {
+      "mathMode": "tall",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "stateDiagram-v2\n state \"$$a$$\" as s1\n s1 : $$b$$\n [*] --> s1 : $$c$$\n note right of s1 : $$d$$\n state \"$$e$$\" as C {\n x --> y\n }",
+    "options": {
+      "mathMode": "html",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "stateDiagram-v2\n state \"$$a$$\" as s1\n s1 : $$b$$\n [*] --> s1 : $$c$$\n note right of s1 : $$d$$\n state \"$$e$$\" as C {\n x --> y\n }",
+    "options": {
+      "mathMode": "missing",
+      "maxWidth": 220
+    }
+  },
+  {
+    "source": "stateDiagram-v2\n state \"$$a$$\" as s1\n s1 : $$b$$\n [*] --> s1 : $$c$$\n note right of s1 : $$d$$\n state \"$$e$$\" as C {\n x --> y\n }",
+    "options": {
+      "mathMode": "invalid",
+      "maxWidth": 220
+    }
+  }
+]

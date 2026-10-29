@@ -12,6 +12,18 @@ const SMALLER: f64 = 1.2;
 
 pub trait TextMeasurer {
     fn width(&self, text: &str, size: f64, style: u32) -> f64;
+    fn icon_markup(&self, _name: &str) -> String {
+        String::new()
+    }
+    fn icon_resolver(&self) -> Option<crate::IconResolver> {
+        None
+    }
+    fn math_active(&self) -> bool {
+        false
+    }
+    fn typeset(&self, _tex: &str, _size: f64) -> Option<crate::MathMarkup> {
+        None
+    }
 }
 
 // Advance widths of printable ASCII in thousandths of an em, two base-36 digits each, from Arial.
