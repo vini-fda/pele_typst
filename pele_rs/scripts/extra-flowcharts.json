@@ -1,0 +1,17 @@
+[
+ "flowchart TD\n  A[Write Mermaid] --> B[Render with pele]\n  B --> C[Embed SVG in Typst]\n",
+ "flowchart TD\n  A[Write Mermaid] --> B{Render with pele}\n  B -->|yes| C[(Embed SVG in Typst)]\n  B -.-> D((done))\n  classDef hot fill:#f96,stroke:#333\n  class D hot\n",
+ "graph LR\n  A --> B & C --> D\n  D --> A\n  B -- label --> D\n  C == thick ==> D\n  A ~~~ D\n",
+ "flowchart LR\n  subgraph one [First]\n    a1 --> a2\n  end\n  subgraph two\n    direction TB\n    b1 --> b2\n  end\n  a2 --> b1\n  one --> two\n",
+ "flowchart TD\n  A --> A\n  A --> B\n  B --> A\n  B -->|loop| B\n",
+ "flowchart BT\n  A[\"`**Bold** and _italic_`\"] --> B[\"multi<br>line<br/>label\"]\n  B --> C[A very long label that should wrap across several lines of text in the node]\n",
+ "flowchart RL\n  A@{ shape: cyl, label: \"Database\" } --> B@{ shape: doc }\n  B --> C@{ shape: hex }\n  C --> D@{ shape: bolt }\n  D --> E@{ shape: cloud }\n",
+ "flowchart TD\n  A --> B\n  linkStyle 0 stroke:#ff3,stroke-width:4px,color:red;\n  style A fill:#333,color:#fff\n",
+ "---\ntitle: With a title\nconfig:\n  flowchart:\n    curve: linear\n---\nflowchart LR\n  A --> B --> C\n  A --> C\n",
+ "%%{init: {\"flowchart\": {\"curve\": \"step\"}}}%%\nflowchart TD\n  A --> B & C & D\n  B --> E\n  C --> E\n  D --> E\n",
+ "flowchart TD\n  %% a comment\n  A[\"#quot;quoted#quot; &amp; #9829;\"] --> B[Ünïcödé 中文 テキスト]\n",
+ "flowchart LR\n  A --> B\n  click A \"https://example.com\" \"Tooltip\"\n  click B call cb()\n",
+ "flowchart TD\n  subgraph outer\n    subgraph inner\n      x --> y\n    end\n    z\n  end\n  y --> z\n  w --> x\n",
+ "flowchart TD\n  A -->\n",
+ "sequenceDiagram\n  A->>B: hi\n"
+]
