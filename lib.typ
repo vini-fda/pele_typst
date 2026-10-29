@@ -1,5 +1,5 @@
 // Renders Mermaid diagrams with pele_rs, a Rust port of pele (https://github.com/obsidianmd/pele),
-// compiled to a WebAssembly plugin. Only flowcharts are supported so far.
+// compiled to a WebAssembly plugin. Flowcharts and pie charts are supported so far.
 //
 // Labels are measured with the widths of Arial, as pele does outside a browser, and drawn in the
 // font you choose, so a much wider font can overflow its boxes.
@@ -38,7 +38,7 @@
 /// - background (auto, bool): Whether to paint the theme's background behind the diagram; by
 ///   default, when the theme sets `bg`.
 /// - config (dictionary): Mermaid configuration, as in front matter's `config:`, such as
-///   `(flowchart: (curve: "linear"))`.
+///   `(flowchart: (curve: "linear"))` or `(pie: (donutHole: 0.5))`.
 /// - alt (none, str): Alternative text for the image.
 #let mermaid(
   source,

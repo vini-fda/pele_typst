@@ -7,15 +7,15 @@ fn yaml_error(message: &str) -> bool {
     message.contains(" is not valid YAML.")
 }
 
-#[test]
-fn flowcharts_match_pele() {
-    let cases: Vec<Value> = serde_json::from_str(include_str!("fixtures/flowchart.json")).unwrap();
+// Renders every case of one type and fails with the first difference of each that differs.
+// `least` guards against a fixture file that has lost its cases.
+fn compare(kind: &str, fixtures: &str, least: usize) {
+    let cases: Vec<Value> = serde_json::from_str(fixtures).unwrap();
     let mut failures = Vec::new();
     let mut compared = 0;
     for (i, case) in cases.iter().enumerate() {
         let source = case["source"].as_str().unwrap();
-        let ported = pele_rs::detect_type(source) == Some("flowchart");
-        if !ported {
+        if pele_rs::detect_type(source) != Some(kind) {
             continue;
         }
         compared += 1;
@@ -47,9 +47,19 @@ fn flowcharts_match_pele() {
             }
         }
     }
-    eprintln!("compared {compared} flowcharts");
-    assert!(compared > 100);
+    eprintln!("compared {compared} {kind} cases");
+    assert!(compared >= least, "only {compared} {kind} cases");
     if !failures.is_empty() {
         panic!("{} of {} cases differ:\n\n{}", failures.len(), compared, failures.join("\n\n"));
     }
+}
+
+#[test]
+fn flowcharts_match_pele() {
+    compare("flowchart", include_str!("fixtures/flowchart.json"), 150);
+}
+
+#[test]
+fn pies_match_pele() {
+    compare("pie", include_str!("fixtures/pie.json"), 50);
 }
