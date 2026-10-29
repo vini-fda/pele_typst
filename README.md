@@ -14,8 +14,6 @@ flowchart TD
 ")
 ```
 
-![Example output](examples/basic.png)
-
 Version 0.3.0 implements all **33 diagram types** in **Pele 1.12.0**, pinned to
 [`36e584d59152181927e0d8bf70fddcd2a5f33d6c`](https://github.com/obsidianmd/pele/tree/36e584d59152181927e0d8bf70fddcd2a5f33d6c).
 The Rust engine matches SVG, dimensions, links, aliases, parsing and diagnostics with identical
