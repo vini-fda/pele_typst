@@ -23,11 +23,26 @@ jobs:
           targets: wasm32-unknown-unknown
           components: rustfmt, clippy
       - uses: Swatinem/rust-cache@v2
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.4"
+      - uses: actions/checkout@v7
+        with:
+          repository: obsidianmd/pele
+          ref: 36e584d59152181927e0d8bf70fddcd2a5f33d6c
+          path: .reference/pele
+      - name: Check the pinned oracle
+        run: |
+          bun pele_rs/scripts/fixtures.ts .reference/pele --check
+          bun pele_rs/scripts/gantt-calendar.ts .reference/pele --check
+          bun pele_rs/scripts/agentflow-model.ts .reference/pele --check
       - run: cargo fmt --all --check
       - run: cargo clippy --workspace --all-targets -- -D warnings
       - run: cargo clippy -p pele_typst_plugin --target wasm32-unknown-unknown -- -D warnings
       # Includes the comparison of every fixture with the SVG pele's JavaScript gives.
       - run: cargo test --workspace
+      - run: cargo build --workspace --examples
+      - run: bun pele_rs/scripts/fuzz.ts .reference/pele 40
 
   package:
     name: Typst package (Typst ${{ matrix.typst }})
@@ -46,6 +61,7 @@ jobs:
       - uses: typst-community/setup-typst@v5
         with:
           typst-version: ${{ matrix.typst }}
+      - run: cargo build -p pele_typst_plugin --example bridge
       - name: Install the package as @local/pele_typst
         run: |
           version=$(sed -n 's/^version = "\(.*\)"/\1/p' typst.toml)
@@ -60,19 +76,21 @@ jobs:
         run: |
           typst compile --package-path "$RUNNER_TEMP/packages" --ignore-system-fonts tests/smoke.typ "$RUNNER_TEMP/smoke.pdf"
           typst compile --root . --ignore-system-fonts examples/basic.typ "$RUNNER_TEMP/basic.pdf"
+          python3 tests/plugin-parity.py
       - name: Build the plugin
         run: ./build.sh
       - name: Compile with the freshly built plugin
         run: |
           typst compile --package-path "$RUNNER_TEMP/packages" --ignore-system-fonts tests/smoke.typ "$RUNNER_TEMP/smoke.pdf"
           typst compile --root . --ignore-system-fonts examples/basic.typ "$RUNNER_TEMP/basic.pdf"
+          python3 tests/plugin-parity.py
       - name: An unsupported diagram fails with pele's message
         run: |
-          printf '#import "@local/pele_typst:%s": mermaid\n#mermaid("sequenceDiagram\\n  A->>B: hi")\n' "$PACKAGE_VERSION" > "$RUNNER_TEMP/bad.typ"
+          printf '#import "@local/pele_typst:%s": mermaid\n#mermaid("not a diagram")\n' "$PACKAGE_VERSION" > "$RUNNER_TEMP/bad.typ"
           if typst compile --package-path "$RUNNER_TEMP/packages" "$RUNNER_TEMP/bad.typ" "$RUNNER_TEMP/bad.pdf" 2> "$RUNNER_TEMP/err.txt"; then
             echo "expected the compile to fail"; exit 1
           fi
-          grep -q 'Diagram type "sequence" is not supported yet.' "$RUNNER_TEMP/err.txt"
+          grep -q 'No diagram type detected for the given text.' "$RUNNER_TEMP/err.txt"
       - uses: actions/upload-artifact@v7
         if: matrix.typst == 'latest'
         with:
