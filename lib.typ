@@ -1,5 +1,5 @@
 // Renders Mermaid diagrams with pele_rs, a Rust port of pele (https://github.com/obsidianmd/pele),
-// compiled to a WebAssembly plugin. Flowcharts and pie charts are supported so far.
+// compiled to a WebAssembly plugin. All 33 Pele 1.12.0 diagram types are supported.
 //
 // Labels are measured with the widths of Arial, as pele does outside a browser, and drawn in the
 // font you choose, so a much wider font can overflow its boxes.
@@ -32,6 +32,11 @@
 /// - font (auto, str, array): Font family for labels; by default the surrounding text's.
 /// - font-size (auto, length): Size of node labels; by default the surrounding text's.
 /// - mono-font (str, array): Font family for monospace label text.
+/// - monospace (none, array): Override monospace parts: members, attributes, files, messages.
+/// - now (none, int, float): Unix timestamp in milliseconds; required for Gantt diagrams.
+/// - time-zone (str): IANA timezone used by Gantt, defaulting to UTC.
+/// - icons (dictionary): Decoded icon names mapped to SVG content in a 24×24 viewport.
+/// - math (dictionary): TeX mapped to (svg: str, width: number, height: number), in pixels.
 /// - padding (length): Room around the drawing.
 /// - theme (dictionary): Colors and sizes by the short name of pele's CSS variables, such as
 ///   `(fg: black, bg: white, accent: blue, surface: luma(240), radius: 4pt)`.
@@ -48,6 +53,11 @@
   font: auto,
   font-size: auto,
   mono-font: "DejaVu Sans Mono",
+  monospace: none,
+  now: none,
+  time-zone: "UTC",
+  icons: (:),
+  math: (:),
   padding: 8pt,
   theme: (:),
   background: auto,
@@ -65,6 +75,11 @@
     fontSize: (if font-size == auto { text.size } else { font-size }).to-absolute() / 1pt,
     fontFamily: _family(if font == auto { text.font } else { font }),
     fontFamilyMono: _family(mono-font),
+    monospace: monospace,
+    now: now,
+    timeZone: time-zone,
+    icons: icons,
+    math: math,
     padding: padding.to-absolute() / 1pt,
     theme: vars,
     background: if background == auto { "--pele-bg" in vars } else { background },
