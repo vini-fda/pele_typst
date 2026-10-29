@@ -51,10 +51,18 @@ pub struct Detected {
 pub fn detect_diagram(cleaned: &str) -> Option<Detected> {
     static RES: OnceLock<Vec<Regex>> = OnceLock::new();
     // JavaScript's \b and \w only know ASCII.
-    let res = RES.get_or_init(|| DETECTORS.iter().map(|d| Regex::new(&d.2.replace(r"\b", r"(?-u:\b)")).unwrap()).collect());
+    let res = RES.get_or_init(|| {
+        DETECTORS
+            .iter()
+            .map(|d| Regex::new(&d.2.replace(r"\b", r"(?-u:\b)")).unwrap())
+            .collect()
+    });
     for (i, (kind, mermaid, _)) in DETECTORS.iter().enumerate() {
         if res[i].is_match(cleaned) {
-            return Some(Detected { kind, mermaid_type: mermaid });
+            return Some(Detected {
+                kind,
+                mermaid_type: mermaid,
+            });
         }
     }
     None

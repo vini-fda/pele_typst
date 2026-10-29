@@ -253,7 +253,11 @@ pub fn build_flow_graph(model: &FlowDb, default_curve: Option<&str>) -> FlowGrap
         let plain = raw.stroke.as_deref() == Some("invisible") || raw.kind.as_deref() == Some("arrow_open");
         let non_empty = |s: &Option<String>| s.clone().filter(|v| !v.is_empty());
         edges.push(GraphEdge {
-            id: if raw.id.is_empty() { format!("L_{}_{}_{}", start, end, index) } else { raw.id.clone() },
+            id: if raw.id.is_empty() {
+                format!("L_{}_{}_{}", start, end, index)
+            } else {
+                raw.id.clone()
+            },
             start,
             end,
             label: raw.text.clone(),
@@ -269,7 +273,9 @@ pub fn build_flow_graph(model: &FlowDb, default_curve: Option<&str>) -> FlowGrap
             arrow_type_end: if plain { "none".into() } else { arrow_end },
             css_compiled_styles: compiled(&raw.classes),
             style: styles,
-            curve: non_empty(&raw.interpolate).or_else(|| non_empty(&model.default_interpolate)).or_else(|| default_curve.map(String::from)),
+            curve: non_empty(&raw.interpolate)
+                .or_else(|| non_empty(&model.default_interpolate))
+                .or_else(|| default_curve.map(String::from)),
         });
     }
 

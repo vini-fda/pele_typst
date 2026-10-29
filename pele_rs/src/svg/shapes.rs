@@ -15,11 +15,61 @@ pub const PAD_Y: f64 = 12.0;
 const CORNER: f64 = 12.0;
 
 const KNOWN: &[&str] = &[
-    "rect", "rounded", "stadium", "fr-rect", "cyl", "circle", "dbl-circ", "ellipse", "diam", "hex", "odd", "lean-r", "lean-l",
-    "trap-b", "trap-t", "text", "sm-circ", "f-circ", "fr-circ", "fork", "notch-rect", "lin-rect", "div-rect", "win-pane", "tri",
-    "flip-tri", "sl-rect", "notch-pent", "hourglass", "delay", "h-cyl", "cross-circ", "st-rect", "doc", "flag", "datastore",
-    "folder", "bucket", "console", "browser", "person", "bang", "cloud", "brace", "brace-r", "braces", "bolt", "lin-cyl",
-    "curv-trap", "docs", "bow-rect", "tag-rect", "tag-doc", "lin-doc", "collapsedGroup",
+    "rect",
+    "rounded",
+    "stadium",
+    "fr-rect",
+    "cyl",
+    "circle",
+    "dbl-circ",
+    "ellipse",
+    "diam",
+    "hex",
+    "odd",
+    "lean-r",
+    "lean-l",
+    "trap-b",
+    "trap-t",
+    "text",
+    "sm-circ",
+    "f-circ",
+    "fr-circ",
+    "fork",
+    "notch-rect",
+    "lin-rect",
+    "div-rect",
+    "win-pane",
+    "tri",
+    "flip-tri",
+    "sl-rect",
+    "notch-pent",
+    "hourglass",
+    "delay",
+    "h-cyl",
+    "cross-circ",
+    "st-rect",
+    "doc",
+    "flag",
+    "datastore",
+    "folder",
+    "bucket",
+    "console",
+    "browser",
+    "person",
+    "bang",
+    "cloud",
+    "brace",
+    "brace-r",
+    "braces",
+    "bolt",
+    "lin-cyl",
+    "curv-trap",
+    "docs",
+    "bow-rect",
+    "tag-rect",
+    "tag-doc",
+    "lin-doc",
+    "collapsedGroup",
 ];
 
 fn known(shape: &str) -> bool {
@@ -41,7 +91,11 @@ fn bulge(t: f64, half: f64, depth: f64) -> f64 {
 }
 
 fn round_inset(w: f64, h: f64, side: i64, t: f64) -> f64 {
-    if side & 1 != 0 { bulge(t, h / 2.0, w / 2.0) } else { bulge(t, w / 2.0, h / 2.0) }
+    if side & 1 != 0 {
+        bulge(t, h / 2.0, w / 2.0)
+    } else {
+        bulge(t, w / 2.0, h / 2.0)
+    }
 }
 
 fn round_span(w: f64, h: f64, sideways: bool) -> f64 {
@@ -49,7 +103,11 @@ fn round_span(w: f64, h: f64, sideways: bool) -> f64 {
 }
 
 fn cap_inset(w: f64, side: i64, t: f64) -> f64 {
-    if side & 1 != 0 { 0.0 } else { bulge(t, w / 2.0, 12f64.min(6f64.max(w / 14.0))) }
+    if side & 1 != 0 {
+        0.0
+    } else {
+        bulge(t, w / 2.0, 12f64.min(6f64.max(w / 14.0)))
+    }
 }
 
 fn lean_inset(h: f64, side: i64) -> f64 {
@@ -57,14 +115,22 @@ fn lean_inset(h: f64, side: i64) -> f64 {
 }
 
 fn box_size(tw: f64, th: f64) -> ShapeSize {
-    ShapeSize { w: (tw + 2.0 * PAD_X).max(2.0 * PAD_X + 12.0), h: th + 2.0 * PAD_Y, dy: 0.0 }
+    ShapeSize {
+        w: (tw + 2.0 * PAD_X).max(2.0 * PAD_X + 12.0),
+        h: th + 2.0 * PAD_Y,
+        dy: 0.0,
+    }
 }
 
 fn tri_size(tw: f64, th: f64, flip: bool) -> ShapeSize {
     let w = (1.6 * tw + 40.0).max(80.0);
     let h = (th + 10.0) / (1.0 - (tw + 8.0) / w);
     let dy = h / 2.0 - 10.0 - th / 2.0;
-    ShapeSize { w, h, dy: if flip { -dy } else { dy } }
+    ShapeSize {
+        w,
+        h,
+        dy: if flip { -dy } else { dy },
+    }
 }
 
 fn path(d: &str, a: &str) -> String {
@@ -85,7 +151,15 @@ fn poly(points: &[f64], a: &str) -> String {
 }
 
 fn rect(w: f64, h: f64, a: &str, rx: &str) -> String {
-    format!("<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\"{}{}/>", num(-w / 2.0), num(-h / 2.0), num(w), num(h), rx, a)
+    format!(
+        "<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\"{}{}/>",
+        num(-w / 2.0),
+        num(-h / 2.0),
+        num(w),
+        num(h),
+        rx,
+        a
+    )
 }
 
 fn brace(x: f64, h: f64, dir: f64, line: &str) -> String {
@@ -258,51 +332,128 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
             )
         }
         "circle" | "sm-circ" => format!("<circle r=\"{}\"{}/>", num(w / 2.0), a),
-        "dbl-circ" => format!("<circle r=\"{}\"{}/><circle r=\"{}\" fill=\"none\"{}/>", num(w / 2.0), a, num(w / 2.0 - 5.0), line),
+        "dbl-circ" => format!(
+            "<circle r=\"{}\"{}/><circle r=\"{}\" fill=\"none\"{}/>",
+            num(w / 2.0),
+            a,
+            num(w / 2.0 - 5.0),
+            line
+        ),
         "ellipse" => format!("<ellipse rx=\"{}\" ry=\"{}\"{}/>", num(w / 2.0), num(h / 2.0), a),
         "diam" => poly(&[0.0, -h / 2.0, w / 2.0, 0.0, 0.0, h / 2.0, -w / 2.0, 0.0], a),
         "hex" => {
             let m = h / 4.0;
             poly(
-                &[-w / 2.0 + m, -h / 2.0, w / 2.0 - m, -h / 2.0, w / 2.0, 0.0, w / 2.0 - m, h / 2.0, -w / 2.0 + m, h / 2.0, -w / 2.0, 0.0],
+                &[
+                    -w / 2.0 + m,
+                    -h / 2.0,
+                    w / 2.0 - m,
+                    -h / 2.0,
+                    w / 2.0,
+                    0.0,
+                    w / 2.0 - m,
+                    h / 2.0,
+                    -w / 2.0 + m,
+                    h / 2.0,
+                    -w / 2.0,
+                    0.0,
+                ],
                 a,
             )
         }
         "odd" => {
             let notch = h / 4.0;
-            poly(&[-w / 2.0, -h / 2.0, w / 2.0, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0, -w / 2.0 + notch, 0.0], a)
+            poly(
+                &[
+                    -w / 2.0,
+                    -h / 2.0,
+                    w / 2.0,
+                    -h / 2.0,
+                    w / 2.0,
+                    h / 2.0,
+                    -w / 2.0,
+                    h / 2.0,
+                    -w / 2.0 + notch,
+                    0.0,
+                ],
+                a,
+            )
         }
         "lean-r" => {
             let s = h / 4.0;
-            poly(&[-w / 2.0 + s, -h / 2.0, w / 2.0, -h / 2.0, w / 2.0 - s, h / 2.0, -w / 2.0, h / 2.0], a)
+            poly(
+                &[-w / 2.0 + s, -h / 2.0, w / 2.0, -h / 2.0, w / 2.0 - s, h / 2.0, -w / 2.0, h / 2.0],
+                a,
+            )
         }
         "lean-l" => {
             let s = h / 4.0;
-            poly(&[-w / 2.0, -h / 2.0, w / 2.0 - s, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0 + s, h / 2.0], a)
+            poly(
+                &[-w / 2.0, -h / 2.0, w / 2.0 - s, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0 + s, h / 2.0],
+                a,
+            )
         }
         "trap-b" => {
             let s = h / 4.0;
-            poly(&[-w / 2.0 + s, -h / 2.0, w / 2.0 - s, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0], a)
+            poly(
+                &[-w / 2.0 + s, -h / 2.0, w / 2.0 - s, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0],
+                a,
+            )
         }
         "trap-t" => {
             let s = h / 4.0;
-            poly(&[-w / 2.0, -h / 2.0, w / 2.0, -h / 2.0, w / 2.0 - s, h / 2.0, -w / 2.0 + s, h / 2.0], a)
+            poly(
+                &[-w / 2.0, -h / 2.0, w / 2.0, -h / 2.0, w / 2.0 - s, h / 2.0, -w / 2.0 + s, h / 2.0],
+                a,
+            )
         }
         "text" => rect(w, h, " fill=\"none\" stroke=\"none\"", ""),
         "f-circ" => format!("<circle r=\"{}\" fill=\"var(--_l)\"{}/>", num(w / 2.0), line),
-        "fr-circ" => format!("<circle r=\"{}\"{}/><circle r=\"{}\" fill=\"var(--_l)\"{}/>", num(w / 2.0), a, num(w / 2.0 - 4.0), line),
+        "fr-circ" => format!(
+            "<circle r=\"{}\"{}/><circle r=\"{}\" fill=\"var(--_l)\"{}/>",
+            num(w / 2.0),
+            a,
+            num(w / 2.0 - 4.0),
+            line
+        ),
         "fork" => rect(w, h, &format!(" fill=\"var(--_l)\"{}", line), " rx=\"2\""),
         "notch-rect" => {
             let c = 10.0;
-            poly(&[-w / 2.0 + c, -h / 2.0, w / 2.0, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0, -w / 2.0, -h / 2.0 + c], a)
+            poly(
+                &[
+                    -w / 2.0 + c,
+                    -h / 2.0,
+                    w / 2.0,
+                    -h / 2.0,
+                    w / 2.0,
+                    h / 2.0,
+                    -w / 2.0,
+                    h / 2.0,
+                    -w / 2.0,
+                    -h / 2.0 + c,
+                ],
+                a,
+            )
         }
         "lin-rect" => {
             rect(w, h, &rounded(a), "")
-                + &format!("<path d=\"M{},{}V{}\" fill=\"none\"{}/>", num(-w / 2.0 + 8.0), num(-h / 2.0), num(h / 2.0), line)
+                + &format!(
+                    "<path d=\"M{},{}V{}\" fill=\"none\"{}/>",
+                    num(-w / 2.0 + 8.0),
+                    num(-h / 2.0),
+                    num(h / 2.0),
+                    line
+                )
         }
         "div-rect" => {
             rect(w, h, &rounded(a), "")
-                + &format!("<path d=\"M{},{}H{}\" fill=\"none\"{}/>", num(-w / 2.0), num(-h / 2.0 + 8.0), num(w / 2.0), line)
+                + &format!(
+                    "<path d=\"M{},{}H{}\" fill=\"none\"{}/>",
+                    num(-w / 2.0),
+                    num(-h / 2.0 + 8.0),
+                    num(w / 2.0),
+                    line
+                )
         }
         "win-pane" => {
             rect(w, h, &rounded(a), "")
@@ -319,11 +470,27 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
         }
         "tri" => poly(&[0.0, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0], a),
         "flip-tri" => poly(&[-w / 2.0, -h / 2.0, w / 2.0, -h / 2.0, 0.0, h / 2.0], a),
-        "sl-rect" => poly(&[-w / 2.0, -h / 2.0 + 10.0, w / 2.0, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0], a),
+        "sl-rect" => poly(
+            &[-w / 2.0, -h / 2.0 + 10.0, w / 2.0, -h / 2.0, w / 2.0, h / 2.0, -w / 2.0, h / 2.0],
+            a,
+        ),
         "notch-pent" => {
             let c = 10.0;
             poly(
-                &[-w / 2.0 + c, -h / 2.0, w / 2.0 - c, -h / 2.0, w / 2.0, -h / 2.0 + c, w / 2.0, h / 2.0, -w / 2.0, h / 2.0, -w / 2.0, -h / 2.0 + c],
+                &[
+                    -w / 2.0 + c,
+                    -h / 2.0,
+                    w / 2.0 - c,
+                    -h / 2.0,
+                    w / 2.0,
+                    -h / 2.0 + c,
+                    w / 2.0,
+                    h / 2.0,
+                    -w / 2.0,
+                    h / 2.0,
+                    -w / 2.0,
+                    -h / 2.0 + c,
+                ],
                 a,
             )
         }
@@ -363,7 +530,16 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
                 num(l),
                 num(-ry),
                 a
-            ) + &format!("<path d=\"M{},{}A{},{} 0 0 0 {},{}\" fill=\"none\"{}/>", num(r), num(-ry), num(rx), num(ry), num(r), num(ry), line)
+            ) + &format!(
+                "<path d=\"M{},{}A{},{} 0 0 0 {},{}\" fill=\"none\"{}/>",
+                num(r),
+                num(-ry),
+                num(rx),
+                num(ry),
+                num(r),
+                num(ry),
+                line
+            )
         }
         "cross-circ" => {
             let r = w / 2.0;
@@ -389,7 +565,14 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
             for i in 0..3 {
                 let x = -w / 2.0 + (2 - i) as f64 * 4.0;
                 let y = -h / 2.0 + i as f64 * 4.0;
-                out += &format!("<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\"{}/>", num(x), num(y), num(bw), num(bh), rounded(a));
+                out += &format!(
+                    "<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\"{}/>",
+                    num(x),
+                    num(y),
+                    num(bw),
+                    num(bh),
+                    rounded(a)
+                );
             }
             out
         }
@@ -502,7 +685,13 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
                 );
             }
             rect(w, h, &rounded(a), "")
-                + &format!("<path d=\"M{},{}H{}\" fill=\"none\"{}/>", num(-w / 2.0), num(-h / 2.0 + 12.0), num(w / 2.0), line)
+                + &format!(
+                    "<path d=\"M{},{}H{}\" fill=\"none\"{}/>",
+                    num(-w / 2.0),
+                    num(-h / 2.0 + 12.0),
+                    num(w / 2.0),
+                    line
+                )
                 + &dots
         }
         "person" => {
@@ -564,7 +753,20 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
             rect(w, h, " fill=\"none\" stroke=\"none\"", "") + &brace(-w / 2.0 + 12.0, h, -1.0, line) + &brace(w / 2.0 - 12.0, h, 1.0, line)
         }
         "bolt" => poly(
-            &[w * 0.15, -h / 2.0, -w / 2.0, h * 0.08, -w * 0.05, h * 0.08, -w * 0.15, h / 2.0, w / 2.0, -h * 0.08, w * 0.05, -h * 0.08],
+            &[
+                w * 0.15,
+                -h / 2.0,
+                -w / 2.0,
+                h * 0.08,
+                -w * 0.05,
+                h * 0.08,
+                -w * 0.15,
+                h / 2.0,
+                w / 2.0,
+                -h * 0.08,
+                w * 0.05,
+                -h * 0.08,
+            ],
             a,
         ),
         "lin-cyl" => {
@@ -614,7 +816,12 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
         "docs" => {
             let mut out = String::new();
             for i in 0..3i32 {
-                out += &format!("<g transform=\"translate({},{})\">{}</g>", (1 - i) * 4, (i - 1) * 4, wave(w - 8.0, h - 8.0, a));
+                out += &format!(
+                    "<g transform=\"translate({},{})\">{}</g>",
+                    (1 - i) * 4,
+                    (i - 1) * 4,
+                    wave(w - 8.0, h - 8.0, a)
+                );
             }
             out
         }
@@ -643,7 +850,14 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
         }
         "tag-rect" => {
             rect(w, h, &rounded(a), "")
-                + &format!("<path d=\"M{},{}L{},{}\" fill=\"none\"{}/>", num(w / 2.0 - 12.0), num(h / 2.0), num(w / 2.0), num(h / 2.0 - 12.0), line)
+                + &format!(
+                    "<path d=\"M{},{}L{},{}\" fill=\"none\"{}/>",
+                    num(w / 2.0 - 12.0),
+                    num(h / 2.0),
+                    num(w / 2.0),
+                    num(h / 2.0 - 12.0),
+                    line
+                )
         }
         "tag-doc" => {
             wave(w, h, a)
@@ -657,7 +871,14 @@ pub fn draw_shape(shape: &str, w: f64, h: f64, a: &str, line: &str) -> String {
                 )
         }
         "lin-doc" => {
-            wave(w, h, a) + &format!("<path d=\"M{},{}V{}\" fill=\"none\"{}/>", num(-w / 2.0 + 8.0), num(-h / 2.0), num(h / 2.0 - 6.0), line)
+            wave(w, h, a)
+                + &format!(
+                    "<path d=\"M{},{}V{}\" fill=\"none\"{}/>",
+                    num(-w / 2.0 + 8.0),
+                    num(-h / 2.0),
+                    num(h / 2.0 - 6.0),
+                    line
+                )
         }
         "collapsedGroup" => format!(
             "<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\"{}/><rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\"{}/>",
@@ -760,13 +981,7 @@ pub fn shape_inset(shape: &str, w: f64, h: f64, side: i64, t: f64) -> f64 {
                 1.0
             }
         }
-        "bow-rect" => {
-            if side == 1 {
-                h * 0.2
-            } else {
-                0.0
-            }
-        }
+        "bow-rect" if side == 1 => h * 0.2,
         _ => 0.0,
     }
 }
@@ -816,7 +1031,10 @@ pub fn shape_span(shape: &str, w: f64, h: f64, sideways: bool) -> f64 {
 }
 
 pub fn shape_has_label(shape: &str) -> bool {
-    !matches!(shape, "sm-circ" | "f-circ" | "fr-circ" | "fork" | "hourglass" | "cross-circ" | "bolt")
+    !matches!(
+        shape,
+        "sm-circ" | "f-circ" | "fr-circ" | "fork" | "hourglass" | "cross-circ" | "bolt"
+    )
 }
 
 pub fn shape_filled(shape: &str) -> bool {

@@ -68,12 +68,20 @@ fn remove_comments(text: &str) -> String {
 }
 
 pub fn cleanup_comments(text: &str) -> String {
-    let text = if text.contains("%%") { remove_comments(text) } else { text.to_string() };
+    let text = if text.contains("%%") {
+        remove_comments(text)
+    } else {
+        text.to_string()
+    };
     trim_start(&text).to_string()
 }
 
 pub fn normalize_line_breaks(text: &str) -> String {
-    if text.contains('\r') { text.replace("\r\n", "\n").replace('\r', "\n") } else { text.to_string() }
+    if text.contains('\r') {
+        text.replace("\r\n", "\n").replace('\r', "\n")
+    } else {
+        text.to_string()
+    }
 }
 
 struct FrontMatter {
@@ -178,10 +186,14 @@ fn match_front_matter(text: &str) -> Option<FrontMatter> {
         if i > last_fence {
             break;
         }
-        if i >= body_start {
-            if let Some(end) = closing_end(i) {
-                return Some(FrontMatter { indent, body: chars[body_start..i].iter().collect(), length: end + 1 });
-            }
+        if i >= body_start
+            && let Some(end) = closing_end(i)
+        {
+            return Some(FrontMatter {
+                indent,
+                body: chars[body_start..i].iter().collect(),
+                length: end + 1,
+            });
         }
         at = find_from(&chars, &needle, i + 1);
     }
@@ -210,7 +222,12 @@ fn merge(target: &mut Config, source: &Config) {
 fn yaml_to_json(y: &yaml_rust2::Yaml) -> Value {
     use yaml_rust2::Yaml;
     match y {
-        Yaml::Real(s) => s.parse::<f64>().ok().and_then(serde_json::Number::from_f64).map(Value::Number).unwrap_or(Value::Null),
+        Yaml::Real(s) => s
+            .parse::<f64>()
+            .ok()
+            .and_then(serde_json::Number::from_f64)
+            .map(Value::Number)
+            .unwrap_or(Value::Null),
         Yaml::Integer(i) => Value::Number((*i).into()),
         Yaml::String(s) => Value::String(s.clone()),
         Yaml::Boolean(b) => Value::Bool(*b),
@@ -319,7 +336,7 @@ fn find_directives(text: &str) -> Vec<Directive> {
                 if j >= n {
                     break;
                 }
-                if chars[j] == '}' && j + 2 < n + 0 && chars.get(j + 1) == Some(&'%') && chars.get(j + 2) == Some(&'%') {
+                if chars[j] == '}' && j + 2 < n && chars.get(j + 1) == Some(&'%') && chars.get(j + 2) == Some(&'%') {
                     break;
                 }
                 let c = chars[j];
@@ -345,7 +362,12 @@ fn find_directives(text: &str) -> Vec<Directive> {
         if j + 2 < n + 1 && chars.get(j) == Some(&'}') && chars.get(j + 1) == Some(&'%') && chars.get(j + 2) == Some(&'%') {
             j += 3;
         }
-        out.push(Directive { start: byte_at(start), end: byte_at(j), kind, body });
+        out.push(Directive {
+            start: byte_at(start),
+            end: byte_at(j),
+            kind,
+            body,
+        });
         i = j.max(i + 1);
     }
     out
@@ -360,12 +382,11 @@ fn directives(text: &str, config: &mut Config) -> String {
         let kind = d.kind.to_string();
         if kind == "wrap" {
             config.insert("wrap".into(), Value::Bool(true));
-        } else if kind == "init" || kind == "initialize" {
-            if let Some(body) = d.body.filter(|b| !b.is_empty()) {
-                if let Ok(Value::Object(args)) = serde_json::from_str::<Value>(trim(&body)) {
-                    merge(config, &args);
-                }
-            }
+        } else if (kind == "init" || kind == "initialize")
+            && let Some(body) = d.body.filter(|b| !b.is_empty())
+            && let Ok(Value::Object(args)) = serde_json::from_str::<Value>(trim(&body))
+        {
+            merge(config, &args);
         }
     }
     let mut out = String::new();
@@ -405,55 +426,66 @@ pub fn preprocess(source: &str) -> Result<Preprocessed> {
     let mut title = None;
     let mut line_offset = 0;
 
-    if text.contains("---") {
-        if let Some(front) = match_front_matter(&text) {
-            let body = if !front.indent.is_empty() {
-                front
-                    .body
-                    .split('\n')
-                    .map(|line| line.strip_prefix(front.indent.as_str()).unwrap_or(line))
-                    .collect::<Vec<_>>()
-                    .join("\n")
-            } else {
-                front.body.clone()
-            };
-            let parsed = parse_yaml(&body)
-                .map_err(|e| PeleError::new(format!("Front matter is not valid YAML. {}", e), PeleErrorCode::Syntax))?;
-            if let Value::Object(parsed) = &parsed {
-                if truthy(parsed.get("title")) {
-                    title = Some(value_string(&parsed["title"]));
+    if text.contains("---")
+        && let Some(front) = match_front_matter(&text)
+    {
+        let body = if !front.indent.is_empty() {
+            front
+                .body
+                .split('\n')
+                .map(|line| line.strip_prefix(front.indent.as_str()).unwrap_or(line))
+                .collect::<Vec<_>>()
+                .join("\n")
+        } else {
+            front.body.clone()
+        };
+        let parsed =
+            parse_yaml(&body).map_err(|e| PeleError::new(format!("Front matter is not valid YAML. {}", e), PeleErrorCode::Syntax))?;
+        if let Value::Object(parsed) = &parsed {
+            if truthy(parsed.get("title")) {
+                title = Some(value_string(&parsed["title"]));
+            }
+            if let Some(Value::Object(c)) = parsed.get("config") {
+                merge(&mut config, c);
+            }
+            if truthy(parsed.get("displayMode")) {
+                let mode = value_string(&parsed["displayMode"]);
+                if !matches!(config.get("gantt"), Some(Value::Object(_))) {
+                    config.insert("gantt".into(), Value::Object(Map::new()));
                 }
-                if let Some(Value::Object(c)) = parsed.get("config") {
-                    merge(&mut config, c);
-                }
-                if truthy(parsed.get("displayMode")) {
-                    let mode = value_string(&parsed["displayMode"]);
-                    if !matches!(config.get("gantt"), Some(Value::Object(_))) {
-                        config.insert("gantt".into(), Value::Object(Map::new()));
-                    }
-                    if let Some(Value::Object(g)) = config.get_mut("gantt") {
-                        g.insert("displayMode".into(), Value::String(mode));
-                    }
+                if let Some(Value::Object(g)) = config.get_mut("gantt") {
+                    g.insert("displayMode".into(), Value::String(mode));
                 }
             }
-            let chars: Vec<char> = text.chars().collect();
-            line_offset = chars[..front.length.min(chars.len())].iter().filter(|&&c| c == '\n').count();
-            text = chars[front.length.min(chars.len())..].iter().collect();
         }
+        let chars: Vec<char> = text.chars().collect();
+        line_offset = chars[..front.length.min(chars.len())].iter().filter(|&&c| c == '\n').count();
+        text = chars[front.length.min(chars.len())..].iter().collect();
     }
 
     let text = directives(&text, &mut config);
-    Ok(Preprocessed { text: cleanup_comments(&text), title, config, with_comments: text, line_offset })
+    Ok(Preprocessed {
+        text: cleanup_comments(&text),
+        title,
+        config,
+        with_comments: text,
+        line_offset,
+    })
 }
 
 // Does what Mermaid's `text.replace(/keyword.*:\S*#.*;/g, drop the last character)` does.
 fn drop_color_semicolons(text: &str, keyword: &str) -> String {
-    let Some(mut from) = text.find(keyword) else { return text.to_string() };
+    let Some(mut from) = text.find(keyword) else {
+        return text.to_string();
+    };
     let mut out = String::new();
     let mut last = 0;
     loop {
         let rest = &text[from..];
-        let line_end = rest.find(['\n', '\r', '\u{2028}', '\u{2029}']).map(|i| from + i).unwrap_or(text.len());
+        let line_end = rest
+            .find(['\n', '\r', '\u{2028}', '\u{2029}'])
+            .map(|i| from + i)
+            .unwrap_or(text.len());
         let mut after_colon = false;
         let mut hash: Option<usize> = None;
         for (off, c) in text[from + keyword.len()..line_end].char_indices() {
@@ -469,13 +501,12 @@ fn drop_color_semicolons(text: &str, keyword: &str) -> String {
                 after_colon = false;
             }
         }
-        if let Some(hash) = hash {
-            if let Some(semi) = text[..line_end].rfind(';') {
-                if semi > hash {
-                    out.push_str(&text[last..semi]);
-                    last = semi + 1;
-                }
-            }
+        if let Some(hash) = hash
+            && let Some(semi) = text[..line_end].rfind(';')
+            && semi > hash
+        {
+            out.push_str(&text[last..semi]);
+            last = semi + 1;
         }
         if line_end >= text.len() {
             break;

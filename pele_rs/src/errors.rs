@@ -31,7 +31,14 @@ pub struct PeleError {
 
 impl PeleError {
     pub fn new(message: impl Into<String>, code: PeleErrorCode) -> Self {
-        PeleError { message: message.into(), code, diagram: None, line: 0, column: 0, snippet: String::new() }
+        PeleError {
+            message: message.into(),
+            code,
+            diagram: None,
+            line: 0,
+            column: 0,
+            snippet: String::new(),
+        }
     }
 
     pub fn of(mut self, diagram: &str) -> Self {
@@ -81,7 +88,11 @@ pub fn locate(src: &[u16], offset: usize) -> Location {
     }
     let column = offset - line_start + 1;
     let text = String::from_utf16_lossy(&src[line_start..line_end]);
-    Location { line, column, snippet: format!("{}\n{}^", text, "-".repeat(column - 1)) }
+    Location {
+        line,
+        column,
+        snippet: format!("{}\n{}^", text, "-".repeat(column - 1)),
+    }
 }
 
 pub fn syntax_error(diagram: &str, src: &[u16], offset: usize, detail: &str, lexical: bool) -> PeleError {

@@ -47,7 +47,11 @@ impl SideReach {
     }
 
     pub fn of(&self, node: usize, side: i64) -> f64 {
-        if side >= 0 { self.reach.get(&(node as i64 * 4 + side)).copied().unwrap_or(0.0) } else { 0.0 }
+        if side >= 0 {
+            self.reach.get(&(node as i64 * 4 + side)).copied().unwrap_or(0.0)
+        } else {
+            0.0
+        }
     }
 }
 
@@ -159,8 +163,20 @@ pub fn route_path(
             if (x - xs[last]).abs() >= 0.01 && (y - ys[last]).abs() >= 0.01 {
                 let px = xs[last];
                 let py = ys[last];
-                let my = if curve == Some("stepBefore") { py } else if curve == Some("stepAfter") { y } else { (py + y) / 2.0 };
-                let mx = if curve == Some("stepBefore") { px } else if curve == Some("stepAfter") { x } else { (px + x) / 2.0 };
+                let my = if curve == Some("stepBefore") {
+                    py
+                } else if curve == Some("stepAfter") {
+                    y
+                } else {
+                    (py + y) / 2.0
+                };
+                let mx = if curve == Some("stepBefore") {
+                    px
+                } else if curve == Some("stepAfter") {
+                    x
+                } else {
+                    (px + x) / 2.0
+                };
                 let turns = if axis == 0.0 { [px, my, x, my] } else { [mx, py, mx, y] };
                 for k in [0, 2] {
                     if near(turns[k], turns[k + 1], px, py) || near(turns[k], turns[k + 1], x, y) {
@@ -179,7 +195,15 @@ pub fn route_path(
     }
     if xs.len() < 2 {
         let (x, y) = (xs.first().copied().unwrap_or(0.0), ys.first().copied().unwrap_or(0.0));
-        return EdgePath { d: format!("M{},{}", num(x), num(y)), tokens: Some(vec![77.0, 2.0, written(x), written(y)]), sx: x, sy: y, ex: x, ey: y, ..Default::default() };
+        return EdgePath {
+            d: format!("M{},{}", num(x), num(y)),
+            tokens: Some(vec![77.0, 2.0, written(x), written(y)]),
+            sx: x,
+            sy: y,
+            ex: x,
+            ey: y,
+            ..Default::default()
+        };
     }
     let mut r = Route { xs, ys, linear };
     let mut last = r.xs.len() as isize - 1;
@@ -220,7 +244,10 @@ pub fn route_path(
     }
 
     // Keep tokens to avoid parsing d when checking fills.
-    let mut w = Writer { d: String::new(), tokens: vec![77.0, 2.0] };
+    let mut w = Writer {
+        d: String::new(),
+        tokens: vec![77.0, 2.0],
+    };
     let a = w.tok(r.xs[0]);
     let b = w.tok(r.ys[0]);
     w.d = format!("M{},{}", a, b);
@@ -270,7 +297,11 @@ pub fn route_path(
         }
         // How much of the leg before the turn and of the leg after it the turn takes.
         let mut before = if r.turns(i - 1, last) { r.length(i) / 2.0 } else { r.length(i) };
-        let mut after = if r.turns(i + 1, last) { r.length(i + 1) / 2.0 } else { r.length(i + 1) };
+        let mut after = if r.turns(i + 1, last) {
+            r.length(i + 1) / 2.0
+        } else {
+            r.length(i + 1)
+        };
         if stepped {
             let m = CORNER.min(before).min(after);
             before = m;
@@ -300,7 +331,18 @@ pub fn route_path(
             w.d += &format!("C{},{} {},{} {},{}", p[0], p[1], p[2], p[3], p[4], p[5]);
         }
     }
-    EdgePath { d: w.d, tokens: Some(w.tokens), sx, sy, sdx: -sdx, sdy: -sdy, ex, ey, edx, edy }
+    EdgePath {
+        d: w.d,
+        tokens: Some(w.tokens),
+        sx,
+        sy,
+        sdx: -sdx,
+        sdy: -sdy,
+        ex,
+        ey,
+        edx,
+        edy,
+    }
 }
 
 pub fn marker_trim(kind: &str) -> f64 {
@@ -397,8 +439,8 @@ fn tokenize(d: &str) -> Vec<f64> {
                 }
                 j += 1;
             }
-            let v;
-            if (code(j) | 32) == 101 || m > 9007199254740991.0 || places > 22 {
+
+            let v = if (code(j) | 32) == 101 || m > 9007199254740991.0 || places > 22 {
                 loop {
                     let k = code(j);
                     let prev = if j > 0 { code(j - 1) | 32 } else { -1 };
@@ -408,14 +450,14 @@ fn tokenize(d: &str) -> Vec<f64> {
                         break;
                     }
                 }
-                v = d[i..j].parse::<f64>().unwrap_or(f64::NAN);
+                d[i..j].parse::<f64>().unwrap_or(f64::NAN)
             } else {
                 let mut x = if places > 0 { m / 10f64.powi(places) } else { m };
                 if c == 45 {
                     x = -x;
                 }
-                v = x;
-            }
+                x
+            };
             if at >= 0 {
                 out.push(v);
                 out[at as usize] += 1.0;
@@ -487,7 +529,17 @@ fn sample(tokens: &[f64]) -> Vec<f64> {
         } else if cmd == 65 {
             let mut k = s;
             while k + 7 <= e {
-                arc(&mut out, x, y, tokens[k], tokens[k + 1], tokens[k + 3], tokens[k + 4], tokens[k + 5], tokens[k + 6]);
+                arc(
+                    &mut out,
+                    x,
+                    y,
+                    tokens[k],
+                    tokens[k + 1],
+                    tokens[k + 3],
+                    tokens[k + 4],
+                    tokens[k + 5],
+                    tokens[k + 6],
+                );
                 x = tokens[k + 5];
                 y = tokens[k + 6];
                 k += 7;
@@ -609,7 +661,11 @@ pub fn fill_under<'a>(d: &str, tips: &[f64], fills: &'a [Fill], tokens: Option<&
     let mut k = 0;
     while k < points.len() + tips.len() {
         let x = if k < points.len() { points[k] } else { tips[k - points.len()] };
-        let y = if k < points.len() { points[k + 1] } else { tips[k + 1 - points.len()] };
+        let y = if k < points.len() {
+            points[k + 1]
+        } else {
+            tips[k + 1 - points.len()]
+        };
         if x < min_x {
             min_x = x;
         }
@@ -697,7 +753,11 @@ pub fn casing(d: &str, markers: &str, line: &str, thick: bool) -> String {
     if stroke.as_deref() == Some("none") || stroke.as_deref() == Some("transparent") {
         return String::new();
     }
-    let width = if thick { Some("2.5".to_string()) } else { decl(line, "stroke-width") };
+    let width = if thick {
+        Some("2.5".to_string())
+    } else {
+        decl(line, "stroke-width")
+    };
     let mut attrs = String::new();
     let mut style = String::new();
     if let Some(width) = &width {
@@ -717,7 +777,11 @@ pub fn casing(d: &str, markers: &str, line: &str, thick: bool) -> String {
     }
     let body = format!("<path d=\"{}\"/>{}", d, markers.replace(" class=\"pele-marker\"", ""));
     if !attrs.is_empty() || !style.is_empty() {
-        let style = if style.is_empty() { String::new() } else { format!(" style=\"{}\"", style) };
+        let style = if style.is_empty() {
+            String::new()
+        } else {
+            format!(" style=\"{}\"", style)
+        };
         format!("<g{}{}>{}</g>", attrs, style, body)
     } else {
         body
@@ -794,7 +858,13 @@ pub fn loop_path(cx: f64, cy: f64, w: f64, h: f64, k: f64, sideways: bool, base:
         e.label_y = cy;
     }
     EdgePath {
-        d: format!("M{}C{} {} {}", at(0.0, -spread), at(reach, -spread * 2.0), at(reach, spread * 2.0), at(tx, spread + ty)),
+        d: format!(
+            "M{}C{} {} {}",
+            at(0.0, -spread),
+            at(reach, -spread * 2.0),
+            at(reach, spread * 2.0),
+            at(tx, spread + ty)
+        ),
         tokens: None,
         sx: if sideways { cx - spread } else { cx + w / 2.0 },
         sy: if sideways { cy + h / 2.0 } else { cy - spread },

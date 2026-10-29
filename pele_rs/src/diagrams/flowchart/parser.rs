@@ -1,16 +1,22 @@
 // The flowchart parser, after pele's diagrams/flowchart/parser.ts.
 
 use super::db::{DocItem, FlowDb, FlowText, LabelType, LinkInfo, Vertex};
-use super::lexer::{tokenize, T, TOKEN_NAMES};
-use crate::errors::{syntax_error, PeleError, Result};
+use super::lexer::{T, TOKEN_NAMES, tokenize};
+use crate::errors::{PeleError, Result, syntax_error};
 use crate::util::{is_js_space, trim};
 
 fn is_id(t: T) -> bool {
-    matches!(t, T::NUM | T::NODE_STRING | T::DOWN | T::MINUS | T::DEFAULT | T::COMMA | T::COLON | T::AMP | T::BRKT | T::MULT | T::UNICODE_TEXT)
+    matches!(
+        t,
+        T::NUM | T::NODE_STRING | T::DOWN | T::MINUS | T::DEFAULT | T::COMMA | T::COLON | T::AMP | T::BRKT | T::MULT | T::UNICODE_TEXT
+    )
 }
 
 fn is_alphanum(t: T) -> bool {
-    matches!(t, T::NUM | T::UNICODE_TEXT | T::NODE_STRING | T::DIR | T::DOWN | T::MINUS | T::COMMA | T::COLON | T::AMP | T::BRKT | T::MULT)
+    matches!(
+        t,
+        T::NUM | T::UNICODE_TEXT | T::NODE_STRING | T::DIR | T::DOWN | T::MINUS | T::COMMA | T::COLON | T::AMP | T::BRKT | T::MULT
+    )
 }
 
 fn is_no_tags(t: T) -> bool {
@@ -112,7 +118,13 @@ impl Parser<'_> {
         if t == T::ERROR {
             return Err(syntax_error("flowchart", &self.src, at, "", true));
         }
-        Err(syntax_error("flowchart", &self.src, at, &format!("Expecting {}, got '{}'", expected, TOKEN_NAMES[t as usize]), false))
+        Err(syntax_error(
+            "flowchart",
+            &self.src,
+            at,
+            &format!("Expecting {}, got '{}'", expected, TOKEN_NAMES[t as usize]),
+            false,
+        ))
     }
 
     fn take(&mut self) -> String {
@@ -217,7 +229,14 @@ impl Parser<'_> {
     }
 
     fn add(&mut self, id: &str, label: &FlowText, kind: &str) -> Result<()> {
-        self.db.add_vertex(id, Vertex { text: Some(label), kind: Some(kind), ..Default::default() })
+        self.db.add_vertex(
+            id,
+            Vertex {
+                text: Some(label),
+                kind: Some(kind),
+                ..Default::default()
+            },
+        )
     }
 
     fn vertex(&mut self) -> Result<String> {
@@ -275,7 +294,15 @@ impl Parser<'_> {
                 self.expect(T::PIPE, "")?;
                 let label = self.text()?;
                 self.closed(T::SQE)?;
-                self.db.add_vertex(&id, Vertex { text: Some(&label), kind: Some("rect"), props: Some((field, value)), ..Default::default() })?;
+                self.db.add_vertex(
+                    &id,
+                    Vertex {
+                        text: Some(&label),
+                        kind: Some("rect"),
+                        props: Some((field, value)),
+                        ..Default::default()
+                    },
+                )?;
             }
             T::CYLINDERSTART => {
                 self.i += 1;
@@ -341,7 +368,13 @@ impl Parser<'_> {
     }
 
     fn metadata(&mut self, id: &str, data: &str) -> Result<()> {
-        self.db.add_vertex(id, Vertex { metadata: Some(data), ..Default::default() })
+        self.db.add_vertex(
+            id,
+            Vertex {
+                metadata: Some(data),
+                ..Default::default()
+            },
+        )
     }
 
     fn node(&mut self) -> Result<Vec<String>> {
@@ -556,7 +589,13 @@ impl Parser<'_> {
         let t = self.t();
         if t == T::NEWLINE || t == T::SEMI || t == T::EOF {
             self.i += 1;
-            return Ok(Frame { id: None, title: None, same: false, list: Vec::new(), collect: false });
+            return Ok(Frame {
+                id: None,
+                title: None,
+                same: false,
+                list: Vec::new(),
+                collect: false,
+            });
         }
         self.expect(T::SPACE, "'SEMI', 'NEWLINE', 'EOF'")?;
         let id = self.text_no_tags()?;
@@ -573,7 +612,13 @@ impl Parser<'_> {
             return self.fail("'SEMI', 'NEWLINE', 'EOF', 'SQS'");
         }
         self.i += 1;
-        Ok(Frame { id: Some(id), title: Some(title), same, list: Vec::new(), collect: false })
+        Ok(Frame {
+            id: Some(id),
+            title: Some(title),
+            same,
+            list: Vec::new(),
+            collect: false,
+        })
     }
 
     fn statement(&mut self, collect: bool) -> Result<DocItem> {
@@ -585,7 +630,13 @@ impl Parser<'_> {
                 let id = self.id_string()?;
                 self.expect(T::SPACE, "")?;
                 let styles = self.styles_opt()?;
-                self.db.add_vertex(&id, Vertex { style: Some(styles), ..Default::default() })?;
+                self.db.add_vertex(
+                    &id,
+                    Vertex {
+                        style: Some(styles),
+                        ..Default::default()
+                    },
+                )?;
                 self.separator()?;
                 Ok(DocItem::List(Vec::new()))
             }
@@ -731,6 +782,14 @@ impl Parser<'_> {
 pub fn parse_flowchart(source: &str, db: &mut FlowDb) -> std::result::Result<(), PeleError> {
     let src: Vec<u16> = trim_brace_trail(source).encode_utf16().collect();
     let tokens = tokenize(&src);
-    let mut p = Parser { src, types: tokens.types, texts: tokens.texts, starts: tokens.starts, i: 0, pending_data: None, db };
+    let mut p = Parser {
+        src,
+        types: tokens.types,
+        texts: tokens.texts,
+        starts: tokens.starts,
+        i: 0,
+        pending_data: None,
+        db,
+    };
     p.parse()
 }

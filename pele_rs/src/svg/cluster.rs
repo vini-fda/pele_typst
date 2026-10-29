@@ -61,19 +61,30 @@ pub fn title_crossed(c: &Box4, width: f64, x: f64, crossings: &Crossings) -> boo
     if width <= 0.0 {
         return false;
     }
-    let Some(xs) = crossings.get(&key(c.y - c.h / 2.0)) else { return false };
+    let Some(xs) = crossings.get(&key(c.y - c.h / 2.0)) else {
+        return false;
+    };
     let left = c.x - c.w / 2.0;
-    xs.iter().any(|&cx| cx > left && cx < left + c.w && (cx - x).abs() < width / 2.0 + 4.0)
+    xs.iter()
+        .any(|&cx| cx > left && cx < left + c.w && (cx - x).abs() < width / 2.0 + 4.0)
 }
 
 // A title that an edge runs through, drawn over the edges on an outline in the color of the
 // cluster behind it. `depth` counts the clusters it is in, each of which tints the background.
 pub fn struck_title(label: &Label, x: f64, y: f64, attrs: &str, id: &str, depth: i32) -> String {
-    let fill = format!("color-mix(in srgb,var(--_a) {}%,var(--_bg))", num(100.0 * (1.0 - 0.5f64.powi(depth))));
+    let fill = format!(
+        "color-mix(in srgb,var(--_a) {}%,var(--_bg))",
+        num(100.0 * (1.0 - 0.5f64.powi(depth)))
+    );
     format!(
         "<g class=\"pele-cluster-title\" data-id=\"{}\">{}{}</g>",
         id,
-        label_svg(label, x, y, &format!(" fill=\"none\" stroke=\"{}\" stroke-width=\"5\" stroke-linejoin=\"round\"", fill)),
+        label_svg(
+            label,
+            x,
+            y,
+            &format!(" fill=\"none\" stroke=\"{}\" stroke-width=\"5\" stroke-linejoin=\"round\"", fill)
+        ),
         label_svg(label, x, y, attrs)
     )
 }

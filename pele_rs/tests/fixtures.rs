@@ -30,13 +30,19 @@ fn flowcharts_match_pele() {
                     Ok(r) => r.svg.clone(),
                     Err(e) => format!("error: {}", e.message),
                 };
-                let want = want.map(String::from).unwrap_or_else(|| format!("error: {}", case["error"].as_str().unwrap()));
-                let at = got.bytes().zip(want.bytes()).position(|(a, b)| a != b).unwrap_or(got.len().min(want.len()));
+                let want = want
+                    .map(String::from)
+                    .unwrap_or_else(|| format!("error: {}", case["error"].as_str().unwrap()));
+                let at = got
+                    .bytes()
+                    .zip(want.bytes())
+                    .position(|(a, b)| a != b)
+                    .unwrap_or(got.len().min(want.len()));
                 let from = at.saturating_sub(60);
                 failures.push(format!(
                     "case {i}:\n{source}\n  want …{}…\n  got  …{}…",
-                    &want.get(from..(at + 120).min(want.len())).unwrap_or(""),
-                    &got.get(from..(at + 120).min(got.len())).unwrap_or("")
+                    want.get(from..(at + 120).min(want.len())).unwrap_or(""),
+                    got.get(from..(at + 120).min(got.len())).unwrap_or("")
                 ));
             }
         }

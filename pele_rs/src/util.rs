@@ -78,7 +78,7 @@ pub fn js_num(x: f64) -> String {
 fn fraction(i: u64) -> String {
     if i == 0 {
         String::new()
-    } else if i % 10 == 0 {
+    } else if i.is_multiple_of(10) {
         format!(".{}", i / 10)
     } else if i < 10 {
         format!(".0{}", i)
@@ -172,7 +172,11 @@ pub fn parse_float(s: &str) -> f64 {
         i += 1;
     }
     if s[i..].starts_with("Infinity") {
-        return if b.first() == Some(&b'-') { f64::NEG_INFINITY } else { f64::INFINITY };
+        return if b.first() == Some(&b'-') {
+            f64::NEG_INFINITY
+        } else {
+            f64::INFINITY
+        };
     }
     let digits_start = i;
     while i < b.len() && b[i].is_ascii_digit() {
@@ -224,7 +228,9 @@ pub fn js_number(s: &str) -> f64 {
     if let Some(hex) = t.strip_prefix("0x").or_else(|| t.strip_prefix("0X")) {
         return u64::from_str_radix(hex, 16).map(|v| v as f64).unwrap_or(f64::NAN);
     }
-    let ok = t.bytes().all(|c| c.is_ascii_digit() || matches!(c, b'.' | b'e' | b'E' | b'+' | b'-'));
+    let ok = t
+        .bytes()
+        .all(|c| c.is_ascii_digit() || matches!(c, b'.' | b'e' | b'E' | b'+' | b'-'));
     if !ok {
         return f64::NAN;
     }

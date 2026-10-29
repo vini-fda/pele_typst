@@ -4,10 +4,10 @@ use std::sync::OnceLock;
 
 use regex::Regex;
 
+use crate::RenderOptions;
 use crate::svg::builder::{esc, is_invalid_xml};
 use crate::text::entities::decode_entities;
 use crate::util::{trim, trim_start};
-use crate::RenderOptions;
 
 const BLANK: &str = "about:blank";
 
@@ -91,7 +91,10 @@ fn unwrap(url: &str, percent: bool) -> Option<String> {
         if percent {
             out = decode(&out);
         }
-        let more = re_ctrl().is_match(&out) || re_html_entities().is_match(&out) || re_html_ctrl_entity().is_match(&out) || re_ws_escape().is_match(&out);
+        let more = re_ctrl().is_match(&out)
+            || re_html_entities().is_match(&out)
+            || re_html_ctrl_entity().is_match(&out)
+            || re_ws_escape().is_match(&out);
         if !more {
             return Some(out);
         }
@@ -108,7 +111,11 @@ fn normalize_http(url: &str) -> Option<String> {
     if host.is_empty() || host.contains(char::is_whitespace) {
         return None;
     }
-    let tail = if tail.starts_with('/') { tail.to_string() } else { format!("/{}", tail) };
+    let tail = if tail.starts_with('/') {
+        tail.to_string()
+    } else {
+        format!("/{}", tail)
+    };
     Some(format!("{}://{}{}", scheme, host.to_lowercase(), tail.replace(' ', "%20")))
 }
 
@@ -117,7 +124,9 @@ pub fn sanitize_url(url: &str) -> String {
     if url.is_empty() {
         return BLANK.into();
     }
-    let (Some(decoded), Some(kept)) = (unwrap(url, true), unwrap(url, false)) else { return BLANK.into() };
+    let (Some(decoded), Some(kept)) = (unwrap(url, true), unwrap(url, false)) else {
+        return BLANK.into();
+    };
     if decoded.is_empty() || kept.is_empty() {
         return BLANK.into();
     }
@@ -160,7 +169,11 @@ fn allowed(url: &str, schemes: &[String]) -> bool {
 
 fn allow(url: &str, schemes: &[String]) -> Option<String> {
     let decoded = unwrap(url, true)?;
-    if allowed(url, schemes) && allowed(&decoded, schemes) { Some(url.to_string()) } else { None }
+    if allowed(url, schemes) && allowed(&decoded, schemes) {
+        Some(url.to_string())
+    } else {
+        None
+    }
 }
 
 fn schemes(given: &Option<Vec<String>>, fallback: &[&str]) -> Vec<String> {
@@ -186,7 +199,10 @@ pub fn internal_link(name: &str, options: &RenderOptions) -> bool {
     if url == BLANK || link_url(&url, options).is_none() {
         return false;
     }
-    let seen: String = name.chars().filter(|&c| !is_invalid_xml(c) && !matches!(c, '\t' | '\n' | '\r')).collect();
+    let seen: String = name
+        .chars()
+        .filter(|&c| !is_invalid_xml(c) && !matches!(c, '\t' | '\n' | '\r'))
+        .collect();
     let seen = seen.trim_start_matches(|c: char| (c as u32) <= 0x20);
     link_url(seen, options).is_some()
 }
@@ -198,12 +214,22 @@ pub struct LinkInfo {
 }
 
 pub fn linked(body: &str, url: &str, id: &str, links: &mut Vec<LinkInfo>, options: &RenderOptions, attrs: &str) -> String {
-    let Some(href) = link_url(url, options) else { return body.to_string() };
-    links.push(LinkInfo { id: id.to_string(), href: href.clone(), internal: false });
+    let Some(href) = link_url(url, options) else {
+        return body.to_string();
+    };
+    links.push(LinkInfo {
+        id: id.to_string(),
+        href: href.clone(),
+        internal: false,
+    });
     format!("<a href=\"{}\"{}{}>{}</a>", esc(&href), attrs, rel_attr(options), body)
 }
 
 pub fn rel_attr(options: &RenderOptions) -> String {
     let rel = options.link_rel.as_deref().unwrap_or("noopener");
-    if rel.is_empty() { String::new() } else { format!(" rel=\"{}\"", esc(rel)) }
+    if rel.is_empty() {
+        String::new()
+    } else {
+        format!(" rel=\"{}\"", esc(rel))
+    }
 }

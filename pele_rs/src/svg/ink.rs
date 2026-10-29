@@ -102,7 +102,11 @@ fn args(body: &str, hsl: bool) -> Option<Vec<String>> {
     }
     let from = if hsl { 1 } else { 0 };
     let percent = list[from..3].iter().filter(|c| c.ends_with('%')).count();
-    if percent == if hsl { 2 } else { 3 } || (!hsl && percent == 0) { Some(list) } else { None }
+    if percent == if hsl { 2 } else { 3 } || (!hsl && percent == 0) {
+        Some(list)
+    } else {
+        None
+    }
 }
 
 // Luminance and alpha; named colors use 0 or 1 to preserve the contrast choice.
@@ -115,11 +119,13 @@ fn color(raw: &str) -> Option<(f64, f64)> {
     if LIGHT.split(' ').any(|c| c == name) {
         return Some((1.0, 1.0));
     }
-    let hex_ok = value.starts_with('#')
-        && matches!(value.len() - 1, 3 | 4 | 6 | 8)
-        && value[1..].chars().all(|c| c.is_ascii_hexdigit());
+    let hex_ok = value.starts_with('#') && matches!(value.len() - 1, 3 | 4 | 6 | 8) && value[1..].chars().all(|c| c.is_ascii_hexdigit());
     if hex_ok {
-        let digits: String = if value.len() < 6 { value[1..].chars().flat_map(|c| [c, c]).collect() } else { value[1..].to_string() };
+        let digits: String = if value.len() < 6 {
+            value[1..].chars().flat_map(|c| [c, c]).collect()
+        } else {
+            value[1..].to_string()
+        };
         let n = |i: usize| u8::from_str_radix(&digits[2 * i..2 * i + 2], 16).unwrap() as f64 / 255.0;
         return Some((luminance(n(0), n(1), n(2)), if digits.len() == 8 { n(3) } else { 1.0 }));
     }

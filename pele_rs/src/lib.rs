@@ -3,6 +3,16 @@
 //!
 //! Only flowcharts are ported so far; other diagram types report that they are not supported.
 
+// The port mirrors pele's TypeScript loop for loop, and keeps JavaScript's handling of NaN, -0
+// and the sign of `%`, so that the SVG stays identical. These lints would trade that for idiom.
+#![allow(
+    clippy::needless_range_loop,
+    clippy::neg_cmp_op_on_partial_ord,
+    clippy::manual_clamp,
+    clippy::manual_rem_euclid,
+    clippy::too_many_arguments
+)]
+
 pub mod detect;
 pub mod diagrams;
 pub mod errors;
@@ -81,15 +91,24 @@ pub fn render(text: &str, options: &RenderOptions) -> Result<RenderResult, PeleE
 pub fn render_with(text: &str, options: &RenderOptions, measurer: &dyn TextMeasurer) -> Result<RenderResult, PeleError> {
     let limit = options.limit.unwrap_or(DEFAULT_LIMIT);
     if text.encode_utf16().count() > limit {
-        return Err(PeleError::new(format!("Diagram source is longer than the limit of {} characters.", limit), PeleErrorCode::Limit));
+        return Err(PeleError::new(
+            format!("Diagram source is longer than the limit of {} characters.", limit),
+            PeleErrorCode::Limit,
+        ));
     }
     let pre = preprocess::preprocess(text)?;
     let Some(found) = detect::detect_diagram(&pre.text) else {
-        return Err(PeleError::new("No diagram type detected for the given text.", PeleErrorCode::UnsupportedDiagram));
+        return Err(PeleError::new(
+            "No diagram type detected for the given text.",
+            PeleErrorCode::UnsupportedDiagram,
+        ));
     };
     if found.kind != "flowchart" {
-        return Err(PeleError::new(format!("Diagram type \"{}\" is not supported yet.", found.kind), PeleErrorCode::UnsupportedDiagram)
-            .of(found.kind));
+        return Err(PeleError::new(
+            format!("Diagram type \"{}\" is not supported yet.", found.kind),
+            PeleErrorCode::UnsupportedDiagram,
+        )
+        .of(found.kind));
     }
     let mut config = options.config.clone().unwrap_or_default();
     for (k, v) in pre.config.iter() {
@@ -113,8 +132,11 @@ pub fn render_with(text: &str, options: &RenderOptions, measurer: &dyn TextMeasu
     let rendered = diagrams::flowchart::render::render_flowchart(&db, &config, &opts, measurer);
     let output_limit = options.output_limit.unwrap_or(DEFAULT_OUTPUT_LIMIT);
     if rendered.svg.encode_utf16().count() > output_limit {
-        return Err(PeleError::new(format!("Diagram output is longer than the limit of {} characters.", output_limit), PeleErrorCode::Limit)
-            .of(found.kind));
+        return Err(PeleError::new(
+            format!("Diagram output is longer than the limit of {} characters.", output_limit),
+            PeleErrorCode::Limit,
+        )
+        .of(found.kind));
     }
     Ok(RenderResult {
         svg: rendered.svg,

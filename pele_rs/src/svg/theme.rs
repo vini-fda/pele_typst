@@ -4,7 +4,7 @@ use indexmap::IndexMap;
 use regex::Regex;
 
 use super::builder::{esc, is_invalid_xml};
-use crate::util::{js_number, parse_float, trim, JS_WS};
+use crate::util::{JS_WS, js_number, parse_float, trim};
 
 // Private aliases set once on the root element, so each use is short and the public --pele-*
 // tokens keep their fallbacks.
@@ -70,13 +70,26 @@ const SHAPE_PROPS: [&str; 12] = [
     "ry",
 ];
 
-const TEXT_PROPS: [&str; 9] =
-    ["color", "font-size", "font-family", "font-weight", "font-style", "text-decoration", "letter-spacing", "word-spacing", "opacity"];
+const TEXT_PROPS: [&str; 9] = [
+    "color",
+    "font-size",
+    "font-family",
+    "font-weight",
+    "font-style",
+    "text-decoration",
+    "letter-spacing",
+    "word-spacing",
+    "opacity",
+];
 
 fn re_unsafe() -> &'static Regex {
     static RE: OnceLock<Regex> = OnceLock::new();
     RE.get_or_init(|| {
-        Regex::new(&format!(r"(?i)url[{ws}]*\(|expression[{ws}]*\(|javascript:|[<>{{}};\\]|@import|image-set|/\*", ws = JS_WS)).unwrap()
+        Regex::new(&format!(
+            r"(?i)url[{ws}]*\(|expression[{ws}]*\(|javascript:|[<>{{}};\\]|@import|image-set|/\*",
+            ws = JS_WS
+        ))
+        .unwrap()
     })
 }
 
@@ -146,9 +159,21 @@ pub fn resolve_style(declarations: &[String]) -> ResolvedStyle {
         if ok { Some(parse_float(s)) } else { None }
     });
     ResolvedStyle {
-        shape: if shape_css.is_empty() { String::new() } else { format!(" style=\"{}\"", esc(&shape_css)) },
-        line: if line_css.is_empty() { String::new() } else { format!(" style=\"{}\"", esc(&line_css)) },
-        text: if text_css.is_empty() { String::new() } else { format!(" style=\"{}\"", esc(&text_css)) },
+        shape: if shape_css.is_empty() {
+            String::new()
+        } else {
+            format!(" style=\"{}\"", esc(&shape_css))
+        },
+        line: if line_css.is_empty() {
+            String::new()
+        } else {
+            format!(" style=\"{}\"", esc(&line_css))
+        },
+        text: if text_css.is_empty() {
+            String::new()
+        } else {
+            format!(" style=\"{}\"", esc(&text_css))
+        },
         stroke: shape.get("stroke").cloned(),
         bold: weight == Some("bold") || weight == Some("bolder") || weight.map(js_number).is_some_and(|w| w >= 600.0),
         italic: text.get("font-style").map(|s| s.as_str()) == Some("italic"),
@@ -172,10 +197,16 @@ pub fn class_names(raw: &str) -> String {
     }
     // JavaScript replaces each run with a space and trims, which this matches except at the start.
     let cleaned = cleaned.trim_start().to_string();
-    if cleaned.is_empty() { String::new() } else { format!(" {}", cleaned) }
+    if cleaned.is_empty() {
+        String::new()
+    } else {
+        format!(" {}", cleaned)
+    }
 }
 
-const SERIES: [&str; 8] = ["#4c78a8", "#f58518", "#54a24b", "#e45756", "#72b7b2", "#eeca3b", "#b279a2", "#9d755d"];
+const SERIES: [&str; 8] = [
+    "#4c78a8", "#f58518", "#54a24b", "#e45756", "#72b7b2", "#eeca3b", "#b279a2", "#9d755d",
+];
 
 pub fn series_color(index: i64) -> String {
     let k = ((index % 8) + 8) % 8;

@@ -205,6 +205,7 @@ pub struct FlowDb {
     pub inherit_dir: bool,
 }
 
+#[derive(Default)]
 pub struct Vertex<'a> {
     pub text: Option<&'a FlowText>,
     pub kind: Option<&'a str>,
@@ -213,15 +214,13 @@ pub struct Vertex<'a> {
     pub metadata: Option<&'a str>,
 }
 
-impl Default for Vertex<'_> {
-    fn default() -> Self {
-        Vertex { text: None, kind: None, style: None, props: None, metadata: None }
-    }
-}
-
 impl FlowDb {
     pub fn new(inherit_dir: bool, max_edges: Option<usize>) -> Self {
-        FlowDb { inherit_dir, max_edges, ..Default::default() }
+        FlowDb {
+            inherit_dir,
+            max_edges,
+            ..Default::default()
+        }
     }
 
     pub fn add_vertex(&mut self, id: &str, v: Vertex) -> Result<()> {
@@ -230,7 +229,11 @@ impl FlowDb {
         }
         let mut doc: Option<Map<String, Value>> = None;
         if let Some(metadata) = v.metadata {
-            let yaml = if metadata.contains('\n') { format!("{}\n", metadata) } else { format!("{{\n{}\n}}", metadata) };
+            let yaml = if metadata.contains('\n') {
+                format!("{}\n", metadata)
+            } else {
+                format!("{{\n{}\n}}", metadata)
+            };
             let parsed = parse_yaml(&yaml).map_err(|e| {
                 PeleError::new(format!("Metadata of \"{}\" is not valid YAML. {}", id, e), PeleErrorCode::Syntax).of("flowchart")
             })?;
@@ -250,10 +253,10 @@ impl FlowDb {
         }
 
         if let Some(&ei) = self.edge_by_id.get(id) {
-            if let Some(doc) = &doc {
-                if let Some(curve) = doc.get("curve") {
-                    self.edges[ei].interpolate = Some(value_string(curve));
-                }
+            if let Some(doc) = &doc
+                && let Some(curve) = doc.get("curve")
+            {
+                self.edges[ei].interpolate = Some(value_string(curve));
             }
             return Ok(());
         }
@@ -301,8 +304,11 @@ impl FlowDb {
         if truthy(doc.get("shape")) {
             let shape = value_string(&doc["shape"]);
             if shape != shape.to_lowercase() || shape.contains('_') {
-                return Err(PeleError::new(format!("No such shape: {}. Shape names should be lowercase.", shape), PeleErrorCode::Semantic)
-                    .of("flowchart"));
+                return Err(PeleError::new(
+                    format!("No such shape: {}. Shape names should be lowercase.", shape),
+                    PeleErrorCode::Semantic,
+                )
+                .of("flowchart"));
             }
             if !is_valid_shape(&shape) {
                 return Err(PeleError::new(format!("No such shape: {}.", shape), PeleErrorCode::Semantic).of("flowchart"));
@@ -387,10 +393,10 @@ impl FlowDb {
                 edge.id = format!("L_{}_{}_{}", start, end, if count == 0 { 0 } else { count + 1 });
             }
         }
-        if let Some(max) = self.max_edges {
-            if self.edges.len() >= max {
-                return Err(PeleError::new(format!("Edge limit exceeded. The limit is {}.", max), PeleErrorCode::Limit).of("flowchart"));
-            }
+        if let Some(max) = self.max_edges
+            && self.edges.len() >= max
+        {
+            return Err(PeleError::new(format!("Edge limit exceeded. The limit is {}.", max), PeleErrorCode::Limit).of("flowchart"));
         }
         let eid = edge.id.clone();
         self.edges.push(edge);
@@ -405,7 +411,11 @@ impl FlowDb {
         let first_end = ends.first().cloned().unwrap_or_default();
         for start in starts {
             for end in ends {
-                let use_id = if *start == last_start && *end == first_end { id.as_deref() } else { None };
+                let use_id = if *start == last_start && *end == first_end {
+                    id.as_deref()
+                } else {
+                    None
+                };
                 self.add_single_link(start, end, info, use_id)?;
             }
         }
@@ -464,7 +474,10 @@ impl FlowDb {
         let joined = styles.join(",").replace("\\,", "§§§").replace(',', ";").replace("§§§", ",");
         let style: Vec<&str> = joined.split(';').collect();
         for id in ids.split(',') {
-            let class = self.classes.entry(id.to_string()).or_insert(FlowClassDef { styles: Vec::new(), text_styles: Vec::new() });
+            let class = self.classes.entry(id.to_string()).or_insert(FlowClassDef {
+                styles: Vec::new(),
+                text_styles: Vec::new(),
+            });
             for s in &style {
                 if s.contains("color") {
                     class.text_styles.push(replace_first(s, "fill", "bgFill"));
@@ -610,24 +623,48 @@ impl FlowDb {
     pub fn destruct_link(&self, end: &str, start: Option<&str>) -> LinkInfo {
         let (kind, stroke, length) = destruct_end_link(end);
         let Some(start) = start.filter(|s| !s.is_empty()) else {
-            return LinkInfo { kind, stroke, length: Some(length), text: None, id: None };
+            return LinkInfo {
+                kind,
+                stroke,
+                length: Some(length),
+                text: None,
+                id: None,
+            };
         };
         let (mut skind, sstroke) = destruct_start_link(start);
         if sstroke != stroke {
-            return LinkInfo { kind: "INVALID".into(), stroke: "INVALID".into(), length: None, text: None, id: None };
+            return LinkInfo {
+                kind: "INVALID".into(),
+                stroke: "INVALID".into(),
+                length: None,
+                text: None,
+                id: None,
+            };
         }
         if skind == "arrow_open" {
             skind = kind;
         } else {
             if skind != kind {
-                return LinkInfo { kind: "INVALID".into(), stroke: "INVALID".into(), length: None, text: None, id: None };
+                return LinkInfo {
+                    kind: "INVALID".into(),
+                    stroke: "INVALID".into(),
+                    length: None,
+                    text: None,
+                    id: None,
+                };
             }
             skind = format!("double_{}", skind);
         }
         if skind == "double_arrow" {
             skind = "double_arrow_point".into();
         }
-        LinkInfo { kind: skind, stroke: sstroke, length: Some(length), text: None, id: None }
+        LinkInfo {
+            kind: skind,
+            stroke: sstroke,
+            length: Some(length),
+            text: None,
+            id: None,
+        }
     }
 
     pub fn subgraph(&self, id: &str) -> Option<&FlowSubgraph> {

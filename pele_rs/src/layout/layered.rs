@@ -79,7 +79,18 @@ pub struct LayeredResult {
 }
 
 pub fn lnode(w: f64, h: f64, kind: Kind) -> LNode {
-    LNode { w, h, kind, pin: 0.0, hint: f64::NAN, key: f64::NAN, span: 0.0, x: 0.0, y: 0.0, rank: 0 }
+    LNode {
+        w,
+        h,
+        kind,
+        pin: 0.0,
+        hint: f64::NAN,
+        key: f64::NAN,
+        span: 0.0,
+        x: 0.0,
+        y: 0.0,
+        rank: 0,
+    }
 }
 
 pub fn ledge(tail: usize, head: usize, minlen: f64, label_w: f64, label_h: f64) -> LEdge {
@@ -202,7 +213,11 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
         node.rank = 0;
         node.x = node.w / 2.0;
         node.y = node.h / 2.0;
-        return LayeredResult { width: node.w, height: node.h, ..Default::default() };
+        return LayeredResult {
+            width: node.w,
+            height: node.h,
+            ..Default::default()
+        };
     }
 
     // Every edge gets a middle rank of its own when labels or parallel edges need the room.
@@ -325,10 +340,10 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
                 first_dummy[ei] = next as i64;
             }
             first_seg[ei] = ce as i64;
-            if let Some(efk) = efk.as_mut() {
-                if !(if e.reversed { e.head_fixed } else { e.tail_fixed }) {
-                    efk[ce] = if e.reversed { ARRIVES } else { LEAVES };
-                }
+            if let Some(efk) = efk.as_mut()
+                && !(if e.reversed { e.head_fixed } else { e.tail_fixed })
+            {
+                efk[ce] = if e.reversed { ARRIVES } else { LEAVES };
             }
             for r in ra + 1..rb {
                 let d = next;
@@ -354,10 +369,10 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
             et[ce] = b;
             efd[ce] = if prev == a { a_dx } else { 0.0 };
             etd[ce] = b_dx;
-            if let Some(etk) = etk.as_mut() {
-                if !(if e.reversed { e.tail_fixed } else { e.head_fixed }) {
-                    etk[ce] = if e.reversed { LEAVES } else { ARRIVES };
-                }
+            if let Some(etk) = etk.as_mut()
+                && !(if e.reversed { e.tail_fixed } else { e.head_fixed })
+            {
+                etk[ce] = if e.reversed { LEAVES } else { ARRIVES };
             }
             last_seg[ei] = ce as i64;
             ce += 1;
@@ -517,7 +532,11 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
     let mut fixed = vec![0u8; max_rank + 1];
     {
         let hint = |v: usize| {
-            if v < real && (nodes[v].kind == Kind::StartPort || nodes[v].kind == Kind::EndPort) { nodes[v].hint } else { f64::NAN }
+            if v < real && (nodes[v].kind == Kind::StartPort || nodes[v].kind == Kind::EndPort) {
+                nodes[v].hint
+            } else {
+                f64::NAN
+            }
         };
         for r in [0, max_rank] {
             if sort_rank(&mut order, r, &hint) {
@@ -581,7 +600,12 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
             pts.push(at[b]);
             e.points = pts;
         }
-        return LayeredResult { width: 0.0, height: 0.0, crossings: Some(crossings), declared: Some(declared) };
+        return LayeredResult {
+            width: 0.0,
+            height: 0.0,
+            crossings: Some(crossings),
+            declared: Some(declared),
+        };
     }
 
     if let (Some(efk), Some(etk)) = (&efk, &etk) {
@@ -612,17 +636,29 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
     align_ports(&g, &mut xs, empty.as_deref());
 
     let mut on_line = vec![0u8; n];
-    if let Some(empty) = &empty {
-        if !opt.tracks {
-            straighten(&g, &mut xs, empty, &first_dummy, &span, if opt.apart { 0.0 } else { opt.edge_sep }, &mut on_line);
-        }
+    if let Some(empty) = &empty
+        && !opt.tracks
+    {
+        straighten(
+            &g,
+            &mut xs,
+            empty,
+            &first_dummy,
+            &span,
+            if opt.apart { 0.0 } else { opt.edge_sep },
+            &mut on_line,
+        );
     }
     if !opt.tracks {
         past_labels(&g, &mut xs, &first_dummy, &span, opt.edge_sep, &mut on_line);
     }
 
     let mut piece_start = vec![0usize; m + 1];
-    let mut pieces: Option<Pieces> = if opt.tracks || (efk.is_some() && !opt.straight) { Some(Pieces::default()) } else { None };
+    let mut pieces: Option<Pieces> = if opt.tracks || (efk.is_some() && !opt.straight) {
+        Some(Pieces::default())
+    } else {
+        None
+    };
     let mut track_count = vec![0i64; max_rank + 1];
     if let Some(pieces) = pieces.as_mut() {
         for ei in 0..m {
@@ -631,7 +667,11 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
                 continue;
             }
             let d0 = first_dummy[ei];
-            let range = if d0 < 0 { 0..0 } else { d0 as usize..d0 as usize + span[ei] as usize - 1 };
+            let range = if d0 < 0 {
+                0..0
+            } else {
+                d0 as usize..d0 as usize + span[ei] as usize - 1
+            };
             // An edge that keeps a bend to stay clear of its twin is drawn through the bend, as it is.
             let mut twin = false;
             for d in range.clone() {
@@ -690,7 +730,11 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
     let mut band_top = vec![0.0f64; max_rank + 1];
     let mut band_bottom = vec![0.0f64; max_rank + 1];
     let usual = |r: usize| -> f64 {
-        (if r < start_ranks || r as i64 >= max_rank as i64 - end_ranks as i64 { opt.port_sep } else { opt.rank_sep }) / step as f64
+        (if r < start_ranks || r as i64 >= max_rank as i64 - end_ranks as i64 {
+            opt.port_sep
+        } else {
+            opt.rank_sep
+        }) / step as f64
     };
     let mut gap_under = vec![0.0f64; max_rank + 1];
     for r in 0..max_rank {
@@ -769,7 +813,11 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
         let top = band_bottom[r];
         let bottom = band_top[below[r]];
         let count = if opt.tracks { track_count[r] } else { pieces.levels[piece] };
-        let pitch = if count > 1 { most_pitch.min((bottom - top - 2.0 * margin) / (count - 1) as f64) } else { 0.0 };
+        let pitch = if count > 1 {
+            most_pitch.min((bottom - top - 2.0 * margin) / (count - 1) as f64)
+        } else {
+            0.0
+        };
         (top + bottom) / 2.0 + (on_track as f64 - (count - 1) as f64 / 2.0) * pitch
     };
 
@@ -883,7 +931,11 @@ pub fn layered(nodes: &mut [LNode], edges: &mut [LEdge], opt: &LayeredOptions) -
         e.points = pts;
     }
 
-    LayeredResult { width: max_x - min_x, height, ..Default::default() }
+    LayeredResult {
+        width: max_x - min_x,
+        height,
+        ..Default::default()
+    }
 }
 
 // Reverses the edges that close a cycle, found by depth-first search in declaration order.
@@ -1023,10 +1075,10 @@ pub fn rank(nodes: &mut [LNode], edges: &[LEdge], step: i64) {
                 hi = Some(hi.map_or(c, |h| h.min(c)));
             }
             let mut next = r[v];
-            if outs > ins && hi.is_some() {
-                next = hi.unwrap();
-            } else if ins > outs && lo.is_some() {
-                next = lo.unwrap();
+            if let (true, Some(h)) = (outs > ins, hi) {
+                next = h;
+            } else if let (true, Some(l)) = (ins > outs, lo) {
+                next = l;
             }
             if next != r[v] {
                 r[v] = next;
@@ -1144,7 +1196,11 @@ fn follow(g: &Graph, empty: Option<&[u8]>, mut e: usize, side: usize) -> usize {
         if g.kind[u] != Kind::Dummy as u8 || empty[g.rank[u]] == 0 {
             break;
         }
-        e = if side == 0 { g.pred_e[g.pred_start[u]] } else { g.succ_e[g.succ_start[u]] };
+        e = if side == 0 {
+            g.pred_e[g.pred_start[u]]
+        } else {
+            g.succ_e[g.succ_start[u]]
+        };
     }
     e
 }
@@ -1158,16 +1214,29 @@ fn align_ports(g: &Graph, xs: &mut [f64], empty: Option<&[u8]>) {
         for i in s..end {
             let v = g.order[i];
             let start = kind == Kind::StartPort;
-            let degree = if start { g.succ_start[v + 1] - g.succ_start[v] } else { g.pred_start[v + 1] - g.pred_start[v] };
+            let degree = if start {
+                g.succ_start[v + 1] - g.succ_start[v]
+            } else {
+                g.pred_start[v + 1] - g.pred_start[v]
+            };
             if g.kind[v] != kind as u8 || degree != 1 {
                 break;
             }
-            let e = follow(g, empty, if start { g.succ_e[g.succ_start[v]] } else { g.pred_e[g.pred_start[v]] }, if start { 1 } else { 0 });
+            let e = follow(
+                g,
+                empty,
+                if start {
+                    g.succ_e[g.succ_start[v]]
+                } else {
+                    g.pred_e[g.pred_start[v]]
+                },
+                if start { 1 } else { 0 },
+            );
             let at = if start { xs[g.et[e]] + g.etd[e] } else { xs[g.ef[e]] + g.efd[e] };
-            if let Some(&last) = to.last() {
-                if at < last + TWIN {
-                    break;
-                }
+            if let Some(&last) = to.last()
+                && at < last + TWIN
+            {
+                break;
             }
             to.push(at);
         }
@@ -1209,7 +1278,14 @@ fn align_labels(g: &Graph, nodes: &[LNode], xs: &mut [f64], free: &[Vec<i64>; 2]
     let end = |xs: &[f64], e: usize, side: usize| -> (f64, i64) {
         let u = if side == 0 { g.ef[e] } else { g.et[e] };
         let x = if side == 0 { xs[u] + g.efd[e] } else { xs[u] + g.etd[e] };
-        (x, if u < g.real && nodes[u].kind == Kind::Node { free[1 - side][u] } else { 0 })
+        (
+            x,
+            if u < g.real && nodes[u].kind == Kind::Node {
+                free[1 - side][u]
+            } else {
+                0
+            },
+        )
     };
     let room = |xs: &[f64], v: usize| -> (f64, f64) {
         let s = g.layer_start[g.rank[v]];
@@ -1226,12 +1302,24 @@ fn align_labels(g: &Graph, nodes: &[LNode], xs: &mut [f64], free: &[Vec<i64>; 2]
                 }
         };
         (
-            if i > s { xs[g.order[i - 1]] + clear(g.order[i - 1]) } else { f64::NEG_INFINITY },
-            if i + 1 < g.layer_start[g.rank[v] + 1] { xs[g.order[i + 1]] - clear(g.order[i + 1]) } else { f64::INFINITY },
+            if i > s {
+                xs[g.order[i - 1]] + clear(g.order[i - 1])
+            } else {
+                f64::NEG_INFINITY
+            },
+            if i + 1 < g.layer_start[g.rank[v] + 1] {
+                xs[g.order[i + 1]] - clear(g.order[i + 1])
+            } else {
+                f64::INFINITY
+            },
         )
     };
     let choose = |x: f64, up: (f64, i64), down: (f64, i64), lo: f64, hi: f64| -> f64 {
-        let up_first = if up.1 != down.1 { up.1 < down.1 } else { (up.0 - x).abs() <= (down.0 - x).abs() };
+        let up_first = if up.1 != down.1 {
+            up.1 < down.1
+        } else {
+            (up.0 - x).abs() <= (down.0 - x).abs()
+        };
         let choices = if up_first { [up.0, down.0] } else { [down.0, up.0] };
         for c in choices {
             if c >= lo && c <= hi {
@@ -1272,7 +1360,13 @@ fn align_labels(g: &Graph, nodes: &[LNode], xs: &mut [f64], free: &[Vec<i64>; 2]
                 d = g.et[g.succ_e[g.succ_start[d]]];
             }
             if lo <= hi {
-                let x = choose(xs[chain[0]], end(xs, g.pred_e[g.pred_start[top]], 0), end(xs, g.succ_e[g.succ_start[bottom]], 1), lo, hi);
+                let x = choose(
+                    xs[chain[0]],
+                    end(xs, g.pred_e[g.pred_start[top]], 0),
+                    end(xs, g.succ_e[g.succ_start[bottom]], 1),
+                    lo,
+                    hi,
+                );
                 for &d in &chain {
                     xs[d] = x;
                 }
@@ -1351,7 +1445,14 @@ fn settle(g: &mut Graph, nodes: &[LNode], xs: &[f64], efk: &[u8], etk: &[u8], fr
             let other = if side == 0 { &g.ef } else { &g.et };
             let mut all: Vec<usize> = (start[v]..start[v + 1]).map(|k| list[k]).collect();
             stable_sort_by(&mut all, |&a, &b| g.pos[other[a]].cmp(&g.pos[other[b]]).then(a.cmp(&b)));
-            sides.push(SideInfo { v, side, span, ids, room, all });
+            sides.push(SideInfo {
+                v,
+                side,
+                span,
+                ids,
+                room,
+                all,
+            });
         }
     }
     let mut moved = true;
@@ -1373,7 +1474,11 @@ fn settle(g: &mut Graph, nodes: &[LNode], xs: &[f64], efk: &[u8], etk: &[u8], fr
                     size += 1;
                     j -= 1;
                 }
-                let hi = if held { (if s.side == 0 { &g.etd } else { &g.efd })[s.all[i]] - PORT_PITCH } else { s.span / 2.0 };
+                let hi = if held {
+                    (if s.side == 0 { &g.etd } else { &g.efd })[s.all[i]] - PORT_PITCH
+                } else {
+                    s.span / 2.0
+                };
                 if size > 0 {
                     let mut sum: Vec<f64> = Vec::new();
                     let mut count: Vec<f64> = Vec::new();
@@ -1400,8 +1505,11 @@ fn settle(g: &mut Graph, nodes: &[LNode], xs: &[f64], efk: &[u8], etk: &[u8], fr
                     before = 0.0;
                     let dx = if s.side == 0 { &mut g.etd } else { &mut g.efd };
                     for b in 0..sum.len() {
-                        let level =
-                            if hi - total < lo { (lo + hi - total) / 2.0 } else { lo.max((hi - total).min(sum[b] / count[b])) };
+                        let level = if hi - total < lo {
+                            (lo + hi - total) / 2.0
+                        } else {
+                            lo.max((hi - total).min(sum[b] / count[b]))
+                        };
                         let mut c = 0.0;
                         while c < count[b] {
                             if j > 0 {
@@ -1427,7 +1535,12 @@ fn settle(g: &mut Graph, nodes: &[LNode], xs: &[f64], efk: &[u8], etk: &[u8], fr
 }
 
 fn half_room(g: &Graph, opt: &LayeredOptions, v: usize) -> f64 {
-    g.w[v] / 2.0 + (if g.kind[v] == Kind::Node as u8 { opt.node_sep } else { opt.edge_sep }) / 2.0
+    g.w[v] / 2.0
+        + (if g.kind[v] == Kind::Node as u8 {
+            opt.node_sep
+        } else {
+            opt.edge_sep
+        }) / 2.0
 }
 
 // Brings edges that are nearly straight into line, by moving a node or bend a little across the flow.
@@ -1492,7 +1605,11 @@ fn snap(g: &Graph, xs: &mut [f64], empty: Option<&[u8]>, opt: &LayeredOptions) {
         }
         let upper = block[a[k]];
         let lower = block[b[k]];
-        let first = if members[upper].len() <= members[lower].len() { upper } else { lower };
+        let first = if members[upper].len() <= members[lower].len() {
+            upper
+        } else {
+            lower
+        };
         for id in [first, if first == upper { lower } else { upper }] {
             let shift = if id == upper { d } else { -d };
             if d.abs() > SNAP && !members[id].iter().all(|&v| g.kind[v] == Kind::Dummy as u8) {
@@ -1595,7 +1712,9 @@ fn assign_tracks(pieces: &mut Pieces, track_count: &mut [i64], curved: bool, roo
 
     let lay = |pieces: &mut Pieces, list: &mut Vec<usize>| -> i64 {
         stable_sort_by(list, |&a, &b| {
-            ord(hi_of[b] - lo_of[b] - (hi_of[a] - lo_of[a])).then(ord(lo_of[a] - lo_of[b])).then(a.cmp(&b))
+            ord(hi_of[b] - lo_of[b] - (hi_of[a] - lo_of[a]))
+                .then(ord(lo_of[a] - lo_of[b]))
+                .then(a.cmp(&b))
         });
         let count = list.len();
         let mut above: Vec<Vec<usize>> = Vec::new();
@@ -1826,7 +1945,11 @@ fn assign_tracks(pieces: &mut Pieces, track_count: &mut [i64], curved: bool, roo
             }
             continue;
         }
-        let mut members: Vec<usize> = all.iter().copied().filter(|&k| level.contains(&k) || (wide[k] != 1 && beside.contains(&k))).collect();
+        let mut members: Vec<usize> = all
+            .iter()
+            .copied()
+            .filter(|&k| level.contains(&k) || (wide[k] != 1 && beside.contains(&k)))
+            .collect();
         lay(pieces, &mut members);
         let mut most = 0;
         for &k in &members {
@@ -2140,7 +2263,13 @@ fn reduce_crossings(g: &mut Graph, nodes: &[LNode]) -> (i64, i64) {
                 gr = gp[gr as usize];
             }
         }
-        let value = |item: usize| if item >= n { group_sum[item - n] / group_count[item - n] as f64 } else { key[item] };
+        let value = |item: usize| {
+            if item >= n {
+                group_sum[item - n] / group_count[item - n] as f64
+            } else {
+                key[item]
+            }
+        };
         let first = |item: usize| if item >= n { group_first[item - n] } else { s + g.pos[item] };
         let compare = |&a: &usize, &b: &usize| {
             let mut ia = a;
@@ -2183,7 +2312,11 @@ fn reduce_crossings(g: &mut Graph, nodes: &[LNode]) -> (i64, i64) {
             arrange(g, r, &at);
         }
     }
-    let mut best = if g.grp.is_some() { count(g, &mut place, &mut tree, &mut targets) } else { declared };
+    let mut best = if g.grp.is_some() {
+        count(g, &mut place, &mut tree, &mut targets)
+    } else {
+        declared
+    };
     if best == 0 {
         return (0, declared);
     }
@@ -2208,8 +2341,11 @@ fn reduce_crossings(g: &mut Graph, nodes: &[LNode]) -> (i64, i64) {
                     moving.push(v);
                     continue;
                 }
-                let (start, list, other, other_dx) =
-                    if down { (&g.pred_start, &g.pred_e, &g.ef, &g.efd) } else { (&g.succ_start, &g.succ_e, &g.et, &g.etd) };
+                let (start, list, other, other_dx) = if down {
+                    (&g.pred_start, &g.pred_e, &g.ef, &g.efd)
+                } else {
+                    (&g.succ_start, &g.succ_e, &g.et, &g.etd)
+                };
                 let from = start[v];
                 let to = start[v + 1];
                 if from == to {
@@ -2291,7 +2427,11 @@ fn reduce_crossings(g: &mut Graph, nodes: &[LNode]) -> (i64, i64) {
 
     let at = |g: &Graph, e: usize, up: bool| -> f64 {
         let u = if up { g.ef[e] } else { g.et[e] };
-        if g.offsets && g.w[u] > 0.0 { g.pos[u] as f64 + (if up { g.efd[e] } else { g.etd[e] }) / g.w[u] } else { g.pos[u] as f64 }
+        if g.offsets && g.w[u] > 0.0 {
+            g.pos[u] as f64 + (if up { g.efd[e] } else { g.etd[e] }) / g.w[u]
+        } else {
+            g.pos[u] as f64
+        }
     };
     let between = |g: &Graph, a: usize, b: usize| -> i64 {
         let mut c = 0;
@@ -2496,8 +2636,11 @@ fn position(g: &mut Graph, opt: &LayeredOptions) -> Vec<f64> {
     for variant in 0..4 {
         let up = variant < 2;
         let right = variant & 1 == 1;
-        let (start, list, other, own_dx, other_dx) =
-            if up { (&g.pred_start, &g.pred_e, &g.ef, &g.etd, &g.efd) } else { (&g.succ_start, &g.succ_e, &g.et, &g.efd, &g.etd) };
+        let (start, list, other, own_dx, other_dx) = if up {
+            (&g.pred_start, &g.pred_e, &g.ef, &g.etd, &g.efd)
+        } else {
+            (&g.succ_start, &g.succ_e, &g.et, &g.efd, &g.etd)
+        };
         for i in 0..n {
             root[i] = i;
             align[i] = i;
@@ -2535,7 +2678,11 @@ fn position(g: &mut Graph, opt: &LayeredOptions) -> Vec<f64> {
                     }
                     let e = list[if (pass == 0) != right { lo } else { hi }];
                     let wv = other[e];
-                    let idx = if right { adjacent_last - g.pos[wv] as isize } else { g.pos[wv] as isize };
+                    let idx = if right {
+                        adjacent_last - g.pos[wv] as isize
+                    } else {
+                        g.pos[wv] as isize
+                    };
                     if align[v] == v && prev_idx < idx && !conflict[e] {
                         align[wv] = v;
                         root[v] = root[wv];
@@ -2557,7 +2704,11 @@ fn position(g: &mut Graph, opt: &LayeredOptions) -> Vec<f64> {
                 let sep = gap[a] + gap[b];
                 e_from[block_edges] = root[a];
                 e_to[block_edges] = root[b];
-                e_w[block_edges] = if right { sep - shift[a] + shift[b] } else { sep + shift[a] - shift[b] };
+                e_w[block_edges] = if right {
+                    sep - shift[a] + shift[b]
+                } else {
+                    sep + shift[a] - shift[b]
+                };
                 indeg[root[b]] += 1;
                 out_start[root[a] + 1] += 1;
                 block_edges += 1;
@@ -2638,7 +2789,11 @@ fn position(g: &mut Graph, opt: &LayeredOptions) -> Vec<f64> {
         }
     }
     for k in 0..4 {
-        let delta = if k & 1 == 0 { mins[narrowest] - mins[k] } else { maxs[narrowest] - maxs[k] };
+        let delta = if k & 1 == 0 {
+            mins[narrowest] - mins[k]
+        } else {
+            maxs[narrowest] - maxs[k]
+        };
         if delta != 0.0 {
             for v in results[k].iter_mut() {
                 *v += delta;

@@ -4,8 +4,8 @@ use std::sync::OnceLock;
 use regex::Regex;
 
 use super::entities::decode_entities;
-use super::measurer::{TextMeasurer, BOLD, ITALIC, MONO, SUB, SUP, UNDERLINE};
-use crate::util::{is_js_space, js_round, trim, trim_end, trim_start, JS_WS};
+use super::measurer::{BOLD, ITALIC, MONO, SUB, SUP, TextMeasurer, UNDERLINE};
+use crate::util::{JS_WS, is_js_space, js_round, trim, trim_end, trim_start};
 
 #[derive(Debug, Clone, PartialEq)]
 pub struct Span {
@@ -149,13 +149,17 @@ fn dedent(text: &str) -> String {
 
 fn push_plain(line: &mut Vec<Span>, text: &str, style: u32) {
     let decoded = decode_entities(text);
-    if let Some(last) = line.last_mut() {
-        if last.style == style {
-            last.text.push_str(&decoded);
-            return;
-        }
+    if let Some(last) = line.last_mut()
+        && last.style == style
+    {
+        last.text.push_str(&decoded);
+        return;
     }
-    line.push(Span { text: decoded, style, width: 0.0 });
+    line.push(Span {
+        text: decoded,
+        style,
+        width: 0.0,
+    });
 }
 
 fn push_text(line: &mut Vec<Span>, text: &str, style: u32) {
@@ -178,10 +182,10 @@ fn push_icons(line: &mut Vec<Span>, text: &str, style: u32) {
         last = m.end();
         if text[last..].starts_with(' ') {
             last += 1;
-        } else if last == text.len() {
-            if let Some(before) = line.last_mut() {
-                before.text = trim_end(&before.text).to_string();
-            }
+        } else if last == text.len()
+            && let Some(before) = line.last_mut()
+        {
+            before.text = trim_end(&before.text).to_string();
         }
     }
     push_text(line, &text[last..], style);
@@ -226,7 +230,11 @@ fn inline(line: &mut Vec<Span>, source: &str, markdown: bool, base: u32, open: &
                     }
                 } else if bit != 0 {
                     flush(line, &mut text, style, open);
-                    open.style = if closing { (open.style & !bit) | (base & bit) } else { open.style | bit };
+                    open.style = if closing {
+                        (open.style & !bit) | (base & bit)
+                    } else {
+                        open.style | bit
+                    };
                     style = if closing { (style & !bit) | (base & bit) } else { style | bit };
                 }
                 // Other HTML tags are dropped and their text kept. Anything else shaped like a
@@ -242,7 +250,11 @@ fn inline(line: &mut Vec<Span>, source: &str, markdown: bool, base: u32, open: &
             let len = if double { 2 } else { 1 };
             let opening = marked & bit == 0;
             let prev = if i > 0 { source[..i].chars().next_back().unwrap() } else { ' ' };
-            let next = if i + len < n { source[i + len..].chars().next().unwrap() } else { ' ' };
+            let next = if i + len < n {
+                source[i + len..].chars().next().unwrap()
+            } else {
+                ' '
+            };
             let needle: String = if double { [ch, ch].iter().collect() } else { ch.to_string() };
             let can_open = opening && !is_js_space(next) && source[i + len..].contains(needle.as_str());
             let can_close = !opening && !is_js_space(prev);
@@ -299,7 +311,12 @@ impl Wrapping<'_> {
 }
 
 fn wrap(line: &[Span], measurer: &dyn TextMeasurer, size: f64, max: f64, out: &mut Vec<Vec<Span>>, widths: &mut Vec<f64>) {
-    let mut w = Wrapping { measurer, size, current: Vec::new(), width: 0.0 };
+    let mut w = Wrapping {
+        measurer,
+        size,
+        current: Vec::new(),
+        width: 0.0,
+    };
     for (si, span) in line.iter().enumerate() {
         let pieces: Vec<&str> = re_piece().find_iter(&span.text).map(|m| m.as_str()).collect();
         // A piece ending in a soft hyphen fits if its '-' does, or if the rest of the word does,
@@ -325,7 +342,11 @@ fn wrap(line: &[Span], measurer: &dyn TextMeasurer, size: f64, max: f64, out: &m
         }
         for (p, &piece) in pieces.iter().enumerate() {
             let mut part = piece;
-            let part_width = if soft { own[p] } else { measurer.width(trim_end(part), size, span.style) };
+            let part_width = if soft {
+                own[p]
+            } else {
+                measurer.width(trim_end(part), size, span.style)
+            };
             let fits = if !soft || !part.ends_with('\u{ad}') {
                 w.width + part_width <= max
             } else {
@@ -349,7 +370,11 @@ fn wrap(line: &[Span], measurer: &dyn TextMeasurer, size: f64, max: f64, out: &m
                 }
                 _ => {
                     let width = measurer.width(part, size, span.style);
-                    w.current.push(Span { text: part.to_string(), style: span.style, width });
+                    w.current.push(Span {
+                        text: part.to_string(),
+                        style: span.style,
+                        width,
+                    });
                     w.width += width;
                 }
             }
@@ -372,7 +397,11 @@ pub fn layout_label(raw: Option<&str>, markdown: bool, measurer: &dyn TextMeasur
         let width = measurer.width(text, size, base);
         if width <= max_width || !(text.contains(' ') || re_cjk().is_match(text) || re_hint().is_match(text)) {
             return Label {
-                lines: vec![vec![Span { text: text.to_string(), style: base, width }]],
+                lines: vec![vec![Span {
+                    text: text.to_string(),
+                    style: base,
+                    width,
+                }]],
                 widths: vec![width],
                 width,
                 height: line_height,
@@ -382,16 +411,38 @@ pub fn layout_label(raw: Option<&str>, markdown: bool, measurer: &dyn TextMeasur
         }
         let mut lines = Vec::new();
         let mut widths = Vec::new();
-        wrap(&[Span { text: text.to_string(), style: base, width }], measurer, size, max_width, &mut lines, &mut widths);
+        wrap(
+            &[Span {
+                text: text.to_string(),
+                style: base,
+                width,
+            }],
+            measurer,
+            size,
+            max_width,
+            &mut lines,
+            &mut widths,
+        );
         let mut widest: f64 = 0.0;
         for &w in &widths {
             if w > widest {
                 widest = w;
             }
         }
-        let snug = if lines.len() > 1 { js_round(size * WRAPPED_LINE_HEIGHT) } else { line_height };
+        let snug = if lines.len() > 1 {
+            js_round(size * WRAPPED_LINE_HEIGHT)
+        } else {
+            line_height
+        };
         let height = lines.len() as f64 * snug;
-        return Label { lines, widths, width: widest, height, size, line_height: snug };
+        return Label {
+            lines,
+            widths,
+            width: widest,
+            height,
+            size,
+            line_height: snug,
+        };
     }
     layout_lines(raw, markdown, measurer, size, max_width, base)
 }
@@ -406,7 +457,10 @@ fn layout_lines(raw: &str, markdown: bool, measurer: &dyn TextMeasurer, size: f6
     let mut widths: Vec<f64> = Vec::new();
     let mut width: f64 = 0.0;
     // HTML tags can span explicit breaks; Markdown emphasis stays local to each line.
-    let mut open = Open { style: base, shifts: Vec::new() };
+    let mut open = Open {
+        style: base,
+        shifts: Vec::new(),
+    };
     for part in re_break().split(&source) {
         let mut line = Vec::new();
         inline(&mut line, trim(part), markdown, base, &mut open);
@@ -423,9 +477,20 @@ fn layout_lines(raw: &str, markdown: bool, measurer: &dyn TextMeasurer, size: f6
             width = w;
         }
     }
-    let snug = if lines.len() > 1 { js_round(size * WRAPPED_LINE_HEIGHT) } else { js_round(size * LINE_HEIGHT) };
+    let snug = if lines.len() > 1 {
+        js_round(size * WRAPPED_LINE_HEIGHT)
+    } else {
+        js_round(size * LINE_HEIGHT)
+    };
     let height = lines.len() as f64 * snug;
-    Label { lines, widths, width, height, size, line_height: snug }
+    Label {
+        lines,
+        widths,
+        width,
+        height,
+        size,
+        line_height: snug,
+    }
 }
 
 pub fn line_middle(label: &Label, i: usize) -> f64 {

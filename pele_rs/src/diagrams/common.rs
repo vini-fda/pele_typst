@@ -1,7 +1,7 @@
 // Fitting a drawing to the width the host has, after pele's diagrams/common/fit-width.ts.
 
-use crate::url::LinkInfo;
 use crate::RenderOptions;
+use crate::url::LinkInfo;
 
 pub struct Rendered {
     pub svg: String,
@@ -24,7 +24,9 @@ const BREAKPOINT: f64 = 640.0;
 // breakpoint, across does not fit, and down is narrower.
 pub fn turn_to_fit(options: &RenderOptions, draw: impl Fn(bool) -> Rendered) -> Rendered {
     let across = draw(false);
-    let Some(available) = options.max_width.filter(|&a| a > 0.0) else { return across };
+    let Some(available) = options.max_width.filter(|&a| a > 0.0) else {
+        return across;
+    };
     if options.auto_direction == Some(false) || across.width <= available {
         return across;
     }
@@ -43,7 +45,9 @@ pub fn runs_across(direction: Option<&str>) -> bool {
 // Draws with room to spare, and tightly instead when that does not fit and tight is narrower.
 pub fn tighten(options: &RenderOptions, draw: impl Fn(bool) -> Rendered) -> Rendered {
     let loose = draw(false);
-    let Some(available) = options.max_width.filter(|&a| a > 0.0) else { return loose };
+    let Some(available) = options.max_width.filter(|&a| a > 0.0) else {
+        return loose;
+    };
     if loose.width <= available {
         return loose;
     }

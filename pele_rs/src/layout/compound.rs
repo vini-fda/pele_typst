@@ -4,7 +4,7 @@
 
 use std::collections::HashMap;
 
-use super::layered::{ease, layered, ledge, lnode, orient, rank, Groups, Kind, LEdge, LNode, LayeredOptions, LayeredResult};
+use super::layered::{Groups, Kind, LEdge, LNode, LayeredOptions, LayeredResult, ease, layered, ledge, lnode, orient, rank};
 use crate::util::{js_round, stable_sort_by};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -169,23 +169,22 @@ impl Segs {
     #[allow(clippy::too_many_arguments)]
     fn add(&mut self, ei: usize, part: u8, mut x0: f64, mut y0: f64, x1: f64, y1: f64) {
         let on = x0 == self.to_x && y0 == self.to_y && ((y1 == y0 && self.from_y == y0) || (x1 == x0 && self.from_x == x0));
-        if let Some(p) = self.owner.len().checked_sub(1) {
-            if on
-                && self.owner[p] == ei
-                && self.ends[p] == part
-                && (x0 - self.from_x) * (x1 - x0) + (y0 - self.from_y) * (y1 - y0) > 0.0
-            {
-                self.ax.pop();
-                self.ay.pop();
-                self.bx.pop();
-                self.by.pop();
-                self.low.pop();
-                self.high.pop();
-                self.owner.pop();
-                self.ends.pop();
-                x0 = self.from_x;
-                y0 = self.from_y;
-            }
+        if let Some(p) = self.owner.len().checked_sub(1)
+            && on
+            && self.owner[p] == ei
+            && self.ends[p] == part
+            && (x0 - self.from_x) * (x1 - x0) + (y0 - self.from_y) * (y1 - y0) > 0.0
+        {
+            self.ax.pop();
+            self.ay.pop();
+            self.bx.pop();
+            self.by.pop();
+            self.low.pop();
+            self.high.pop();
+            self.owner.pop();
+            self.ends.pop();
+            x0 = self.from_x;
+            y0 = self.from_y;
         }
         self.from_x = x0;
         self.from_y = y0;
@@ -327,7 +326,11 @@ pub fn route_crossings(nodes: &[CNode], edges: &[CEdge], style: Style) -> i64 {
     }
     let count = s.owner.len();
     let (top, bottom) = (s.top, s.bottom);
-    let bands = if bottom > top { js_round((count as f64).sqrt()) as usize } else { 1 };
+    let bands = if bottom > top {
+        js_round((count as f64).sqrt()) as usize
+    } else {
+        1
+    };
     let scale = if bottom > top { bands as f64 / (bottom - top) } else { 0.0 };
     let band_of = |y: f64| -> usize {
         let b = ((y - top) * scale).floor();
@@ -385,7 +388,11 @@ pub fn route_crossings(nodes: &[CNode], edges: &[CEdge], style: Style) -> i64 {
         let dx = runs[o + 2] - x0;
         let dy = runs[o + 3] - y0;
         let length = dx * dx + dy * dy;
-        let t = if length > 0.0 { 0f64.max(1f64.min(((x - x0) * dx + (y - y0) * dy) / length)) } else { 0.0 };
+        let t = if length > 0.0 {
+            0f64.max(1f64.min(((x - x0) * dx + (y - y0) * dy) / length))
+        } else {
+            0.0
+        };
         (x - x0 - t * dx).hypot(y - y0 - t * dy) < IN_LINE
     };
     let mut total = 0;
@@ -393,7 +400,9 @@ pub fn route_crossings(nodes: &[CNode], edges: &[CEdge], style: Style) -> i64 {
         let band_end = band_start[band + 1];
         let bs = band_start[band];
         if band_end - bs > MAX_INSERT {
-            stable_sort_by(&mut in_band[bs..band_end], |&p, &q| crate::util::ord(s.ax[p] - s.ax[q]).then(p.cmp(&q)));
+            stable_sort_by(&mut in_band[bs..band_end], |&p, &q| {
+                crate::util::ord(s.ax[p] - s.ax[q]).then(p.cmp(&q))
+            });
         } else {
             for i in bs + 1..band_end {
                 let p = in_band[i];
@@ -598,7 +607,13 @@ impl Compound<'_> {
                 places.push(self.ports[p].py);
             }
         }
-        Snapshot { nodes: at, routes: self.edges.iter().map(|e| e.route.clone()).collect(), labels, levels: places, total: self.total }
+        Snapshot {
+            nodes: at,
+            routes: self.edges.iter().map(|e| e.route.clone()).collect(),
+            labels,
+            levels: places,
+            total: self.total,
+        }
     }
 
     fn restore(&mut self, s: &Snapshot) {
@@ -664,11 +679,19 @@ impl Compound<'_> {
             self.local[item] = i;
             let node = &self.nodes[item];
             let mut ln = if sized {
-                lnode(if vertical { node.w } else { node.h }, if vertical { node.h } else { node.w }, Kind::Node)
+                lnode(
+                    if vertical { node.w } else { node.h },
+                    if vertical { node.h } else { node.w },
+                    Kind::Node,
+                )
             } else {
                 lnode(0.0, 0.0, Kind::Node)
             };
-            ln.span = if node.is_group { node.span.min(ln.w - 2.0 * node.pad_x) } else { node.span };
+            ln.span = if node.is_group {
+                node.span.min(ln.w - 2.0 * node.pad_x)
+            } else {
+                node.span
+            };
             ln.key = if self.keyed { self.key[item] } else { f64::NAN };
             lnodes.push(ln);
         }
@@ -678,7 +701,11 @@ impl Compound<'_> {
                 return 0.0;
             }
             let port = &s.ports[s.port_in(item, ei, out)];
-            if vertical { port.px - s.nodes[item].w / 2.0 } else { port.py - s.nodes[item].h / 2.0 }
+            if vertical {
+                port.px - s.nodes[item].w / 2.0
+            } else {
+                port.py - s.nodes[item].h / 2.0
+            }
         };
         let level_edges = self.levels[li].edges.clone();
         for le in &level_edges {
@@ -706,11 +733,18 @@ impl Compound<'_> {
                 } else {
                     f64::NAN
                 };
-                ln.hint = if port.hint.is_nan() && self.keyed && self.flat.is_some() { self.far_hint(li, &port) } else { port.hint };
+                ln.hint = if port.hint.is_nan() && self.keyed && self.flat.is_some() {
+                    self.far_hint(li, &port)
+                } else {
+                    port.hint
+                };
                 lnodes.push(ln);
                 dummies[i] = d as i64;
-                let mut edge =
-                    if port.out { ledge(self.local[port.inner], d, 1.0, 0.0, 0.0) } else { ledge(d, self.local[port.inner], 1.0, 0.0, 0.0) };
+                let mut edge = if port.out {
+                    ledge(self.local[port.inner], d, 1.0, 0.0, 0.0)
+                } else {
+                    ledge(d, self.local[port.inner], 1.0, 0.0, 0.0)
+                };
                 if port.out {
                     edge.tail_dx = offset(self, port.inner, port.e, true);
                     edge.tail_fixed = held(self, port.inner, port.e, true);
@@ -756,7 +790,12 @@ impl Compound<'_> {
             }
         }
         let size = layered(&mut lnodes, &mut ledges, self.opt);
-        past.push(Laid { given, lnodes: lnodes.clone(), ledges: ledges.clone(), size });
+        past.push(Laid {
+            given,
+            lnodes: lnodes.clone(),
+            ledges: ledges.clone(),
+            size,
+        });
         (lnodes, ledges, size)
     }
 
@@ -824,7 +863,16 @@ impl Compound<'_> {
             let box_h = content_h + pad_top + pad_bottom;
             let off_x = (box_w - content_w) / 2.0;
             let off_y = pad_top;
-            let tx = |lx: f64, ly: f64| off_x + if vertical { lx } else if flip { size.height - ly } else { ly };
+            let tx = |lx: f64, ly: f64| {
+                off_x
+                    + if vertical {
+                        lx
+                    } else if flip {
+                        size.height - ly
+                    } else {
+                        ly
+                    }
+            };
             let ty = |lx: f64, ly: f64| off_y + if vertical { if flip { size.height - ly } else { ly } } else { lx };
             let axis = if vertical { 0.0 } else { 1.0 };
             let convert = |points: &[f64]| -> Vec<f64> {
@@ -907,14 +955,21 @@ impl Compound<'_> {
                 let p = &mut self.ports[pi];
                 p.px = bx;
                 p.py = by;
-                p.route = if port.out { vec![ix, iy, a, bx, by, a] } else { vec![bx, by, a, ix, iy, a] };
+                p.route = if port.out {
+                    vec![ix, iy, a, bx, by, a]
+                } else {
+                    vec![bx, by, a, ix, iy, a]
+                };
             }
 
             if id >= 0 {
                 self.nodes[id as usize].w = box_w;
                 self.nodes[id as usize].h = box_h;
             } else {
-                self.total = CompoundResult { width: box_w, height: box_h };
+                self.total = CompoundResult {
+                    width: box_w,
+                    height: box_h,
+                };
             }
         }
 
@@ -1018,7 +1073,13 @@ pub fn compound_layout(nodes: &mut [CNode], edges: &mut [CEdge], root_dir: Dir, 
     levels[root].items = root_items;
     let mut depth = vec![0i64; n];
     let mut placed = vec![false; n];
-    let descend = |levels: &mut Vec<Level>, level_of: &mut HashMap<i64, usize>, nodes: &[CNode], children: &[Vec<usize>], depth: &mut Vec<i64>, placed: &mut Vec<bool>, from: usize| {
+    let descend = |levels: &mut Vec<Level>,
+                   level_of: &mut HashMap<i64, usize>,
+                   nodes: &[CNode],
+                   children: &[Vec<usize>],
+                   depth: &mut Vec<i64>,
+                   placed: &mut Vec<bool>,
+                   from: usize| {
         let mut q = from;
         while q < levels.len() {
             let (id, dir, items) = (levels[q].id, levels[q].dir, levels[q].items.clone());
@@ -1065,7 +1126,9 @@ pub fn compound_layout(nodes: &mut [CNode], edges: &mut [CEdge], root_dir: Dir, 
         }
     }
     for level in levels.iter_mut() {
-        stable_sort_by(&mut level.items, |&a, &b| crate::util::ord(nodes[a].seq - nodes[b].seq).then(a.cmp(&b)));
+        stable_sort_by(&mut level.items, |&a, &b| {
+            crate::util::ord(nodes[a].seq - nodes[b].seq).then(a.cmp(&b))
+        });
     }
 
     // Every group border an edge crosses costs a port. Past the budget, an edge is drawn between
@@ -1135,7 +1198,16 @@ pub fn compound_layout(nodes: &mut [CNode], edges: &mut [CEdge], root_dir: Dir, 
         for (path, out) in [(&a_path, true), (&b_path, false)] {
             for &inner in path {
                 let li = level_of[&nodes[inner].parent];
-                ports.push(PortEdge { e: ei, inner, out, side: TOP, hint: f64::NAN, px: 0.0, py: 0.0, route: Vec::new() });
+                ports.push(PortEdge {
+                    e: ei,
+                    inner,
+                    out,
+                    side: TOP,
+                    hint: f64::NAN,
+                    px: 0.0,
+                    py: 0.0,
+                    route: Vec::new(),
+                });
                 let pi = ports.len() - 1;
                 levels[li].ports.push(pi);
                 levels[li].port_of.insert(ei * 2 + if out { 0 } else { 1 }, pi);
@@ -1175,7 +1247,11 @@ pub fn compound_layout(nodes: &mut [CNode], edges: &mut [CEdge], root_dir: Dir, 
                 parent[group[i] as usize] = if p >= 0 { group[p as usize] } else { -1 };
             } else {
                 leaf[i] = lnodes.len() as i64;
-                lnodes.push(lnode(if vertical { nodes[i].w } else { nodes[i].h }, if vertical { nodes[i].h } else { nodes[i].w }, Kind::Node));
+                lnodes.push(lnode(
+                    if vertical { nodes[i].w } else { nodes[i].h },
+                    if vertical { nodes[i].h } else { nodes[i].w },
+                    Kind::Node,
+                ));
                 of.push(if p >= 0 { group[p as usize] } else { -1 });
             }
         }
@@ -1303,7 +1379,12 @@ pub fn compound_layout(nodes: &mut [CNode], edges: &mut [CEdge], root_dir: Dir, 
                 if next < 0 || next as usize >= route.len() {
                     continue;
                 }
-                let hint = route[next as usize + a] - if vertical { bx_node.x - bx_node.w / 2.0 } else { bx_node.y - bx_node.h / 2.0 };
+                let hint = route[next as usize + a]
+                    - if vertical {
+                        bx_node.x - bx_node.w / 2.0
+                    } else {
+                        bx_node.y - bx_node.h / 2.0
+                    };
                 let px = if vertical { port.px } else { port.py };
                 c.ports[pi].hint = hint;
                 seen.push((px, hint));
@@ -1316,7 +1397,11 @@ pub fn compound_layout(nodes: &mut [CNode], edges: &mut [CEdge], root_dir: Dir, 
             }
         }
         if again {
-            let before = if crossings >= 0 { crossings } else { route_crossings(c.nodes, c.edges, style) };
+            let before = if crossings >= 0 {
+                crossings
+            } else {
+                route_crossings(c.nodes, c.edges, style)
+            };
             if before > 0 {
                 let first = c.snapshot();
                 c.place();

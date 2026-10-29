@@ -60,7 +60,11 @@ pub fn label_svg(label: &Label, cx: f64, cy: f64, attrs: &str) -> String {
         let mid = top + lh / 2.0;
         let y = mid + shift;
         for (j, span) in line.iter().enumerate() {
-            let pos = if j == 0 { format!(" x=\"{}\" y=\"{}\"", num(cx), num(y)) } else { String::new() };
+            let pos = if j == 0 {
+                format!(" x=\"{}\" y=\"{}\"", num(cx), num(y))
+            } else {
+                String::new()
+            };
             body += &format!("<tspan{}{}>{}</tspan>", pos, span_style(span.style & !shared), esc(&span.text));
         }
         if line.is_empty() {

@@ -39,7 +39,11 @@ fn lookup(name: &str) -> Option<char> {
 
 fn code_point(n: Option<u64>) -> Option<char> {
     let n = n?;
-    if n > 0 && n <= 0x10ffff && !(0xd800..=0xdfff).contains(&n) { char::from_u32(n as u32) } else { None }
+    if n > 0 && n <= 0x10ffff && !(0xd800..=0xdfff).contains(&n) {
+        char::from_u32(n as u32)
+    } else {
+        None
+    }
 }
 
 const OPEN: &str = "ﬂ°";
@@ -96,20 +100,28 @@ fn entity_re() -> &'static regex::Regex {
 
 // Turns Mermaid's `#35;` / `#quot;` codes (as hidden by encode_entities) and HTML entities into characters.
 pub fn decode_entities(text: &str) -> String {
-    let mut text = if text.contains(CLOSE) { restore_placeholders(text) } else { text.to_string() };
+    let mut text = if text.contains(CLOSE) {
+        restore_placeholders(text)
+    } else {
+        text.to_string()
+    };
     if text.contains('&') {
         text = entity_re()
             .replace_all(&text, |c: &regex::Captures| {
                 let whole = c.get(0).unwrap().as_str();
                 if let Some(dec) = c.get(1) {
-                    return code_point(dec.as_str().parse().ok()).map(String::from).unwrap_or_else(|| whole.to_string());
+                    return code_point(dec.as_str().parse().ok())
+                        .map(String::from)
+                        .unwrap_or_else(|| whole.to_string());
                 }
                 if let Some(hex) = c.get(2) {
                     return code_point(u64::from_str_radix(hex.as_str(), 16).ok())
                         .map(String::from)
                         .unwrap_or_else(|| whole.to_string());
                 }
-                lookup(c.get(3).unwrap().as_str()).map(String::from).unwrap_or_else(|| whole.to_string())
+                lookup(c.get(3).unwrap().as_str())
+                    .map(String::from)
+                    .unwrap_or_else(|| whole.to_string())
             })
             .into_owned();
     }

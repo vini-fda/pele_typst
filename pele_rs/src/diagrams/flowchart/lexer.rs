@@ -1,8 +1,8 @@
 // The flowchart lexer, after pele's diagrams/flowchart/lexer.ts. It reads UTF-16 code units, as
 // the JavaScript does, so that offsets and the treatment of surrogates match.
 
-use crate::util::{is_space16 as is_space, is_word16 as is_word};
 use crate::unicode::is_unicode_letter;
+use crate::util::{is_space16 as is_space, is_word16 as is_word};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u8)]
@@ -174,7 +174,7 @@ pub struct Tokens {
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-#[allow(non_camel_case_types)]
+#[allow(non_camel_case_types, clippy::upper_case_acronyms)]
 enum S {
     INITIAL,
     string,
@@ -201,7 +201,8 @@ const NONE: u32 = u32::MAX;
 const NO_B: u32 = u32::MAX - 1;
 
 fn node_char(c: u32) -> bool {
-    c < 128 && (c as u8 as char).is_ascii_alphanumeric() || matches!(c, 33 | 34 | 35 | 36 | 37 | 38 | 39 | 42 | 43 | 46 | 96 | 63 | 92 | 95 | 47)
+    c < 128 && (c as u8 as char).is_ascii_alphanumeric()
+        || matches!(c, 33 | 34 | 35 | 36 | 37 | 38 | 39 | 42 | 43 | 46 | 96 | 63 | 92 | 95 | 47)
 }
 
 #[derive(Clone, Copy)]
@@ -323,7 +324,11 @@ impl Lexer<'_> {
 
     fn re_dir_v(&self, q: usize) -> Option<usize> {
         let j = self.skip_ws(q);
-        if self.cc(j) == 118 && !is_word(self.cc(j + 1)) { Some(j + 1) } else { None }
+        if self.cc(j) == 118 && !is_word(self.cc(j + 1)) {
+            Some(j + 1)
+        } else {
+            None
+        }
     }
 
     // /.*direction\s+XX[^\n]*/y
@@ -351,7 +356,9 @@ impl Lexer<'_> {
     }
 
     fn line_terminator_from(&self, p: usize) -> usize {
-        (p..self.n).find(|&i| matches!(self.src[i], 10 | 13 | 0x2028 | 0x2029)).unwrap_or(self.n)
+        (p..self.n)
+            .find(|&i| matches!(self.src[i], 10 | 13 | 0x2028 | 0x2029))
+            .unwrap_or(self.n)
     }
 
     fn re_link(&self, q: usize, kind: LinkRe) -> Option<usize> {
@@ -404,7 +411,11 @@ impl Lexer<'_> {
         if matches!(self.cc(j), 120 | 111 | 60) {
             j += 1;
         }
-        if self.cc(j) == a && self.cc(j + 1) == b { Some(self.skip_ws(j + 2)) } else { None }
+        if self.cc(j) == a && self.cc(j + 1) == b {
+            Some(self.skip_ws(j + 2))
+        } else {
+            None
+        }
     }
 
     fn re_invis(&self, q: usize) -> Option<usize> {
@@ -609,11 +620,11 @@ impl Lexer<'_> {
                 self.emit(T::START_LINK, p, e);
                 return true;
             }
-        } else if d == 46 {
-            if let Some(e) = self.re_link(p, LinkRe::Dotted) {
-                self.emit(T::LINK, p, e);
-                return true;
-            }
+        } else if d == 46
+            && let Some(e) = self.re_link(p, LinkRe::Dotted)
+        {
+            self.emit(T::LINK, p, e);
+            return true;
         }
         c != 45 && c != 61 && c != 46 && self.invis_link()
     }
@@ -746,27 +757,27 @@ impl Lexer<'_> {
             _ => {}
         }
 
-        if let Some(mut dir_next) = self.dir_next {
-            if p >= self.dir_failed {
-                if dir_next < p {
-                    self.dir_next = index_of(self.src, &u16s("direction"), p);
+        if let Some(mut dir_next) = self.dir_next
+            && p >= self.dir_failed
+        {
+            if dir_next < p {
+                self.dir_next = index_of(self.src, &u16s("direction"), p);
+            }
+            if let Some(dn) = self.dir_next {
+                dir_next = dn;
+                if self.line_end < p as isize {
+                    self.line_end = self.line_terminator_from(p) as isize;
                 }
-                if let Some(dn) = self.dir_next {
-                    dir_next = dn;
-                    if self.line_end < p as isize {
-                        self.line_end = self.line_terminator_from(p) as isize;
-                    }
-                    if (dir_next as isize) < self.line_end {
-                        let kinds = [T::direction_tb, T::direction_bt, T::direction_rl, T::direction_lr, T::direction_td];
-                        for (i, code) in ["TB", "BT", "RL", "LR", "TD"].iter().enumerate() {
-                            if let Some(e) = self.re_direction(p, code) {
-                                self.emit(kinds[i], p, e);
-                                return true;
-                            }
+                if (dir_next as isize) < self.line_end {
+                    let kinds = [T::direction_tb, T::direction_bt, T::direction_rl, T::direction_lr, T::direction_td];
+                    for (i, code) in ["TB", "BT", "RL", "LR", "TD"].iter().enumerate() {
+                        if let Some(e) = self.re_direction(p, code) {
+                            self.emit(kinds[i], p, e);
+                            return true;
                         }
-                        // No direction statement starts anywhere in the rest of this line either.
-                        self.dir_failed = self.line_end as usize;
                     }
+                    // No direction statement starts anywhere in the rest of this line either.
+                    self.dir_failed = self.line_end as usize;
                 }
             }
         }
@@ -787,20 +798,20 @@ impl Lexer<'_> {
                 }
                 self.run_end = q;
                 self.run_at = -1;
-                if let Some(at_next) = self.at_next {
-                    if at_next < q {
-                        let mut k = q.min(self.n - 1) as isize - 1;
-                        while k >= at_next as isize {
-                            let ku = k as usize;
-                            if self.src[ku] == 64 {
-                                let after = self.cc(ku + 1);
-                                if after != 123 && after != 34 {
-                                    self.run_at = k;
-                                    break;
-                                }
+                if let Some(at_next) = self.at_next
+                    && at_next < q
+                {
+                    let mut k = q.min(self.n - 1) as isize - 1;
+                    while k >= at_next as isize {
+                        let ku = k as usize;
+                        if self.src[ku] == 64 {
+                            let after = self.cc(ku + 1);
+                            if after != 123 && after != 34 {
+                                self.run_at = k;
+                                break;
                             }
-                            k -= 1;
                         }
+                        k -= 1;
                     }
                 }
             }
@@ -932,12 +943,12 @@ impl Lexer<'_> {
             return true;
         }
         let d = self.link_char(self.p);
-        if d == a || d == b {
-            if let Some(e) = self.re_link(self.p, link_re) {
-                self.pop();
-                self.emit(T::LINK, self.p, e);
-                return true;
-            }
+        if (d == a || d == b)
+            && let Some(e) = self.re_link(self.p, link_re)
+        {
+            self.pop();
+            self.emit(T::LINK, self.p, e);
+            return true;
         }
         if c == a && (a != 45 || self.cc(self.p + 1) == 45) {
             return false;
@@ -1021,7 +1032,11 @@ impl Lexer<'_> {
                 }
                 S::acc_title | S::acc_descr => {
                     let e = index_of(self.src, &[10], p).unwrap_or(self.n);
-                    let kind = if self.state == S::acc_title { T::acc_title_value } else { T::acc_descr_value };
+                    let kind = if self.state == S::acc_title {
+                        T::acc_title_value
+                    } else {
+                        T::acc_descr_value
+                    };
                     self.pop();
                     self.emit(kind, p, e);
                 }
@@ -1260,13 +1275,21 @@ impl Lexer<'_> {
                 self.types.push(T::ERROR);
                 self.texts.push(String::new());
                 self.starts.push(self.p);
-                return Tokens { types: self.types, texts: self.texts, starts: self.starts };
+                return Tokens {
+                    types: self.types,
+                    texts: self.texts,
+                    starts: self.starts,
+                };
             }
         }
         self.types.push(T::END);
         self.texts.push(String::new());
         self.starts.push(self.n);
-        Tokens { types: self.types, texts: self.texts, starts: self.starts }
+        Tokens {
+            types: self.types,
+            texts: self.texts,
+            starts: self.starts,
+        }
     }
 }
 

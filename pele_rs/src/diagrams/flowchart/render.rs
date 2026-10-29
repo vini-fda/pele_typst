@@ -5,25 +5,27 @@ use std::collections::HashMap;
 use serde_json::Value;
 
 use super::db::{FlowDb, LabelType};
-use super::graph::{build_flow_graph, GraphNode};
+use super::graph::{GraphNode, build_flow_graph};
 use super::shapes::canonical_shape;
-use crate::diagrams::common::{runs_across, tighten, title_room, turn_to_fit, Rendered};
-use crate::layout::compound::{cnode, compound_layout, direction, inherit_crossed_directions, shift_layout, CEdge, CNode, Dir};
+use crate::RenderOptions;
+use crate::diagrams::common::{Rendered, runs_across, tighten, title_room, turn_to_fit};
+use crate::layout::compound::{CEdge, CNode, Dir, cnode, compound_layout, direction, inherit_crossed_directions, shift_layout};
 use crate::layout::layered::LayeredOptions;
 use crate::preprocess::Config;
 use crate::svg::builder::{esc, esc_text, label_svg};
-use crate::svg::cluster::{cluster_title_x, mark_crossings, struck_title, title_crossed, Box4, Crossings};
-use crate::svg::edges::{casings_svg, edge_casing, edge_label_svg, loop_path, marker, marker_trim, over_fills, route_path, EdgePath, Fill, LoopLabel, SideReach};
+use crate::svg::cluster::{Box4, Crossings, cluster_title_x, mark_crossings, struck_title, title_crossed};
+use crate::svg::edges::{
+    EdgePath, Fill, LoopLabel, SideReach, casings_svg, edge_casing, edge_label_svg, loop_path, marker, marker_trim, over_fills, route_path,
+};
 use crate::svg::ink::{ink_fill, paints};
-use crate::svg::root::{svg_document, Accessible};
+use crate::svg::root::{Accessible, svg_document};
 use crate::svg::shapes::{draw_shape, end_side, inset_route, shape_filled, shape_has_label, shape_size, shape_span};
-use crate::svg::theme::{class_names, resolve_style, rounded, sets_fill, ResolvedStyle};
+use crate::svg::theme::{ResolvedStyle, class_names, resolve_style, rounded, sets_fill};
 use crate::text::entities::decode_entities;
-use crate::text::label::{layout_label, Label};
-use crate::text::measurer::{TextMeasurer, BOLD, ITALIC};
-use crate::url::{image_url, internal_link, linked, rel_attr, safe_url, LinkInfo};
+use crate::text::label::{Label, layout_label};
+use crate::text::measurer::{BOLD, ITALIC, TextMeasurer};
+use crate::url::{LinkInfo, image_url, internal_link, linked, rel_attr, safe_url};
 use crate::util::{js_round, num};
-use crate::RenderOptions;
 
 const NODE_SEP: f64 = 40.0;
 const EDGE_SEP: f64 = 16.0;
@@ -64,7 +66,11 @@ struct NodeView<'a> {
 
 pub fn render_flowchart(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn TextMeasurer) -> Rendered {
     let fitted = |down: bool| tighten(options, |tight| draw(db, config, options, measurer, down, tight));
-    if runs_across(db.direction.as_deref()) { turn_to_fit(options, fitted) } else { fitted(false) }
+    if runs_across(db.direction.as_deref()) {
+        turn_to_fit(options, fitted)
+    } else {
+        fitted(false)
+    }
 }
 
 fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn TextMeasurer, turned: bool, tight: bool) -> Rendered {
@@ -111,11 +117,24 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             c.pad_top = if label.height > 0.0 { label.height + 16.0 } else { GROUP_PAD };
             c.pad_bottom = group_pad;
             c.min_w = label.width + 2.0 * group_pad - 12.0;
-            view = NodeView { node, style, label, shape: "group".into(), w: 0.0, h: 0.0, dy: 0.0, loops: 0 };
+            view = NodeView {
+                node,
+                style,
+                label,
+                shape: "group".into(),
+                w: 0.0,
+                h: 0.0,
+                dy: 0.0,
+                loops: 0,
+            };
         } else {
             let shape = canonical_shape(Some(&node.shape));
             let with_asset = present(&node.img) || present(&node.icon);
-            let text = if with_asset || shape_has_label(&shape) { node.label.as_deref() } else { None };
+            let text = if with_asset || shape_has_label(&shape) {
+                node.label.as_deref()
+            } else {
+                None
+            };
             let label = layout_label(text, markdown, measurer, font_size, wrap_width, text_style);
             let (w, h, mut dy);
             if with_asset {
@@ -135,7 +154,16 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
                 dy = s.dy;
             }
             c = cnode(w, h);
-            view = NodeView { node, style, label, shape, w, h, dy, loops: 0 };
+            view = NodeView {
+                node,
+                style,
+                label,
+                shape,
+                w,
+                h,
+                dy,
+                loops: 0,
+            };
         }
         c.seq = views.len() as f64;
         views.push(view);
@@ -186,8 +214,17 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
     let mut edge_labels: Vec<Label> = Vec::new();
     let mut drawn = Vec::new();
     for edge in &graph.edges {
-        let (Some(&src), Some(&dst)) = (index.get(edge.start.as_str()), index.get(edge.end.as_str())) else { continue };
-        let label = layout_label(Some(&edge.label), edge.label_type == LabelType::Markdown, measurer, edge_size, wrap_width, 0);
+        let (Some(&src), Some(&dst)) = (index.get(edge.start.as_str()), index.get(edge.end.as_str())) else {
+            continue;
+        };
+        let label = layout_label(
+            Some(&edge.label),
+            edge.label_type == LabelType::Markdown,
+            measurer,
+            edge_size,
+            wrap_width,
+            0,
+        );
         if src == dst {
             // A self-loop sits beside the node, across the flow, and the node's box grows to hold it.
             views[src].loops += 1;
@@ -225,7 +262,14 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
     };
     let layout = compound_layout(&mut cnodes, &mut cedges, root_dir, &layout_options);
 
-    let title = layout_label(db.title.as_deref(), false, measurer, size, if tight { title_room(options) } else { 4000.0 }, BOLD);
+    let title = layout_label(
+        db.title.as_deref(),
+        false,
+        measurer,
+        size,
+        if tight { title_room(options) } else { 4000.0 },
+        BOLD,
+    );
     let title_height = if title.height > 0.0 { title.height + 12.0 } else { 0.0 };
     let inner = layout.width.max(title.width);
     let ox = pad + (inner - layout.width) / 2.0;
@@ -251,12 +295,19 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
         let c = &cnodes[i];
         let node = view.node;
         let (x, y) = (c.x, c.y);
-        let stripped = node.css_classes.strip_prefix("default ").or_else(|| node.css_classes.strip_prefix("default")).unwrap_or(&node.css_classes);
+        let stripped = node
+            .css_classes
+            .strip_prefix("default ")
+            .or_else(|| node.css_classes.strip_prefix("default"))
+            .unwrap_or(&node.css_classes);
         let classes = class_names(stripped);
         let id = esc_text(&node.id);
         if c.is_group {
             if paints(&view.style.shape) {
-                fills.push(Fill { bx: [x - c.w / 2.0, y - c.h / 2.0, x + c.w / 2.0, y + c.h / 2.0], shape: view.style.shape.clone() });
+                fills.push(Fill {
+                    bx: [x - c.w / 2.0, y - c.h / 2.0, x + c.w / 2.0, y + c.h / 2.0],
+                    shape: view.style.shape.clone(),
+                });
             }
             let b = Box4 { x, y, w: c.w, h: c.h };
             let title_x = cluster_title_x(&b, view.label.width, &crossings, group_pad);
@@ -265,7 +316,11 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             // A title drawn over the edges sits on a halo in the theme's colors.
             let title_attrs = format!(
                 " class=\"pele-cluster-label\"{}{}",
-                if struck { " fill=\"var(--_m)\"".to_string() } else { ink_fill(&view.style.shape, &view.style.text, Some("var(--_m)")) },
+                if struck {
+                    " fill=\"var(--_m)\"".to_string()
+                } else {
+                    ink_fill(&view.style.shape, &view.style.text, Some("var(--_m)"))
+                },
                 view.style.text
             );
             if struck {
@@ -285,9 +340,17 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
                 num(y - c.h / 2.0),
                 num(c.w),
                 num(c.h),
-                if sets_fill(&view.style.shape) { "" } else { " fill-opacity=\"0.5\"" },
+                if sets_fill(&view.style.shape) {
+                    ""
+                } else {
+                    " fill-opacity=\"0.5\""
+                },
                 rounded(&view.style.shape),
-                if struck { String::new() } else { label_svg(&view.label, title_x, title_y, &title_attrs) }
+                if struck {
+                    String::new()
+                } else {
+                    label_svg(&view.label, title_x, title_y, &title_attrs)
+                }
             );
             continue;
         }
@@ -312,7 +375,11 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
                     num(top),
                     num(aw),
                     num(ah),
-                    if node.constraint.as_deref() == Some("on") { "xMidYMid meet" } else { "none" }
+                    if node.constraint.as_deref() == Some("on") {
+                        "xMidYMid meet"
+                    } else {
+                        "none"
+                    }
                 ),
             };
         } else if present(&node.icon) {
@@ -325,7 +392,13 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             let frame = if node.shape == "icon" {
                 String::new()
             } else if node.shape == "iconCircle" {
-                format!("<circle cy=\"{}\" r=\"{}\"{}{}/>", num(top + bx / 2.0), num(bx / 2.0), SHAPE_ATTRS, view.style.shape)
+                format!(
+                    "<circle cy=\"{}\" r=\"{}\"{}{}/>",
+                    num(top + bx / 2.0),
+                    num(bx / 2.0),
+                    SHAPE_ATTRS,
+                    view.style.shape
+                )
             } else {
                 format!(
                     "<rect x=\"{}\" y=\"{}\" width=\"{}\" height=\"{}\" rx=\"{}\"{}{}/>",
@@ -349,13 +422,24 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
                     num(glyph)
                 );
         } else {
-            inner = draw_shape(&view.shape, w, h, &format!("{}{}", SHAPE_ATTRS, view.style.shape), &format!("{}{}", LINE_ATTRS, view.style.line));
+            inner = draw_shape(
+                &view.shape,
+                w,
+                h,
+                &format!("{}{}", SHAPE_ATTRS, view.style.shape),
+                &format!("{}{}", LINE_ATTRS, view.style.line),
+            );
             if shape_filled(&view.shape) {
                 ink = ink_fill(&view.style.shape, &view.style.text, None);
             }
         }
 
-        let mut text = label_svg(&view.label, 0.0, view.dy, &format!(" class=\"pele-label\"{}{}", ink, view.style.text));
+        let mut text = label_svg(
+            &view.label,
+            0.0,
+            view.dy,
+            &format!(" class=\"pele-label\"{}{}", ink, view.style.text),
+        );
         let internal = format!("{} ", classes).contains(" internal-link ");
         if internal && present(&node.label) && options.links != Some(false) {
             // The label is a note name, but it still ends up in an href, so it gets the same check as a URL.
@@ -364,18 +448,31 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             let target = esc(&name);
             text = format!(
                 "<a class=\"internal-link\"{} data-href=\"{}\">{}</a>",
-                if safe { format!(" href=\"{}\"{}", target, rel_attr(options)) } else { String::new() },
+                if safe {
+                    format!(" href=\"{}\"{}", target, rel_attr(options))
+                } else {
+                    String::new()
+                },
                 target,
                 text
             );
-            links.push(LinkInfo { id: node.id.clone(), href: name, internal: true });
+            links.push(LinkInfo {
+                id: node.id.clone(),
+                href: name,
+                internal: true,
+            });
         }
         let mut body = inner + &text;
         if let Some(tooltip) = node.tooltip.as_deref().filter(|t| !t.is_empty()) {
             body = format!("<title>{}</title>{}", esc_text(tooltip), body);
         }
         if let Some(link) = node.link.as_deref().filter(|l| !l.is_empty()) {
-            let target = node.link_target.as_deref().filter(|t| !t.is_empty()).map(|t| format!(" target=\"{}\"", esc(t))).unwrap_or_default();
+            let target = node
+                .link_target
+                .as_deref()
+                .filter(|t| !t.is_empty())
+                .map(|t| format!(" target=\"{}\"", esc(t)))
+                .unwrap_or_default();
             body = linked(&body, link, &node.id, &mut links, options, &target);
         }
         nodes_out += &format!(
@@ -397,7 +494,11 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
         let s = &cnodes[ce.src];
         let d = &cnodes[ce.dst];
         reach.add(ce.src, end_side(&ce.route, 0, s.x, s.y, s.w, s.h), &drawn[i].arrow_type_start);
-        reach.add(ce.dst, end_side(&ce.route, ce.route.len() - 3, d.x, d.y, d.w, d.h), &drawn[i].arrow_type_end);
+        reach.add(
+            ce.dst,
+            end_side(&ce.route, ce.route.len() - 3, d.x, d.y, d.w, d.h),
+            &drawn[i].arrow_type_end,
+        );
     }
 
     let mut casings = String::new();
@@ -425,8 +526,23 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
                 let k = *loop_seen.get(&ce.src).unwrap_or(&0);
                 loop_seen.insert(ce.src, k + 1);
                 let node = &cnodes[ce.src];
-                let mut l = LoopLabel { label_w: ce.label_w, label_h: ce.label_h, label_x: ce.label_x, label_y: ce.label_y };
-                path = loop_path(node.x, node.y, view.w, view.h, k as f64, flows_sideways(&cnodes, ce.src), LOOP, marker_trim(end_type), &mut l);
+                let mut l = LoopLabel {
+                    label_w: ce.label_w,
+                    label_h: ce.label_h,
+                    label_x: ce.label_x,
+                    label_y: ce.label_y,
+                };
+                path = loop_path(
+                    node.x,
+                    node.y,
+                    view.w,
+                    view.h,
+                    k as f64,
+                    flows_sideways(&cnodes, ce.src),
+                    LOOP,
+                    marker_trim(end_type),
+                    &mut l,
+                );
                 ce.label_x = l.label_x;
                 ce.label_y = l.label_y;
             } else {
@@ -439,7 +555,14 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
                 let (vs, vd) = (&views[ce.src], &views[ce.dst]);
                 inset_route(&mut route, 0, &vs.shape, vs.w, vs.h, s.x, s.y, s.w, s.h, s.is_group);
                 inset_route(&mut route, last, &vd.shape, vd.w, vd.h, d.x, d.y, d.w, d.h, d.is_group);
-                path = route_path(&route, edge.curve.as_deref(), marker_trim(start_type), marker_trim(end_type), Some(leaves), Some(arrives));
+                path = route_path(
+                    &route,
+                    edge.curve.as_deref(),
+                    marker_trim(start_type),
+                    marker_trim(end_type),
+                    Some(leaves),
+                    Some(arrives),
+                );
             }
             let over = over_fills(&path.d, &[path.sx, path.sy, path.ex, path.ey], &fills, line, path.tokens.as_deref());
             let stroke = style.as_ref().and_then(|s| s.stroke.clone()).filter(|s| !s.is_empty());
@@ -453,7 +576,13 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
             } else if edge.thickness.as_deref() == Some("dotted") {
                 attrs = " stroke-dasharray=\"3 4\"";
             }
-            let classes = class_names(&edge.classes.replace("edge-thickness-normal", "").replace("edge-pattern-solid", "").replace("flowchart-link", ""));
+            let classes = class_names(
+                &edge
+                    .classes
+                    .replace("edge-thickness-normal", "")
+                    .replace("edge-pattern-solid", "")
+                    .replace("flowchart-link", ""),
+            );
             if over.as_deref() == Some("") {
                 casings += &edge_casing(&path, start_type, end_type, line, edge.thickness.as_deref() == Some("thick"));
             }
@@ -474,26 +603,47 @@ fn draw(db: &FlowDb, config: &Config, options: &RenderOptions, measurer: &dyn Te
         }
         if label.width > 0.0 {
             let ce = &cedges[i];
-            labels_out += &edge_label_svg(&edge.id, label, ce.label_x, ce.label_y, style.as_ref().map(|s| s.text.as_str()).unwrap_or(""));
+            labels_out += &edge_label_svg(
+                &edge.id,
+                label,
+                ce.label_x,
+                ce.label_y,
+                style.as_ref().map(|s| s.text.as_str()).unwrap_or(""),
+            );
         }
     }
 
-    let mut content = label_svg(&title, width / 2.0, pad + title.height / 2.0, " class=\"pele-title\" font-weight=\"var(--_tw)\"");
+    let mut content = label_svg(
+        &title,
+        width / 2.0,
+        pad + title.height / 2.0,
+        " class=\"pele-title\" font-weight=\"var(--_tw)\"",
+    );
     if !clusters.is_empty() {
         content += &format!("<g class=\"pele-clusters\">{}</g>", clusters);
     }
     content += &casings_svg(&casings);
     if !edges_out.is_empty() {
-        content += &format!("<g class=\"pele-edges\" fill=\"none\" stroke=\"var(--_l)\" stroke-linecap=\"round\">{}</g>", edges_out);
+        content += &format!(
+            "<g class=\"pele-edges\" fill=\"none\" stroke=\"var(--_l)\" stroke-linecap=\"round\">{}</g>",
+            edges_out
+        );
     }
     if !struck_titles.is_empty() {
         content += &format!("<g class=\"pele-cluster-titles\">{}</g>", struck_titles);
     }
     if !labels_out.is_empty() {
-        content += &format!("<g class=\"pele-edge-labels\" font-size=\"{}\">{}</g>", crate::util::js_num(edge_size), labels_out);
+        content += &format!(
+            "<g class=\"pele-edge-labels\" font-size=\"{}\">{}</g>",
+            crate::util::js_num(edge_size),
+            labels_out
+        );
     }
     content += &format!("<g class=\"pele-nodes\">{}</g>", nodes_out);
-    let acc = Accessible { acc_title: db.acc_title.as_deref(), acc_descr: db.acc_descr.as_deref() };
+    let acc = Accessible {
+        acc_title: db.acc_title.as_deref(),
+        acc_descr: db.acc_descr.as_deref(),
+    };
     let svg = svg_document("flowchart", width, height, size, options, &acc, &content);
     Rendered { svg, width, height, links }
 }

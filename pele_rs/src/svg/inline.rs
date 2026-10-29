@@ -100,10 +100,24 @@ fn parse_tag(s: &str) -> (Tag, usize) {
             i += 1;
         }
         if i >= b.len() {
-            return (Tag { name, attrs, closed: false }, i);
+            return (
+                Tag {
+                    name,
+                    attrs,
+                    closed: false,
+                },
+                i,
+            );
         }
         if b[i] == b'>' {
-            return (Tag { name, attrs, closed: false }, i + 1);
+            return (
+                Tag {
+                    name,
+                    attrs,
+                    closed: false,
+                },
+                i + 1,
+            );
         }
         if b[i] == b'/' && b.get(i + 1) == Some(&b'>') {
             return (Tag { name, attrs, closed: true }, i + 2);
@@ -219,7 +233,7 @@ fn resolve(value: &str, scopes: &[HashMap<String, String>], own: &HashMap<String
     for _ in 0..8 {
         let Some(at) = v.find("calc(") else { break };
         let Some((inner, end)) = group(&v, at + 5) else { break };
-        let sum = calc(&inner).map(|n| crate::util::num(n)).unwrap_or_default();
+        let sum = calc(&inner).map(crate::util::num).unwrap_or_default();
         v = format!("{}{}{}", &v[..at], sum, &v[end..]);
     }
     v
@@ -251,7 +265,10 @@ fn color_mix(inner: &str) -> Option<String> {
     let one = |s: &str| -> Option<([f64; 4], Option<f64>)> {
         let s = s.trim();
         match s.rsplit_once(char::is_whitespace) {
-            Some((color, pct)) if pct.ends_with('%') => Some((parse_color(color.trim())?, Some(pct.trim_end_matches('%').parse::<f64>().ok()? / 100.0))),
+            Some((color, pct)) if pct.ends_with('%') => Some((
+                parse_color(color.trim())?,
+                Some(pct.trim_end_matches('%').parse::<f64>().ok()? / 100.0),
+            )),
             _ => Some((parse_color(s)?, None)),
         }
     };
@@ -288,13 +305,24 @@ fn parse_color(s: &str) -> Option<[f64; 4]> {
         let alpha = if digits.len() == 8 { n(3)? / 255.0 } else { 1.0 };
         return Some([n(0)?, n(1)?, n(2)?, alpha]);
     }
-    if let Some(body) = s.strip_prefix("rgba(").or_else(|| s.strip_prefix("rgb(")).and_then(|b| b.strip_suffix(')')) {
-        let parts: Vec<&str> = body.split(|c: char| c == ',' || c == '/' || c.is_whitespace()).filter(|p| !p.is_empty()).collect();
+    if let Some(body) = s
+        .strip_prefix("rgba(")
+        .or_else(|| s.strip_prefix("rgb("))
+        .and_then(|b| b.strip_suffix(')'))
+    {
+        let parts: Vec<&str> = body
+            .split(|c: char| c == ',' || c == '/' || c.is_whitespace())
+            .filter(|p| !p.is_empty())
+            .collect();
         if parts.len() < 3 {
             return None;
         }
         let channel = |p: &str| -> Option<f64> {
-            if let Some(pct) = p.strip_suffix('%') { pct.parse::<f64>().ok().map(|v| v * 2.55) } else { p.parse().ok() }
+            if let Some(pct) = p.strip_suffix('%') {
+                pct.parse::<f64>().ok().map(|v| v * 2.55)
+            } else {
+                p.parse().ok()
+            }
         };
         let alpha = match parts.get(3) {
             Some(p) => {

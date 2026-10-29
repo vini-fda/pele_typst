@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust:
+    name: Rust (fmt, clippy, tests)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo fmt --all --check
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo clippy -p pele_typst_plugin --target wasm32-unknown-unknown -- -D warnings
+      # Includes the comparison of every fixture with the SVG pele's JavaScript gives.
+      - run: cargo test --workspace
+
+  package:
+    name: Typst package (Typst ${{ matrix.typst }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The oldest version typst.toml claims, and the newest.
+        typst: ["0.13", "latest"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@v2
+      - uses: typst-community/setup-typst@v5
+        with:
+          typst-version: ${{ matrix.typst }}
+      - name: Install the package as @local/pele_typst
+        run: |
+          version=$(sed -n 's/^version = "\(.*\)"/\1/p' typst.toml)
+          mkdir -p "$RUNNER_TEMP/packages/local/pele_typst"
+          ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/packages/local/pele_typst/$version"
+      - name: Compile with the committed plugin
+        run: |
+          typst compile --package-path "$RUNNER_TEMP/packages" --ignore-system-fonts tests/smoke.typ "$RUNNER_TEMP/smoke.pdf"
+          typst compile --root . --ignore-system-fonts examples/basic.typ "$RUNNER_TEMP/basic.pdf"
+      - name: Build the plugin
+        run: ./build.sh
+      - name: Compile with the freshly built plugin
+        run: |
+          typst compile --package-path "$RUNNER_TEMP/packages" --ignore-system-fonts tests/smoke.typ "$RUNNER_TEMP/smoke.pdf"
+          typst compile --root . --ignore-system-fonts examples/basic.typ "$RUNNER_TEMP/basic.pdf"
+      - name: An unsupported diagram fails with pele's message
+        run: |
+          printf '#import "@local/pele_typst:0.1.0": mermaid\n#mermaid("sequenceDiagram\\n  A->>B: hi")\n' > "$RUNNER_TEMP/bad.typ"
+          if typst compile --package-path "$RUNNER_TEMP/packages" "$RUNNER_TEMP/bad.typ" "$RUNNER_TEMP/bad.pdf" 2> "$RUNNER_TEMP/err.txt"; then
+            echo "expected the compile to fail"; exit 1
+          fi
+          grep -q 'Diagram type "sequence" is not supported yet.' "$RUNNER_TEMP/err.txt"
+      - uses: actions/upload-artifact@v7
+        if: matrix.typst == 'latest'
+        with:
+          name: pele_typst-wasm-and-pdfs
+          path: |
+            pele_typst.wasm
+            ${{ runner.temp }}/*.pdf
