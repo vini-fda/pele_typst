@@ -1,7 +1,8 @@
 //! A Rust port of [pele](https://github.com/obsidianmd/pele), a Mermaid renderer that writes
 //! themeable SVG. Identical inputs give the same SVG as pele's JavaScript, byte for byte.
 //!
-//! Only flowcharts are ported so far; other diagram types report that they are not supported.
+//! Flowcharts and pie charts are ported so far; other diagram types report that they are not
+//! supported.
 
 // The port mirrors pele's TypeScript loop for loop, and keeps JavaScript's handling of NaN, -0
 // and the sign of `%`, so that the SVG stays identical. These lints would trade that for idiom.
@@ -68,9 +69,17 @@ const DEFAULT_LIMIT: usize = 50000;
 const DEFAULT_OUTPUT_LIMIT: usize = 4_000_000;
 const DEFAULT_MAX_EDGES: usize = 5000;
 
+// The diagram types this port draws, by pele's names for them.
+pub const SUPPORTED: [&str; 2] = ["flowchart", "pie"];
+
 pub fn detect_type(text: &str) -> Option<&'static str> {
     let pre = preprocess::preprocess(text).ok()?;
     detect::detect_diagram(&pre.text).map(|d| d.kind)
+}
+
+/// Whether `text` is a diagram of a type this port draws.
+pub fn supports(text: &str) -> bool {
+    detect_type(text).is_some_and(|kind| SUPPORTED.contains(&kind))
 }
 
 fn tag(mut error: PeleError, kind: &str) -> PeleError {
@@ -103,7 +112,7 @@ pub fn render_with(text: &str, options: &RenderOptions, measurer: &dyn TextMeasu
             PeleErrorCode::UnsupportedDiagram,
         ));
     };
-    if found.kind != "flowchart" {
+    if !SUPPORTED.contains(&found.kind) {
         return Err(PeleError::new(
             format!("Diagram type \"{}\" is not supported yet.", found.kind),
             PeleErrorCode::UnsupportedDiagram,
@@ -115,21 +124,30 @@ pub fn render_with(text: &str, options: &RenderOptions, measurer: &dyn TextMeasu
         config.insert(k.clone(), v.clone());
     }
     let parsed = preprocess::encode_entities(&pre.text) + "\n";
+    let title = pre.title.as_deref().filter(|t| !t.is_empty());
 
-    let flow = config.get("flowchart").and_then(|v| v.as_object());
-    let mut db = diagrams::flowchart::db::FlowDb::new(
-        flow.and_then(|f| f.get("inheritDir")) == Some(&Value::Bool(true)),
-        Some(options.max_edges.unwrap_or(DEFAULT_MAX_EDGES)),
-    );
-    if let Some(title) = pre.title.as_deref().filter(|t| !t.is_empty()) {
-        db.title = Some(title.to_string());
-    }
-    diagrams::flowchart::parser::parse_flowchart(&parsed, &mut db).map_err(|e| tag(e, found.kind))?;
-
-    let fixed = flow.and_then(|f| f.get("useMaxWidth")) == Some(&Value::Bool(false));
+    // A diagram whose config section sets `useMaxWidth: false` keeps its own size in a page.
+    let section = config.get(found.kind).and_then(|v| v.as_object());
+    let fixed = section.and_then(|f| f.get("useMaxWidth")) == Some(&Value::Bool(false));
     let mut opts = options.clone();
     opts.responsive = Some(options.responsive.unwrap_or(!fixed));
-    let rendered = diagrams::flowchart::render::render_flowchart(&db, &config, &opts, measurer);
+
+    let rendered = match found.kind {
+        "pie" => {
+            let ast = diagrams::pie::parser::parse_pie(&parsed).map_err(|e| tag(e, found.kind))?;
+            let model = diagrams::pie::model::build_pie(ast, title).map_err(|e| tag(e, found.kind))?;
+            diagrams::pie::render::render_pie(&model, &config, &opts, measurer)
+        }
+        _ => {
+            let mut db = diagrams::flowchart::db::FlowDb::new(
+                section.and_then(|f| f.get("inheritDir")) == Some(&Value::Bool(true)),
+                Some(options.max_edges.unwrap_or(DEFAULT_MAX_EDGES)),
+            );
+            db.title = title.map(String::from);
+            diagrams::flowchart::parser::parse_flowchart(&parsed, &mut db).map_err(|e| tag(e, found.kind))?;
+            diagrams::flowchart::render::render_flowchart(&db, &config, &opts, measurer)
+        }
+    };
     let output_limit = options.output_limit.unwrap_or(DEFAULT_OUTPUT_LIMIT);
     if rendered.svg.encode_utf16().count() > output_limit {
         return Err(PeleError::new(

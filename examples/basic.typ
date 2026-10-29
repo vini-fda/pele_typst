@@ -64,3 +64,12 @@ graph TD
   check -- yes --> done[[Done]]
   check -- no --> fix[/Fix it/] --> check
 ```
+
+Pie charts, as a donut with the legend below, at half the page width:
+
+#mermaid(width: 50%, config: (pie: (donutHole: 0.45, legendPosition: "bottom")), "
+pie showData title Pets adopted by volunteers
+  \"Dogs\" : 386
+  \"Cats\" : 85
+  \"Rats\" : 15
+")

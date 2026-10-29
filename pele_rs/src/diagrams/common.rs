@@ -54,3 +54,25 @@ pub fn tighten(options: &RenderOptions, draw: impl Fn(bool) -> Rendered) -> Rend
     let tight = draw(true);
     if tight.width < loose.width { tight } else { loose }
 }
+
+// Draws a chart whose plot can be any width so that the whole diagram fits the width the host
+// has. `narrow` tells the chart that it did not fit at its own width.
+pub fn fit_width(options: &RenderOptions, natural: f64, least: f64, draw: impl Fn(f64, bool) -> Rendered) -> Rendered {
+    let mut result = draw(natural, false);
+    let Some(available) = options.max_width.filter(|&a| a > 0.0) else {
+        return result;
+    };
+    if result.width <= available {
+        return result;
+    }
+    let floor = least.min(natural);
+    let mut plot = natural;
+    result = draw(plot, true);
+    let mut round = 0;
+    while round < 3 && result.width > available && plot > floor {
+        plot = floor.max(plot - (result.width - available));
+        result = draw(plot, true);
+        round += 1;
+    }
+    result
+}
