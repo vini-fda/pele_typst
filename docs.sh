@@ -5,11 +5,11 @@ set -e
 cd "$(dirname "$0")"
 version=$(sed -n 's/^version = "\(.*\)"/\1/p' typst.toml)
 
-# The gallery imports @preview/pele as users do; serve it from this checkout.
+# The gallery imports @preview/pele-rs as users do; serve it from this checkout.
 packages=$(mktemp -d)
 trap 'rm -rf "$packages"' EXIT
-mkdir -p "$packages/preview/pele"
-ln -s "$PWD" "$packages/preview/pele/$version"
+mkdir -p "$packages/preview/pele-rs"
+ln -s "$PWD" "$packages/preview/pele-rs/$version"
 
 typst compile --root . --ignore-system-fonts manual.typ manual.pdf
 for file in gallery/*.typ; do

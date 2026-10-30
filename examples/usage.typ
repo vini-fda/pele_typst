@@ -1,4 +1,4 @@
-#import "@local/pele:0.3.0": mermaid
+#import "@local/pele-rs:0.3.0": mermaid
 
 // 1. Pass the diagram as a string
 #mermaid("flowchart LR\n  A --> B --> C", width: 80%)

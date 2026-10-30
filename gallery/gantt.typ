@@ -1,4 +1,4 @@
-#import "@preview/pele:0.3.0": mermaid
+#import "@preview/pele-rs:0.3.0": mermaid
 
 #set page(width: 12cm, height: 8cm, margin: 5mm, fill: white)
 #set text(font: "Libertinus Serif")

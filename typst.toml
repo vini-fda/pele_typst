@@ -1,5 +1,5 @@
 [package]
-name = "pele"
+name = "pele-rs"
 version = "0.3.0"
 entrypoint = "lib.typ"
 authors = ["Vini Freitas <@vini-fda>"]

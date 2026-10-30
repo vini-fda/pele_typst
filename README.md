@@ -1,8 +1,10 @@
-# pele
+# pele-rs
 
 Draw [Mermaid](https://mermaid.js.org) diagrams in Typst. This package runs `pele_rs`, a Rust
 port of [pele](https://github.com/obsidianmd/pele), Obsidian's fast Mermaid renderer, as a
 WebAssembly plugin: no browser or Node.js needed, in the CLI and the web app alike.
+
+pele-rs is an independent port, not an official Obsidian or Mermaid project.
 
 ## Examples
 
@@ -37,7 +39,7 @@ _Click on an image to see its code._
 For the full documentation, see the [manual (PDF)](manual.pdf).
 
 ```typ
-#import "@preview/pele:0.3.0": mermaid
+#import "@preview/pele-rs:0.3.0": mermaid
 
 #mermaid("
 flowchart LR
@@ -107,7 +109,7 @@ The plugin is built from the Rust crates in this repository: `pele_rs`, the port
 rustup target add wasm32-unknown-unknown
 ./build.sh      # builds pele.wasm
 ./docs.sh       # builds manual.pdf and the gallery
-./package.sh    # installs the package as @local/pele:0.3.0
+./package.sh    # installs the package as @local/pele-rs:0.3.0
 cargo test --workspace
 ```
 

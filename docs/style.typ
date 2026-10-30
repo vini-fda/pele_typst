@@ -170,7 +170,7 @@
 }
 
 #let setup(body) = {
-  set document(title: "pele manual", author: "Vini Freitas")
+  set document(title: "pele-rs manual", author: "Vini Freitas")
   set page(paper: "a4", margin: (x: 2.2cm, y: 2.4cm), numbering: "1", number-align: center)
   set text(font: "Libertinus Serif", size: 10.5pt, lang: "en")
   set par(justify: true)
