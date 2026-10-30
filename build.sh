@@ -3,4 +3,4 @@
 set -e
 cd "$(dirname "$0")"
 cargo build --release -p pele_typst_plugin --target wasm32-unknown-unknown
-cp target/wasm32-unknown-unknown/release/pele_typst_plugin.wasm pele_typst.wasm
+cp target/wasm32-unknown-unknown/release/pele_typst_plugin.wasm pele.wasm

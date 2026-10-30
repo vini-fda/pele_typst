@@ -2,3 +2,4 @@
 *.pdf
 /tests/plugin-cases.json
 /.reference
+!/manual.pdf

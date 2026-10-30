@@ -3,7 +3,7 @@
 #set page(width: 16cm, height: auto, margin: 1cm)
 #set text(size: 10pt)
 
-= pele_typst
+= pele
 
 A flowchart drawn by `pele_rs`, inline in Typst:
 

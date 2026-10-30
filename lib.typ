@@ -4,7 +4,7 @@
 // Labels are measured with the widths of Arial, as pele does outside a browser, and drawn in the
 // font you choose, so a much wider font can overflow its boxes.
 
-#let _plugin = plugin("pele_typst.wasm")
+#let _plugin = plugin("pele.wasm")
 
 // The colors and sizes of pele's themes, by the short name of each `--pele-*` variable.
 #let _theme-keys = (
@@ -25,26 +25,44 @@
 
 /// Draws a Mermaid diagram.
 ///
-/// - source (str, raw): The Mermaid text, or a raw block holding it.
-/// - width (auto, relative): Width of the image; by default the diagram's own size.
-/// - height (auto, relative): Height of the image.
-/// - fit (str): How the diagram fills a box given both a width and a height.
-/// - font (auto, str, array): Font family for labels; by default the surrounding text's.
-/// - font-size (auto, length): Size of node labels; by default the surrounding text's.
-/// - mono-font (str, array): Font family for monospace label text.
-/// - monospace (none, array): Override monospace parts: members, attributes, files, messages.
-/// - now (none, int, float): Unix timestamp in milliseconds; required for Gantt diagrams.
-/// - time-zone (str): IANA timezone used by Gantt, defaulting to UTC.
-/// - icons (dictionary): Decoded icon names mapped to SVG content in a 24×24 viewport.
-/// - math (dictionary): TeX mapped to (svg: str, width: number, height: number), in pixels.
+/// The diagram type is detected from the first line of the source, as in Mermaid. Front matter
+/// and `%%{init: ...}%%` directives are honored. Syntax errors stop the compilation with
+/// pele's message, which names the line and the expected token.
+///
+/// The result is an `image`, so it can be placed in a `figure`, scaled, aligned or rotated like
+/// any other image.
+///
+/// - source (str, raw): The Mermaid text, or a raw block holding it. Raw blocks make it easy to
+///   render every ```` ```mermaid ```` block with a show rule.
+/// - width (auto, relative): Width of the image. By default, the diagram's natural width.
+/// - height (auto, relative): Height of the image. By default, the diagram's natural height.
+/// - fit (str): How the diagram fills a box given both a `width` and a `height`: `"contain"`,
+///   `"cover"` or `"stretch"`, as for `image`.
+/// - font (auto, str, array): Font family for labels. By default, the surrounding text's font.
+/// - font-size (auto, length): Size of node labels. By default, the surrounding text's size.
+/// - mono-font (str, array): Font family for text pele draws in monospace, such as class
+///   members and file trees.
+/// - monospace (none, array): Which parts are drawn in `mono-font`, from `"members"`,
+///   `"attributes"`, `"files"` and `"messages"`. `none` keeps pele's defaults.
+/// - now (none, int, float): The current time, as a Unix timestamp in milliseconds. Gantt
+///   charts require it, so that their today marker and relative dates are reproducible.
+/// - time-zone (str): IANA time zone for Gantt calendar arithmetic, such as
+///   `"Europe/Paris"`. Daylight-saving transitions are respected.
+/// - icons (dictionary): Icons by decoded name, such as `"fa:fa-star"`, mapped to SVG markup
+///   drawn in a 24×24 viewport. Missing icons fall back to pele's default behavior.
+/// - math (dictionary): Math by TeX source, mapped to `(svg: str, width: float, height: float)`
+///   in pixels. Labels written as `$$...$$` use it; unknown formulas are drawn as text.
 /// - padding (length): Room around the drawing.
 /// - theme (dictionary): Colors and sizes by the short name of pele's CSS variables, such as
-///   `(fg: black, bg: white, accent: blue, surface: luma(240), radius: 4pt)`.
-/// - background (auto, bool): Whether to paint the theme's background behind the diagram; by
-///   default, when the theme sets `bg`.
+///   `(fg: black, bg: white, accent: blue, surface: luma(240), radius: 4pt)`. Values may be
+///   colors, lengths or strings. Keys starting with `--` are passed as raw CSS variables.
+/// - background (auto, bool): Whether to paint the theme's `bg` behind the diagram. By default,
+///   only when the theme sets `bg`.
 /// - config (dictionary): Mermaid configuration, as in front matter's `config:`, such as
-///   `(flowchart: (curve: "linear"))` or `(pie: (donutHole: 0.5))`.
-/// - alt (none, str): Alternative text for the image.
+///   `(flowchart: (curve: "linear"))` or `(pie: (donutHole: 0.5))`. The source's own front
+///   matter and directives take precedence.
+/// - alt (none, str): Alternative text for the image, for accessibility.
+/// -> content
 #let mermaid(
   source,
   width: auto,

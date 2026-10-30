@@ -1,5 +1,5 @@
 // Imports the package the way users do, and draws one diagram of each kind it supports.
-#import "@local/pele_typst:0.3.0": mermaid
+#import "@local/pele:0.3.0": mermaid
 
 #set page(width: 800pt, height: auto, margin: 20pt)
 #set text(size: 11pt)
