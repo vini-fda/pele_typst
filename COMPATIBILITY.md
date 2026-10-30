@@ -108,6 +108,19 @@ engine, minimizes differences, and retains their inputs under `scripts/regressio
 the regular oracle. `tests/plugin-parity.py` compares native inlined SVG with the actual Typst
 WASM ABI for every type, representative aliases, themes, fonts, icons and SVG math.
 
+Regenerate and check the fixtures with [Bun](https://bun.sh) from a checkout of the pinned
+upstream commit:
+
+```sh
+bun pele_rs/scripts/fixtures.ts /path/to/pinned/pele --check
+bun pele_rs/scripts/gantt-calendar.ts /path/to/pinned/pele --check
+bun pele_rs/scripts/agentflow-model.ts /path/to/pinned/pele --check
+cargo test --workspace
+cargo build --workspace --examples
+bun pele_rs/scripts/fuzz.ts /path/to/pinned/pele 40
+python3 tests/plugin-parity.py --typst typst
+```
+
 Release checks are `cargo fmt --all --check`, native and WASM Clippy with warnings denied,
 workspace tests, oracle regeneration checks, the plugin build, and package smoke/parity
 checks using both the committed and rebuilt WASM on Typst 0.13 and latest. Upstream's MIT

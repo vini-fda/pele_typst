@@ -1,137 +1,115 @@
-# pele_typst
+# pele
 
-Render [Mermaid](https://mermaid.js.org) diagrams in Typst with **pele_rs**, a Rust port of
-[pele](https://github.com/obsidianmd/pele), the fast Mermaid renderer from Obsidian. The port is
-compiled to a WebAssembly plugin, so it runs in the Typst CLI and the web app alike.
+Draw [Mermaid](https://mermaid.js.org) diagrams in Typst. This package runs `pele_rs`, a Rust
+port of [pele](https://github.com/obsidianmd/pele), Obsidian's fast Mermaid renderer, as a
+WebAssembly plugin: no browser or Node.js needed, in the CLI and the web app alike.
 
-```typ
-#import "@local/pele_typst:0.3.0": mermaid
+## Examples
 
-#mermaid("
-flowchart TD
-  A[Write Mermaid] --> B[Render with pele]
-  B --> C[Embed SVG in Typst]
-")
-```
+<!-- img width is set so the table gets evenly spaced by GitHub's css -->
+<table>
+<tr>
+  <td><a href="gallery/flowchart.typ"><img src="gallery/flowchart.png" width="250px" alt="A flowchart with a decision, a subgraph and a loop back"></a></td>
+  <td><a href="gallery/sequence.typ"><img src="gallery/sequence.png" width="250px" alt="A sequence diagram of Typst calling the plugin"></a></td>
+  <td><a href="gallery/class.typ"><img src="gallery/class.png" width="250px" alt="A class diagram with two subclasses"></a></td>
+</tr>
+<tr>
+  <td>Flowchart</td>
+  <td>Sequence diagram</td>
+  <td>Class diagram</td>
+</tr>
+<tr>
+  <td><a href="gallery/gantt.typ"><img src="gallery/gantt.png" width="250px" alt="A Gantt chart of a release plan"></a></td>
+  <td><a href="gallery/mindmap.typ"><img src="gallery/mindmap.png" width="250px" alt="A mind map with three branches"></a></td>
+  <td><a href="gallery/state.typ"><img src="gallery/state.png" width="250px" alt="A state diagram in a dark theme"></a></td>
+</tr>
+<tr>
+  <td>Gantt chart</td>
+  <td>Mind map</td>
+  <td>State diagram, dark theme</td>
+</tr>
+</table>
 
-![Example output](examples/basic.png)
-
-Version 0.3.0 implements all **33 diagram types** in **Pele 1.12.0**, pinned to
-[`36e584d59152181927e0d8bf70fddcd2a5f33d6c`](https://github.com/obsidianmd/pele/tree/36e584d59152181927e0d8bf70fddcd2a5f33d6c).
-The Rust engine matches SVG, dimensions, links, aliases, parsing and diagnostics with identical
-inputs, text measurement, clock and timezone. Front matter and `%%{init}%%` configuration are supported.
-See the [compatibility contract](COMPATIBILITY.md) for the full type list and Rust API.
+_Click on an image to see its code._
 
 ## Usage
 
+For the full documentation, see the [manual (PDF)](manual.pdf).
+
+```typ
+#import "@preview/pele:0.3.0": mermaid
+
+#mermaid("
+flowchart LR
+  A[Write Mermaid] --> B[Render with pele] --> C[Embed in Typst]
+")
+```
+
+To turn every `mermaid` code block into a diagram, use a show rule. Code blocks are set in a
+monospace font, so name the font for labels:
+
+````typ
+#show raw.where(lang: "mermaid"): it => mermaid(it, font: "Libertinus Serif")
+
+```mermaid
+sequenceDiagram
+  Alice->>Bob: Hello
+```
+````
+
+`mermaid` returns an image and takes `width`, `height` and `alt` like one. Other options set
+the font, colors, Mermaid configuration and more:
+
 ```typ
 #mermaid(
-  source,                      // str, or a raw block
-  width: auto, height: auto,   // image size; by default the diagram's natural size
-  fit: "contain",
-  font: auto,                  // label font; by default the surrounding text's
-  font-size: auto,             // label size; by default the surrounding text's
-  mono-font: "DejaVu Sans Mono",
-  monospace: none,             // optional array: members, attributes, files, messages
-  now: none,                   // Unix milliseconds; REQUIRED for Gantt
-  time-zone: "UTC",            // IANA timezone
-  icons: (:),                  // decoded name -> SVG content in a 24×24 viewport
-  math: (:),                   // TeX -> (svg: str, width: number, height: number)
-  padding: 8pt,
-  theme: (:),                  // pele's CSS variables by short name
-  background: auto,            // paint theme.bg behind the diagram; on when theme.bg is set
-  config: (:),                 // Mermaid config, e.g. (flowchart: (curve: "linear"))
-  alt: none,
+  "graph TD\n  A --> B",
+  width: 50%,
+  font: "Libertinus Serif",
+  theme: (bg: rgb("#1e1e2e"), fg: white, line: rgb("#89b4fa"), radius: 6pt),
+  config: (flowchart: (curve: "linear")),
 )
 ```
 
-Render every `mermaid` raw block:
+Gantt charts require `now`, the current time as a Unix timestamp in milliseconds, so that
+every build draws the same chart:
 
 ```typ
-#show raw.where(lang: "mermaid"): it => mermaid(it, font: "Libertinus Serif")
+#mermaid(now: 1768478400000, "gantt\n  dateFormat YYYY-MM-DD\n  Build :2026-01-15, 3d")
 ```
 
-Inside a raw block the text font is monospace, so pass the font you want.
+## Diagram types
 
-Theme keys are pele's [CSS variables](https://pele.run/theming) without the `--pele-` prefix:
-`bg`, `fg`, `muted`, `line`, `surface`, `surface-alt`, `border`, `accent`, `radius`,
-`fg-on-light`, `fg-on-dark`, `critical`, and the `*-weight` keys. Values may be Typst colors,
-lengths or strings:
+All 33 diagram types of pele 1.12.0 are supported, with output identical to the original:
 
-```typ
-#mermaid(theme: (bg: rgb("#1e1e2e"), fg: rgb("#cdd6f4"), line: rgb("#89b4fa"),
-                 surface: rgb("#313244"), border: rgb("#6c7086"), radius: 6pt), "...")
-```
+- **Flow and charts**: flowchart, pie, info, packet, quadrant chart, radar, XY chart, Cynefin
+- **Structured layouts**: mind map, kanban, treemap, tree view, timeline, user journey,
+  Ishikawa, event modeling, Wardley map
+- **Graphs**: entity relationship, class, state, requirement, use case, architecture, C4,
+  block, agent flow, swimlane
+- **Specialized engines**: sequence, Gantt, Git graph, Sankey, Venn, railroad
 
-Labels are measured with pele's table of Arial widths and drawn in the font you choose, so a
-font much wider than Arial can overflow its boxes.
+Front matter and `%%{init}%%` directives work as in Mermaid. See the
+[compatibility notes](COMPATIBILITY.md) for details.
 
-Gantt rendering is deterministic in Typst: supply a finite Unix timestamp in milliseconds.
-Calendar operations use the selected IANA timezone, including daylight-saving transitions.
+## Limitations
 
-```typ
-#mermaid("gantt\n  dateFormat YYYY-MM-DD\n  Build :2026-01-15, 3d",
-  now: 1768478400000, time-zone: "UTC")
-```
+- Labels are measured with the character widths of Arial, as pele does outside a browser. A
+  font much wider than Arial can overflow its boxes.
+- Icons and math are drawn from SVG you supply; no icon set or math typesetter is bundled.
+- Click handlers, links and other browser-only features have no effect.
 
-Icon and math assets are supplied by the caller. Math dimensions are fixed pixels, independent
-of label font size; Typst accepts SVG assets and rejects HTML math. Missing assets use Pele's
-fallback behavior. No math typesetter is bundled.
+## Building from source
 
-```typ
-#mermaid("flowchart LR\n A[\"$$x$$ fa:fa-star\"]", icons: (
-  "fa:fa-star": "<path d='M2 2H22V22H2Z'/>",
-), math: (
-  "x": (svg: "<path d='M1 1L17 17M17 1L1 17' stroke='currentColor'/>",
-        width: 18, height: 18),
-))
-```
-
-## Installing
-
-Typst reads local packages from `{data-dir}/typst/packages/local/pele_typst/0.3.0`, where
-`{data-dir}` is `~/Library/Application Support` on macOS, `~/.local/share` on Linux and
-`%APPDATA%` on Windows. Link or copy this folder there; only `typst.toml`, `lib.typ`,
-`pele_typst.wasm`, `README.md`, `COMPATIBILITY.md` and `LICENSE` are needed. For the web app, upload those files to
-a project and use "File > Package project" (see
-[private packages](https://typst.app/docs/web-app/private-packages/)).
-
-## Building
-
-`pele_typst.wasm` is built from the two Rust crates here:
-
-- `pele_rs/`: the port of pele, a plain Rust library (`pele_rs::render(text, &options)`).
-- `plugin/`: the Typst plugin. It renders with `pele_rs` and inlines pele's CSS custom
-  properties, `color-mix()` and `calc()` into plain SVG attributes, which Typst's SVG renderer needs.
+The plugin is built from the Rust crates in this repository: `pele_rs`, the port of pele, and
+`plugin`, which wraps it for Typst. With [Rust](https://rustup.rs) installed:
 
 ```sh
 rustup target add wasm32-unknown-unknown
-./build.sh
-```
-
-## Tests
-
-The oracle includes all 522 upstream documentation examples, all 239 agentflow reference
-examples, existing fixtures, upstream test inputs, and explicit option, asset and error cases.
-Comparisons include complete SVG, dimensions, type aliases, links, resolver calls and structured
-errors. Successful models are reused at default, 320, 500, then default width. Calendar tests
-add 7,118 date, scheduling and rendering cases in UTC and America/Los_Angeles.
-The [coverage manifest](pele_rs/tests/fixtures/coverage.json) records per-type totals.
-
-Regenerate fixtures with [Bun](https://bun.sh) from the pinned checkout:
-
-```sh
-bun pele_rs/scripts/fixtures.ts /path/to/pinned/pele --check
-bun pele_rs/scripts/gantt-calendar.ts /path/to/pinned/pele --check
-bun pele_rs/scripts/agentflow-model.ts /path/to/pinned/pele --check
+./build.sh      # builds pele.wasm
+./docs.sh       # builds manual.pdf and the gallery
+./package.sh    # installs the package as @local/pele:0.3.0
 cargo test --workspace
-cargo build --workspace --examples
-bun pele_rs/scripts/fuzz.ts /path/to/pinned/pele 40
-python3 tests/plugin-parity.py --typst typst
 ```
-
-CI checks formatting, native/WASM Clippy, oracle reproducibility, native/WASM SVG parity and
-package smoke documents using both the committed and rebuilt plugin on Typst 0.13 and latest.
 
 ## License
 

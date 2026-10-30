@@ -1,11 +1,18 @@
 [package]
-name = "pele_typst"
+name = "pele"
 version = "0.3.0"
 entrypoint = "lib.typ"
-authors = ["Vini Freitas"]
+authors = ["Vini Freitas <@vini-fda>"]
 license = "MIT"
-description = "Render Mermaid diagrams with a Rust port of the pele renderer."
-keywords = ["mermaid", "diagram", "flowchart", "graph", "pele"]
-categories = ["visualization"]
+description = "Render Mermaid diagrams with a Rust port of pele."
+repository = "https://github.com/vini-fda/pele_typst"
+keywords = ["mermaid", "diagram", "flowchart", "sequence", "gantt", "uml", "chart", "graph"]
+categories = ["visualization", "integration"]
 compiler = "0.13.0"
-exclude = ["pele_rs", "plugin", "target", "tests", ".github", "Cargo.toml", "Cargo.lock", "rustfmt.toml", "build.sh", "examples/*.pdf", "examples/*.png", ".gitignore"]
+# Development files, and the documentation linked from the README.
+exclude = [
+  "/pele_rs", "/plugin", "/target", "/tests", "/.github", "/.reference",
+  "/Cargo.toml", "/Cargo.lock", "/rustfmt.toml", "/*.sh",
+  "/docs", "/examples", "/gallery", "/manual.typ", "/manual.pdf", "/COMPATIBILITY.md",
+  ".gitignore",
+]
