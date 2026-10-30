@@ -1,7 +1,7 @@
 #!/bin/sh
-# Copies the package's files to DIR/pele/VERSION.
+# Copies the package's files to DIR/pele-rs/VERSION.
 #
-#   ./package.sh             install as @local/pele, in Typst's local package directory
+#   ./package.sh             install as @local/pele-rs, in Typst's local package directory
 #   ./package.sh DIR         e.g. a checkout of typst/packages: ./package.sh packages/preview
 set -e
 cd "$(dirname "$0")"
@@ -18,11 +18,11 @@ else
   root="$data/typst/packages/local"
 fi
 
-target="$root/pele/$version"
+target="$root/pele-rs/$version"
 rm -rf "$target"
 mkdir -p "$target/gallery"
 # The README, manual and gallery are shown on Typst Universe; typst.toml excludes them from the
 # bundle that the compiler downloads.
 cp typst.toml lib.typ pele.wasm README.md LICENSE COMPATIBILITY.md manual.pdf "$target"
 cp gallery/*.typ gallery/*.png "$target/gallery"
-echo "Copied pele $version to $target"
+echo "Copied pele-rs $version to $target"

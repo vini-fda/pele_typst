@@ -62,19 +62,19 @@ jobs:
         with:
           typst-version: ${{ matrix.typst }}
       - run: cargo build -p pele_typst_plugin --example bridge
-      - name: Install the package as @local/pele and @preview/pele
+      - name: Install the package as @local/pele-rs and @preview/pele-rs
         run: |
           version=$(sed -n 's/^version = "\(.*\)"/\1/p' typst.toml)
           echo "PACKAGE_VERSION=$version" >> "$GITHUB_ENV"
           for namespace in local preview; do
-            mkdir -p "$RUNNER_TEMP/packages/$namespace/pele"
-            ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/packages/$namespace/pele/$version"
+            mkdir -p "$RUNNER_TEMP/packages/$namespace/pele-rs"
+            ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/packages/$namespace/pele-rs/$version"
           done
       - name: The documents import the version typst.toml declares
         run: |
-          grep -q "@local/pele:$PACKAGE_VERSION\"" tests/smoke.typ
+          grep -q "@local/pele-rs:$PACKAGE_VERSION\"" tests/smoke.typ
           for file in README.md manual.typ gallery/*.typ; do
-            grep -q "@preview/pele:$PACKAGE_VERSION\"" "$file" || { echo "$file"; exit 1; }
+            grep -q "@preview/pele-rs:$PACKAGE_VERSION\"" "$file" || { echo "$file"; exit 1; }
           done
       - name: Compile with the committed plugin
         run: |
@@ -90,7 +90,7 @@ jobs:
           python3 tests/plugin-parity.py
       - name: An unsupported diagram fails with pele's message
         run: |
-          printf '#import "@local/pele:%s": mermaid\n#mermaid("not a diagram")\n' "$PACKAGE_VERSION" > "$RUNNER_TEMP/bad.typ"
+          printf '#import "@local/pele-rs:%s": mermaid\n#mermaid("not a diagram")\n' "$PACKAGE_VERSION" > "$RUNNER_TEMP/bad.typ"
           if typst compile --package-path "$RUNNER_TEMP/packages" "$RUNNER_TEMP/bad.typ" "$RUNNER_TEMP/bad.pdf" 2> "$RUNNER_TEMP/err.txt"; then
             echo "expected the compile to fail"; exit 1
           fi

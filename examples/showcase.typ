@@ -1,6 +1,6 @@
-// A tour of pele 0.3.0: one diagram from each family, written the ways you would use it.
+// A tour of pele-rs 0.3.0: one diagram from each family, written the ways you would use it.
 // Compile with: typst compile examples/showcase.typ
-#import "@local/pele:0.3.0": mermaid
+#import "@local/pele-rs:0.3.0": mermaid
 
 #set page(paper: "a4", margin: 2cm, numbering: "1")
 #set text(font: "Libertinus Serif", size: 10.5pt)

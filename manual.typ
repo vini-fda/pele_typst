@@ -5,7 +5,7 @@
 #import "/docs/diagrams.typ": families
 
 #let package = toml("/typst.toml").package
-#let import-line = "#import \"@preview/pele:" + package.version + "\": mermaid"
+#let import-line = "#import \"@preview/pele-rs:" + package.version + "\": mermaid"
 #let now = 1768478400000
 
 #show: setup
@@ -13,7 +13,7 @@
 // Title
 #v(3cm)
 #align(center)[
-  #text(3.2em, weight: "bold", tracking: 0.02em)[pele]
+  #text(3.2em, weight: "bold", tracking: 0.02em)[pele-rs]
   #v(0.2em)
   #text(1.25em)[Mermaid diagrams in Typst]
   #v(0.6em)
@@ -32,14 +32,15 @@ flowchart LR
 
 = Overview
 
-*pele* draws #link("https://mermaid.js.org")[Mermaid] diagrams in Typst documents. You write the
+*pele-rs* draws #link("https://mermaid.js.org")[Mermaid] diagrams in Typst documents. You write the
 diagram as text, and it is laid out and drawn while your document compiles: no browser, no
 Node.js, no image files to keep in sync.
 
 It is built on `pele_rs`, a Rust port of #link("https://github.com/obsidianmd/pele")[pele], the
 fast Mermaid renderer by Obsidian, compiled to a WebAssembly plugin. This version implements all
 33 diagram types of pele #raw("1.12.0"), and its output matches the original's byte for byte.
-It works in the Typst CLI and in the web app alike.
+It works in the Typst CLI and in the web app alike. pele-rs is an independent port, not an
+official Obsidian or Mermaid project.
 
 #example("#mermaid(\"
 sequenceDiagram
@@ -90,8 +91,8 @@ the label font. That is why the rule above names the `font` to use.
 same options everywhere, define your own version with `.with`:
 
 ```typ
-#import "@preview/pele:0.3.0"
-#let mermaid = pele.mermaid.with(
+#import "@preview/pele-rs:0.3.0": mermaid
+#let mermaid = mermaid.with(
   font: "Libertinus Serif",
   theme: (accent: rgb("#2f5fb3"), radius: 6pt),
   now: 1768478400000,
